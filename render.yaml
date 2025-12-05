@@ -1,0 +1,59 @@
+# Render Blueprint - Infrastructure as Code
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: kokoc-ai-bot
+    runtime: python
+    region: frankfurt  # Ближе к России/СНГ
+    plan: starter      # $7/мес - не спит, стабильный webhook
+    branch: main
+    
+    # Сборка
+    buildCommand: pip install -r requirements.txt
+    
+    # Запуск (webhook mode автоматически при наличии WEBHOOK_URL)
+    startCommand: python -m src.main
+    
+    # Health check для мониторинга
+    healthCheckPath: /health
+    
+    # Автоматический деплой при push в main
+    autoDeploy: true
+    
+    # Environment Variables
+    # ВАЖНО: Секреты настраиваются вручную в Dashboard (sync: false)
+    envVars:
+      # Telegram Bot (PROD token)
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false  # Настроить в Dashboard как Secret
+      
+      # Webhook Configuration
+      - key: WEBHOOK_URL
+        sync: false  # URL сервиса после создания
+      - key: WEBHOOK_SECRET
+        sync: false  # Случайная строка для безопасности
+      
+      # Access Control
+      - key: ALLOWED_USER_IDS
+        sync: false  # Список разрешенных Telegram ID
+      
+      # AI APIs
+      - key: GEMINI_API_KEY
+        sync: false  # Google Gemini API
+      - key: NBP_API_KEY
+        sync: false  # Nano Banana Pro (Gemini 3 Pro Image)
+      
+      # Application Settings (можно задать здесь)
+      - key: STORAGE_TYPE
+        value: local
+      - key: LOG_LEVEL
+        value: INFO
+      - key: DEBUG
+        value: "false"
+      - key: AI_REQUEST_TIMEOUT
+        value: "120"
+      - key: MEDIA_DOWNLOAD_TIMEOUT
+        value: "30"
+      - key: MEDIA_CLEANUP_HOURS
+        value: "24"

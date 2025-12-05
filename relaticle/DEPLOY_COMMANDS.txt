@@ -1,0 +1,73 @@
+# Команды для развертывания Relaticle CRM на FirstVDS
+# Скопируйте и выполните эти команды на сервере
+
+# ============================================
+# 1. Подключение к серверу
+# ============================================
+ssh root@83.220.175.224
+# Пароль: YOUR_ADMIN_PASSWORD
+
+# ============================================
+# 2. Подготовка директории
+# ============================================
+cd /var/www
+git clone <ВАШ_РЕПОЗИТОРИЙ> relaticle
+cd relaticle
+
+# ============================================
+# 3. Запуск развертывания
+# ============================================
+chmod +x deploy.sh
+
+ADMIN_NAME="Администратор" \
+ADMIN_EMAIL="YOUR_ADMIN_EMAIL" \
+ADMIN_PASSWORD="YOUR_ADMIN_PASSWORD" \
+YANDEX_GPT_API_KEY="YOUR_YANDEX_GPT_API_KEY" \
+YANDEX_FOLDER_ID="YOUR_YANDEX_FOLDER_ID" \
+DB_TYPE=sqlite \
+./deploy.sh
+
+# ============================================
+# 4. После развертывания (если нужно вручную)
+# ============================================
+
+# Настройка .env (если не настроилось автоматически)
+nano .env
+# Добавьте/проверьте:
+# AI_PROVIDER=yandex
+# YANDEX_GPT_API_KEY=YOUR_YANDEX_GPT_API_KEY
+# YANDEX_FOLDER_ID=YOUR_YANDEX_FOLDER_ID
+# DB_CONNECTION=sqlite
+# DB_DATABASE=/var/www/relaticle/database/database.sqlite
+
+# Создание администратора (если не создался автоматически)
+php artisan sysadmin:create \
+  --name="Администратор" \
+  --email="YOUR_ADMIN_EMAIL" \
+  --password="YOUR_ADMIN_PASSWORD" \
+  --no-interaction
+
+# Настройка SSL (опционально)
+apt install -y certbot python3-certbot-nginx
+certbot --nginx -d lizon0707.fvds.ru
+
+# ============================================
+# 5. Проверка работы
+# ============================================
+
+# Статус сервисов
+systemctl status nginx
+systemctl status php8.4-fpm
+systemctl status relaticle-queue
+
+# Логи
+tail -f storage/logs/laravel.log
+
+# ============================================
+# 6. Доступ к приложению
+# ============================================
+# URL: http://lizon0707.fvds.ru
+# Панель администратора: http://lizon0707.fvds.ru/sysadmin
+# Email: YOUR_ADMIN_EMAIL
+# Пароль: YOUR_ADMIN_PASSWORD
+

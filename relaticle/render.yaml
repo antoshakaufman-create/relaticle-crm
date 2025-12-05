@@ -1,0 +1,122 @@
+# Render Blueprint для Relaticle CRM
+# https://render.com/docs/blueprint-spec
+
+services:
+  # Web Service - Laravel приложение
+  - type: web
+    name: relaticle-crm
+    runtime: php
+    region: frankfurt  # Ближе к России/СНГ
+    plan: starter      # $7/мес (можно upgrade до standard $25/мес)
+    branch: main
+    
+    # Build команды
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+      php artisan key:generate --force
+      npm ci
+      npm run build
+      php artisan migrate --force
+      php artisan config:cache
+      php artisan route:cache
+      php artisan view:cache
+      php artisan storage:link
+    
+    # Start команда
+    startCommand: php artisan serve --host=0.0.0.0 --port=$PORT
+    
+    # Health check
+    healthCheckPath: /
+    
+    # Автоматический деплой
+    autoDeploy: true
+    
+    # Environment Variables
+    envVars:
+      # Application
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_LOCALE
+        value: ru
+      - key: LOG_CHANNEL
+        value: stderr
+      
+      # Database (будет автоматически подключена из PostgreSQL сервиса)
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_HOST
+        fromDatabase:
+          name: relaticle-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: relaticle-db
+          property: port
+      - key: DB_DATABASE
+        fromDatabase:
+          name: relaticle-db
+          property: database
+      - key: DB_USERNAME
+        fromDatabase:
+          name: relaticle-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: relaticle-db
+          property: password
+      
+      # Queue (используем database, Redis опционален)
+      - key: QUEUE_CONNECTION
+        value: database
+      
+      # Cache (используем database, Redis опционален)
+      - key: CACHE_STORE
+        value: database
+      
+      # Session
+      - key: SESSION_DRIVER
+        value: database
+      
+      # Mail (настроить вручную в Dashboard)
+      - key: MAIL_MAILER
+        value: smtp
+      - key: MAIL_PORT
+        value: "587"
+      - key: MAIL_ENCRYPTION
+        value: tls
+      - key: MAIL_FROM_NAME
+        value: "Relaticle CRM"
+      - key: MAIL_HOST
+        sync: false
+      - key: MAIL_USERNAME
+        sync: false
+      - key: MAIL_PASSWORD
+        sync: false
+      - key: MAIL_FROM_ADDRESS
+        sync: false
+      
+      # Секреты (настроить вручную в Dashboard)
+      - key: APP_KEY
+        sync: false  # Сгенерируется автоматически при первом деплое
+      - key: APP_URL
+        sync: false  # URL вашего сервиса после создания
+
+  # PostgreSQL Database
+  - type: pgsql
+    name: relaticle-db
+    plan: starter      # $7/мес (256MB RAM, shared CPU)
+    # plan: standard   # $20/мес (1GB RAM, dedicated CPU) - для production
+    region: frankfurt
+    databaseName: relaticle
+    user: relaticle_user
+
+  # Redis (опционально, для кеша и очередей)
+  # Раскомментируйте, если нужен Redis
+  # - type: redis
+  #   name: relaticle-redis
+  #   plan: starter     # $10/мес (256MB RAM)
+  #   region: frankfurt
+  #   maxmemoryPolicy: allkeys-lru
+

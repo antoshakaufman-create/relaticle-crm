@@ -1,0 +1,70 @@
+# Переменные окружения для развертывания Relaticle CRM
+# Скопируйте эти значения в .env файл на сервере
+
+# ============================================
+# YandexGPT Configuration
+# ============================================
+AI_PROVIDER=yandex
+YANDEX_GPT_API_KEY=YOUR_YANDEX_GPT_API_KEY
+YANDEX_FOLDER_ID=YOUR_YANDEX_FOLDER_ID
+YANDEX_GPT_MODEL=yandexgpt/latest
+YANDEX_GPT_TIMEOUT=60
+
+# ============================================
+# Application Configuration
+# ============================================
+APP_NAME=Relaticle
+APP_ENV=production
+APP_KEY=base64:ГЕНЕРИРУЕТСЯ_АВТОМАТИЧЕСКИ
+APP_DEBUG=false
+APP_URL=http://lizon0707.fvds.ru
+
+# ============================================
+# Database Configuration (SQLite - рекомендуется для 2GB RAM)
+# ============================================
+DB_CONNECTION=sqlite
+DB_DATABASE=/var/www/relaticle/database/database.sqlite
+
+# Или PostgreSQL (если предпочитаете):
+# DB_CONNECTION=pgsql
+# DB_HOST=127.0.0.1
+# DB_PORT=5432
+# DB_DATABASE=relaticle_prod
+# DB_USERNAME=relaticle_user
+# DB_PASSWORD=ВАШ_ПАРОЛЬ_БД
+
+# ============================================
+# Cache & Sessions
+# ============================================
+CACHE_STORE=database
+SESSION_DRIVER=database
+QUEUE_CONNECTION=database
+
+# ============================================
+# Locale
+# ============================================
+APP_LOCALE=ru
+APP_FALLBACK_LOCALE=en
+
+# ============================================
+# Mail Configuration (опционально)
+# ============================================
+# MAIL_MAILER=smtp
+# MAIL_HOST=smtp.yourdomain.com
+# MAIL_PORT=587
+# MAIL_USERNAME=noreply@yourdomain.com
+# MAIL_PASSWORD=your-smtp-password
+# MAIL_ENCRYPTION=tls
+# MAIL_FROM_ADDRESS=noreply@yourdomain.com
+# MAIL_FROM_NAME="${APP_NAME}"
+
+# ============================================
+# Опциональные интеграции
+# ============================================
+# KONTUR_COMPASS_API_KEY=
+# KONTUR_COMPASS_ENABLED=false
+# YANDEX_DIRECTORY_API_KEY=
+# YANDEX_DIRECTORY_ENABLED=false
+# TWO_GIS_API_KEY=
+# TWO_GIS_ENABLED=false
+

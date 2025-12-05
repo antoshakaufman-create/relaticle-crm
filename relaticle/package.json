@@ -1,0 +1,23 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.10",
+        "@tailwindcss/typography": "^0.5.19",
+        "autoprefixer": "^10.4.21",
+        "chokidar": "^4.0.3",
+        "laravel-vite-plugin": "^2.0",
+        "postcss": "^8.5.6",
+        "postcss-nesting": "^13.0.2",
+        "tailwindcss": "^4.1.13",
+        "vite": "^7.1"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.13",
+        "shiki": "^3.13.0"
+    }
+}
