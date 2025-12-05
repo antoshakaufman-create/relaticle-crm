@@ -46,6 +46,10 @@ set SERVER_USER [lindex $argv 1]
 set SERVER_PASSWORD [lindex $argv 2]
 set REPO_URL [lindex $argv 3]
 set DOMAIN [lindex $argv 4]
+set ADMIN_EMAIL [lindex $argv 5]
+set ADMIN_PASSWORD [lindex $argv 6]
+set YANDEX_GPT_API_KEY [lindex $argv 7]
+set YANDEX_FOLDER_ID [lindex $argv 8]
 
 # Подключение к серверу
 spawn ssh -o StrictHostKeyChecking=no $SERVER_USER@$SERVER_HOST
@@ -57,20 +61,51 @@ send "$SERVER_PASSWORD\r"
 # Ожидание приглашения командной строки
 expect "$ "
 
+# Установка git если не установлен
+send "apt update && apt install -y git\r"
+set timeout 300
+expect {
+    "Do you want to continue?" {
+        send "Y\r"
+        expect "$ "
+    }
+    "$ " {}
+    timeout {}
+}
+set timeout 30
+
 # Создание директории и клонирование репозитория
 send "cd /var/www\r"
 expect "$ "
 send "rm -rf relaticle\r"
 expect "$ "
 send "git clone $REPO_URL relaticle\r"
-expect "$ "
+expect {
+    "Cloning" {
+        expect "$ "
+    }
+    "$ " {}
+    timeout {}
+}
 send "cd relaticle\r"
 expect "$ "
 
-# Запуск развертывания
-send "chmod +x run_deployment.sh\r"
+# Проверка наличия скрипта развертывания и установка переменных окружения
+send "export ADMIN_NAME=\"Администратор\"\r"
 expect "$ "
-send "./run_deployment.sh\r"
+send "export ADMIN_EMAIL=\"$ADMIN_EMAIL\"\r"
+expect "$ "
+send "export ADMIN_PASSWORD=\"$ADMIN_PASSWORD\"\r"
+expect "$ "
+send "export YANDEX_GPT_API_KEY=\"$YANDEX_GPT_API_KEY\"\r"
+expect "$ "
+send "export YANDEX_FOLDER_ID=\"$YANDEX_FOLDER_ID\"\r"
+expect "$ "
+send "export DB_TYPE=sqlite\r"
+expect "$ "
+
+# Запуск развертывания
+send "if [ -f run_deployment.sh ]; then chmod +x run_deployment.sh && ./run_deployment.sh; elif [ -f deploy.sh ]; then chmod +x deploy.sh && ./deploy.sh; else echo 'Скрипт развертывания не найден'; fi\r"
 
 # Ожидание завершения (может занять время)
 set timeout 1200
@@ -109,8 +144,14 @@ echo "🔗 Подключение к серверу и запуск развер
 echo "Это может занять 10-15 минут..."
 echo ""
 
+# Получение переменных окружения
+ADMIN_EMAIL="${ADMIN_EMAIL:-anton.kaufmann95@gmail.com}"
+ADMIN_PASSWORD="${ADMIN_PASSWORD:-Starten01!}"
+YANDEX_GPT_API_KEY="${YANDEX_GPT_API_KEY:-AQVN3f76xWgppmVEMeZqPTsUpFG7UzH0CNTWg_b8}"
+YANDEX_FOLDER_ID="${YANDEX_FOLDER_ID:-b1gn3qao39gb9uecn2c2}"
+
 # Запуск expect скрипта
-/tmp/deploy_expect.sh "$SERVER_HOST" "$SERVER_USER" "$SERVER_PASSWORD" "$REPO_URL" "$DOMAIN"
+/tmp/deploy_expect.sh "$SERVER_HOST" "$SERVER_USER" "$SERVER_PASSWORD" "$REPO_URL" "$DOMAIN" "$ADMIN_EMAIL" "$ADMIN_PASSWORD" "$YANDEX_GPT_API_KEY" "$YANDEX_FOLDER_ID"
 
 # Очистка
 rm -f /tmp/deploy_expect.sh
