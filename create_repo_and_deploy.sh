@@ -84,10 +84,22 @@ echo "🚀 Запуск автоматического развертывани�
 echo ""
 
 # Устанавливаем переменные окружения для развертывания
+echo "📝 Установите переменные окружения перед развертыванием:"
+echo "export YANDEX_GPT_API_KEY='ваш_ключ_здесь'"
+echo "export YANDEX_FOLDER_ID='ваш_folder_id_здесь'"
+echo "export ADMIN_EMAIL='ваш_email_здесь'"
+echo "export ADMIN_PASSWORD='ваш_пароль_здесь'"
+echo ""
+
+# Устанавливаем переменные окружения для развертывания
 export YANDEX_GPT_API_KEY="${YANDEX_GPT_API_KEY:-YOUR_YANDEX_GPT_API_KEY}"
 export YANDEX_FOLDER_ID="${YANDEX_FOLDER_ID:-YOUR_YANDEX_FOLDER_ID}"
 export ADMIN_EMAIL="${ADMIN_EMAIL:-YOUR_ADMIN_EMAIL}"
 export ADMIN_PASSWORD="${ADMIN_PASSWORD:-YOUR_ADMIN_PASSWORD}"
+
+echo "🔗 Репозиторий: $REPO_URL"
+echo "🚀 Запуск развертывания..."
+echo ""
 
 ./deploy_remote.sh "$REPO_URL"
 
