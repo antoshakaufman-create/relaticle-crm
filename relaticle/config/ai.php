@@ -42,9 +42,10 @@ return [
     */
 
     'yandex' => [
-        'api_key' => env('YANDEX_GPT_API_KEY'),
+        'api_key' => env('YANDEX_API_KEY'), // Unified key name as per deploy script
         'folder_id' => env('YANDEX_FOLDER_ID'),
         'base_url' => env('YANDEX_GPT_BASE_URL', 'https://llm.api.cloud.yandex.net/foundationModels/v1'),
+        'search_url' => env('YANDEX_SEARCH_URL', 'https://search.api.cloud.yandex.net/search/v2/search'),
         'model' => env('YANDEX_GPT_MODEL', 'yandexgpt/latest'),
         'timeout' => env('YANDEX_GPT_TIMEOUT', 60),
     ],

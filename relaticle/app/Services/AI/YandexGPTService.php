@@ -35,7 +35,7 @@ final class YandexGPTService
 
         try {
             $messages = [];
-            
+
             // Add system prompt if provided
             if ($systemPrompt !== null) {
                 $messages[] = [
@@ -43,7 +43,7 @@ final class YandexGPTService
                     'text' => $systemPrompt,
                 ];
             }
-            
+
             // Add user query
             $messages[] = [
                 'role' => 'user',
@@ -52,7 +52,7 @@ final class YandexGPTService
 
             $response = Http::timeout(60)
                 ->withHeaders([
-                    'Authorization' => 'Api-Key '.$this->apiKey,
+                    'Authorization' => 'Api-Key ' . $this->apiKey,
                     'x-folder-id' => $this->folderId,
                 ])
                 ->post("{$this->baseUrl}/completion", [
@@ -74,11 +74,11 @@ final class YandexGPTService
                 ];
             }
 
-            Log::warning('YandexGPT API error: '.$response->body());
+            Log::warning('YandexGPT API error: ' . $response->body());
 
             return null;
         } catch (\Exception $e) {
-            Log::error('YandexGPT API exception: '.$e->getMessage());
+            Log::error('YandexGPT API exception: ' . $e->getMessage());
 
             return null;
         }
@@ -104,11 +104,11 @@ final class YandexGPTService
     {
         $prompt = "Проанализируй достоверность контактных данных лида на российском рынке и определи, не являются ли они вымышленными (mock данными).\n\n";
         $prompt .= "Данные лида:\n";
-        $prompt .= "- Имя: ".($leadData['name'] ?? 'не указано')."\n";
-        $prompt .= "- Email: ".($leadData['email'] ?? 'не указано')."\n";
-        $prompt .= "- Телефон: ".($leadData['phone'] ?? 'не указано')."\n";
-        $prompt .= "- Компания: ".($leadData['company_name'] ?? 'не указано')."\n";
-        $prompt .= "- Должность: ".($leadData['position'] ?? 'не указано')."\n\n";
+        $prompt .= "- Имя: " . ($leadData['name'] ?? 'не указано') . "\n";
+        $prompt .= "- Email: " . ($leadData['email'] ?? 'не указано') . "\n";
+        $prompt .= "- Телефон: " . ($leadData['phone'] ?? 'не указано') . "\n";
+        $prompt .= "- Компания: " . ($leadData['company_name'] ?? 'не указано') . "\n";
+        $prompt .= "- Должность: " . ($leadData['position'] ?? 'не указано') . "\n\n";
 
         $prompt .= "Результаты валидации:\n";
         foreach ($validationResults as $field => $result) {
@@ -126,10 +126,10 @@ final class YandexGPTService
 
         $prompt .= "Верни JSON:\n";
         $prompt .= "{\n";
-        $prompt .= '  "score": 0-100,'."\n";
-        $prompt .= '  "riskFactors": ["список факторов риска"],'."\n";
-        $prompt .= '  "recommendations": ["рекомендации"],'."\n";
-        $prompt .= '  "confidence": 0-1'."\n";
+        $prompt .= '  "score": 0-100,' . "\n";
+        $prompt .= '  "riskFactors": ["список факторов риска"],' . "\n";
+        $prompt .= '  "recommendations": ["рекомендации"],' . "\n";
+        $prompt .= '  "confidence": 0-1' . "\n";
         $prompt .= "}\n";
 
         return $prompt;
@@ -159,5 +159,63 @@ final class YandexGPTService
             confidence: (float) ($data['confidence'] ?? 0.5)
         );
     }
+    /**
+     * Поиск и извлечение компаний через Search + GPT
+     * 
+     * @return array<int, array{name: string, description: string, url: string}>
+     */
+    public function discoverCompanies(string $query): array
+    {
+        $searchService = app(YandexSearchService::class);
+        $searchResults = $searchService->search($query);
+
+        if (empty($searchResults)) {
+            return [];
+        }
+
+        // Contextualize the prompt with real search data
+        $context = "Результаты поиска по запросу '$query':\n\n";
+        foreach ($searchResults as $index => $result) {
+            $context .= ($index + 1) . ". " . $result['title'] . "\n";
+            $context .= "   URL: " . $result['url'] . "\n";
+            $context .= "   Описание: " . $result['description'] . "\n\n";
+        }
+
+        $systemPrompt = "Ты - бизнес-аналитик. Твоя задача - извлечь информацию о РЕАЛЬНЫХ компаниях из предоставленных результатов поиска. Игнорируй каталоги, агрегаторы и информационные статьи. Ищи только официальные сайты компаний или их прямые представительства.";
+
+        $prompt = $context . "\n\n";
+        $prompt .= "На основе этих данных, составь список найденных компаний в формате JSON.\n";
+        $prompt .= "Формат:\n";
+        $prompt .= "[\n";
+        $prompt .= "  {\n";
+        $prompt .= "    \"name\": \"Название компании\",\n";
+        $prompt .= "    \"description\": \"Краткое описание деятельности (на русском)\",\n";
+        $prompt .= "    \"url\": \"Официальный сайт\",\n";
+        $prompt .= "    \"confidence\": 0-100 (насколько это похоже на реальный бизнес)\n";
+        $prompt .= "  }\n";
+        $prompt .= "]\n";
+        $prompt .= "Верни ТОЛЬКО JSON массив.";
+
+        $response = $this->search($prompt, $systemPrompt); // Reuse existing completion method
+
+        if (!$response || empty($response['content'])) {
+            return [];
+        }
+
+        $parsed = $this->parseContent($response['content']);
+
+        // Handle if parseContent returned array wrapper or direct array
+        if (isset($parsed['text'])) {
+            // Fallback if regex failed in parseContent but it might be raw json
+            $json = json_decode($response['content'], true);
+            return is_array($json) ? $json : [];
+        }
+
+        // If parsed is associative array but we expect list, wrap it? 
+        // parseContent usually returns the decoded JSON. 
+        // If GPT adhered to prompt, it's a list.
+        return is_array($parsed) && array_is_list($parsed) ? $parsed : [];
+    }
+
 }
 
