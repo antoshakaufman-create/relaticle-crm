@@ -52,15 +52,25 @@ if [ -d "$APP_DIR" ]; then
     rm -rf "$APP_DIR"
 fi
 
+info "Клонирование репозитория..."
+git clone https://github.com/antoshakaufman-create/relaticle-crm.git "$APP_DIR"
+
 if [ ! -d "$APP_DIR" ]; then
-    info "Клонирование репозитория..."
-    git clone https://github.com/antoshakaufman-create/relaticle-crm.git "$APP_DIR"
-    cd "$APP_DIR"
-else
-    cd "$APP_DIR"
-    info "Pull последних изменений..."
-    git pull origin main
+    error "Папка приложения не создана после клонирования!"
+    exit 1
 fi
+
+cd "$APP_DIR"
+info "Содержимое папки после клонирования:"
+ls -la
+
+if [ ! -f "composer.json" ]; then
+    error "composer.json не найден! Клонирование прошло некорректно или репозиторий пуст."
+    exit 1
+fi
+
+info "Pull последних изменений (на всякий случай)..."
+git pull origin main
 
 # 3. Установка зависимостей
 info "Установка зависимостей Composer..."
