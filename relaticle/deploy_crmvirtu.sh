@@ -73,6 +73,24 @@ if [ ! -f .env ]; then
     warn ".env файл не найден! Копируем из .env.example..."
     cp .env.example .env
     php$PHP_VERSION artisan key:generate
+    
+    # Автоматическая настройка .env
+    info "Настройка переменных окружения..."
+    sed -i "s|APP_ENV=.*|APP_ENV=production|" .env
+    sed -i "s|APP_DEBUG=.*|APP_DEBUG=false|" .env
+    sed -i "s|APP_URL=.*|APP_URL=https://$DOMAIN|" .env
+    sed -i "s|APP_LOCALE=.*|APP_LOCALE=ru|" .env
+    
+    # Настройка базы данных (SQLite для простоты)
+    sed -i "s|DB_CONNECTION=.*|DB_CONNECTION=sqlite|" .env
+    sed -i "s|DB_DATABASE=.*|DB_DATABASE=$APP_DIR/database/database.sqlite|" .env
+    
+    # Создаем базу данных если её нет
+    if [ ! -f "$APP_DIR/database/database.sqlite" ]; then
+        touch "$APP_DIR/database/database.sqlite"
+    fi
+    chown www-data:www-data "$APP_DIR/database/database.sqlite"
+    
     warn "ВАЖНО: Отредактируйте .env и укажите YANDEX ключи!"
 fi
 
