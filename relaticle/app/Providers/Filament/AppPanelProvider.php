@@ -61,9 +61,9 @@ final class AppPanelProvider extends PanelProvider
             SwitchTeam::class,
         );
 
-        Action::configureUsing(fn (Action $action): Action => $action->size(Size::Small)->iconPosition('before'));
-        Section::configureUsing(fn (Section $section): Section => $section->compact());
-        Table::configureUsing(fn (Table $table): Table => $table);
+        Action::configureUsing(fn(Action $action): Action => $action->size(Size::Small)->iconPosition('before'));
+        Section::configureUsing(fn(Section $section): Section => $section->compact());
+        Table::configureUsing(fn(Table $table): Table => $table);
     }
 
     /**
@@ -77,11 +77,11 @@ final class AppPanelProvider extends PanelProvider
             ->default()
             ->id('app')
             ->path('app')
-            ->homeUrl(fn (): string => CompanyResource::getUrl())
+            ->homeUrl(fn(): string => CompanyResource::getUrl())
             ->brandName('Relaticle')
             ->login(Login::class)
             ->registration(Register::class)
-            ->locale(fn (): string => Session::get('locale', 'ru'))
+
             ->authGuard('web')
             ->authPasswordBroker('users')
             ->passwordReset()
@@ -89,7 +89,7 @@ final class AppPanelProvider extends PanelProvider
             ->strictAuthorization()
             ->databaseNotifications()
             ->brandLogoHeight('2.6rem')
-            ->brandLogo(fn (): View|Factory => view('filament.app.logo'))
+            ->brandLogo(fn(): View|Factory => view('filament.app.logo'))
             ->viteTheme('resources/css/app.css')
             ->colors([
                 'primary' => [
@@ -113,19 +113,19 @@ final class AppPanelProvider extends PanelProvider
                 Action::make('profile')
                     ->label(__('resources.common.profile'))
                     ->icon('heroicon-m-user-circle')
-                    ->url(fn (): string => $this->shouldRegisterMenuItem()
+                    ->url(fn(): string => $this->shouldRegisterMenuItem()
                         ? url(EditProfile::getUrl())
                         : url($panel->getPath())),
                 Action::make('locale_ru')
                     ->label('Русский')
                     ->icon('heroicon-m-language')
-                    ->visible(fn (): bool => Session::get('locale', 'ru') !== 'ru')
-                    ->url(fn (): string => route('locale.switch', ['locale' => 'ru'])),
+                    ->visible(fn(): bool => Session::get('locale', 'ru') !== 'ru')
+                    ->url(fn(): string => route('locale.switch', ['locale' => 'ru'])),
                 Action::make('locale_en')
                     ->label('English')
                     ->icon('heroicon-m-language')
-                    ->visible(fn (): bool => Session::get('locale', 'ru') !== 'en')
-                    ->url(fn (): string => route('locale.switch', ['locale' => 'en'])),
+                    ->visible(fn(): bool => Session::get('locale', 'ru') !== 'en')
+                    ->url(fn(): string => route('locale.switch', ['locale' => 'en'])),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -172,29 +172,29 @@ final class AppPanelProvider extends PanelProvider
                     ->authorize(function () {
                         $tenant = Filament::getTenant();
                         $user = Auth::user();
-                        
+
                         // Allow access if user owns the team or is a team member
                         return $tenant && $user && (
-                            $user->ownsTeam($tenant) || 
+                            $user->ownsTeam($tenant) ||
                             $user->belongsToTeam($tenant)
                         );
                     }),
             ])
             ->renderHook(
                 PanelsRenderHook::AUTH_LOGIN_FORM_BEFORE,
-                fn (): string => Blade::render('@env(\'local\')<x-login-link email="manuk.minasyan1@gmail.com" redirect-url="'.url('/').'" />@endenv'),
+                fn(): string => Blade::render('@env(\'local\')<x-login-link email="manuk.minasyan1@gmail.com" redirect-url="' . url('/') . '" />@endenv'),
             )
             ->renderHook(
                 PanelsRenderHook::AUTH_LOGIN_FORM_BEFORE,
-                fn (): View|Factory => view('filament.auth.social_login_buttons')
+                fn(): View|Factory => view('filament.auth.social_login_buttons')
             )
             ->renderHook(
                 PanelsRenderHook::AUTH_REGISTER_FORM_BEFORE,
-                fn (): View|Factory => view('filament.auth.social_login_buttons')
+                fn(): View|Factory => view('filament.auth.social_login_buttons')
             )
             ->renderHook(
                 PanelsRenderHook::HEAD_END,
-                fn (): View|Factory => view('filament.app.analytics')
+                fn(): View|Factory => view('filament.app.analytics')
             );
 
         if (Features::hasApiFeatures()) {
@@ -202,7 +202,7 @@ final class AppPanelProvider extends PanelProvider
                 Action::make('api_tokens')
                     ->label(__('resources.common.api_tokens'))
                     ->icon('heroicon-o-key')
-                    ->url(fn (): string => $this->shouldRegisterMenuItem()
+                    ->url(fn(): string => $this->shouldRegisterMenuItem()
                         ? url(ApiTokens::getUrl())
                         : url($panel->getPath())),
             ]);

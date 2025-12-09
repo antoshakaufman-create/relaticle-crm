@@ -46,7 +46,7 @@ final class SystemAdminPanelProvider extends PanelProvider
             ->authPasswordBroker('system_administrators')
             ->strictAuthorization()
             ->spa()
-            ->locale('ru')
+
             ->colors([
                 'primary' => Color::Indigo,
             ])
