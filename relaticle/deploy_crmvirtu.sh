@@ -23,7 +23,7 @@ fi
 
 DOMAIN="crmvirtu.ru"
 APP_DIR="/var/www/relaticle"
-PHP_VERSION="8.4"
+PHP_VERSION="8.5"
 
 info "Начинаем развертывание на $DOMAIN..."
 

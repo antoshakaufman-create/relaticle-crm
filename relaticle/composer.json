@@ -13,7 +13,7 @@
     ],
     "license": "AGPL-3.0",
     "require": {
-        "php": "^8.4",
+        "php": "^8.5",
         "ashallendesign/favicon-fetcher": "^3.8",
         "awcodes/overlook": "^v3.0",
         "blade-ui-kit/blade-heroicons": "^2.6",
