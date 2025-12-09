@@ -64,6 +64,16 @@ cd "$APP_DIR"
 info "Содержимое папки после клонирования:"
 ls -la
 
+# FIX: Handle nested structure (relaticle/relaticle)
+if [ -d "relaticle" ] && [ -f "relaticle/composer.json" ]; then
+    warn "Обнаружена вложенность (relaticle/relaticle). Переносим файлы в корень..."
+    # Copy all files including hidden ones from subdir to current dir
+    cp -a relaticle/. .
+    rm -rf relaticle
+    info "Структура исправлена."
+    ls -la
+fi
+
 if [ ! -f "composer.json" ]; then
     error "composer.json не найден! Клонирование прошло некорректно или репозиторий пуст."
     exit 1
