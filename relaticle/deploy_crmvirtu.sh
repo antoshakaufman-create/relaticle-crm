@@ -189,6 +189,12 @@ nginx -t && systemctl reload nginx
 # 8. Перезапуск сервисов
 info "Перезапуск сервисов..."
 systemctl restart php$PHP_VERSION-fpm
+
+echo "----------------------------------------"
+echo "[DEBUG] Checking Filament Resources:"
+ls -la "$APP_DIR/app/Filament/Resources"
+echo "----------------------------------------"
+
 if command -v supervisorctl &> /dev/null; then
     supervisorctl restart all
 fi
