@@ -22,7 +22,7 @@ class CompanyDiscovery extends Page implements HasForms
     protected static string|\UnitEnum|null $navigationGroup = 'Workspace';
     protected static ?string $navigationLabel = 'Поиск компаний';
     protected static ?string $title = 'AI Поиск компаний';
-    protected static string $view = 'filament.pages.company-discovery';
+    protected string $view = 'filament.pages.company-discovery';
 
     public ?array $data = [];
     public array $results = [];
