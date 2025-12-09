@@ -1,232 +1,113 @@
-# Внутрикорпоративный Telegram AI-бот
+<p align="center">
+  <a href="https://relaticle.com">
+    <img src="https://relaticle.com/relaticle-logo.svg" width="100px" alt="Relaticle logo" />
+  </a>
+</p>
 
-Внутрикорпоративный Telegram-бот с гибридной AI-архитектурой для генерации изображений. Интегрирует Gemini 2.5 Flash-Lite, Seedream 4.0 и Nano Banana Pro с оптимизированной бюджетной стратегией.
+<h1 align="center"> Next-Generation Open-Source CRM</h1>
 
-## 🎯 Основные возможности
+<p align="center">
+  <a href="https://github.com/Relaticle/relaticle/actions"><img src="https://img.shields.io/github/actions/workflow/status/Relaticle/relaticle/tests.yml?branch=main&style=for-the-badge&label=tests" alt="Tests"></a>
+  <a href="https://laravel.com/docs/12.x"><img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel" alt="Laravel 12"></a>
+  <a href="https://filamentphp.com"><img src="https://img.shields.io/badge/Filament-4.x-FBBC04?style=for-the-badge" alt="Filament 4"></a>
+  <a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.4-777BB4?style=for-the-badge&logo=php" alt="PHP 8.4"></a>
+  <a href="https://github.com/Relaticle/relaticle/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-AGPL--3.0-blue.svg?style=for-the-badge" alt="License"></a>
+</p>
 
-- **Строгая авторизация**: ACL middleware блокирует неавторизованных пользователей до любых AI-вызовов
-- **Гибридная AI-архитектура**:
-  - **Gemini 2.5 Flash-Lite**: Оптимизация промптов и транскрипция голоса (Free Tier)
-  - **Seedream 4.0**: Бюджетная генерация изображений ($0.03)
-  - **Nano Banana Pro**: Премиум генерация 4K для сложных задач ($0.24 или $0.12 через KIE API)
-- **Интеллектуальный роутинг**: Автоматический выбор оптимальной модели на основе типа задачи
-- **Tiered Preview**: Бюджетная стратегия превью (Seedream) → финал (NBP 4K)
-- **Мультимодальные запросы**: Поддержка до 14 смешанных входов (текст + изображения)
-- **Обработка медиа**: Фото, документы, голосовые сообщения
+<p align="center">
+  <a href="https://relaticle.com">🌐 Website</a> ·
+  <a href="https://relaticle.com/documentation">📚 Documentation</a> ·
+  <a href="https://github.com/orgs/Relaticle/projects/1/views/1">🛣️ Roadmap</a> ·
+  <a href="https://github.com/Relaticle/relaticle/discussions">💬 Discussions</a>
+</p>
 
-## ⚠️ Критические предупреждения
+<p align="center">
+  <img src="https://relaticle.com/images/github-preview-light.png" alt="Relaticle Dashboard - Manage contacts, companies, and opportunities in a modern interface" />
+  <br>
+  <sub>Clean, modern interface built with Filament 4 and Livewire 3</sub>
+</p>
 
-### Конфиденциальность Gemini Free Tier
+---
 
-**ВАЖНО**: Free Tier Gemini может использовать контент для улучшения продуктов Google. Для корпоративного использования с требованиями конфиденциальности необходимо использовать платный план Gemini API.
+# About Relaticle
 
-### Seedream 4.0
+**Perfect for:** Laravel developers, agencies, and SMBs who need a modern CRM they can customize and self-host.
 
-Seedream имеет меньше цензуры, чем NBP. Все промпты проходят корпоративную санитизацию через `utils/sanitizer.py`.
+Relaticle is a powerful, adaptable CRM platform built for teams who've outgrown spreadsheets but find Salesforce overkill. Unlike SaaS CRMs that lock your data in their cloud, Relaticle gives you complete control with self-hosting and unlimited customization through our no-code custom fields system.
 
-## 📋 Требования
+**Core Strengths:**
+- **Fully Customizable** - Create and manage custom fields without coding
+- **Multi-Team Support** - Securely manage multiple business units with isolated workspaces
+- **Modern Technology** - Built on Laravel 12, PHP 8.4, and Filament 4
+- **Privacy-Focused** - Self-host with complete data ownership
+- **Open Source** - Transparent development with AGPL-3.0 license
 
-- Python 3.12+
-- Docker (для контейнеризации)
-- API ключи:
-  - Telegram Bot Token (от @BotFather)
-  - Gemini API Key
-  - NBP API Key
-  - Seedream API Key (опционально)
+**vs Other CRMs:**
+- **vs HubSpot/Salesforce:** Self-hosted, no monthly fees, own your data
+- **vs SuiteCRM:** Modern Laravel stack, no-code customization, beautiful UI
+- **vs Custom Build:** Production-ready, maintained, community-supported
 
-## 🚀 Быстрый старт
+Visit our [website](https://relaticle.com) to learn more about Relaticle's capabilities.
 
-### 1. Клонирование и настройка
+## Структура репозитория
+
+```
+relaticle-crm/
+├── relaticle/              # Основное Laravel приложение
+├── docs/                   # Документация
+│   ├── deployment/         # Инструкции по деплою
+│   ├── configuration/      # Инструкции по настройке
+│   └── archive/           # Архивные файлы
+├── deploy_server.sh        # Скрипт автоматической установки
+└── README.md              # Этот файл
+```
+
+Для подробной информации о деплое см. [docs/deployment/](docs/deployment/).
+
+# Requirements
+
+- PHP 8.4+,
+- PostgreSQL 15+
+- Composer 2 and Node.js 20+
+- Redis for queues (optional for development)
+
+# Installation
+
+For a streamlined setup experience, use the single installation command:
 
 ```bash
-git clone <repository-url>
-cd telegram-ai-bot
-cp .env.example .env
-# Отредактируйте .env и заполните все необходимые переменные
+git clone https://github.com/Relaticle/relaticle.git
+cd relaticle && composer app-install
 ```
 
-### 2. Получение Telegram User ID
-
-Для добавления пользователей в белый список:
-
-1. Откройте [@userinfobot](https://t.me/userinfobot) в Telegram
-2. Отправьте команду `/start`
-3. Скопируйте ваш `Id` (число)
-4. Добавьте в `ALLOWED_USER_IDS` в `.env` (через запятую)
-
-### 3. Локальный запуск (Polling)
+# Development
 
 ```bash
-# Установка зависимостей
-pip install -r requirements.txt
+# Start everything (server, queue, vite)
+composer dev
 
-# Запуск
-python -m src.main
+# Run tests
+composer test
+
+# Format code
+composer lint
 ```
 
-### 4. Запуск через Docker
+# Documentation
 
-```bash
-# Сборка образа
-docker build -t telegram-ai-bot .
+Visit our [comprehensive documentation](https://relaticle.com/documentation) for guides on business usage, technical architecture, API integration, and more.
 
-# Запуск контейнера
-docker run -d \
-  --name telegram-bot \
-  --env-file .env \
-  -p 8000:8000 \
-  telegram-ai-bot
-```
+# Community & Support
 
-## 🌐 Развертывание на Render
+- 🐛 [Report Issues](https://github.com/Relaticle/relaticle/issues)
+- 💡 [Request Features](https://github.com/Relaticle/relaticle/discussions/categories/ideas)
+- 💬 [Ask Questions](https://github.com/Relaticle/relaticle/discussions/categories/q-a)
+- ⭐ [Star us on GitHub](https://github.com/Relaticle/relaticle) to support the project
 
-### 1. Подготовка
+# License
 
-1. Создайте аккаунт на [Render.com](https://render.com)
-2. Подключите ваш Git репозиторий
-3. Создайте новый **Web Service**
+Relaticle is open-source software licensed under the [AGPL-3.0 license](LICENSE).
 
-### 2. Настройка переменных окружения
+# Star History
 
-В Render Dashboard → Environment добавьте все переменные из `.env.example`:
-
-- `ALLOWED_USER_IDS` - список разрешенных ID
-- `TELEGRAM_BOT_TOKEN` - токен бота
-- `GEMINI_API_KEY` - ключ Gemini
-- `NBP_API_KEY` - ключ NBP
-- `SEEDREAM_API_KEY` - ключ Seedream (опционально)
-- `WEBHOOK_URL` - будет автоматически: `https://your-service.onrender.com`
-- И другие необходимые переменные
-
-### 3. Настройка Webhook
-
-После деплоя на Render:
-
-1. Получите URL вашего сервиса: `https://your-service.onrender.com`
-2. Установите webhook через Telegram API:
-
-```bash
-curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook" \
-  -d "url=https://your-service.onrender.com/webhook" \
-  -d "secret_token=<YOUR_WEBHOOK_SECRET>"
-```
-
-### 4. Предотвращение "засыпания" (для бесплатного плана)
-
-На бесплатном плане Render приложения могут "засыпать" после бездействия. Рекомендуется:
-
-1. Использовать [UptimeRobot](https://uptimerobot.com) для периодических запросов к `/ping`
-2. Или перейти на платный план Render
-
-## 📁 Структура проекта
-
-```
-telegram-ai-bot/
-├── src/
-│   ├── __init__.py
-│   ├── main.py                 # Точка входа, webhook handler
-│   ├── config.py               # Конфигурация
-│   ├── middleware.py            # ACL проверка доступа
-│   ├── handlers.py             # Обработчики команд
-│   ├── agent.py                # Интеллектуальный роутер
-│   ├── prompt_optimizer.py    # Gemini 2.5 Flash-Lite
-│   ├── seedream_client.py      # Seedream 4.0 клиент
-│   ├── nbp_client.py           # Nano Banana Pro клиент
-│   ├── cost_manager.py         # Управление затратами
-│   ├── media_processor.py     # Обработка медиа
-│   └── utils/
-│       ├── storage.py          # Временное хранилище
-│       ├── sanitizer.py        # Санитизация промптов
-│       └── logger.py           # Логирование
-├── Dockerfile
-├── requirements.txt
-├── .env.example
-├── .gitignore
-└── README.md
-```
-
-## 🔐 Безопасность
-
-### ACL (Access Control List)
-
-Бот проверяет `user_id` каждого входящего сообщения против белого списка `ALLOWED_USER_IDS`. Если ID не найден:
-
-- Сообщение блокируется **ДО** любых AI-вызовов
-- Пользователь получает стандартное сообщение об отказе
-- Попытка логируется для аудита
-
-### Управление секретами
-
-**КРИТИЧЕСКИ ВАЖНО**: Все API ключи должны храниться только в переменных окружения. В CI/CD эти переменные должны быть настроены как **Protected Variables**.
-
-## 💰 Управление затратами
-
-### Tiered Preview Strategy
-
-Оптимизированная стратегия для экономии:
-
-1. **Превью**: Seedream 4.0 ($0.03) - быстрая генерация 2K превью
-2. **Финал**: NBP 4K ($0.24 или $0.12 через KIE API) - после подтверждения пользователем
-
-**Экономия**: ~29% на каждом запросе с превью по сравнению со старой стратегией.
-
-### Команды для контроля затрат
-
-- `/stats` - просмотр статистики затрат
-
-## 🤖 Команды бота
-
-- `/start` - приветствие и описание возможностей
-- `/final` - генерация финального 4K после превью
-- `/stats` - статистика затрат
-
-## 📝 Логирование
-
-Все операции логируются:
-
-- Попытки доступа (ALLOWED/DENIED)
-- AI-операции с затратами
-- Ошибки и предупреждения
-
-Логи доступны через стандартный Python logging.
-
-## 🔧 Разработка
-
-### Локальная разработка
-
-```bash
-# Установка зависимостей
-pip install -r requirements.txt
-
-# Запуск в режиме polling (без webhook)
-# Убедитесь, что WEBHOOK_URL не установлен в .env
-python -m src.main
-```
-
-### Тестирование
-
-1. Добавьте свой Telegram ID в `ALLOWED_USER_IDS`
-2. Запустите бота локально
-3. Отправьте сообщение боту в Telegram
-4. Проверьте логи на наличие ошибок
-
-## 📞 Поддержка
-
-При возникновении проблем:
-
-1. Проверьте логи бота
-2. Убедитесь, что все переменные окружения установлены
-3. Проверьте, что ваш Telegram ID добавлен в `ALLOWED_USER_IDS`
-4. Убедитесь, что API ключи действительны
-
-## 📄 Лицензия
-
-Внутрикорпоративное использование.
-
-## 🙏 Благодарности
-
-- [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
-- [Google Gemini API](https://ai.google.dev/)
-- ByteDance Seedream 4.0
-- Nano Banana Pro (Gemini 3 Pro Image)
-
+[![Star History Chart](https://api.star-history.com/svg?repos=Relaticle/relaticle&type=Date)](https://www.star-history.com/#Relaticle/relaticle&Date)
