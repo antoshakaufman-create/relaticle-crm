@@ -148,6 +148,7 @@ nginx -t && systemctl reload nginx
 # 8. Перезапуск сервисов
 info "Перезапуск сервисов..."
 systemctl restart php$PHP_VERSION-fpm
+if command -v supervisorctl &> /dev/null; then
     supervisorctl restart all
 fi
 
