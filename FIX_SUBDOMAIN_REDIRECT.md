@@ -49,7 +49,12 @@ systemctl restart php8.4-fpm
 
 ```bash
 cd /var/www/relaticle
-grep -n "->path\|->domain" app/Providers/Filament/AppPanelProvider.php
+grep -nE "->path|->domain" app/Providers/Filament/AppPanelProvider.php
+```
+
+Или проще:
+```bash
+grep "path\|domain" app/Providers/Filament/AppPanelProvider.php
 ```
 
 Должно быть:
