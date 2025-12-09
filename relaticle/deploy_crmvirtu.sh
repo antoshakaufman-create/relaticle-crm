@@ -29,6 +29,8 @@ info "Начинаем развертывание на $DOMAIN..."
 
 # 1. Обновление PHP до 8.5
 info "Обновление PHP до версии $PHP_VERSION..."
+apt update
+apt install -y software-properties-common
 add-apt-repository ppa:ondrej/php -y
 apt update
 apt install -y php$PHP_VERSION php$PHP_VERSION-{fpm,cli,common,mysql,zip,gd,mbstring,curl,xml,bcmath,intl,sqlite3,redis}
