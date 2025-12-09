@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use Filament\Facades\Filament;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 
@@ -14,8 +13,7 @@ final readonly class HomeController
     {
         // Если пользователь не авторизован, редиректим на страницу входа
         if (!auth()->check()) {
-            $panel = Filament::getPanel('app');
-            return redirect($panel->getLoginUrl());
+            return redirect('/app/login');
         }
 
         return view('home.index');
