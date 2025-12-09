@@ -146,9 +146,20 @@ nginx -t && systemctl reload nginx
 # 8. Перезапуск сервисов
 info "Перезапуск сервисов..."
 systemctl restart php$PHP_VERSION-fpm
-if systemctl is-active --quiet supervisor; then
     supervisorctl restart all
 fi
+
+# 9. Настройка SSL (Certbot)
+info "Настройка SSL сертификата..."
+if ! command -v certbot &> /dev/null; then
+    info "Установка Certbot..."
+    apt install -y certbot python3-certbot-nginx
+fi
+
+# Запускаем certbot для настройки Nginx
+# --redirect: делать редирект с HTTP на HTTPS
+# --non-interactive: не задавать вопросов
+certbot --nginx -d $DOMAIN --non-interactive --agree-tos --email admin@$DOMAIN --redirect || warn "Не удалось автоматически настроить SSL via Certbot. Проверьте логи."
 
 info "Развертывание завершено! Сайт должен быть доступен по адресу https://$DOMAIN"
 warn "Не забудьте настроить Yandex API ключи в .env файле, если они еще не настроены."
