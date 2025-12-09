@@ -126,6 +126,10 @@ if [ ! -f .env ]; then
     sed -i "s|DB_CONNECTION=.*|DB_CONNECTION=sqlite|" .env
     sed -i "s|DB_DATABASE=.*|DB_DATABASE=$APP_DIR/database/database.sqlite|" .env
     
+    # Настройка Yandex API (User Provided)
+    sed -i "s|YANDEX_API_KEY=.*|YANDEX_API_KEY=ajetvrtcaq19kpik8cf6|" .env
+    sed -i "s|YANDEX_FOLDER_ID=.*|YANDEX_FOLDER_ID=b1gn3qao39gb9uecn2c2|" .env
+
     # Создаем базу данных если её нет
     if [ ! -f "$APP_DIR/database/database.sqlite" ]; then
         touch "$APP_DIR/database/database.sqlite"
