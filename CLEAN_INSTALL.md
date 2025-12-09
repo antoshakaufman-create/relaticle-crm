@@ -88,6 +88,8 @@ sed -i "s|DB_DATABASE=.*|DB_DATABASE=${PWD}/database/database.sqlite|" .env
 sed -i 's|APP_ENV=.*|APP_ENV=production|' .env
 sed -i 's|APP_DEBUG=.*|APP_DEBUG=false|' .env
 sed -i 's|APP_URL=.*|APP_URL=https://crmvirtu.ru|' .env
+sed -i 's|APP_LOCALE=.*|APP_LOCALE=ru|' .env
+sed -i 's|APP_FALLBACK_LOCALE=.*|APP_FALLBACK_LOCALE=ru|' .env
 
 # Создайте базу данных SQLite
 mkdir -p database

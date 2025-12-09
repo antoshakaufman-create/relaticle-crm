@@ -144,6 +144,8 @@ fi
 sed -i "s|APP_URL=.*|APP_URL=https://${DOMAIN}|" .env
 sed -i "s|APP_ENV=.*|APP_ENV=production|" .env
 sed -i "s|APP_DEBUG=.*|APP_DEBUG=false|" .env
+sed -i "s|APP_LOCALE=.*|APP_LOCALE=ru|" .env
+sed -i "s|APP_FALLBACK_LOCALE=.*|APP_FALLBACK_LOCALE=ru|" .env
 
 if [ "$USE_SQLITE" = "yes" ]; then
     # Настройка для SQLite
