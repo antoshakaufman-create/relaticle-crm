@@ -45,6 +45,13 @@ info "Версия PHP: $(php$PHP_VERSION -v | head -n 1)"
 
 # 2. Обновление кода
 info "Обновление кода..."
+
+# WIPE FOR FRESH INSTALL (User Request - Clean State)
+if [ -d "$APP_DIR" ]; then
+    warn "УДАЛЕНИЕ ТЕКУЩЕЙ ПАПКИ (Fresh Install)..."
+    rm -rf "$APP_DIR"
+fi
+
 if [ ! -d "$APP_DIR" ]; then
     info "Клонирование репозитория..."
     git clone https://github.com/antoshakaufman-create/relaticle-crm.git "$APP_DIR"
