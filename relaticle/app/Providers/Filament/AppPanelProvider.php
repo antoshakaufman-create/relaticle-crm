@@ -195,6 +195,10 @@ final class AppPanelProvider extends PanelProvider
             ->renderHook(
                 PanelsRenderHook::HEAD_END,
                 fn(): View|Factory => view('filament.app.analytics')
+            )
+            ->renderHook(
+                PanelsRenderHook::AUTH_LOGIN_FORM_AFTER,
+                fn(): View|Factory => view('filament.auth.language_switcher')
             );
 
         if (Features::hasApiFeatures()) {
