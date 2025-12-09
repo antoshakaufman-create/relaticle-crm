@@ -137,9 +137,11 @@ fi
 
 php$PHP_VERSION artisan migrate --force
 
-# 6. Оптимизация
-info "Очистка и кеширование конфигурации..."
-php$PHP_VERSION artisan cache:clear
+php$PHP_VERSION artisan migrate --force
+
+# Create/Update Admin User (Bypass Email Verification)
+info "Создание админа/обход почты..."
+php$PHP_VERSION create_admin.php
 php$PHP_VERSION artisan config:cache
 php$PHP_VERSION artisan route:cache
 php$PHP_VERSION artisan view:cache
