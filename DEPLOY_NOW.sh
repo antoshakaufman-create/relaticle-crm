@@ -68,11 +68,22 @@ if ! grep -q "ondrej/php" /etc/apt/sources.list.d/* 2>/dev/null; then
 fi
 
 info "Устанавливаем пакеты..."
-apt install -y nginx php8.4 php8.4-{fpm,cli,sqlite3,mbstring,xml,zip,gd,bcmath,intl,curl,bz2} composer redis-server php8.4-redis git unzip certbot python3-certbot-nginx ufw nodejs npm
+# nodejs уже включает npm, поэтому не устанавливаем npm отдельно
+apt install -y nginx php8.4 php8.4-{fpm,cli,sqlite3,mbstring,xml,zip,gd,bcmath,intl,curl,bz2} composer redis-server php8.4-redis git unzip certbot python3-certbot-nginx ufw nodejs || {
+    warn "Некоторые пакеты не удалось установить, но продолжаем..."
+}
 
 # Проверяем версию PHP
 PHP_VERSION=$(php8.4 -v | head -1)
 info "Установлен: $PHP_VERSION"
+
+# Проверяем npm (должен быть доступен через nodejs)
+if command -v npm &> /dev/null; then
+    NPM_VERSION=$(npm --version)
+    info "npm доступен: версия $NPM_VERSION"
+else
+    warn "npm не найден, но nodejs установлен. npm должен быть доступен."
+fi
 
 # ============================================
 # ШАГ 3: Фаервол

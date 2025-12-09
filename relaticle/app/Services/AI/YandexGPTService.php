@@ -25,7 +25,7 @@ final class YandexGPTService
     /**
      * Поиск информации через YandexGPT
      */
-    public function search(string $query): ?array
+    public function search(string $query, ?string $systemPrompt = null): ?array
     {
         if (!$this->apiKey || !$this->folderId) {
             Log::warning('YandexGPT API key or folder ID not configured');
@@ -34,6 +34,22 @@ final class YandexGPTService
         }
 
         try {
+            $messages = [];
+            
+            // Add system prompt if provided
+            if ($systemPrompt !== null) {
+                $messages[] = [
+                    'role' => 'system',
+                    'text' => $systemPrompt,
+                ];
+            }
+            
+            // Add user query
+            $messages[] = [
+                'role' => 'user',
+                'text' => $query,
+            ];
+
             $response = Http::timeout(60)
                 ->withHeaders([
                     'Authorization' => 'Api-Key '.$this->apiKey,
@@ -46,12 +62,7 @@ final class YandexGPTService
                         'temperature' => 0.3,
                         'maxTokens' => 2000,
                     ],
-                    'messages' => [
-                        [
-                            'role' => 'user',
-                            'text' => $query,
-                        ],
-                    ],
+                    'messages' => $messages,
                 ]);
 
             if ($response->successful()) {

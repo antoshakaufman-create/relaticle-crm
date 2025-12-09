@@ -16,6 +16,7 @@ final readonly class HomeController
             return redirect('/app/login');
         }
 
-        return view('home.index');
+        // Для авторизованных пользователей - редирект на панель
+        return redirect('/app');
     }
 }

@@ -65,9 +65,29 @@ final class GenerateRecordSummaryAction extends Action
 
     private function getSummaryView(Model $record): View
     {
-        return view('filament.actions.ai-summary', [
-            'summary' => $this->summaryService()->getSummary($record),
-        ]);
+        try {
+            $summary = $this->summaryService()->getSummary($record);
+            return view('filament.actions.ai-summary', [
+                'summary' => $summary,
+            ]);
+        } catch (Throwable $e) {
+            // Return error view if summary generation fails
+            return view('filament.actions.ai-summary-error', [
+                'error' => $e->getMessage(),
+                'hint' => $this->getErrorMessage($e),
+            ]);
+        }
+    }
+    
+    private function getErrorMessage(Throwable $e): string
+    {
+        $message = $e->getMessage();
+        
+        if (str_contains($message, 'YandexGPT') || str_contains($message, 'API key')) {
+            return 'Проверьте настройки YandexGPT в .env файле (YANDEX_GPT_API_KEY и YANDEX_FOLDER_ID)';
+        }
+        
+        return 'Проверьте логи для получения дополнительной информации';
     }
 
     private function getCachedSummary(Model $record): ?AiSummary

@@ -40,7 +40,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Session;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\Http\Middleware\SetLocale;
 use Laravel\Jetstream\Features;
 use Relaticle\CustomFields\CustomFieldsPlugin;
 
@@ -79,7 +81,7 @@ final class AppPanelProvider extends PanelProvider
             ->brandName('Relaticle')
             ->login(Login::class)
             ->registration(Register::class)
-            ->locale('ru')
+            ->locale(fn (): string => Session::get('locale', 'ru'))
             ->authGuard('web')
             ->authPasswordBroker('users')
             ->passwordReset()
@@ -114,6 +116,16 @@ final class AppPanelProvider extends PanelProvider
                     ->url(fn (): string => $this->shouldRegisterMenuItem()
                         ? url(EditProfile::getUrl())
                         : url($panel->getPath())),
+                Action::make('locale_ru')
+                    ->label('Русский')
+                    ->icon('heroicon-m-language')
+                    ->visible(fn (): bool => Session::get('locale', 'ru') !== 'ru')
+                    ->url(fn (): string => route('locale.switch', ['locale' => 'ru'])),
+                Action::make('locale_en')
+                    ->label('English')
+                    ->icon('heroicon-m-language')
+                    ->visible(fn (): bool => Session::get('locale', 'ru') !== 'en')
+                    ->url(fn (): string => route('locale.switch', ['locale' => 'en'])),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -136,6 +148,7 @@ final class AppPanelProvider extends PanelProvider
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
                 StartSession::class,
+                SetLocale::class,
                 AuthenticateSession::class,
                 ShareErrorsFromSession::class,
                 VerifyCsrfToken::class,
@@ -156,7 +169,16 @@ final class AppPanelProvider extends PanelProvider
             )
             ->plugins([
                 CustomFieldsPlugin::make()
-                    ->authorize(fn () => Gate::check('update', Filament::getTenant())),
+                    ->authorize(function () {
+                        $tenant = Filament::getTenant();
+                        $user = Auth::user();
+                        
+                        // Allow access if user owns the team or is a team member
+                        return $tenant && $user && (
+                            $user->ownsTeam($tenant) || 
+                            $user->belongsToTeam($tenant)
+                        );
+                    }),
             ])
             ->renderHook(
                 PanelsRenderHook::AUTH_LOGIN_FORM_BEFORE,

@@ -5,20 +5,20 @@ declare(strict_types=1);
 namespace App\Services\AI;
 
 use App\Models\AiSummary;
+use App\Services\AI\YandexGPTService;
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
-use Prism\Prism\Enums\Provider;
-use Prism\Prism\Facades\Prism;
-use Prism\Prism\ValueObjects\Usage;
 use RuntimeException;
+use Throwable;
 
 final readonly class RecordSummaryService
 {
-    private const string MODEL = 'claude-3-5-haiku-latest';
+    private const string MODEL = 'yandexgpt/latest';
 
     public function __construct(
-        private RecordContextBuilder $contextBuilder
+        private RecordContextBuilder $contextBuilder,
+        private YandexGPTService $yandexGPT
     ) {}
 
     /**
@@ -41,17 +41,29 @@ final readonly class RecordSummaryService
     {
         $context = $this->contextBuilder->buildContext($record);
         $prompt = $this->formatPrompt($context);
+        $systemPrompt = $this->getSystemPrompt();
 
-        $response = Prism::text()
-            ->using(Provider::Anthropic, self::MODEL)
-            ->withSystemPrompt($this->getSystemPrompt())
-            ->withPrompt($prompt)
-            ->generate();
+        try {
+            $response = $this->yandexGPT->search($prompt, $systemPrompt);
+            
+            if (!$response || empty($response['content'])) {
+                throw new RuntimeException('YandexGPT API key or folder ID not configured, or API returned empty response');
+            }
 
-        return $this->cacheSummary($record, $response->text, $response->usage);
+            $summary = $response['content'];
+            
+            // Estimate token usage (rough approximation: 1 token ≈ 4 characters)
+            $fullPrompt = $systemPrompt . "\n\n" . $prompt;
+            $promptTokens = (int) (strlen($fullPrompt) / 4);
+            $completionTokens = (int) (strlen($summary) / 4);
+
+            return $this->cacheSummary($record, $summary, $promptTokens, $completionTokens);
+        } catch (Throwable $e) {
+            throw new RuntimeException('Failed to generate AI summary: ' . $e->getMessage(), 0, $e);
+        }
     }
 
-    private function cacheSummary(Model $record, string $summary, Usage $usage): AiSummary
+    private function cacheSummary(Model $record, string $summary, int $promptTokens, int $completionTokens): AiSummary
     {
         $teamId = Filament::getTenant()?->getKey();
 
@@ -69,8 +81,8 @@ final readonly class RecordSummaryService
             'summarizable_id' => $record->getKey(),
             'summary' => $summary,
             'model_used' => self::MODEL,
-            'prompt_tokens' => $usage->promptTokens,
-            'completion_tokens' => $usage->completionTokens,
+            'prompt_tokens' => $promptTokens,
+            'completion_tokens' => $completionTokens,
         ]);
     }
 
