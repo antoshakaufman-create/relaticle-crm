@@ -32,11 +32,11 @@ Route::middleware('guest')->group(function () {
         ->middleware('throttle:10,1');
 
     Route::get('/login', function () {
-        return redirect('/app/login');
+        return redirect()->route('filament.app.auth.login');
     })->name('login');
 
     Route::get('/register', function () {
-        return redirect('/app/register');
+        return redirect()->route('filament.app.auth.register');
     })->name('register');
 
     Route::get('/forgot-password', function () {
