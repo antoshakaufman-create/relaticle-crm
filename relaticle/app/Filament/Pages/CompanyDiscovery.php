@@ -18,7 +18,7 @@ class CompanyDiscovery extends Page implements HasForms
 {
     use InteractsWithForms;
 
-    protected static ?string $navigationIcon = 'heroicon-o-globe-alt';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-globe-alt';
     protected static string|\UnitEnum|null $navigationGroup = 'Workspace';
     protected static ?string $navigationLabel = 'Поиск компаний';
     protected static ?string $title = 'AI Поиск компаний';
