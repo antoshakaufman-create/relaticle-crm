@@ -13,10 +13,10 @@ final readonly class HomeController
     {
         // Если пользователь не авторизован, редиректим на страницу входа
         if (!auth()->check()) {
-            return redirect('/app/login');
+            return redirect()->route('filament.app.auth.login');
         }
 
         // Для авторизованных пользователей - редирект на панель
-        return redirect('/app');
+        return redirect()->route('filament.app.pages.dashboard');
     }
 }
