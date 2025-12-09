@@ -15,9 +15,10 @@ final class MacroServiceProvider extends ServiceProvider
             $baseUrl = config('app.url');
             $parsed = parse_url((string) $baseUrl);
             $scheme = $parsed['scheme'] ?? 'https';
-            $host = 'app.'.($parsed['host'] ?? 'localhost');
+            $host = $parsed['host'] ?? 'localhost';
+            $basePath = rtrim($parsed['path'] ?? '', '/');
 
-            return $scheme.'://'.$host.'/'.ltrim($path, '/');
+            return $scheme.'://'.$host.$basePath.'/app/'.ltrim($path, '/');
         });
 
         URL::macro('getPublicUrl', function (string $path = ''): string {

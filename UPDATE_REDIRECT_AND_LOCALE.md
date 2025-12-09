@@ -55,66 +55,13 @@ php artisan config:clear
 php artisan config:cache
 ```
 
-## Важно: Настройка поддомена
+## Важно: Filament панель использует путь вместо поддомена
 
-Filament панель использует поддомен `app.crmvirtu.ru` для страницы входа. Если поддомен не настроен, редирект не будет работать.
+Filament панель настроена на использование пути `/app` вместо поддомена. Это означает, что:
+- Страница входа будет доступна по адресу: `https://crmvirtu.ru/app/login`
+- Главная страница панели: `https://crmvirtu.ru/app`
 
-### Настройка поддомена:
-
-1. **В DNS** добавьте A-запись:
-   - Имя: `app`
-   - Тип: A
-   - Значение: `83.220.175.224` (IP вашего сервера)
-
-2. **В Nginx** добавьте конфигурацию для поддомена:
-
-```bash
-cat > /etc/nginx/sites-available/app.crmvirtu.ru << 'EOF'
-server {
-    listen 80;
-    server_name app.crmvirtu.ru;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl http2;
-    server_name app.crmvirtu.ru;
-
-    ssl_certificate /etc/letsencrypt/live/crmvirtu.ru/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/crmvirtu.ru/privkey.pem;
-    include /etc/letsencrypt/options-ssl-nginx.conf;
-    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
-
-    root /var/www/relaticle/public;
-    index index.php;
-
-    location / {
-        try_files $uri $uri/ /index.php?$query_string;
-    }
-
-    location ~ \.php$ {
-        include snippets/fastcgi-php.conf;
-        fastcgi_pass unix:/run/php/php8.4-fpm.sock;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        include fastcgi_params;
-    }
-
-    client_max_body_size 50M;
-}
-EOF
-
-# Активируйте конфигурацию
-ln -sf /etc/nginx/sites-available/app.crmvirtu.ru /etc/nginx/sites-enabled/
-nginx -t
-systemctl reload nginx
-
-# Получите SSL сертификат для поддомена
-certbot --nginx -d app.crmvirtu.ru --non-interactive --agree-tos --register-unsafely-without-email --redirect
-```
-
-### Альтернатива: Использовать путь вместо поддомена
-
-Если не хотите настраивать поддомен, можно изменить конфигурацию Filament панели, чтобы использовать путь вместо поддомена. Но это требует изменения кода в `AppPanelProvider.php`.
+**Никаких дополнительных настроек DNS или Nginx не требуется!** Всё работает на основном домене.
 
 ## Проверка:
 
