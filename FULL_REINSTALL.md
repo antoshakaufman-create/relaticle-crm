@@ -21,9 +21,7 @@ ssh root@83.220.175.224
 ```bash
 # Остановите все сервисы
 systemctl stop nginx
-systemctl stop php8.3-fpm 2>/dev/null || true
 systemctl stop php8.4-fpm 2>/dev/null || true
-systemctl stop mysql 2>/dev/null || true
 
 # Удалите старое приложение
 rm -rf /var/www/relaticle
@@ -33,6 +31,10 @@ rm -f /etc/nginx/sites-enabled/relaticle
 rm -f /etc/nginx/sites-available/relaticle
 rm -f /etc/nginx/sites-enabled/app.crmvirtu.ru 2>/dev/null || true
 rm -f /etc/nginx/sites-available/app.crmvirtu.ru 2>/dev/null || true
+
+# Удалите PHP 8.3 если установлен
+apt remove --purge -y php8.3* 2>/dev/null || true
+apt autoremove -y
 
 # Запустите Nginx обратно
 systemctl start nginx
