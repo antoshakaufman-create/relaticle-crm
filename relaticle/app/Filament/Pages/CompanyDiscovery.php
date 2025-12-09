@@ -19,7 +19,7 @@ class CompanyDiscovery extends Page implements HasForms
     use InteractsWithForms;
 
     protected static ?string $navigationIcon = 'heroicon-o-globe-alt';
-    protected static ?string $navigationGroup = 'Workspace';
+    protected static string|\UnitEnum|null $navigationGroup = 'Workspace';
     protected static ?string $navigationLabel = 'Поиск компаний';
     protected static ?string $title = 'AI Поиск компаний';
     protected static string $view = 'filament.pages.company-discovery';
