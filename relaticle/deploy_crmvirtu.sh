@@ -1,0 +1,136 @@
+#!/bin/bash
+
+# Скрипт развертывания для crmvirtu.ru (PHP 8.5)
+# Использование: sudo ./deploy_crmvirtu.sh
+
+set -e
+
+# Цвета
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+info() { echo -e "${GREEN}[INFO]${NC} $1"; }
+warn() { echo -e "${YELLOW}[WARN]${NC} $1"; }
+error() { echo -e "${RED}[ERROR]${NC} $1"; }
+
+# Проверка root
+if [ "$EUID" -ne 0 ]; then
+    error "Запустите от root: sudo ./deploy_crmvirtu.sh"
+    exit 1
+fi
+
+DOMAIN="crmvirtu.ru"
+APP_DIR="/var/www/relaticle"
+PHP_VERSION="8.5"
+
+info "Начинаем развертывание на $DOMAIN..."
+
+# 1. Обновление PHP до 8.5
+info "Обновление PHP до версии $PHP_VERSION..."
+add-apt-repository ppa:ondrej/php -y
+apt update
+apt install -y php$PHP_VERSION php$PHP_VERSION-{fpm,cli,common,mysql,zip,gd,mbstring,curl,xml,bcmath,intl,sqlite3,redis}
+
+# Проверка установки PHP
+if ! command -v php$PHP_VERSION &> /dev/null; then
+    error "PHP $PHP_VERSION не удалось установить. Проверьте поддержку в PPA."
+    exit 1
+fi
+
+info "Версия PHP: $(php$PHP_VERSION -v | head -n 1)"
+
+# 2. Обновление кода
+info "Обновление кода..."
+if [ ! -d "$APP_DIR" ]; then
+    info "Клонирование репозитория..."
+    git clone https://github.com/antoshakaufman-create/relaticle-crm.git "$APP_DIR"
+    cd "$APP_DIR"
+else
+    cd "$APP_DIR"
+    info "Pull последних изменений..."
+    git pull origin main
+fi
+
+# 3. Установка зависимостей
+info "Установка зависимостей Composer..."
+php$PHP_VERSION /usr/bin/composer install --no-dev --optimize-autoloader --no-interaction
+
+info "Установка зависимостей NPM и сборка..."
+npm install
+npm run build
+
+# 4. Настройка прав
+info "Настройка прав доступа..."
+chown -R www-data:www-data "$APP_DIR"
+chmod -R 775 "$APP_DIR/storage" "$APP_DIR/bootstrap/cache"
+
+# 5. База данных и миграции
+info "Миграция базы данных..."
+# Предполагаем, что .env уже настроен, но проверим/обновим ключи если нужно
+if [ ! -f .env ]; then
+    warn ".env файл не найден! Копируем из .env.example..."
+    cp .env.example .env
+    php$PHP_VERSION artisan key:generate
+    warn "ВАЖНО: Отредактируйте .env и укажите YANDEX ключи!"
+fi
+
+php$PHP_VERSION artisan migrate --force
+
+# 6. Оптимизация
+info "Очистка и кеширование конфигурации..."
+php$PHP_VERSION artisan cache:clear
+php$PHP_VERSION artisan config:cache
+php$PHP_VERSION artisan route:cache
+php$PHP_VERSION artisan view:cache
+php$PHP_VERSION artisan filament:assets
+
+# 7. Настройка Nginx
+info "Обновление конфигурации Nginx..."
+cat > /etc/nginx/sites-available/relaticle <<EOF
+server {
+    listen 80;
+    server_name $DOMAIN www.$DOMAIN;
+    root $APP_DIR/public;
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.php;
+
+    charset utf-8;
+
+    location / {
+        try_files \$uri \$uri/ /index.php?\$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt  { access_log off; log_not_found off; }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php$PHP_VERSION-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME \$realpath_root\$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+EOF
+
+ln -sf /etc/nginx/sites-available/relaticle /etc/nginx/sites-enabled/
+nginx -t && systemctl reload nginx
+
+# 8. Перезапуск сервисов
+info "Перезапуск сервисов..."
+systemctl restart php$PHP_VERSION-fpm
+if systemctl is-active --quiet supervisor; then
+    supervisorctl restart all
+fi
+
+info "Развертывание завершено! Сайт должен быть доступен по адресу https://$DOMAIN"
+warn "Не забудьте настроить Yandex API ключи в .env файле, если они еще не настроены."
