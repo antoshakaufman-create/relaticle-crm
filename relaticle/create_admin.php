@@ -42,3 +42,50 @@ if (!$user) {
     $user->save();
     echo "User updated successfully.\n";
 }
+
+// Ensure Team exists and is assigned
+echo "Checking Team configuration...\n";
+$teamName = 'VirtuDigital';
+$team = \App\Models\Team::where('name', $teamName)->first();
+
+if (!$team) {
+    echo "Team '$teamName' not found. Creating...\n";
+    $team = new \App\Models\Team();
+    $team->user_id = $user->id;
+    $team->name = $teamName;
+    $team->personal_team = true;
+    $team->save();
+    echo "Team created with ID: " . $team->id . "\n";
+} else {
+    echo "Team '$teamName' found (ID: " . $team->id . ").\n";
+}
+
+// Ensure user owns or belongs to team
+if (!$user->belongsToTeam($team)) {
+    echo "Attaching user to team...\n";
+    // Jetstream/Filament method to attach might be via relationship or pivot
+    // For personal team, usually user_id is enough if it's the owner
+    if ($team->user_id !== $user->id) {
+        // If not owner, attach member
+        $team->users()->attach($user, ['role' => 'admin']);
+    }
+}
+
+// Set current team
+if ($user->current_team_id !== $team->id) {
+    echo "Setting current_team_id to " . $team->id . "\n";
+    $user->current_team_id = $team->id;
+    $user->save();
+}
+
+echo "Team configuration complete. User Current Team ID: " . $user->current_team_id . "\n";
+
+// Debug Policy Check for Opportunity
+$canView = $user->can('viewAny', \App\Models\Opportunity::class);
+echo "Policy Check - Can View Opportunities: " . ($canView ? 'YES' : 'NO') . "\n";
+
+if (!$canView) {
+    echo "[DEBUG] Policy failure details:\n";
+    echo " - Verified Email: " . ($user->hasVerifiedEmail() ? 'YES' : 'NO') . "\n";
+    echo " - Current Team Set: " . ($user->currentTeam ? 'YES' : 'NO') . "\n";
+}
