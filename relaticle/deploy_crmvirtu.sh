@@ -67,9 +67,21 @@ ls -la
 # FIX: Handle nested structure (relaticle/relaticle)
 if [ -d "relaticle" ] && [ -f "relaticle/composer.json" ]; then
     warn "Обнаружена вложенность (relaticle/relaticle). Переносим файлы в корень..."
-    # Copy all files including hidden ones from subdir to current dir
-    cp -a relaticle/. .
-    rm -rf relaticle
+    
+    # Use rsync to merge directories and files safely
+    if ! command -v rsync &> /dev/null; then
+        apt install -y rsync
+    fi
+    
+    # 1. Rename conflicting directory to temp name to avoid "./relaticle" vs "./relaticle/relaticle" collision
+    mv relaticle relaticle_temp
+    
+    # 2. Sync content from temp to root
+    rsync -a relaticle_temp/ ./
+    
+    # 3. Remove the temp subdir
+    rm -rf relaticle_temp
+    
     info "Структура исправлена."
     ls -la
 fi
