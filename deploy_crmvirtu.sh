@@ -172,6 +172,14 @@ php$PHP_VERSION artisan migrate --force
 # Create/Update Admin User (Bypass Email Verification)
 info "Создание админа/обход почты..."
 php$PHP_VERSION create_admin.php
+
+# Clear all caches first to remove stale paths
+info "Очистка старого кэша..."
+php$PHP_VERSION artisan optimize:clear
+php$PHP_VERSION artisan config:clear
+php$PHP_VERSION artisan route:clear
+php$PHP_VERSION artisan view:clear
+
 php$PHP_VERSION artisan config:cache
 php$PHP_VERSION artisan route:cache
 php$PHP_VERSION artisan view:cache
