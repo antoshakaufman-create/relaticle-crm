@@ -23,9 +23,16 @@ certbot certificates
 echo '=== Service Status ==='
 systemctl status php8.4-fpm --no-pager
 systemctl status ng
-echo "=== LARAVEL LOGS (Last 100 lines) ==="
-tail -n 100 /var/www/relaticle/storage/logs/laravel.log
-echo "=== END LOGS ==="
+
+echo "=== NGINX ACCESS LOGS (Last 20 lines) ==="
+tail -n 20 /var/log/nginx/access.log
+
+echo "=== LARAVEL LOGS (Last 50 lines) ==="
+tail -n 50 /var/www/relaticle/storage/logs/laravel.log
+
+echo "=== LARAVEL ROUTES (Grepping 'people') ==="
+php8.5 /var/www/relaticle/artisan route:list | grep people
+
 echo "Checking Policies on Server:"
 ls -la /var/www/relaticle/app/Policies
 
