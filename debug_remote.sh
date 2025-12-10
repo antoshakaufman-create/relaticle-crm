@@ -1,10 +1,6 @@
 #!/bin/bash
 # debug_remote.sh
-SERVER_IP="83.220.175.224"
-USER="root"
 
-echo "Checking remote server status..."
-ssh $USER@$SERVER_IP "
 echo '=== PHP Version ==='
 php -v || echo 'PHP CLI not working'
 
@@ -18,11 +14,13 @@ echo '=== Laravel Log ==='
 tail -n 20 /var/www/relaticle/storage/logs/laravel.log
 
 echo '=== SSL Cert Status ==='
-certbot certificates
+if command -v certbot &> /dev/null; then
+    certbot certificates
+fi
 
 echo '=== Service Status ==='
-systemctl status php8.4-fpm --no-pager
-systemctl status ng
+systemctl status php8.5-fpm --no-pager
+systemctl status nginx --no-pager
 
 echo "=== NGINX ACCESS LOGS (Last 20 lines) ==="
 tail -n 20 /var/log/nginx/access.log
@@ -38,4 +36,4 @@ ls -la /var/www/relaticle/app/Policies
 
 echo '=== PHP 8.5 Availability ==='
 apt-cache policy php8.5
-"
+

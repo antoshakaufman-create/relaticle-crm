@@ -77,7 +77,7 @@ final class AppPanelProvider extends PanelProvider
             ->default()
             ->id('app')
             ->path('app')
-            ->homeUrl(fn(): string => PeopleResource::getUrl())
+
             ->brandName('Relaticle')
             ->login(Login::class)
             ->registration(Register::class)

@@ -17,6 +17,6 @@ final readonly class HomeController
         }
 
         // Для авторизованных пользователей - редирект на панель
-        return redirect('/app');
+        return redirect()->route('filament.app.pages.dashboard');
     }
 }
