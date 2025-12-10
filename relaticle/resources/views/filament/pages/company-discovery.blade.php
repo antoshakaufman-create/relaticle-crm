@@ -1,5 +1,5 @@
 <x-filament-panels::page>
-    <x-filament-panels::form wire:submit="search">
+    <form wire:submit="search">
         {{ $this->form }}
 
         <div class="flex justify-end mt-4">
@@ -8,7 +8,7 @@
                 <span wire:loading wire:target="search">Поиск...</span>
             </x-filament::button>
         </div>
-    </x-filament-panels::form>
+    </form>
 
     <div wire:loading wire:target="search" class="w-full text-center py-6">
         <x-filament::loading-indicator class="h-10 w-10 mx-auto" />
