@@ -5,7 +5,7 @@
 
 SERVER_IP="83.220.175.224"
 USER="root"
-SCRIPT_NAME="deploy_crmvirtu.sh"
+SCRIPT_NAME="${1:-deploy_crmvirtu.sh}"
 
 echo "=== Запуск удаленного развертывания на $SERVER_IP ==="
 echo "Для продолжения может потребоваться ввести пароль от сервера."

@@ -761,3 +761,7 @@ Did you mean one of these?
 #4 /Users/antonkaufmann/relaticle-crm-1/relaticle/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
 #5 {main}
 "} 
+[2025-12-10 19:33:31] local.ERROR: Cannot redeclare non static Filament\Widgets\ChartWidget::$heading as static App\Filament\Widgets\RevenueChart::$heading {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare non static Filament\\Widgets\\ChartWidget::$heading as static App\\Filament\\Widgets\\RevenueChart::$heading at /Users/antonkaufmann/relaticle-crm-1/app/Filament/Widgets/RevenueChart.php:9)
+[stacktrace]
+#0 {main}
+"} 

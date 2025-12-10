@@ -119,12 +119,12 @@ final class AppPanelProvider extends PanelProvider
                 Action::make('locale_ru')
                     ->label('Русский')
                     ->icon('heroicon-m-language')
-                    ->visible(fn(): bool => Session::get('locale', 'ru') !== 'ru')
+                    ->visible(fn(): bool => app()->getLocale() !== 'ru')
                     ->url(fn(): string => route('locale.switch', ['locale' => 'ru'])),
                 Action::make('locale_en')
                     ->label('English')
                     ->icon('heroicon-m-language')
-                    ->visible(fn(): bool => Session::get('locale', 'ru') !== 'en')
+                    ->visible(fn(): bool => app()->getLocale() !== 'en')
                     ->url(fn(): string => route('locale.switch', ['locale' => 'en'])),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\Resources')
@@ -135,6 +135,7 @@ final class AppPanelProvider extends PanelProvider
             ->pages([
                 EditProfile::class,
                 ApiTokens::class,
+                \App\Filament\Pages\AiImport::class,
             ])
             ->spa()
             ->breadcrumbs(false)

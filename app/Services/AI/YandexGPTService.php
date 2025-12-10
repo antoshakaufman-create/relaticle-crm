@@ -161,4 +161,28 @@ final class YandexGPTService
     }
     // Discovery feature removed
 
+    /**
+     * Analyze file structure and suggest column mapping
+     */
+    public function analyzeImportStructure(array $headers, array $samples, string $targetModel): array
+    {
+        $prompt = "You are a data analyst. I have an import file with the following headers: " . json_encode($headers) . ".\n";
+        $prompt .= "Here are the first few rows of data: " . json_encode($samples) . ".\n";
+        $prompt .= "I need to map these columns to a '$targetModel' model in a CRM system.\n\n";
+
+        $prompt .= "The available fields for '$targetModel' are likely: name, email, phone, company_name, position, source, notes.\n";
+        $prompt .= "Please analyze the headers and data, and provide a JSON mapping where keys are the file headers and values are the target model fields.\n";
+        $prompt .= "If a column is irrelevant, map it to null.\n";
+        $prompt .= "Return ONLY the JSON mapping, nothing else.";
+
+        $result = $this->search($prompt);
+
+        if (!$result) {
+            return [];
+        }
+
+        $mapping = $this->parseContent($result['content']);
+        // If the result is wrapped in 'mapping' key or similar, try to extract it, otherwise assume root is the map.
+        return $mapping;
+    }
 }

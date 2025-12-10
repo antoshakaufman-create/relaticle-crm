@@ -7,6 +7,10 @@ php -v || echo 'PHP CLI not working'
 echo '=== Nginx Config Test ==='
 nginx -t
 
+echo "Fixing Permissions for Cache (Just in Case)..."
+chmod -R 777 /var/www/relaticle/bootstrap/cache
+chmod -R 777 /var/www/relaticle/storage
+
 echo '=== Last 20 lines of Nginx Error Log ==='
 tail -n 20 /var/log/nginx/error.log
 
