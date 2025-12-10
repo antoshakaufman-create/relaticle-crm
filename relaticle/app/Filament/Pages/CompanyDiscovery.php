@@ -101,13 +101,7 @@ class CompanyDiscovery extends Page implements HasForms
         $company->domain = parse_url($url, PHP_URL_HOST) ?? $url;
         $company->about = $description;
 
-        // Link to current team if available
-        if ($user = Auth::user()) {
-            if ($user->currentTeam) {
-                $company->team_id = $user->currentTeam->id;
-            }
-            $company->created_by = $user->id; // Assuming created_by/creator_id exists via trait
-        }
+        // Observer handles team_id and creator_id automatically via 'creating' event
 
         $company->save();
 
