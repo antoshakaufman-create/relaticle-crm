@@ -1,26 +1,25 @@
-# Environment variables
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/public/sitemap.xml
+/storage/*.key
+/vendor
 .env
-.env.local
-.env.*.local
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-logs/
-
-# Temporary files
-tmp/
-temp/
-
-# Docker
-.dockerignore
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/coverage-html/
+coverage.xml
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+CLAUDE.md
+/.fleet
+/.idea
+/.vscode
+/.claude

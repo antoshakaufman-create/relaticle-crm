@@ -49,21 +49,6 @@ Relaticle is a powerful, adaptable CRM platform built for teams who've outgrown 
 
 Visit our [website](https://relaticle.com) to learn more about Relaticle's capabilities.
 
-## Структура репозитория
-
-```
-relaticle-crm/
-├── relaticle/              # Основное Laravel приложение
-├── docs/                   # Документация
-│   ├── deployment/         # Инструкции по деплою
-│   ├── configuration/      # Инструкции по настройке
-│   └── archive/           # Архивные файлы
-├── deploy_server.sh        # Скрипт автоматической установки
-└── README.md              # Этот файл
-```
-
-Для подробной информации о деплое см. [docs/deployment/](docs/deployment/).
-
 # Requirements
 
 - PHP 8.4+,
