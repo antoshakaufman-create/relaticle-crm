@@ -12,7 +12,65 @@ use App\Filament\Pages\EditProfile;
 use App\Filament\Pages\EditTeam;
 use App\Filament\Resources\PeopleResource;
 use App\Http\Middleware\ApplyTenantScopes;
-// ...
+use App\Listeners\SwitchTeam;
+use App\Models\Team;
+use Exception;
+use Filament\Actions\Action;
+use Filament\Events\TenantSet;
+use Filament\Facades\Filament;
+use Filament\Http\Middleware\Authenticate;
+use Filament\Http\Middleware\DisableBladeIconComponents;
+use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Filament\Navigation\NavigationGroup;
+use Filament\Panel;
+use Filament\PanelProvider;
+use Filament\Schemas\Components\Section;
+use Filament\Support\Enums\Size;
+use Filament\Tables\Table;
+use Filament\View\PanelsRenderHook;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
+use Illuminate\Cookie\Middleware\EncryptCookies;
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+use Illuminate\Routing\Middleware\SubstituteBindings;
+use Illuminate\Session\Middleware\AuthenticateSession;
+use Illuminate\Session\Middleware\StartSession;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Session;
+use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\Http\Middleware\SetLocale;
+use Laravel\Jetstream\Features;
+use Relaticle\CustomFields\CustomFieldsPlugin;
+
+final class AppPanelProvider extends PanelProvider
+{
+    /**
+     * Perform post-registration booting of components.
+     */
+    public function boot(): void
+    {
+        /**
+         * Listen and switch team if tenant was changed
+         */
+        Event::listen(
+            TenantSet::class,
+            SwitchTeam::class,
+        );
+
+        Action::configureUsing(fn(Action $action): Action => $action->size(Size::Small)->iconPosition('before'));
+        Section::configureUsing(fn(Section $section): Section => $section->compact());
+        Table::configureUsing(fn(Table $table): Table => $table);
+    }
+
+    /**
+     * Configure the Filament admin panel.
+     *
+     * @throws Exception
+     */
     public function panel(Panel $panel): Panel
     {
         $panel
