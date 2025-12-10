@@ -22,17 +22,10 @@ certbot certificates
 
 echo '=== Service Status ==='
 systemctl status php8.4-fpm --no-pager
-systemctl status nginx --no-pager
-
-echo '=== Nginx Site Config ==='
-cat /etc/nginx/sites-enabled/relaticle
-
-echo '=== OS Release ==='
-lsb_release -a
-
-echo "----------------------------------------"
-echo "Checking Filament Resources on Server:"
-ls -la /var/www/relaticle/app/Filament/Resources
+systemctl status ng
+echo "=== LARAVEL LOGS (Last 100 lines) ==="
+tail -n 100 /var/www/relaticle/storage/logs/laravel.log
+echo "=== END LOGS ==="
 echo "Checking Policies on Server:"
 ls -la /var/www/relaticle/app/Policies
 

@@ -46,9 +46,26 @@ info "Версия PHP: $(php$PHP_VERSION -v | head -n 1)"
 # 2. Обновление кода
 info "Обновление кода..."
 
-# WIPE FOR FRESH INSTALL (User Request - Clean State)
+# Data Persistence Setup
+DATA_DIR="/var/www/relaticle_data"
+if [ ! -d "$DATA_DIR" ]; then
+    info "Создание директории данных $DATA_DIR..."
+    mkdir -p "$DATA_DIR"
+    chown www-data:www-data "$DATA_DIR"
+fi
+
+# Rescue existing data if this is the first run with persistence
 if [ -d "$APP_DIR" ]; then
-    warn "УДАЛЕНИЕ ТЕКУЩЕЙ ПАПКИ (Fresh Install)..."
+    if [ ! -f "$DATA_DIR/.env" ] && [ -f "$APP_DIR/.env" ]; then
+        warn "Перенос существующего .env в $DATA_DIR..."
+        cp "$APP_DIR/.env" "$DATA_DIR/.env"
+    fi
+    if [ ! -f "$DATA_DIR/database.sqlite" ] && [ -f "$APP_DIR/database/database.sqlite" ]; then
+        warn "Перенос существующей БД в $DATA_DIR (backup)..."
+        cp "$APP_DIR/database/database.sqlite" "$DATA_DIR/database.sqlite"
+    fi
+    
+    warn "УДАЛЕНИЕ ТЕКУЩЕЙ ПАПКИ ПРИЛОЖЕНИЯ (Fresh Install via Clone)..."
     rm -rf "$APP_DIR"
 fi
 
@@ -94,6 +111,52 @@ fi
 info "Pull последних изменений (на всякий случай)..."
 git pull origin main
 
+# Symlink Persistence Data
+info "Подключение постоянных данных..."
+
+# .env
+if [ ! -f "$DATA_DIR/.env" ]; then
+    warn ".env в хранилище не найден. Создаем новый из example..."
+    cp .env.example "$DATA_DIR/.env"
+    # Basic Config for new env
+    sed -i "s|APP_ENV=.*|APP_ENV=production|" "$DATA_DIR/.env"
+    sed -i "s|APP_DEBUG=.*|APP_DEBUG=false|" "$DATA_DIR/.env"
+    sed -i "s|APP_URL=.*|APP_URL=https://$DOMAIN|" "$DATA_DIR/.env"
+    sed -i "s|APP_LOCALE=.*|APP_LOCALE=ru|" "$DATA_DIR/.env"
+    sed -i "s|DB_CONNECTION=.*|DB_CONNECTION=sqlite|" "$DATA_DIR/.env"
+    # DB Path in env works better if absolute, but symlink makes relative work too. 
+    # Let's keep it simple: The app sees database.sqlite in database/ folder via symlink.
+    sed -i "s|DB_DATABASE=.*|DB_DATABASE=$APP_DIR/database/database.sqlite|" "$DATA_DIR/.env" 
+    
+    # Yandex Keys
+    sed -i "s|YANDEX_API_KEY=.*|YANDEX_API_KEY=ajetvrtcaq19kpik8cf6|" "$DATA_DIR/.env"
+    sed -i "s|YANDEX_FOLDER_ID=.*|YANDEX_FOLDER_ID=b1gn3qao39gb9uecn2c2|" "$DATA_DIR/.env"
+    
+    # Generate Key in the persisted env if empty
+    if ! grep -q "APP_KEY=base64" "$DATA_DIR/.env"; then
+         # We need to run artisan key:generate later or manually inject it.
+         # For now relying on artisan key:generate writing to the symlinked file.
+         true
+    fi
+fi
+
+# Link .env
+rm -f .env
+ln -sf "$DATA_DIR/.env" .env
+
+# Database
+if [ ! -f "$DATA_DIR/database.sqlite" ]; then
+    touch "$DATA_DIR/database.sqlite"
+fi
+chown www-data:www-data "$DATA_DIR/database.sqlite"
+
+# Ensure database directory exists in app
+mkdir -p database
+
+# Link database
+rm -f database/database.sqlite
+ln -sf "$DATA_DIR/database.sqlite" database/database.sqlite
+
 # 3. Установка зависимостей
 info "Установка зависимостей Composer..."
 php$PHP_VERSION /usr/bin/composer install --no-dev --optimize-autoloader --no-interaction
@@ -107,37 +170,14 @@ info "Настройка прав доступа..."
 chown -R www-data:www-data "$APP_DIR"
 chmod -R 775 "$APP_DIR/storage" "$APP_DIR/bootstrap/cache"
 
+# Generate key if needed (writes to symlinked file)
+if grep -q "APP_KEY=$" .env || grep -q "APP_KEY=$" "$DATA_DIR/.env"; then
+    php$PHP_VERSION artisan key:generate
+fi
+
 # 5. База данных и миграции
 info "Миграция базы данных..."
-# Предполагаем, что .env уже настроен, но проверим/обновим ключи если нужно
-if [ ! -f .env ]; then
-    warn ".env файл не найден! Копируем из .env.example..."
-    cp .env.example .env
-    php$PHP_VERSION artisan key:generate
-    
-    # Автоматическая настройка .env
-    info "Настройка переменных окружения..."
-    sed -i "s|APP_ENV=.*|APP_ENV=production|" .env
-    sed -i "s|APP_DEBUG=.*|APP_DEBUG=false|" .env
-    sed -i "s|APP_URL=.*|APP_URL=https://$DOMAIN|" .env
-    sed -i "s|APP_LOCALE=.*|APP_LOCALE=ru|" .env
-    
-    # Настройка базы данных (SQLite для простоты)
-    sed -i "s|DB_CONNECTION=.*|DB_CONNECTION=sqlite|" .env
-    sed -i "s|DB_DATABASE=.*|DB_DATABASE=$APP_DIR/database/database.sqlite|" .env
-    
-    # Настройка Yandex API (User Provided)
-    sed -i "s|YANDEX_API_KEY=.*|YANDEX_API_KEY=ajetvrtcaq19kpik8cf6|" .env
-    sed -i "s|YANDEX_FOLDER_ID=.*|YANDEX_FOLDER_ID=b1gn3qao39gb9uecn2c2|" .env
-
-    # Создаем базу данных если её нет
-    if [ ! -f "$APP_DIR/database/database.sqlite" ]; then
-        touch "$APP_DIR/database/database.sqlite"
-    fi
-    chown www-data:www-data "$APP_DIR/database/database.sqlite"
-    
-    warn "ВАЖНО: Отредактируйте .env и укажите YANDEX ключи!"
-fi
+# Since .env and db are linked, standard migrate works.
 
 php$PHP_VERSION artisan migrate --force
 
