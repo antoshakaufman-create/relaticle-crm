@@ -47,6 +47,14 @@ final class People extends Model implements HasCustomFields
      */
     protected $fillable = [
         'name',
+        'email',
+        'phone',
+        'position',
+        'source',
+        'notes',
+        'website',
+        'industry',
+        'company_id',
         'creation_source',
     ];
 

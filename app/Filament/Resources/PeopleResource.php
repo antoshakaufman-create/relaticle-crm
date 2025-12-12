@@ -84,13 +84,13 @@ final class PeopleResource extends Resource
                         TextInput::make('name')
                             ->required()
                             ->maxLength(255)
-                            ->columnSpan(7),
+                            ->columnSpan(6),
                         Select::make('company_id')
                             ->relationship('company', 'name')
                             ->suffixAction(
                                 Action::make('Create Company')
                                     ->model(Company::class)
-                                    ->schema(fn (Schema $schema): \Filament\Schemas\Schema => $schema->components([
+                                    ->schema(fn(Schema $schema): \Filament\Schemas\Schema => $schema->components([
                                         TextInput::make('name')
                                             ->required(),
                                         Select::make('account_owner_id')
@@ -112,8 +112,31 @@ final class PeopleResource extends Resource
                             )
                             ->searchable()
                             ->preload()
-                            ->required()
-                            ->columnSpan(5),
+                            ->columnSpan(6),
+                        TextInput::make('email')
+                            ->email()
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        TextInput::make('phone')
+                            ->tel()
+                            ->maxLength(50)
+                            ->columnSpan(6),
+                        TextInput::make('position')
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        TextInput::make('industry')
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        TextInput::make('website')
+                            ->url()
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        TextInput::make('source')
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        \Filament\Forms\Components\Textarea::make('notes')
+                            ->rows(3)
+                            ->columnSpanFull(),
                     ])
                     ->columns(12),
                 CustomFields::form()->forSchema($schema)
@@ -129,18 +152,25 @@ final class PeopleResource extends Resource
                 ImageColumn::make('avatar')->label('')->size(24)->circular(),
                 TextColumn::make('name')
                     ->searchable(),
+                TextColumn::make('email')
+                    ->searchable()
+                    ->toggleable(),
+                TextColumn::make('phone')
+                    ->searchable()
+                    ->toggleable(),
+                TextColumn::make('position')
+                    ->searchable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('industry')
+                    ->searchable()
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('company.name')
                     ->label(__('resources.common.companies'))
-                    ->url(fn (People $record): ?string => $record->company_id ? CompanyResource::getUrl('view', [$record->company_id]) : null)
+                    ->url(fn(People $record): ?string => $record->company_id ? CompanyResource::getUrl('view', [$record->company_id]) : null)
                     ->searchable()
                     ->sortable(),
-                TextColumn::make('creator.name')
-                    ->label(__('resources.common.created_by'))
-                    ->searchable()
-                    ->sortable()
-                    ->toggleable()
-                    ->getStateUsing(fn (People $record): string => $record->created_by)
-                    ->color(fn (People $record): string => $record->isSystemCreated() ? 'secondary' : 'primary'),
+                TextColumn::make('source')
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

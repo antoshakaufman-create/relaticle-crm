@@ -13,7 +13,6 @@ class Dashboard extends BaseDashboard
         return [
             \App\Filament\Widgets\DashboardStatsOverview::class,
             \App\Filament\Widgets\RevenueChart::class,
-            \App\Filament\Widgets\LatestLeads::class,
         ];
     }
 }
