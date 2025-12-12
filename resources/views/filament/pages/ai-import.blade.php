@@ -1,5 +1,5 @@
 <x-filament-panels::page>
-    <x-filament-panels::form wire:submit="analyze">
+    <form wire:submit="analyze">
         {{ $this->form }}
 
         <div class="flex justify-end mt-4">
@@ -7,7 +7,7 @@
                 Analyze File with AI
             </x-filament::button>
         </div>
-    </x-filament-panels::form>
+    </form>
 
     @if($analyzed)
         <div class="mt-6 p-4 bg-gray-50 dark:bg-gray-900 rounded-lg border dark:border-gray-800">
