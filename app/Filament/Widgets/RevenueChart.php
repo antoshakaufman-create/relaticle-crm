@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class RevenueChart extends ChartWidget
 {
-    protected static ?string $heading = 'Revenue Growth';
+    protected ?string $heading = 'Revenue Growth';
     protected static ?int $sort = 2;
 
     protected function getData(): array
