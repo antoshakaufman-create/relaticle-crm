@@ -131,11 +131,35 @@ final class PeopleResource extends Resource
                             ->url()
                             ->maxLength(255)
                             ->columnSpan(6),
+                        TextInput::make('vk_url')
+                            ->label('ВКонтакте')
+                            ->url()
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        TextInput::make('telegram_url')
+                            ->label('Telegram')
+                            ->url()
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        TextInput::make('instagram_url')
+                            ->label('Instagram')
+                            ->url()
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        TextInput::make('youtube_url')
+                            ->label('YouTube')
+                            ->url()
+                            ->maxLength(255)
+                            ->columnSpan(6),
                         TextInput::make('source')
                             ->maxLength(255)
                             ->columnSpan(6),
                         \Filament\Forms\Components\Textarea::make('notes')
                             ->rows(3)
+                            ->columnSpanFull(),
+                        \Filament\Forms\Components\Textarea::make('smm_analysis')
+                            ->label('SMM Анализ')
+                            ->rows(5)
                             ->columnSpanFull(),
                     ])
                     ->columns(12),
