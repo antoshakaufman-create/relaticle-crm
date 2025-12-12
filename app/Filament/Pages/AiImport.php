@@ -19,7 +19,7 @@ class AiImport extends Page implements HasForms
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-arrow-up-tray';
     protected static ?string $title = 'AI Smart Import';
-    protected static string $view = 'filament.pages.ai-import';
+    protected string $view = 'filament.pages.ai-import';
 
     public static function getNavigationGroup(): ?string
     {
