@@ -44,7 +44,7 @@ Route::middleware('guest')->group(function () {
     })->name('password.request');
 });
 
-Route::get('/', HomeController::class);
+Route::redirect('/', '/app');
 
 // Language switcher
 Route::get('/locale/{locale}', LocaleController::class)->name('locale.switch');

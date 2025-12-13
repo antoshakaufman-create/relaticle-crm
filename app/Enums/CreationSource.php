@@ -29,6 +29,7 @@ enum CreationSource: string implements HasLabel
      * migrated from another system in bulk operations.
      */
     case IMPORT = 'import';
+    case IMPORTED = 'imported';
 
     /**
      * Get the human-readable label for Filament UI components.
@@ -39,6 +40,7 @@ enum CreationSource: string implements HasLabel
             self::WEB => 'Web Interface',
             self::SYSTEM => 'System Process',
             self::IMPORT => 'Data Import',
+            self::IMPORTED => 'Data Import (Legacy)',
         };
     }
 }

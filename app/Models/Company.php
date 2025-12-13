@@ -53,10 +53,14 @@ final class Company extends Model implements HasCustomFields, HasMedia
      * @var list<string>
      */
     protected $fillable = [
+        'team_id',
+        'creator_id',
         'name',
         'address',
         'country',
         'phone',
+        'website',
+        'industry',
         'creation_source',
     ];
 

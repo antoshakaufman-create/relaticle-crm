@@ -57,10 +57,18 @@ final class People extends Model implements HasCustomFields
         'company_id',
         'creation_source',
         'vk_url',
+        'linkedin_url',
+        'linkedin_position',
+        'linkedin_company',
+        'linkedin_location',
+        'vk_status',
+        'lead_score',
+        'lead_category',
         'telegram_url',
         'instagram_url',
         'youtube_url',
         'smm_analysis',
+        'visual_analysis',
     ];
 
     /**

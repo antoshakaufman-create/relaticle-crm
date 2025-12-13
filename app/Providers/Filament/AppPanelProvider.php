@@ -139,11 +139,11 @@ final class AppPanelProvider extends PanelProvider
             ])
             ->spa()
             ->breadcrumbs(false)
-            ->sidebarCollapsibleOnDesktop()
+            // ->sidebarCollapsibleOnDesktop()
             ->navigationGroups([
                 NavigationGroup::make()
-                    ->label(__('resources.workspace.label'))
-                    ->icon('heroicon-o-shopping-cart'),
+                    ->label(__('resources.workspace.label')),
+                // ->icon('heroicon-o-shopping-cart'),
             ])
             ->middleware([
                 EncryptCookies::class,

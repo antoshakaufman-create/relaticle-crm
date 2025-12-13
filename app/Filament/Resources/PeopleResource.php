@@ -188,6 +188,47 @@ final class PeopleResource extends Resource
                 TextColumn::make('industry')
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('vk_url')
+                    ->label('VK')
+                    ->icon('heroicon-m-link')
+                    ->url(fn($state) => $state)
+                    ->openUrlInNewTab()
+                    ->toggleable(),
+                TextColumn::make('vk_status')
+                    ->label('Статус VK')
+                    ->badge()
+                    ->color(fn(string $state): string => match (true) {
+                        str_contains($state, 'ACTIVE') => 'success',
+                        str_contains($state, 'INACTIVE') => 'warning',
+                        default => 'danger',
+                    })
+                    ->toggleable(),
+                TextColumn::make('lead_score')
+                    ->label('Lead Score')
+                    ->numeric(1)
+                    ->sortable()
+                    ->toggleable(),
+                TextColumn::make('lead_category')
+                    ->label('Категория')
+                    ->badge()
+                    ->color(fn(string $state): string => match ($state) {
+                        'HOT' => 'danger',
+                        'WARM' => 'success',
+                        'COLD-WARM' => 'warning',
+                        'COLD' => 'gray',
+                        default => 'gray',
+                    })
+                    ->toggleable(),
+                TextColumn::make('telegram_url')
+                    ->label('Telegram')
+                    ->icon('heroicon-m-link')
+                    ->url(fn($state) => $state)
+                    ->openUrlInNewTab()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('smm_analysis')
+                    ->label('SMM')
+                    ->formatStateUsing(fn($state) => $state ? '✅' : '—')
+                    ->toggleable(),
                 TextColumn::make('company.name')
                     ->label(__('resources.common.companies'))
                     ->url(fn(People $record): ?string => $record->company_id ? CompanyResource::getUrl('view', [$record->company_id]) : null)
@@ -216,6 +257,76 @@ final class PeopleResource extends Resource
                     ->options(CreationSource::class)
                     ->multiple(),
                 TrashedFilter::make(),
+
+                // Social Media Filters
+                \Filament\Tables\Filters\TernaryFilter::make('has_vk')
+                    ->label('VK')
+                    ->placeholder('Все')
+                    ->trueLabel('Есть VK')
+                    ->falseLabel('Нет VK')
+                    ->queries(
+                        true: fn($query) => $query->whereNotNull('vk_url')->where('vk_url', '!=', ''),
+                        false: fn($query) => $query->where(fn($q) => $q->whereNull('vk_url')->orWhere('vk_url', '=', '')),
+                        blank: fn($query) => $query,
+                    ),
+
+                \Filament\Tables\Filters\TernaryFilter::make('has_telegram')
+                    ->label('Telegram')
+                    ->placeholder('Все')
+                    ->trueLabel('Есть Telegram')
+                    ->falseLabel('Нет Telegram')
+                    ->queries(
+                        true: fn($query) => $query->whereNotNull('telegram_url')->where('telegram_url', '!=', ''),
+                        false: fn($query) => $query->where(fn($q) => $q->whereNull('telegram_url')->orWhere('telegram_url', '=', '')),
+                        blank: fn($query) => $query,
+                    ),
+
+                \Filament\Tables\Filters\TernaryFilter::make('has_smm')
+                    ->label('SMM Анализ')
+                    ->placeholder('Все')
+                    ->trueLabel('Есть SMM')
+                    ->falseLabel('Нет SMM')
+                    ->queries(
+                        true: fn($query) => $query->whereNotNull('smm_analysis')->where('smm_analysis', '!=', ''),
+                        false: fn($query) => $query->where(fn($q) => $q->whereNull('smm_analysis')->orWhere('smm_analysis', '=', '')),
+                        blank: fn($query) => $query,
+                    ),
+
+                \Filament\Tables\Filters\TernaryFilter::make('has_email')
+                    ->label('Email')
+                    ->placeholder('Все')
+                    ->trueLabel('Есть Email')
+                    ->falseLabel('Нет Email')
+                    ->queries(
+                        true: fn($query) => $query->whereNotNull('email')->where('email', '!=', ''),
+                        false: fn($query) => $query->where(fn($q) => $q->whereNull('email')->orWhere('email', '=', '')),
+                        blank: fn($query) => $query,
+                    ),
+
+                \Filament\Tables\Filters\TernaryFilter::make('has_phone')
+                    ->label('Телефон')
+                    ->placeholder('Все')
+                    ->trueLabel('Есть Телефон')
+                    ->falseLabel('Нет Телефона')
+                    ->queries(
+                        true: fn($query) => $query->whereNotNull('phone')->where('phone', '!=', ''),
+                        false: fn($query) => $query->where(fn($q) => $q->whereNull('phone')->orWhere('phone', '=', '')),
+                        blank: fn($query) => $query,
+                    ),
+
+                \Filament\Tables\Filters\SelectFilter::make('industry')
+                    ->label('Отрасль')
+                    ->options(fn() => \App\Models\People::whereNotNull('industry')
+                        ->distinct()
+                        ->pluck('industry', 'industry')
+                        ->toArray())
+                    ->searchable(),
+
+                \Filament\Tables\Filters\SelectFilter::make('company_id')
+                    ->label('Компания')
+                    ->relationship('company', 'name')
+                    ->searchable()
+                    ->preload(),
             ])
             ->recordActions([
                 ActionGroup::make([
