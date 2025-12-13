@@ -8,7 +8,10 @@ use App\Enums\CreationSource;
 use App\Filament\Exports\CompanyExporter;
 use App\Filament\Resources\CompanyResource\Pages\ListCompanies;
 use App\Filament\Resources\CompanyResource\Pages\ViewCompany;
-use App\Models\Company;
+use App\Filament\Resources\CompanyResource\RelationManagers\PeopleRelationManager;
+use Filament\Forms\Components\Section;
+
+
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
@@ -78,10 +81,46 @@ final class CompanyResource extends Resource
                     ->preload()
                     ->searchable(),
 
+                \Filament\Forms\Components\Section::make('Enrichment Data')
+                    ->description('Automatic SMM Analysis & Lead Score')
+                    ->schema([
+                        TextInput::make('industry')
+                            ->label('Отрасль'),
+                        TextInput::make('website')
+                            ->label('Website')
+                            ->url()
+                            ->suffixIcon('heroicon-m-globe-alt'),
+                        TextInput::make('vk_url')
+                            ->label('VK')
+                            ->url()
+                            ->suffixIcon('heroicon-m-link'),
+                        Select::make('vk_status')
+                            ->label('VK Status')
+                            ->options([
+                                'ACTIVE' => 'Active',
+                                'INACTIVE' => 'Inactive',
+                                'DEAD' => 'Dead',
+                            ]),
+                        TextInput::make('lead_score')
+                            ->label('Lead Score')
+                            ->numeric(),
+                        Select::make('lead_category')
+                            ->label('Category')
+                            ->options([
+                                'HOT' => 'HOT',
+                                'WARM' => 'WARM',
+                                'COLD-WARM' => 'COLD-WARM',
+                                'COLD' => 'COLD',
+                            ]),
+                        \Filament\Forms\Components\Textarea::make('smm_analysis')
+                            ->label('SMM Анализ')
+                            ->rows(3)
+                            ->columnSpanFull(),
+                    ])->collapsible(),
+
                 CustomFields::form()->forSchema($schema)->build()->columns(1),
             ])
-            ->columns(1)
-            ->inlineLabel();
+            ->columns(1);
     }
 
     public static function table(Table $table): Table
@@ -92,6 +131,32 @@ final class CompanyResource extends Resource
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
+                TextColumn::make('industry')
+                    ->label('Отрасль')
+                    ->searchable()
+                    ->toggleable(),
+                TextColumn::make('lead_score')
+                    ->label('Score')
+                    ->numeric(1)
+                    ->sortable()
+                    ->toggleable(),
+                TextColumn::make('lead_category')
+                    ->badge()
+                    ->color(fn(string $state): string => match ($state) {
+                        'HOT' => 'danger',
+                        'WARM' => 'success',
+                        'COLD-WARM' => 'warning',
+                        'COLD' => 'gray',
+                        default => 'gray',
+                    }),
+                TextColumn::make('vk_status')
+                    ->badge()
+                    ->color(fn(string $state): string => match (true) {
+                        str_contains($state, 'ACTIVE') => 'success',
+                        str_contains($state, 'INACTIVE') => 'warning',
+                        default => 'danger',
+                    })
+                    ->toggleable(),
                 TextColumn::make('accountOwner.name')
                     ->label(__('resources.company.account_owner'))
                     ->searchable()
@@ -102,8 +167,8 @@ final class CompanyResource extends Resource
                     ->searchable()
                     ->sortable()
                     ->toggleable()
-                    ->getStateUsing(fn (Company $record): string => $record->created_by)
-                    ->color(fn (Company $record): string => $record->isSystemCreated() ? 'secondary' : 'primary'),
+                    ->getStateUsing(fn(Company $record): string => $record->created_by)
+                    ->color(fn(Company $record): string => $record->isSystemCreated() ? 'secondary' : 'primary'),
                 TextColumn::make('deleted_at')
                     ->dateTime()
                     ->sortable()
@@ -148,6 +213,13 @@ final class CompanyResource extends Resource
                     RestoreBulkAction::make(),
                 ]),
             ]);
+    }
+
+    public static function getRelations(): array
+    {
+        return [
+            PeopleRelationManager::class,
+        ];
     }
 
     public static function getPages(): array

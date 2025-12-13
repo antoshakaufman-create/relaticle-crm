@@ -1,0 +1,171 @@
+# CRM Import Data - Full Export
+Этот файл содержит все компании и контакты из Excel для импорта в CRM систему.
+---
+### Company
+- **company_name**: Р Фарм
+- **industry**: Фарма
+- **website**: https://r-pharm.com
+- **date_first_contact**: 2025-12-13
+- **services_offered**: смм, Ведение соц сетей, создание контента по продуктам
+- **company_comment**: Новый Ген директор, в понедельник получаю инфо по маркетингу
+- **source_sheet**: Компании
+- **import_id**: company_1
+### Contact
+- **full_name**: Самсонов Михаил
+- **job_title**: Медицинский Директор
+- **email**: samsonov@rpharm@ru
+- **phone**: 7 (495) 956-79-37
+- **contact_comment**: 
+- **company_import_id**: company_1
+- **import_id**: contact_1_1
+---
+### Company
+- **company_name**: Валента Фарм
+- **industry**: Фарма
+- **website**: https://valentapharm.com
+- **date_first_contact**: 2025-12-13
+- **services_offered**: Соц сети, AI Решения, создание рекламных кейсов
+- **company_comment**: Анастасия уволилась, просили прислать инфо на почту, перезвонить на след неделе после среды
+- **source_sheet**: Компании
+- **import_id**: company_2
+### Contact
+- **full_name**: Алексей Андреев
+- **job_title**: маркетинг
+- **email**: a.andreev@valentapharm.com
+- **phone**: 7 (495) 933-60-80
+- **contact_comment**: 
+- **company_import_id**: company_2
+- **import_id**: contact_2_1
+### Contact
+- **full_name**: Анастасия Мещерякова
+- **job_title**: Не указано
+- **email**: a.andreev@valentapharm.com
+- **phone**: 7 (495) 933-60-80
+- **contact_comment**: Уволилась
+- **company_import_id**: company_2
+- **import_id**: contact_2_2
+### Contact
+- **full_name**: Мария Курган
+- **job_title**: Не указано
+- **email**: a.andreev@valentapharm.com
+- **phone**: 7 (495) 933-60-80
+- **contact_comment**: 
+- **company_import_id**: company_2
+- **import_id**: contact_2_3
+---
+### Company
+- **company_name**: Фармасинтез
+- **industry**: Фарма
+- **website**: 
+- **date_first_contact**: 2025-12-13
+- **services_offered**: 
+- **company_comment**: Контакт не актуален, нужно доставать новый у Головной структуры
+- **source_sheet**: Компании
+- **import_id**: company_3
+### Contact
+- **full_name**: Не указано
+- **job_title**: 
+- **email**: 
+- **phone**: 
+- **contact_comment**: Нет активных контактов
+- **company_import_id**: company_3
+- **import_id**: contact_3_1
+---
+### Company
+- **company_name**: Фарм Синтез
+- **industry**: Фарма
+- **website**: https://pharm-sintez.ru
+- **date_first_contact**: 2025-12-13
+- **services_offered**: Ведение соц сетей, таргет
+- **company_comment**: Поговорил с Ниной, передаст нас It, так как она некомпетента, совсем нет работы в соц сетях и таргета
+- **source_sheet**: Компании
+- **import_id**: company_4
+### Contact
+- **full_name**: Нина Поздеева
+- **job_title**: Глава Маркетинга
+- **email**: npozdeeva@pharm-sintez.ru
+- **phone**: 7 (495) 796-94-33
+- **contact_comment**: Некомпетентна, передаст в IT
+- **company_import_id**: company_4
+- **import_id**: contact_4_1
+---
+### Company
+- **company_name**: Веро Фарма
+- **industry**: Фарма
+- **website**: https://veropharm.ru/
+- **date_first_contact**: 2025-12-13
+- **services_offered**: ТГ и ВК, не работает БОТ
+- **company_comment**: Пытались вести ТГ и ВК но забросили в 2024г все. прислать наши предложения на почту и звонить!
+- **source_sheet**: Компании
+- **import_id**: company_5
+### Contact
+- **full_name**: Ирина Трусова
+- **job_title**: маркетолог
+- **email**: irina.trusova@veropharm.ru
+- **phone**: 7 (495) 797-57-37
+- **contact_comment**: 
+- **company_import_id**: company_5
+- **import_id**: contact_5_1
+---
+### Company
+- **company_name**: НоваМедика
+- **industry**: Фарма
+- **website**: www.novamedica.com
+- **date_first_contact**: 2025-12-13
+- **services_offered**: Сами не понимают что хотят, Соц сети(мой Вариант)
+- **company_comment**: Марина уволилась, передали Юлии Фазовой(маркетинг). звонить в понедельник, передадут контакт
+- **source_sheet**: Компании
+- **import_id**: company_6
+### Contact
+- **full_name**: Марина Айвазова
+- **job_title**: Не указано
+- **email**: maivazova@novamedica.com
+- **phone**: 89161444865
+- **contact_comment**: Уволилась
+- **company_import_id**: company_6
+- **import_id**: contact_6_1
+---
+### Company
+- **company_name**: Озон
+- **industry**: Фарма
+- **website**: www.ozon.ru
+- **date_first_contact**: 2025-12-13
+- **services_offered**: Соц сети, Рекламные интеграции
+- **company_comment**: Необходимо уточнить контакт у Игоря Гудкова, АННА Б-новый контакт. В принципе у Озона есть все.
+- **source_sheet**: Компании
+- **import_id**: company_7
+### Contact
+- **full_name**: Не указано
+- **job_title**: 
+- **email**: 
+- **phone**: 
+- **contact_comment**: Контакт уточняется у Игоря Гудкова
+- **company_import_id**: company_7
+- **import_id**: contact_7_1
+---
+### Company
+- **company_name**: Вертекс
+- **industry**: Фарма
+- **website**: https://vertex.spb.ru/
+- **date_first_contact**: 2025-12-13
+- **services_offered**: 
+- **company_comment**: Анна уточнила что стоит перезвонить во вторник, так как Германа нет на месте и он ЛПР
+- **source_sheet**: Компании
+- **import_id**: company_8
+### Contact
+- **full_name**: Анна Симанович
+- **job_title**: Не указано
+- **email**: vertex@vertex.spb.ru
+- **phone**: 
+- **contact_comment**: Уточнила перезвонить во вторник
+- **company_import_id**: company_8
+- **import_id**: contact_8_1
+### Contact
+- **full_name**: Гадимов Рамал
+- **job_title**: Не указано
+- **email**: vertex@vertex.spb.ru
+- **phone**: 
+- **contact_comment**: Германа нет на месте, он ЛПР
+- **company_import_id**: company_8
+- **import_id**: contact_8_2
+---

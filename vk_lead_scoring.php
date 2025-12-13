@@ -301,24 +301,35 @@ foreach ($companyMap as $vkUrl => $contactList) {
     $finalScore = min(100, round($finalScore, 1));
 
     $cat = classify_lead($finalScore, $postingScore);
+    $status = $cat['status'];
 
-    echo "Score: $finalScore (" . $cat['cat'] . " | " . $cat['status'] . ")\n";
+    echo "Score: $finalScore (" . $cat['cat'] . " | " . $status . ")\n";
 
-    // Update CRM
-    $report = "=== 🎯 LEAD SCORE: $finalScore ({$cat['cat']}) ===\n";
-    $report .= $cat['desc'] . "\n";
-    $report .= "Status: " . $cat['status'] . "\n";
-    $report .= "ER: " . round($erScore, 1) . " (of 30)\n";
-    $report .= "Posting: " . round($postingScore, 1) . " (of 20)\n";
-    $report .= "Growth: " . round($growthScore, 1) . " (of 15)\n";
-    $report .= "Promo: " . round($promoScore, 1) . " (of 10)\n";
-    $report .= "Quality: " . round($commentQuality, 1) . " (of 15)\n";
-    $report .= "GPT Intent/Auth: " . ($gptIntent + $gptAuth) . " (of 10)\n";
-
-    foreach ($contactList as $c) {
-        $old = preg_replace('/=== 🎯.*$/us', '', $c->notes ?? '');
-        $c->update(['notes' => trim($old) . "\n\n" . $report]);
+    // Update Company Record
+    $company = $contactList[0]->company;
+    if ($company) {
+        $company->update([
+            'lead_score' => $finalScore,
+            'lead_category' => $cat['cat'], // HOT, WARM...
+            'vk_status' => trim(str_replace(' (2025)', '', $status)), // "ACTIVE" or "INACTIVE/DEAD" (simplified)
+            // Store SMM Analysis text
+            'smm_analysis' => $cat['desc'] . "\n" .
+                "Status: $status\n" .
+                "ER: " . round($erScore, 1) . "\n" .
+                "Posting: " . round($postingScore, 1) . "\n" .
+                "Growth: " . round($growthScore, 1) . "\n" .
+                "Promo: " . round($promoScore, 1) . "\n" .
+                "Quality: " . round($commentQuality, 1)
+        ]);
     }
+
+    // Also update People notes for legacy/visibility if needed (optional)
+    /*
+    $report = "=== 🎯 LEAD SCORE: $finalScore ({$cat['cat']}) ===\n...";
+    foreach ($contactList as $c) {
+       // ...
+    }
+    */
 
     usleep(250000);
 }

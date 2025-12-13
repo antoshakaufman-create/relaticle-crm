@@ -46,6 +46,18 @@ final class PeopleRelationManager extends RelationManager
             ->recordTitleAttribute('name')
             ->columns([
                 TextColumn::make('name'),
+                TextColumn::make('position')->label('Должность'),
+                TextColumn::make('email')->label('Email')->toggleable(),
+                TextColumn::make('phone')->label('Телефон')->toggleable(),
+                TextColumn::make('vk_status')
+                    ->label('VK')
+                    ->badge()
+                    ->color(fn(string $state): string => match (true) {
+                        str_contains($state, 'ACTIVE') => 'success',
+                        str_contains($state, 'INACTIVE') => 'warning',
+                        default => 'danger',
+                    })
+                    ->toggleable(),
 
                 ...CustomFields::table()->forModel($table->getModel())->columns(),
             ])

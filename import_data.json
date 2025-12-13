@@ -1,0 +1,5603 @@
+{
+  "companies": [
+    {
+      "name": "Р Фарм",
+      "industry": "Фарма",
+      "website": "https://r-pharm.com",
+      "services": "смм, Ведение соц сетей, создание контента по продуктам",
+      "comment": "Новый Ген директор, в понедельник получаю инфо по маркетингу",
+      "import_id": "company_1"
+    },
+    {
+      "name": "Валента Фарм",
+      "industry": "Фарма",
+      "website": "https://valentapharm.com",
+      "services": "Соц сети, AI Решения, создание рекламных кейсов",
+      "comment": "Анастасия уволилась, просили прислать инфо на почту, перезвонить на след неделе после среды",
+      "import_id": "company_2"
+    },
+    {
+      "name": "Фармасинтез",
+      "industry": "Фарма",
+      "website": "",
+      "services": "",
+      "comment": "Контакт не актуален, нужно доставать новый у Головной структуры",
+      "import_id": "company_3"
+    },
+    {
+      "name": "Фарм Синтез",
+      "industry": "Фарма",
+      "website": "https://pharm-sintez.ru",
+      "services": "Ведение соц сетей, таргет",
+      "comment": "Поговорил с Ниной, передаст нас It, так как она некомпетента, совсем нет работы в соц сетях и таргета",
+      "import_id": "company_4"
+    },
+    {
+      "name": "Веро Фарма",
+      "industry": "Фарма",
+      "website": "https://veropharm.ru/",
+      "services": "ТГ и ВК, не работает БОТ",
+      "comment": "Пытались вести ТГ и ВК но забросили в 2024г все. прислать наши предложения на почту и звонить!",
+      "import_id": "company_5"
+    },
+    {
+      "name": "НоваМедика",
+      "industry": "Фарма",
+      "website": "www.novamedica.com",
+      "services": "Сами не понимают что хотят, Соц сети(мой Вариант)",
+      "comment": "Марина уволилась, передали Юлии Фазовой(маркетинг). звонить в понедельник, передадут контакт",
+      "import_id": "company_6"
+    },
+    {
+      "name": "Озон",
+      "industry": "Фарма",
+      "website": "www.ozon.ru",
+      "services": "Соц сети, Рекламные интеграции",
+      "comment": "Необходимо уточнить контакт у Игоря Гудкова, АННА Б-новый контакт. В принципе у Озона есть все.",
+      "import_id": "company_7"
+    },
+    {
+      "name": "Вертекс",
+      "industry": "Фарма",
+      "website": "https://vertex.spb.ru/",
+      "services": "",
+      "comment": "Анна уточнила что стоит перезвонить во вторник, так как Германа нет на месте и он ЛПР",
+      "import_id": "company_8"
+    },
+    {
+      "name": "Синтез",
+      "industry": "Фарма",
+      "website": "http://ksintez.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_9"
+    },
+    {
+      "name": "Чиези Фарма",
+      "industry": "Фарма",
+      "website": "chiesi.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_10"
+    },
+    {
+      "name": "ПАО \"Отисифарм\"",
+      "industry": "Фарма",
+      "website": "https://otcpharm.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_11"
+    },
+    {
+      "name": "Эвалар",
+      "industry": "Фарма",
+      "website": "evalar.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_12"
+    },
+    {
+      "name": "Нижфарм",
+      "industry": "Фарма",
+      "website": "https://www.stada.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_13"
+    },
+    {
+      "name": "Полярис",
+      "industry": "Фарма",
+      "website": "https://polarpharm.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_14"
+    },
+    {
+      "name": "Цифровая Экономика",
+      "industry": "Фарма",
+      "website": "https://data-economy.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_15"
+    },
+    {
+      "name": "KPBS",
+      "industry": "Фарма",
+      "website": "www.kbps.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_16"
+    },
+    {
+      "name": "Ozon Travel",
+      "industry": "Фарма",
+      "website": "www.ozon.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_17"
+    },
+    {
+      "name": "Триколор",
+      "industry": "Фарма",
+      "website": "tricolor.tv",
+      "services": "",
+      "comment": "",
+      "import_id": "company_18"
+    },
+    {
+      "name": "Находка",
+      "industry": "Фарма",
+      "website": "vcm-nahodka.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_19"
+    },
+    {
+      "name": "Институт Коучинга СПБ",
+      "industry": "Фарма",
+      "website": "https://coachinstitute.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_20"
+    },
+    {
+      "name": "Ригла",
+      "industry": "Фарма",
+      "website": "rigla.ru",
+      "services": "",
+      "comment": "Нет email",
+      "import_id": "company_21"
+    },
+    {
+      "name": "Союз Фармацевтов России",
+      "industry": "Фарма",
+      "website": "http://spfo.ru/",
+      "services": "",
+      "comment": "Нет email",
+      "import_id": "company_22"
+    },
+    {
+      "name": "Pozitive Techlogies",
+      "industry": "IT",
+      "website": "https://www.ptsecurity.com/ru-ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_23"
+    },
+    {
+      "name": "Тензор",
+      "industry": "IT",
+      "website": "https://tensor.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_24"
+    },
+    {
+      "name": "Технониколь",
+      "industry": "Производство",
+      "website": "www.technonikol.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_25"
+    },
+    {
+      "name": "Газпром",
+      "industry": "Нефтегаз",
+      "website": "www.gazprom.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_26"
+    },
+    {
+      "name": "Сделано в России",
+      "industry": "Гос компания",
+      "website": "www.madeinrussia.gov.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_27"
+    },
+    {
+      "name": "My games",
+      "industry": "IT",
+      "website": "www.mygames.ru",
+      "services": "",
+      "comment": "Московский офис временно закрыт",
+      "import_id": "company_28"
+    },
+    {
+      "name": "Марвел",
+      "industry": "IT",
+      "website": "www.marvel.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_29"
+    },
+    {
+      "name": "Level",
+      "industry": "Строительство",
+      "website": "levelgroup.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_30"
+    },
+    {
+      "name": "Start",
+      "industry": "IT",
+      "website": "www.start.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_31"
+    },
+    {
+      "name": "ЛАНИТ",
+      "industry": "IT",
+      "website": "www.lanit.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_32"
+    },
+    {
+      "name": "Litress",
+      "industry": "IT",
+      "website": "www.litress.eu",
+      "services": "",
+      "comment": "",
+      "import_id": "company_33"
+    },
+    {
+      "name": "Банки ру",
+      "industry": "IT",
+      "website": "www.banki.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_34"
+    },
+    {
+      "name": "Talenttech",
+      "industry": "IT",
+      "website": "https://main.talenttech.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_35"
+    },
+    {
+      "name": "Авиа Сейлс",
+      "industry": "IT",
+      "website": "www.aviasales.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_36"
+    },
+    {
+      "name": "RGS",
+      "industry": "Страхование",
+      "website": "www.rgs.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_37"
+    },
+    {
+      "name": "Материка",
+      "industry": "Фарма",
+      "website": "www.materimedica.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_38"
+    },
+    {
+      "name": "Netwell",
+      "industry": "Фарма",
+      "website": "www.netwell.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_39"
+    },
+    {
+      "name": "Kaspersky",
+      "industry": "IT",
+      "website": "www.kaspersky.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_40"
+    },
+    {
+      "name": "Яндекс",
+      "industry": "IT",
+      "website": "www.ya.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_41"
+    },
+    {
+      "name": "Газпромнефть",
+      "industry": "Нефтегаз",
+      "website": "www.gazpromneft.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_42"
+    },
+    {
+      "name": "Лореаль",
+      "industry": "Парфюмерия",
+      "website": "www,loreal.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_43"
+    },
+    {
+      "name": "АЕБ",
+      "industry": "Бизнес Ассоциация",
+      "website": "www.aebrus.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_44"
+    },
+    {
+      "name": "Redbull",
+      "industry": "FMSG",
+      "website": "www.redbull.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_45"
+    },
+    {
+      "name": "NL international",
+      "industry": "Корпорация",
+      "website": "https://www.nlstar.com/ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_46"
+    },
+    {
+      "name": "Сибирское здоровье",
+      "industry": "Парфюмерия",
+      "website": "https://ru.siberianhealth.com/ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_47"
+    },
+    {
+      "name": "Gisbuyer",
+      "industry": "Парфюмерия",
+      "website": "https://gisbuyer.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_48"
+    },
+    {
+      "name": "GreenWay",
+      "industry": "Парфюмерия",
+      "website": "https://greenwaystart.com/rus",
+      "services": "",
+      "comment": "",
+      "import_id": "company_49"
+    },
+    {
+      "name": "Faberlic",
+      "industry": "Парфюмерия",
+      "website": "https://new.faberlic.com/ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_50"
+    },
+    {
+      "name": "Первая Грузовая Компания",
+      "industry": "Грузоперевозки",
+      "website": "www.pgk.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_51"
+    },
+    {
+      "name": "L'oreal",
+      "industry": "Парфюмерия",
+      "website": "loreal.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_52"
+    },
+    {
+      "name": "ЕВРАЗ",
+      "industry": "Металлургия",
+      "website": "https://vision.group/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_53"
+    },
+    {
+      "name": "Fun and sun",
+      "industry": "Тур оператор",
+      "website": "https://fstravel.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_54"
+    },
+    {
+      "name": "Не указано",
+      "industry": "Парфюмерия",
+      "website": "https://nlmk.com/ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_55"
+    },
+    {
+      "name": "Tiande",
+      "industry": "Парфюмерия",
+      "website": "https://tiande.ru/about/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_56"
+    },
+    {
+      "name": "Батель",
+      "industry": "Парфюмерия",
+      "website": "https://batel.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_57"
+    },
+    {
+      "name": "Витамакс",
+      "industry": "Парфюмерия",
+      "website": "https://vitamax.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_58"
+    },
+    {
+      "name": "AMWAY",
+      "industry": "Парфюмерия",
+      "website": "https://www.amway.ru/about-amway-new",
+      "services": "",
+      "comment": "",
+      "import_id": "company_59"
+    },
+    {
+      "name": "Oriflame",
+      "industry": "Парфюмерия",
+      "website": "https://www.oriflame.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_60"
+    },
+    {
+      "name": "Avon",
+      "industry": "Парфюмерия",
+      "website": "https://my.avon.ru/",
+      "services": "",
+      "comment": "Контакт от Ирины Берниковой",
+      "import_id": "company_61"
+    },
+    {
+      "name": "Atomy",
+      "industry": "Парфюмерия",
+      "website": "https://www.atomy.ru/ru/Home",
+      "services": "",
+      "comment": "",
+      "import_id": "company_62"
+    },
+    {
+      "name": "Herbalife",
+      "industry": "Парфюмерия",
+      "website": "https://herbalife.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_63"
+    },
+    {
+      "name": "Кэпитал Лайф",
+      "industry": "Страхование",
+      "website": "https://kaplife.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_64"
+    },
+    {
+      "name": "Cеверсталь",
+      "industry": "Производство",
+      "website": "www.severstal.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_65"
+    },
+    {
+      "name": "Janssen Cosmetics",
+      "industry": "Парфюмерия",
+      "website": "https://janssencosmetics.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_66"
+    },
+    {
+      "name": "Gipfel",
+      "industry": "",
+      "website": "www.gipfel.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_67"
+    },
+    {
+      "name": "World Class",
+      "industry": "",
+      "website": "www.worldclass.com/ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_68"
+    },
+    {
+      "name": "Tele2",
+      "industry": "Сотовый оператор",
+      "website": "www.tele2.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_69"
+    },
+    {
+      "name": "НСПК",
+      "industry": "Банки",
+      "website": "www.nspk.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_70"
+    },
+    {
+      "name": "Размер",
+      "industry": "Производство",
+      "website": "razmergroup.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_71"
+    },
+    {
+      "name": "Столото",
+      "industry": "",
+      "website": "www.stoloto.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_72"
+    },
+    {
+      "name": "Лента",
+      "industry": "Retail",
+      "website": "www.lenta.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_73"
+    },
+    {
+      "name": "Ренкредит",
+      "industry": "Банки",
+      "website": "www.rencredit.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_74"
+    },
+    {
+      "name": "Тинькофф",
+      "industry": "Банки",
+      "website": "www.tinkoff.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_75"
+    },
+    {
+      "name": "Райффайзен Банк",
+      "industry": "Банки",
+      "website": "raiffeisen.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_76"
+    },
+    {
+      "name": "Credit Europa Bank",
+      "industry": "Банки",
+      "website": "www.crediteurope.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_77"
+    },
+    {
+      "name": "СберСтрахование жизни",
+      "industry": "Банки",
+      "website": "https://sberbank-insurance.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_78"
+    },
+    {
+      "name": "ГазпромБанк",
+      "industry": "Банки",
+      "website": "gazprombank.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_79"
+    },
+    {
+      "name": "Hochland",
+      "industry": "FMSG",
+      "website": "hochland.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_80"
+    },
+    {
+      "name": "Актион Групп",
+      "industry": "IT",
+      "website": "www.action.group.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_81"
+    },
+    {
+      "name": "Группа Компаний Эфко",
+      "industry": "IT",
+      "website": "www.efko.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_82"
+    },
+    {
+      "name": "Everest",
+      "industry": "Теле Холдинг",
+      "website": "www.ctc.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_83"
+    },
+    {
+      "name": "Окей",
+      "industry": "Ритэйл",
+      "website": "okmarket.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_84"
+    },
+    {
+      "name": "Концерн Калашников",
+      "industry": "Гос. Компания",
+      "website": "kalashnikovgroup.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_85"
+    },
+    {
+      "name": "ФРИИ",
+      "industry": "Гос компания",
+      "website": "iidf-hall.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_86"
+    },
+    {
+      "name": "УралМАШ",
+      "industry": "Гос компания",
+      "website": "uralmash-ngo.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_87"
+    },
+    {
+      "name": "Topcase",
+      "industry": "IT",
+      "website": "topcase.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_88"
+    },
+    {
+      "name": "NOV",
+      "industry": "Нефтегаз",
+      "website": "nov.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_89"
+    },
+    {
+      "name": "Merck KGaA",
+      "industry": "ФАРМА",
+      "website": "merck.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_90"
+    },
+    {
+      "name": "Servier",
+      "industry": "Фарма",
+      "website": "servier.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_91"
+    },
+    {
+      "name": "РФС",
+      "industry": "Гос структура",
+      "website": "www.rfs.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_92"
+    },
+    {
+      "name": "KRKA",
+      "industry": "Фарма",
+      "website": "www.krka.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_93"
+    },
+    {
+      "name": "AL Pharma",
+      "industry": "Фарма",
+      "website": "www.alpharma.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_94"
+    },
+    {
+      "name": "ARMZ",
+      "industry": "Гос структура",
+      "website": "Armz.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_95"
+    },
+    {
+      "name": "Урал Хим",
+      "industry": "Гос структура",
+      "website": "www.uralchim.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_96"
+    },
+    {
+      "name": "Продо",
+      "industry": "IT",
+      "website": "www.prodo.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_97"
+    },
+    {
+      "name": "Astra Zeneca",
+      "industry": "Фарма",
+      "website": "www.astrazeneca.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_98"
+    },
+    {
+      "name": "Островок",
+      "industry": "",
+      "website": "www.ostrovok.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_99"
+    },
+    {
+      "name": "Chery",
+      "industry": "Авто Дилер",
+      "website": "www.chery.com/ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_100"
+    },
+    {
+      "name": "Rambler",
+      "industry": "IT",
+      "website": "www.rambler.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_101"
+    },
+    {
+      "name": "Stada(ДОП)",
+      "industry": "Фарма",
+      "website": "www,stada.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_102"
+    },
+    {
+      "name": "Takeda",
+      "industry": "IT",
+      "website": "www.takeda.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_103"
+    },
+    {
+      "name": "Церсанит",
+      "industry": "IT",
+      "website": "cersanit.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_104"
+    },
+    {
+      "name": "Novartis(Доп)",
+      "industry": "Фарма",
+      "website": "www.novartis.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_105"
+    },
+    {
+      "name": "Efko(доп)",
+      "industry": "IT",
+      "website": "www.efko.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_106"
+    },
+    {
+      "name": "Лукойл",
+      "industry": "Нефтегаз",
+      "website": "www.lukoil.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_107"
+    },
+    {
+      "name": "Megafon",
+      "industry": "Сотовый оператор",
+      "website": "www.MegaFon.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_108"
+    },
+    {
+      "name": "РФС(доп)",
+      "industry": "Гос структура",
+      "website": "www.rfs.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_109"
+    },
+    {
+      "name": "ФинПР",
+      "industry": "Гос структура",
+      "website": "www.frprf.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_110"
+    },
+    {
+      "name": "OK маркет",
+      "industry": "FMSG",
+      "website": "www.okmarket.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_111"
+    },
+    {
+      "name": "X5",
+      "industry": "Ритэйл",
+      "website": "www.x5.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_112"
+    },
+    {
+      "name": "Москвич",
+      "industry": "Ритэйл",
+      "website": "www.moskvich-auto.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_113"
+    },
+    {
+      "name": "Barilla (доп)",
+      "industry": "FMSG",
+      "website": "www.barilla.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_114"
+    },
+    {
+      "name": "Open",
+      "industry": "Банки",
+      "website": "www.open.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_115"
+    },
+    {
+      "name": "RenLife",
+      "industry": "Банки",
+      "website": "www.renlife.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_116"
+    },
+    {
+      "name": "Bayer",
+      "industry": "FMSG",
+      "website": "www.bayer.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_117"
+    },
+    {
+      "name": "Huawei",
+      "industry": "IT",
+      "website": "Huawei.com/ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_118"
+    },
+    {
+      "name": "Мечел",
+      "industry": "Производство",
+      "website": "mechel.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_119"
+    },
+    {
+      "name": "2Gis",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_120"
+    },
+    {
+      "name": "Аренадата Software",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_121"
+    },
+    {
+      "name": "Eruditor Group",
+      "industry": "IT",
+      "website": "eruditor-group.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_122"
+    },
+    {
+      "name": "KazanExpress",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_123"
+    },
+    {
+      "name": "B2B Center",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_124"
+    },
+    {
+      "name": "AstraLinux",
+      "industry": "IT",
+      "website": "astralinux.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_125"
+    },
+    {
+      "name": "ЦФТ",
+      "industry": "IT",
+      "website": "https://www.cft.ru/contacts",
+      "services": "",
+      "comment": "",
+      "import_id": "company_126"
+    },
+    {
+      "name": "GreenAtom",
+      "industry": "IT",
+      "website": "https://greenatom.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_127"
+    },
+    {
+      "name": "Usergate",
+      "industry": "IT",
+      "website": "https://www.usergate.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_128"
+    },
+    {
+      "name": "Zecurion",
+      "industry": "IT",
+      "website": "https://zecurion.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_129"
+    },
+    {
+      "name": "Infotecs",
+      "industry": "IT",
+      "website": "www.infotecs.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_130"
+    },
+    {
+      "name": "ИКС Холдинг",
+      "industry": "IT",
+      "website": "https://x-holding.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_131"
+    },
+    {
+      "name": "Positive Technologies",
+      "industry": "IT",
+      "website": "ptsecurity.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_132"
+    },
+    {
+      "name": "3Logic Group",
+      "industry": "IT",
+      "website": "https://3logic.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_133"
+    },
+    {
+      "name": "Техфорвард",
+      "industry": "IT",
+      "website": "https://techforward.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_134"
+    },
+    {
+      "name": "Юникон",
+      "industry": "IT",
+      "website": "https://www.unicon.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_135"
+    },
+    {
+      "name": "Дельрет",
+      "industry": "IT",
+      "website": "https://delret.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_136"
+    },
+    {
+      "name": "Fplus",
+      "industry": "IT",
+      "website": "www.фплюс.рф",
+      "services": "",
+      "comment": "",
+      "import_id": "company_137"
+    },
+    {
+      "name": "Isource",
+      "industry": "IT",
+      "website": "https://www.isource.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_138"
+    },
+    {
+      "name": "Монт",
+      "industry": "IT",
+      "website": "https://www.mont.ru/ru-ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_139"
+    },
+    {
+      "name": "Cloud.ru",
+      "industry": "IT",
+      "website": "https://cloud.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_140"
+    },
+    {
+      "name": "Mary Kay Russia",
+      "industry": "",
+      "website": "https://www.marykay.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_141"
+    },
+    {
+      "name": "Боржоми",
+      "industry": "FMSG",
+      "website": "https://borjomi.tech/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_142"
+    },
+    {
+      "name": "Capital Life",
+      "industry": "Эквайринг",
+      "website": "https://kaplife.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_143"
+    },
+    {
+      "name": "Roche Diabetes Care Rus",
+      "industry": "Фарма",
+      "website": "https://www.rochediabetes.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_144"
+    },
+    {
+      "name": "Lanit",
+      "industry": "IT",
+      "website": "lanit.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_145"
+    },
+    {
+      "name": "Интерфакс",
+      "industry": "Издательство",
+      "website": "www.interfax.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_146"
+    },
+    {
+      "name": "Северсталь ЦБС",
+      "industry": "Производство",
+      "website": "https://severstalssc.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_147"
+    },
+    {
+      "name": "B1",
+      "industry": "IT",
+      "website": "https://b1.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_148"
+    },
+    {
+      "name": "Европлан",
+      "industry": "Авто Лизинг",
+      "website": "https://www.cctcom.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_149"
+    },
+    {
+      "name": "НПК ТРАНС",
+      "industry": "Грузоперевозки",
+      "website": "npktrans.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_150"
+    },
+    {
+      "name": "Русский Стандарт",
+      "industry": "Банки",
+      "website": "www.rsb.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_151"
+    },
+    {
+      "name": "ГазпрпомЦПС",
+      "industry": "IT",
+      "website": "https://gazpromcps.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_152"
+    },
+    {
+      "name": "Dahua Technology",
+      "industry": "IT",
+      "website": "www.dahuasecurity.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_153"
+    },
+    {
+      "name": "Айтеко",
+      "industry": "IT",
+      "website": "https://www.i-teco.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_154"
+    },
+    {
+      "name": "Инфосистемы Джет",
+      "industry": "IT",
+      "website": "jet.su",
+      "services": "",
+      "comment": "",
+      "import_id": "company_155"
+    },
+    {
+      "name": "Беризаряд",
+      "industry": "IT",
+      "website": "https://berizaryad.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_156"
+    },
+    {
+      "name": "RockWool",
+      "industry": "Утеплители",
+      "website": "www.rockwool.com/ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_157"
+    },
+    {
+      "name": "Мегафон",
+      "industry": "Сотовый оператор",
+      "website": "www. Megafon.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_158"
+    },
+    {
+      "name": "Восток ЭнергоТрэйд",
+      "industry": "Производство",
+      "website": "www.vostojerergy.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_159"
+    },
+    {
+      "name": "Servier",
+      "industry": "Фарма",
+      "website": "www.servier.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_160"
+    },
+    {
+      "name": "Leroymerlin(доп)",
+      "industry": "Ритэйл",
+      "website": "www.leroymerlin.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_161"
+    },
+    {
+      "name": "Geropharm",
+      "industry": "Фарма",
+      "website": "geropharm.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_162"
+    },
+    {
+      "name": "Артпласт",
+      "industry": "Производство",
+      "website": "artplast.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_163"
+    },
+    {
+      "name": "Новартис Фарма",
+      "industry": "Фарма",
+      "website": "novartis.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_164"
+    },
+    {
+      "name": "Гардиа",
+      "industry": "Страхование",
+      "website": "www.gardia.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_165"
+    },
+    {
+      "name": "Unim",
+      "industry": "IT",
+      "website": "Unim.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_166"
+    },
+    {
+      "name": "Holo Group",
+      "industry": "IT",
+      "website": "Holo.group.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_167"
+    },
+    {
+      "name": "Solid-clouds",
+      "industry": "IT",
+      "website": "www.solit-clouds.ru",
+      "services": "",
+      "comment": "В процессе, выясняю",
+      "import_id": "company_168"
+    },
+    {
+      "name": "B2b centr",
+      "industry": "IT",
+      "website": "www.b2b-center.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_169"
+    },
+    {
+      "name": "СИБРТ",
+      "industry": "IT",
+      "website": "www.sibrt.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_170"
+    },
+    {
+      "name": "Инностэйдж",
+      "industry": "IT",
+      "website": "www.innostage-group.ru",
+      "services": "",
+      "comment": "В процессе, выясняю",
+      "import_id": "company_171"
+    },
+    {
+      "name": "ГАЗ ИС",
+      "industry": "IT",
+      "website": "www.gas-is.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_172"
+    },
+    {
+      "name": "Аренадата",
+      "industry": "IT",
+      "website": "www.arenadata.io",
+      "services": "",
+      "comment": "",
+      "import_id": "company_173"
+    },
+    {
+      "name": "BI.ZONE",
+      "industry": "IT",
+      "website": "www.bi.zone",
+      "services": "",
+      "comment": "",
+      "import_id": "company_174"
+    },
+    {
+      "name": "Jet SU",
+      "industry": "IT",
+      "website": "www.jet.su",
+      "services": "",
+      "comment": "",
+      "import_id": "company_175"
+    },
+    {
+      "name": "PTSecurity",
+      "industry": "IT",
+      "website": "www.ptsecurity.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_176"
+    },
+    {
+      "name": "Crocus Group",
+      "industry": "Development",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_177"
+    },
+    {
+      "name": "Flexicore(Ракета)",
+      "industry": "Стартап",
+      "website": "www.flexicore.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_178"
+    },
+    {
+      "name": "ООО \"АСУ метрология сервис\"",
+      "industry": "IT",
+      "website": "https://futurelab.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_179"
+    },
+    {
+      "name": "ХК Вязки",
+      "industry": "Спорт",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_180"
+    },
+    {
+      "name": "АО \"Корпорация \"МСП\"",
+      "industry": "Гос Проект",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_181"
+    },
+    {
+      "name": "ДССЛ",
+      "industry": "Хим Производство",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_182"
+    },
+    {
+      "name": "ООО Лаборатория Будущего",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_183"
+    },
+    {
+      "name": "Билайн",
+      "industry": "Сотовый оператор",
+      "website": "beeline.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_184"
+    },
+    {
+      "name": "Vatech",
+      "industry": "IT",
+      "website": "vatech.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_185"
+    },
+    {
+      "name": "Fibo Group",
+      "industry": "IT",
+      "website": "Fibogroup.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_186"
+    },
+    {
+      "name": "ВТБ",
+      "industry": "Банки",
+      "website": "vtb.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_187"
+    },
+    {
+      "name": "МатчТВ",
+      "industry": "Телевидение",
+      "website": "https://matchtv.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_188"
+    },
+    {
+      "name": "Ледванс(Старый Клиент)",
+      "industry": "IT",
+      "website": "www.ledvance.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_189"
+    },
+    {
+      "name": "Гала Центр(Старый Клиент)",
+      "industry": "Телевидение",
+      "website": "www.bitsrv.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_190"
+    },
+    {
+      "name": "Не указано",
+      "industry": "IT",
+      "website": "https://ct-sg.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_191"
+    },
+    {
+      "name": "Kazan Express",
+      "industry": "IT",
+      "website": "www.kazanexpress.ru",
+      "services": "",
+      "comment": "В работе, выясняю контакты. Был Алексей Дмитров, но недоступен",
+      "import_id": "company_192"
+    },
+    {
+      "name": "ЦФТ",
+      "industry": "IT",
+      "website": "www.cft.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_193"
+    },
+    {
+      "name": "РЖД",
+      "industry": "Гос сту",
+      "website": "rzd.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_194"
+    },
+    {
+      "name": "РусНАPБанк",
+      "industry": "БАНКИ",
+      "website": "rusnarbanl.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_195"
+    },
+    {
+      "name": "МТС БАНК",
+      "industry": "БАНКИ",
+      "website": "mtsbank.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_196"
+    },
+    {
+      "name": "Леруа Мерлен",
+      "industry": "Retail",
+      "website": "leroymerlin.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_197"
+    },
+    {
+      "name": "Светофор",
+      "industry": "Retail",
+      "website": "svetofore.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_198"
+    },
+    {
+      "name": "ЛюксорЭкзотика",
+      "industry": "Retail",
+      "website": "essilorluxottica.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_199"
+    },
+    {
+      "name": "Комитас",
+      "industry": "Логистика",
+      "website": "https://www.comitas.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_200"
+    },
+    {
+      "name": "Imba-IT",
+      "industry": "IT",
+      "website": "https://imba-it.ru/about/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_201"
+    },
+    {
+      "name": "Фонд Прямых Инвестиций",
+      "industry": "Гос. Структура",
+      "website": "www.rdif.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_202"
+    },
+    {
+      "name": "2can",
+      "industry": "IT",
+      "website": "https://www.2can.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_203"
+    },
+    {
+      "name": "KRKA (ООО КРКА ФАРМА)",
+      "industry": "Фарма",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_204"
+    },
+    {
+      "name": "Упоковочные системы",
+      "industry": "Производство",
+      "website": "packaging-systems.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_205"
+    },
+    {
+      "name": "Стан",
+      "industry": "Производство",
+      "website": "www.stan.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_206"
+    },
+    {
+      "name": "Агаларов Девелопмент",
+      "industry": "Строительство",
+      "website": "https://agalarovdevelopment.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_207"
+    },
+    {
+      "name": "ЗАО Бастион",
+      "industry": "Охранные Системы",
+      "website": "https://bast.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_208"
+    },
+    {
+      "name": "Адватех Инжиниринг",
+      "industry": "Инжинирия",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_209"
+    },
+    {
+      "name": "Новая Горная УК",
+      "industry": "Горнодобывающая промышленность",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_210"
+    },
+    {
+      "name": "Маника Групп",
+      "industry": "Косметика",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_211"
+    },
+    {
+      "name": "Группа компаний СПЕЯ",
+      "industry": "Фарма",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_212"
+    },
+    {
+      "name": "АО Татхимфармпрепараты",
+      "industry": "Строительство",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_213"
+    },
+    {
+      "name": "Туапсинский НПЗ (РН)",
+      "industry": "Нефтехимпром",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_214"
+    },
+    {
+      "name": "Альфа Банк",
+      "industry": "Банк",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_215"
+    },
+    {
+      "name": "АО ГЛОНАСС",
+      "industry": "Спутниковые системы",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_216"
+    },
+    {
+      "name": "x5 retail group",
+      "industry": "Ритейл",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_217"
+    },
+    {
+      "name": "Сыктывкарский ликеро-водочный завод",
+      "industry": "Алкоголь",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_218"
+    },
+    {
+      "name": "Единство (Норникель)",
+      "industry": "Оператор связи/телефони",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_219"
+    },
+    {
+      "name": "Морской банк",
+      "industry": "Банк",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_220"
+    },
+    {
+      "name": "Не указано",
+      "industry": "ООО Профиль",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_221"
+    },
+    {
+      "name": "МосОБлБанк",
+      "industry": "Банки",
+      "website": "https://mosoblbank.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_222"
+    },
+    {
+      "name": "Мерц Фарма",
+      "industry": "Фарма",
+      "website": "merz.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_223"
+    },
+    {
+      "name": "Группа компаний СПЕЯ",
+      "industry": "Фарма",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_224"
+    },
+    {
+      "name": "Worwag Pharma",
+      "industry": "Фарма",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_225"
+    },
+    {
+      "name": "Не указано",
+      "industry": "Изуми",
+      "website": "yizumi.com",
+      "services": "",
+      "comment": "",
+      "import_id": "company_226"
+    },
+    {
+      "name": "АО Татхимфармпрепараты",
+      "industry": "Строительство",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_227"
+    },
+    {
+      "name": "Туапсинский НПЗ (РН)",
+      "industry": "Нефтехимпром",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_228"
+    },
+    {
+      "name": "Альфа Банк",
+      "industry": "Банк",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_229"
+    },
+    {
+      "name": "АО ГЛОНАСС",
+      "industry": "Спутниковые системы",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_230"
+    },
+    {
+      "name": "x5 retail group",
+      "industry": "Ритейл",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_231"
+    },
+    {
+      "name": "Сыктывкарский ликеро-водочный завод",
+      "industry": "Алкоголь",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_232"
+    },
+    {
+      "name": "Единство (Норникель)",
+      "industry": "Оператор связи/телефони",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_233"
+    },
+    {
+      "name": "Морской банк",
+      "industry": "Банк",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_234"
+    },
+    {
+      "name": "КАНЕКС",
+      "industry": "производство/промышленное оборудование",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_235"
+    },
+    {
+      "name": "АМАДА",
+      "industry": "Производство",
+      "website": "44466",
+      "services": "",
+      "comment": "",
+      "import_id": "company_236"
+    },
+    {
+      "name": "Ланит",
+      "industry": "ИТ",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_237"
+    },
+    {
+      "name": "Быстрые Деньги",
+      "industry": "Банки",
+      "website": "bistrodengi.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_238"
+    },
+    {
+      "name": "ФБУ \"ГИЛС и НП\"",
+      "industry": "Гос учреждение",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_239"
+    },
+    {
+      "name": "Группа компаний СПЕЯ",
+      "industry": "Фарма",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_240"
+    },
+    {
+      "name": "Группа компаний \"КорпусГрупп\"",
+      "industry": "Легкая пр.",
+      "website": "",
+      "services": "",
+      "comment": "",
+      "import_id": "company_241"
+    },
+    {
+      "name": "Verba Legal",
+      "industry": "Юристы",
+      "website": "www.verba.legal.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_242"
+    },
+    {
+      "name": "Сейсмопоиск",
+      "industry": "Вахты",
+      "website": "www.seismpoisk.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_243"
+    },
+    {
+      "name": "Kion",
+      "industry": "IT",
+      "website": "kion.ru",
+      "services": "",
+      "comment": "Общая почта, после рассмотрения звонить",
+      "import_id": "company_it_1"
+    },
+    {
+      "name": "IVI",
+      "industry": "IT",
+      "website": "ivi.ru",
+      "services": "",
+      "comment": "Артем переслал информацию маркетингу, звонить в четверг",
+      "import_id": "company_it_2"
+    },
+    {
+      "name": "2Gis",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_3"
+    },
+    {
+      "name": "Аренадата Software",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_4"
+    },
+    {
+      "name": "Eruditor Group",
+      "industry": "IT",
+      "website": "eruditor-group.com",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_5"
+    },
+    {
+      "name": "KazanExpress",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Получил нужный контакт(маркетинг). Отправил предложение",
+      "import_id": "company_it_6"
+    },
+    {
+      "name": "B2B Center",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_7"
+    },
+    {
+      "name": "AstraLinux",
+      "industry": "IT",
+      "website": "astralinux.ru",
+      "services": "",
+      "comment": "Еть мероприятия, жду ТЗ и назначаю встречу. Ожидание",
+      "import_id": "company_it_8"
+    },
+    {
+      "name": "ЦФТ",
+      "industry": "IT",
+      "website": "https://www.cft.ru/contacts",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_9"
+    },
+    {
+      "name": "GreenAtom",
+      "industry": "IT",
+      "website": "https://greenatom.ru/",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_10"
+    },
+    {
+      "name": "Usergate",
+      "industry": "IT",
+      "website": "https://www.usergate.com/",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_11"
+    },
+    {
+      "name": "Zecurion",
+      "industry": "IT",
+      "website": "https://zecurion.ru",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_12"
+    },
+    {
+      "name": "Infotecs",
+      "industry": "IT",
+      "website": "www.infotecs.ru",
+      "services": "",
+      "comment": "Думаю назначить встречу так как мероприятия есть, звонок в среду",
+      "import_id": "company_it_13"
+    },
+    {
+      "name": "ИКС Холдинг",
+      "industry": "IT",
+      "website": "https://x-holding.ru/",
+      "services": "",
+      "comment": "Общая почта, после рассмотрения звонить",
+      "import_id": "company_it_14"
+    },
+    {
+      "name": "Positive Technologies",
+      "industry": "IT",
+      "website": "ptsecurity.com",
+      "services": "",
+      "comment": "попробовал через Айти отдел, ждем ответ",
+      "import_id": "company_it_15"
+    },
+    {
+      "name": "3Logic Group",
+      "industry": "IT",
+      "website": "https://3logic.ru",
+      "services": "",
+      "comment": "Все письма о сотрудничестве по этому имэйл, ожидаем",
+      "import_id": "company_it_16"
+    },
+    {
+      "name": "Техфорвард",
+      "industry": "IT",
+      "website": "https://techforward.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_17"
+    },
+    {
+      "name": "Юникон",
+      "industry": "IT",
+      "website": "https://www.unicon.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_18"
+    },
+    {
+      "name": "Дельрет",
+      "industry": "IT",
+      "website": "https://delret.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_19"
+    },
+    {
+      "name": "Fplus",
+      "industry": "IT",
+      "website": "www.фплюс.рф",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_20"
+    },
+    {
+      "name": "Isource",
+      "industry": "IT",
+      "website": "https://www.isource.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_21"
+    },
+    {
+      "name": "Монт",
+      "industry": "IT",
+      "website": "https://www.mont.ru/ru-ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_22"
+    },
+    {
+      "name": "Cloud.ru",
+      "industry": "IT",
+      "website": "https://cloud.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_23"
+    },
+    {
+      "name": "Mary Kay Russia",
+      "industry": "",
+      "website": "https://www.marykay.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_24"
+    },
+    {
+      "name": "Боржоми",
+      "industry": "FMSG",
+      "website": "https://borjomi.tech/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_25"
+    },
+    {
+      "name": "Capital Life",
+      "industry": "Эквайринг",
+      "website": "https://kaplife.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_26"
+    },
+    {
+      "name": "Roche Diabetes Care Rus",
+      "industry": "Фарма",
+      "website": "https://www.rochediabetes.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_27"
+    },
+    {
+      "name": "Lanit",
+      "industry": "IT",
+      "website": "lanit.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_28"
+    },
+    {
+      "name": "Спектрум",
+      "industry": "",
+      "website": "https://spectrum-group.ru/moskva/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_29"
+    },
+    {
+      "name": "Северсталь ЦБС",
+      "industry": "Производство",
+      "website": "https://severstalssc.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_30"
+    },
+    {
+      "name": "B1",
+      "industry": "IT",
+      "website": "https://b1.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_31"
+    },
+    {
+      "name": "Связь Сервис Телекоммуникации",
+      "industry": "",
+      "website": "https://www.cctcom.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_32"
+    },
+    {
+      "name": "ГазпрпомЦПС",
+      "industry": "IT",
+      "website": "https://gazpromcps.ru/",
+      "services": "",
+      "comment": "!",
+      "import_id": "company_it_33"
+    },
+    {
+      "name": "Центр Корпоративных решений",
+      "industry": "",
+      "website": "https://cscentr.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_34"
+    },
+    {
+      "name": "Айтеко",
+      "industry": "IT",
+      "website": "https://www.i-teco.ru/",
+      "services": "",
+      "comment": "Контакты Московского офиса так и не получил",
+      "import_id": "company_it_35"
+    },
+    {
+      "name": "Инфосистемы Джет",
+      "industry": "IT",
+      "website": "jet.su",
+      "services": "",
+      "comment": "Отдел маркетинга по этой почте. Анастасия рассматривает. ждем",
+      "import_id": "company_it_36"
+    },
+    {
+      "name": "Беризаряд",
+      "industry": "IT",
+      "website": "https://berizaryad.ru/",
+      "services": "",
+      "comment": "В обработке",
+      "import_id": "company_it_37"
+    },
+    {
+      "name": "Rubytech",
+      "industry": "IT",
+      "website": "https://rubytech.ru/",
+      "services": "",
+      "comment": "Пресс служба+маркетинг. Ответа пока нет",
+      "import_id": "company_it_38"
+    },
+    {
+      "name": "Kion",
+      "industry": "IT",
+      "website": "kion.ru",
+      "services": "",
+      "comment": "Общая почта, после рассмотрения звонить",
+      "import_id": "company_it_39"
+    },
+    {
+      "name": "IVI",
+      "industry": "IT",
+      "website": "ivi.ru",
+      "services": "",
+      "comment": "Артем переслал информацию маркетингу, звонить в четверг",
+      "import_id": "company_it_40"
+    },
+    {
+      "name": "2Gis",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_41"
+    },
+    {
+      "name": "Аренадата Software",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_42"
+    },
+    {
+      "name": "Eruditor Group",
+      "industry": "IT",
+      "website": "eruditor-group.com",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_43"
+    },
+    {
+      "name": "KazanExpress",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Получил нужный контакт(маркетинг). Отправил предложение",
+      "import_id": "company_it_44"
+    },
+    {
+      "name": "B2B Center",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_45"
+    },
+    {
+      "name": "AstraLinux",
+      "industry": "IT",
+      "website": "astralinux.ru",
+      "services": "",
+      "comment": "Еть мероприятия, жду ТЗ и назначаю встречу. Ожидание",
+      "import_id": "company_it_46"
+    },
+    {
+      "name": "ЦФТ",
+      "industry": "IT",
+      "website": "https://www.cft.ru/contacts",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_47"
+    },
+    {
+      "name": "GreenAtom",
+      "industry": "IT",
+      "website": "https://greenatom.ru/",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_48"
+    },
+    {
+      "name": "Usergate",
+      "industry": "IT",
+      "website": "https://www.usergate.com/",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_49"
+    },
+    {
+      "name": "Zecurion",
+      "industry": "IT",
+      "website": "https://zecurion.ru",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_50"
+    },
+    {
+      "name": "Infotecs",
+      "industry": "IT",
+      "website": "www.infotecs.ru",
+      "services": "",
+      "comment": "Думаю назначить встречу так как мероприятия есть, звонок в среду",
+      "import_id": "company_it_51"
+    },
+    {
+      "name": "ИКС Холдинг",
+      "industry": "IT",
+      "website": "https://x-holding.ru/",
+      "services": "",
+      "comment": "Общая почта, после рассмотрения звонить",
+      "import_id": "company_it_52"
+    },
+    {
+      "name": "Positive Technologies",
+      "industry": "IT",
+      "website": "ptsecurity.com",
+      "services": "",
+      "comment": "попробовал через Айти отдел, ждем ответ",
+      "import_id": "company_it_53"
+    },
+    {
+      "name": "3Logic Group",
+      "industry": "IT",
+      "website": "https://3logic.ru",
+      "services": "",
+      "comment": "Все письма о сотрудничестве по этому имэйл, ожидаем",
+      "import_id": "company_it_54"
+    },
+    {
+      "name": "Техфорвард",
+      "industry": "IT",
+      "website": "https://techforward.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_55"
+    },
+    {
+      "name": "Юникон",
+      "industry": "IT",
+      "website": "https://www.unicon.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_56"
+    },
+    {
+      "name": "Дельрет",
+      "industry": "IT",
+      "website": "https://delret.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_57"
+    },
+    {
+      "name": "Fplus",
+      "industry": "IT",
+      "website": "www.фплюс.рф",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_58"
+    },
+    {
+      "name": "Isource",
+      "industry": "IT",
+      "website": "https://www.isource.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_59"
+    },
+    {
+      "name": "Монт",
+      "industry": "IT",
+      "website": "https://www.mont.ru/ru-ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_60"
+    },
+    {
+      "name": "Cloud.ru",
+      "industry": "IT",
+      "website": "https://cloud.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_61"
+    },
+    {
+      "name": "Mary Kay Russia",
+      "industry": "",
+      "website": "https://www.marykay.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_62"
+    },
+    {
+      "name": "Боржоми",
+      "industry": "FMSG",
+      "website": "https://borjomi.tech/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_63"
+    },
+    {
+      "name": "Capital Life",
+      "industry": "Эквайринг",
+      "website": "https://kaplife.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_64"
+    },
+    {
+      "name": "Roche Diabetes Care Rus",
+      "industry": "Фарма",
+      "website": "https://www.rochediabetes.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_65"
+    },
+    {
+      "name": "Lanit",
+      "industry": "IT",
+      "website": "lanit.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_66"
+    },
+    {
+      "name": "Спектрум",
+      "industry": "",
+      "website": "https://spectrum-group.ru/moskва/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_67"
+    },
+    {
+      "name": "Северсталь ЦБС",
+      "industry": "Производство",
+      "website": "https://severstalssc.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_68"
+    },
+    {
+      "name": "B1",
+      "industry": "IT",
+      "website": "https://b1.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_69"
+    },
+    {
+      "name": "Связь Сервис Телекоммуникации",
+      "industry": "",
+      "website": "https://www.cctcom.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_70"
+    },
+    {
+      "name": "ГазпрпомЦПС",
+      "industry": "IT",
+      "website": "https://gazpromcps.ru/",
+      "services": "",
+      "comment": "!",
+      "import_id": "company_it_71"
+    },
+    {
+      "name": "Центр Корпоративных решений",
+      "industry": "",
+      "website": "https://cscentr.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_72"
+    },
+    {
+      "name": "Айтеко",
+      "industry": "IT",
+      "website": "https://www.i-teco.ru/",
+      "services": "",
+      "comment": "Контакты Московского офиса так и не получил",
+      "import_id": "company_it_73"
+    },
+    {
+      "name": "Инфосистемы Джет",
+      "industry": "IT",
+      "website": "jet.su",
+      "services": "",
+      "comment": "Отдел маркетинга по этой почте. Анастасия рассматривает. ждем",
+      "import_id": "company_it_74"
+    },
+    {
+      "name": "Беризаряд",
+      "industry": "IT",
+      "website": "https://berizaryad.ru/",
+      "services": "",
+      "comment": "В обработке",
+      "import_id": "company_it_75"
+    },
+    {
+      "name": "Rubytech",
+      "industry": "IT",
+      "website": "https://rubytech.ru/",
+      "services": "",
+      "comment": "Пресс служба+маркетинг. Ответа пока нет",
+      "import_id": "company_it_76"
+    },
+    {
+      "name": "Kion",
+      "industry": "IT",
+      "website": "kion.ru",
+      "services": "",
+      "comment": "Общая почта, после рассмотрения звонить",
+      "import_id": "company_it_77"
+    },
+    {
+      "name": "IVI",
+      "industry": "IT",
+      "website": "ivi.ru",
+      "services": "",
+      "comment": "Артем переслал информацию маркетингу, звонить в четверг",
+      "import_id": "company_it_78"
+    },
+    {
+      "name": "2Gis",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_79"
+    },
+    {
+      "name": "Аренадата Software",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_80"
+    },
+    {
+      "name": "Eruditor Group",
+      "industry": "IT",
+      "website": "eruditor-group.com",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_81"
+    },
+    {
+      "name": "KazanExpress",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Получил нужный контакт(маркетинг). Отправил предложение",
+      "import_id": "company_it_82"
+    },
+    {
+      "name": "B2B Center",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_83"
+    },
+    {
+      "name": "AstraLinux",
+      "industry": "IT",
+      "website": "astralinux.ru",
+      "services": "",
+      "comment": "Еть мероприятия, жду ТЗ и назначаю встречу. Ожидание",
+      "import_id": "company_it_84"
+    },
+    {
+      "name": "ЦФТ",
+      "industry": "IT",
+      "website": "https://www.cft.ru/contacts",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_85"
+    },
+    {
+      "name": "GreenAtom",
+      "industry": "IT",
+      "website": "https://greenatom.ru/",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_86"
+    },
+    {
+      "name": "Usergate",
+      "industry": "IT",
+      "website": "https://www.usergate.com/",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_87"
+    },
+    {
+      "name": "Zecurion",
+      "industry": "IT",
+      "website": "https://zecurion.ru",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_88"
+    },
+    {
+      "name": "Infotecs",
+      "industry": "IT",
+      "website": "www.infotecs.ru",
+      "services": "",
+      "comment": "Думаю назначить встречу так как мероприятия есть, звонок в среду",
+      "import_id": "company_it_89"
+    },
+    {
+      "name": "ИКС Холдинг",
+      "industry": "IT",
+      "website": "https://x-holding.ru/",
+      "services": "",
+      "comment": "Общая почта, после рассмотрения звонить",
+      "import_id": "company_it_90"
+    },
+    {
+      "name": "Positive Technologies",
+      "industry": "IT",
+      "website": "ptsecurity.com",
+      "services": "",
+      "comment": "попробовал через Айти отдел, ждем ответ",
+      "import_id": "company_it_91"
+    },
+    {
+      "name": "3Logic Group",
+      "industry": "IT",
+      "website": "https://3logic.ru",
+      "services": "",
+      "comment": "Все письма о сотрудничестве по этому имэйл, ожидаем",
+      "import_id": "company_it_92"
+    },
+    {
+      "name": "Техфорвард",
+      "industry": "IT",
+      "website": "https://techforward.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_93"
+    },
+    {
+      "name": "Юникон",
+      "industry": "IT",
+      "website": "https://www.unicon.ru/",
+      "comment": "",
+      "import_id": "company_it_94"
+    },
+    {
+      "name": "Дельрет",
+      "industry": "IT",
+      "website": "https://delret.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_95"
+    },
+    {
+      "name": "Fplus",
+      "industry": "IT",
+      "website": "www.фплюс.рф",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_96"
+    },
+    {
+      "name": "Isource",
+      "industry": "IT",
+      "website": "https://www.isource.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_97"
+    },
+    {
+      "name": "Монт",
+      "industry": "IT",
+      "website": "https://www.mont.ru/ru-ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_98"
+    },
+    {
+      "name": "Cloud.ru",
+      "industry": "IT",
+      "website": "https://cloud.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_99"
+    },
+    {
+      "name": "Mary Kay Russia",
+      "industry": "",
+      "website": "https://www.marykay.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_100"
+    },
+    {
+      "name": "Боржоми",
+      "industry": "FMSG",
+      "website": "https://borjomi.tech/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_101"
+    },
+    {
+      "name": "Capital Life",
+      "industry": "Эквайринг",
+      "website": "https://kaplife.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_102"
+    },
+    {
+      "name": "Roche Diabetes Care Rus",
+      "industry": "Фарма",
+      "website": "https://www.rochediabetes.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_103"
+    },
+    {
+      "name": "Lanit",
+      "industry": "IT",
+      "website": "lanit.ru",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_104"
+    },
+    {
+      "name": "Спектрум",
+      "industry": "",
+      "website": "https://spectrum-group.ru/moskва/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_105"
+    },
+    {
+      "name": "Северсталь ЦБС",
+      "industry": "Производство",
+      "website": "https://severstalssc.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_106"
+    },
+    {
+      "name": "B1",
+      "industry": "IT",
+      "website": "https://b1.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_107"
+    },
+    {
+      "name": "Связь Сервис Телекоммуникации",
+      "industry": "",
+      "website": "https://www.cctcom.ru/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_108"
+    },
+    {
+      "name": "ГазпрпомЦПС",
+      "industry": "IT",
+      "website": "https://gazpromcps.ru/",
+      "services": "",
+      "comment": "!",
+      "import_id": "company_it_109"
+    },
+    {
+      "name": "Центр Корпоративных решений",
+      "industry": "",
+      "website": "https://cscentr.com/",
+      "services": "",
+      "comment": "",
+      "import_id": "company_it_110"
+    },
+    {
+      "name": "Айтеко",
+      "industry": "IT",
+      "website": "https://www.i-teco.ru/",
+      "services": "",
+      "comment": "Контакты Московского офиса так и не получил",
+      "import_id": "company_it_111"
+    },
+    {
+      "name": "Инфосистемы Джет",
+      "industry": "IT",
+      "website": "jet.su",
+      "services": "",
+      "comment": "Отдел маркетинга по этой почте. Анастасия рассматривает. ждем",
+      "import_id": "company_it_112"
+    },
+    {
+      "name": "Беризаряд",
+      "industry": "IT",
+      "website": "https://berizaryad.ru/",
+      "services": "",
+      "comment": "В обработке",
+      "import_id": "company_it_113"
+    },
+    {
+      "name": "Rubytech",
+      "industry": "IT",
+      "website": "https://rubytech.ru/",
+      "services": "",
+      "comment": "Пресс служба+маркетинг. Ответа пока нет",
+      "import_id": "company_it_114"
+    },
+    {
+      "name": "Kion",
+      "industry": "IT",
+      "website": "kion.ru",
+      "services": "",
+      "comment": "Общая почта, после рассмотрения звонить",
+      "import_id": "company_it_115"
+    },
+    {
+      "name": "IVI",
+      "industry": "IT",
+      "website": "ivi.ru",
+      "services": "",
+      "comment": "Артем переслал информацию маркетингу, звонить в четверг",
+      "import_id": "company_it_116"
+    },
+    {
+      "name": "2Gis",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_117"
+    },
+    {
+      "name": "Аренадата Software",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_118"
+    },
+    {
+      "name": "Eruditor Group",
+      "industry": "IT",
+      "website": "eruditor-group.com",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_119"
+    },
+    {
+      "name": "KazanExpress",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Получил нужный контакт(маркетинг). Отправил предложение",
+      "import_id": "company_it_120"
+    },
+    {
+      "name": "B2B Center",
+      "industry": "IT",
+      "website": "",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_121"
+    },
+    {
+      "name": "AstraLinux",
+      "industry": "IT",
+      "website": "astralinux.ru",
+      "services": "",
+      "comment": "Еть мероприятия, жду ТЗ и назначаю встречу. Ожидание",
+      "import_id": "company_it_122"
+    },
+    {
+      "name": "ЦФТ",
+      "industry": "IT",
+      "website": "https://www.cft.ru/contacts",
+      "services": "",
+      "comment": "Выслал предложение и прозвонил, в процессе рассмотрения",
+      "import_id": "company_it_123"
+    }
+  ],
+  "contacts": [
+    {
+      "full_name": "Самсонов Михаил",
+      "job_title": "Медицинский Директор",
+      "email": "samsonov@rpharm@ru",
+      "phone": "7 (495) 956-79-37",
+      "comment": "",
+      "company_import_id": "company_1"
+    },
+    {
+      "full_name": "Алексей Андреев",
+      "job_title": "маркетинг",
+      "email": "a.andreev@valentapharm.com",
+      "phone": "7 (495) 933-60-80",
+      "comment": "",
+      "company_import_id": "company_2"
+    },
+    {
+      "full_name": "Анастасия Мещерякова",
+      "job_title": "Не указано",
+      "email": "a.andreev@valentapharm.com",
+      "phone": "7 (495) 933-60-80",
+      "comment": "Уволилась",
+      "company_import_id": "company_2"
+    },
+    {
+      "full_name": "Мария Курган",
+      "job_title": "Не указано",
+      "email": "a.andreev@valentapharm.com",
+      "phone": "7 (495) 933-60-80",
+      "comment": "",
+      "company_import_id": "company_2"
+    },
+    {
+      "full_name": "Нина Поздеева",
+      "job_title": "Глава Маркетинга",
+      "email": "npozdeeva@pharm-sintez.ru",
+      "phone": "7 (495) 796-94-33",
+      "comment": "Некомпетентна, передаст в IT",
+      "company_import_id": "company_4"
+    },
+    {
+      "full_name": "Ирина Трусова",
+      "job_title": "маркетолог",
+      "email": "irina.trusova@veropharm.ru",
+      "phone": "7 (495) 797-57-37",
+      "comment": "",
+      "company_import_id": "company_5"
+    },
+    {
+      "full_name": "Марина Айвазова",
+      "job_title": "Не указано",
+      "email": "maivazova@novamedica.com",
+      "phone": "89161444865",
+      "comment": "Уволилась",
+      "company_import_id": "company_6"
+    },
+    {
+      "full_name": "Анна Симанович",
+      "job_title": "Не указано",
+      "email": "vertex@vertex.spb.ru",
+      "phone": "",
+      "comment": "Уточнила перезвонить во вторник",
+      "company_import_id": "company_8"
+    },
+    {
+      "full_name": "Гадимов Рамал",
+      "job_title": "Не указано",
+      "email": "vertex@vertex.spb.ru",
+      "phone": "",
+      "comment": "Германа нет на месте, он ЛПР",
+      "company_import_id": "company_8"
+    },
+    {
+      "full_name": "Абхар Мамедов",
+      "job_title": "менеджер Закупок",
+      "email": "contact@ksintez.ru",
+      "phone": "7(3522)481285",
+      "comment": "",
+      "company_import_id": "company_9"
+    },
+    {
+      "full_name": "Административный Менеджер",
+      "job_title": "Не указано",
+      "email": "t.kozlova@chiesi.ru",
+      "phone": "89032356157",
+      "comment": "",
+      "company_import_id": "company_10"
+    },
+    {
+      "full_name": "Виталий Прийменко",
+      "job_title": "Глава Маркетинга",
+      "email": "marketing@otcpharm.ru",
+      "phone": "7 (495) 221-18-00",
+      "comment": "Личный email не дал",
+      "company_import_id": "company_11"
+    },
+    {
+      "full_name": "Юлия Суслова",
+      "job_title": "Не указано",
+      "email": "marketing@otcpharm.ru",
+      "phone": "7 (495) 221-18-00",
+      "comment": "",
+      "company_import_id": "company_11"
+    },
+    {
+      "full_name": "Андрей Завьялов",
+      "job_title": "Директор по закупкам",
+      "email": "commerce.msk@evalar.com; Andrei.Zavialov@evalar.com",
+      "phone": "7 495 783-10-00 доб.143",
+      "comment": "",
+      "company_import_id": "company_12"
+    },
+    {
+      "full_name": "Анна Козловская",
+      "job_title": "Не указано",
+      "email": "Trifantsova <Natalia.Trifantsova@stada.ru>",
+      "phone": "74957973110",
+      "comment": "",
+      "company_import_id": "company_13"
+    },
+    {
+      "full_name": "Наталья Трифанцова",
+      "job_title": "Не указано",
+      "email": "Trifantsova <Natalia.Trifantsova@stada.ru>",
+      "phone": "74957973110",
+      "comment": "",
+      "company_import_id": "company_13"
+    },
+    {
+      "full_name": "Екатерина Ежова",
+      "job_title": "Директор по развитию",
+      "email": "ezhova@polarpharm.ru",
+      "phone": "8 (800) 2222-106",
+      "comment": "",
+      "company_import_id": "company_14"
+    },
+    {
+      "full_name": "Вадим Евдокимов",
+      "job_title": "Маркетинг",
+      "email": "vevdokimov@data-economy.ru",
+      "phone": "7 (495) 587-04-77",
+      "comment": "",
+      "company_import_id": "company_15"
+    },
+    {
+      "full_name": "Юрий Маркелов",
+      "job_title": "Продакт Менеджер",
+      "email": "yuriy.markelov@kbps.ru",
+      "phone": "79255557846",
+      "comment": "",
+      "company_import_id": "company_16"
+    },
+    {
+      "full_name": "Праслов Евгений",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_17"
+    },
+    {
+      "full_name": "Алексей Липилин",
+      "job_title": "Директор по маркетингу",
+      "email": "lapilin@tricolor.tv",
+      "phone": "8 800 500-01-23",
+      "comment": "",
+      "company_import_id": "company_18"
+    },
+    {
+      "full_name": "Анастасия Большова",
+      "job_title": "Не указано",
+      "email": "info@vhcm-nahodka.ru",
+      "phone": "4956458401",
+      "comment": "",
+      "company_import_id": "company_19"
+    },
+    {
+      "full_name": "Алексей Попов",
+      "job_title": "Не указано",
+      "email": "aldpopov@gmail.com",
+      "phone": "89067989898",
+      "comment": "",
+      "company_import_id": "company_20"
+    },
+    {
+      "full_name": "Ольга Майорова",
+      "job_title": "Медицинский Директор",
+      "email": "",
+      "phone": "7 (495) 231-16-97; +7 (495) 231-16-97 (доб. 0975)",
+      "comment": "",
+      "company_import_id": "company_21"
+    },
+    {
+      "full_name": "Виктор",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "8985 788 93 53",
+      "comment": "",
+      "company_import_id": "company_22"
+    },
+    {
+      "full_name": "Валентина Трофименко",
+      "job_title": "Не указано",
+      "email": "vtrofimenko@ptsecurity.com",
+      "phone": "8495 744 01 44",
+      "comment": "",
+      "company_import_id": "company_23"
+    },
+    {
+      "full_name": "Ирина Москалева",
+      "job_title": "Директор По развитию",
+      "email": "info1@msk.tensor.ru",
+      "phone": "7 (4852) 26-20-00",
+      "comment": "",
+      "company_import_id": "company_24"
+    },
+    {
+      "full_name": "Ольга Курепина",
+      "job_title": "Не указано",
+      "email": "kurepina@tn.ru",
+      "phone": "89106414780",
+      "comment": "",
+      "company_import_id": "company_25"
+    },
+    {
+      "full_name": "Петровичев Максим Геннадьевич",
+      "job_title": "Не указано",
+      "email": "petrovich.MG@gazprom-neft.ru",
+      "phone": "89196429969",
+      "comment": "",
+      "company_import_id": "company_26"
+    },
+    {
+      "full_name": "Коста Кадзов",
+      "job_title": "Не указано",
+      "email": "k.kadzov@madeinrussia.gov.ru",
+      "phone": "89652222215",
+      "comment": "",
+      "company_import_id": "company_27"
+    },
+    {
+      "full_name": "Анастасия Шестерикова",
+      "job_title": "Head of Corporate PR",
+      "email": "anastasiia.shesterikova@my.games",
+      "phone": "Московский офис временно закрыт",
+      "comment": "",
+      "company_import_id": "company_28"
+    },
+    {
+      "full_name": "Roman Polyak",
+      "job_title": "Chief Business Development Officer",
+      "email": "roman.polyak@my.games",
+      "phone": "Московский офис временно закрыт",
+      "comment": "",
+      "company_import_id": "company_28"
+    },
+    {
+      "full_name": "Анастасия Калунова",
+      "job_title": "PR отдел",
+      "email": "a.kolunova@marvel.ru",
+      "phone": "7 (812) 326-32-32; +7 (495) 745-80-08",
+      "comment": "",
+      "company_import_id": "company_29"
+    },
+    {
+      "full_name": "Мария Поторацкая",
+      "job_title": "Не указано",
+      "email": "mpoltoratskaya@levelgroup.ru",
+      "phone": "89037902829",
+      "comment": "",
+      "company_import_id": "company_30"
+    },
+    {
+      "full_name": "Светлана Кашина",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "7 (495) 664-34-99",
+      "comment": "",
+      "company_import_id": "company_31"
+    },
+    {
+      "full_name": "Ольга Кацко",
+      "job_title": "менеджер по закупкам",
+      "email": "kazko@lanit.ru",
+      "phone": "7 (495) 967-66-50; +7 (499) 576-55-45",
+      "comment": "",
+      "company_import_id": "company_32"
+    },
+    {
+      "full_name": "Екатерина Киселева",
+      "job_title": "Специалист Отдел по корпоративному взаимодействию",
+      "email": "Info@banki.ru; kiseleva.e@banki.ru",
+      "phone": "7 (495) 665 5255 доб 101",
+      "comment": "",
+      "company_import_id": "company_34"
+    },
+    {
+      "full_name": "Алексей Половинкин",
+      "job_title": "Не указано",
+      "email": "info@talenttech.ru",
+      "phone": "7 (495) 280-72-55",
+      "comment": "",
+      "company_import_id": "company_35"
+    },
+    {
+      "full_name": "Мария Маслова",
+      "job_title": "Не указано",
+      "email": "info@talenttech.ru",
+      "phone": "7 (495) 280-72-55",
+      "comment": "",
+      "company_import_id": "company_35"
+    },
+    {
+      "full_name": "Елизавета Тиманская",
+      "job_title": "маркетинг",
+      "email": "Timanskaya@aviasales.ru; marketing@aviasales.ru",
+      "phone": "89032324567",
+      "comment": "",
+      "company_import_id": "company_36"
+    },
+    {
+      "full_name": "Ольга Коваленко",
+      "job_title": "Не указано",
+      "email": "olga_kovalenko@rgs.ru",
+      "phone": "84959265555",
+      "comment": "",
+      "company_import_id": "company_37"
+    },
+    {
+      "full_name": "Виктория Александровна Кабанова",
+      "job_title": "Не указано",
+      "email": "Viktoriya_Kabanova@rgs.ru",
+      "phone": "84959265555",
+      "comment": "",
+      "company_import_id": "company_37"
+    },
+    {
+      "full_name": "Нагиева Юлия",
+      "job_title": "Не указано",
+      "email": "nagaevaYN@materiamedica.ru",
+      "phone": "89260902204",
+      "comment": "",
+      "company_import_id": "company_38"
+    },
+    {
+      "full_name": "Ольга Ларева",
+      "job_title": "главная по маркетингу",
+      "email": "olareva@netwell.ru; echulikova@netwell.ru; elementueva@netwell.ru",
+      "phone": "89856426654",
+      "comment": "",
+      "company_import_id": "company_39"
+    },
+    {
+      "full_name": "Анна Мащенко",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "7-495-797-8700",
+      "comment": "",
+      "company_import_id": "company_40"
+    },
+    {
+      "full_name": "Дарья Шекочихина",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "89259674432",
+      "comment": "",
+      "company_import_id": "company_40"
+    },
+    {
+      "full_name": "Сергей Зайцев",
+      "job_title": "руководитель группы развития клиентов",
+      "email": "liza-merk@yandex-team.ru",
+      "phone": "89629821791",
+      "comment": "",
+      "company_import_id": "company_41"
+    },
+    {
+      "full_name": "Елизавета Меркурьева",
+      "job_title": "менеджер",
+      "email": "liza-merk@yandex-team.ru",
+      "phone": "89629821791",
+      "comment": "",
+      "company_import_id": "company_41"
+    },
+    {
+      "full_name": "Алексей Лапутин",
+      "job_title": "Не указано",
+      "email": "Laputin.AV@gazprom-neft.ru",
+      "phone": "8124494970 доб 11158",
+      "comment": "",
+      "company_import_id": "company_42"
+    },
+    {
+      "full_name": "Ирина Махмутова",
+      "job_title": "Не указано",
+      "email": "mariya.khikmatova@loreal.com",
+      "phone": "89811609414",
+      "comment": "",
+      "company_import_id": "company_43"
+    },
+    {
+      "full_name": "Анна Подрядчикова",
+      "job_title": "Не указано",
+      "email": "anna,podryadchikova@aebrus.ru",
+      "phone": "89533536523",
+      "comment": "",
+      "company_import_id": "company_44"
+    },
+    {
+      "full_name": "Алла Горбунова",
+      "job_title": "Не указано",
+      "email": "alla-d@bk.ru",
+      "phone": "7 (495) 937-83-83доб 3512",
+      "comment": "",
+      "company_import_id": "company_45"
+    },
+    {
+      "full_name": "Чубарова Елена",
+      "job_title": "Не указано",
+      "email": "info@nlstar.com",
+      "phone": "7 (983) 510-00-81 / 8-800-2500-800",
+      "comment": "",
+      "company_import_id": "company_46"
+    },
+    {
+      "full_name": "Наталья Яромчик",
+      "job_title": "Не указано",
+      "email": "call-centre@sibvaleo.com; eshop@sibvaleo.com",
+      "phone": "88007558755",
+      "comment": "",
+      "company_import_id": "company_47"
+    },
+    {
+      "full_name": "Анатолий Серебрянский",
+      "job_title": "Не указано",
+      "email": "info@gisbuyer.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_48"
+    },
+    {
+      "full_name": "Ирина Золотова",
+      "job_title": "Не указано",
+      "email": "I.zolotova@greenway.group",
+      "phone": "8-800-23-45-800",
+      "comment": "",
+      "company_import_id": "company_49"
+    },
+    {
+      "full_name": "Ирэна Лукиянова",
+      "job_title": "Директор департамента по развитию сети Faberlic",
+      "email": "i.lukiyanova@faberlic.com",
+      "phone": "7 (495) 943-46-45; +7 (926) 020-42-25",
+      "comment": "",
+      "company_import_id": "company_50"
+    },
+    {
+      "full_name": "Мовчан Наталья Александровна",
+      "job_title": "Не указано",
+      "email": "MovchanNA@pgk.ru",
+      "phone": "8 910 452 46 03",
+      "comment": "",
+      "company_import_id": "company_51"
+    },
+    {
+      "full_name": "Елена Турчина",
+      "job_title": "Не указано",
+      "email": "elena.turtchina@loreal.com",
+      "phone": "7 (495) 258 31 91",
+      "comment": "",
+      "company_import_id": "company_52"
+    },
+    {
+      "full_name": "Дарья Афанасьева",
+      "job_title": "Не указано",
+      "email": "daria.afanasieva@evraz.com",
+      "phone": "8 (800) 302-82-73",
+      "comment": "",
+      "company_import_id": "company_53"
+    },
+    {
+      "full_name": "Наталья Зарецких",
+      "job_title": "Не указано",
+      "email": "natalya.zaretskikh@fstravel.com",
+      "phone": "+7 (495) 797-42-81; +7 (999) 852-43-46",
+      "comment": "Мобильный 89160204827",
+      "company_import_id": "company_54"
+    },
+    {
+      "full_name": "Яна Кузнецова",
+      "job_title": "Не указано",
+      "email": "kulagina@meitan.ru",
+      "phone": "7 (3852) 289-555; 289-607 (доб. 195)",
+      "comment": "",
+      "company_import_id": "company_55"
+    },
+    {
+      "full_name": "Ольга Нестерова",
+      "job_title": "Не указано",
+      "email": "SUPPORT@OBC24.COM",
+      "phone": "8-800-700-70-95",
+      "comment": "",
+      "company_import_id": "company_56"
+    },
+    {
+      "full_name": "Дмитрий",
+      "job_title": "Не указано",
+      "email": "sales@batel.ru; transfer@batel.ru; development@batel.ru",
+      "phone": "7-906-960-69-32",
+      "comment": "",
+      "company_import_id": "company_57"
+    },
+    {
+      "full_name": "Александра",
+      "job_title": "маркетинг",
+      "email": "mail@vitamax-russia.ru",
+      "phone": "74957428888",
+      "comment": "",
+      "company_import_id": "company_58"
+    },
+    {
+      "full_name": "Алина",
+      "job_title": "секретарь",
+      "email": "atomy_ru@atomypark.com",
+      "phone": "7 (495) 189-74-94; +7 (916) 333-41-79 (WhatsApp)",
+      "comment": "",
+      "company_import_id": "company_62"
+    },
+    {
+      "full_name": "Ксения Михайлина",
+      "job_title": "Не указано",
+      "email": "Yanat@herbalife.com",
+      "phone": "8 800 200 71 51",
+      "comment": "",
+      "company_import_id": "company_63"
+    },
+    {
+      "full_name": "Юлия Александровна Фирсова",
+      "job_title": "Не указано",
+      "email": "yuliya_firsova@kaplife.ru",
+      "phone": "8 800 200-68-86",
+      "comment": "",
+      "company_import_id": "company_64"
+    },
+    {
+      "full_name": "Наталья Росса",
+      "job_title": "Не указано",
+      "email": "natalya.rossa@severstal.com",
+      "phone": "8 (800) 100-31-63",
+      "comment": "",
+      "company_import_id": "company_65"
+    },
+    {
+      "full_name": "Усанова Елена",
+      "job_title": "Не указано",
+      "email": "usanova_eu@gipfel.net; e.v.usanova@gmail.com",
+      "phone": "89162284710",
+      "comment": "",
+      "company_import_id": "company_67"
+    },
+    {
+      "full_name": "Мария Камаева",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_68"
+    },
+    {
+      "full_name": "Олеся Горвоненко",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_68"
+    },
+    {
+      "full_name": "Кузьмин Филипп",
+      "job_title": "Не указано",
+      "email": "kuzminFA@wclass.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_68"
+    },
+    {
+      "full_name": "Евгений Свешников",
+      "job_title": "Не указано",
+      "email": "evgeny.sveshnikov@tele2.ru",
+      "phone": "89999096099",
+      "comment": "",
+      "company_import_id": "company_69"
+    },
+    {
+      "full_name": "Виолетта Казакова",
+      "job_title": "Не указано",
+      "email": "kazakova@nspk.ru",
+      "phone": "89167803660",
+      "comment": "",
+      "company_import_id": "company_70"
+    },
+    {
+      "full_name": "Андрей Филиппов",
+      "job_title": "Не указано",
+      "email": "afilippov@razmergroup.ru",
+      "phone": "89167063681",
+      "comment": "",
+      "company_import_id": "company_71"
+    },
+    {
+      "full_name": "Алексей Савельев",
+      "job_title": "продакт менеджер",
+      "email": "ekaterina.letsko@stoloto.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_72"
+    },
+    {
+      "full_name": "Алина Грюканова",
+      "job_title": "Не указано",
+      "email": "pr@lenta-co.ru",
+      "phone": "89032310065",
+      "comment": "",
+      "company_import_id": "company_73"
+    },
+    {
+      "full_name": "Екатерина Андреевна Емискевич",
+      "job_title": "Не указано",
+      "email": "emitskevitch@rencredit.ru",
+      "phone": "89214819776",
+      "comment": "",
+      "company_import_id": "company_74"
+    },
+    {
+      "full_name": "Максим Деряжин",
+      "job_title": "Не указано",
+      "email": "m.deryazhin@tinkoff.ru",
+      "phone": "89169802802",
+      "comment": "",
+      "company_import_id": "company_75"
+    },
+    {
+      "full_name": "Мария Остроумова",
+      "job_title": "Не указано",
+      "email": "m.ostroumova@tinkoff.ru",
+      "phone": "89169802802",
+      "comment": "",
+      "company_import_id": "company_75"
+    },
+    {
+      "full_name": "Яна Самойленко",
+      "job_title": "Не указано",
+      "email": "y.samoylenko@tinkoff.ru",
+      "phone": "89169802802",
+      "comment": "",
+      "company_import_id": "company_75"
+    },
+    {
+      "full_name": "Денис Тихомиров",
+      "job_title": "Не указано",
+      "email": "denis.tikhomirov@raiffeisen.ru; anna.sazonova@raiffeisen.ru",
+      "phone": "89151808002",
+      "comment": "",
+      "company_import_id": "company_76"
+    },
+    {
+      "full_name": "Анна Сазонова",
+      "job_title": "Не указано",
+      "email": "denis.tikhomirov@raiffeisen.ru; anna.sazonova@raiffeisen.ru",
+      "phone": "89151808002",
+      "comment": "",
+      "company_import_id": "company_76"
+    },
+    {
+      "full_name": "Дмитрий Алексеев",
+      "job_title": "Не указано",
+      "email": "dmitriy.alekseev@crediteurope.ru; tatyana.chekmareva@crediteurope.ru",
+      "phone": "89032303115; 7 (495) 981-38-00 доб. 3453",
+      "comment": "",
+      "company_import_id": "company_77"
+    },
+    {
+      "full_name": "Чекмарева Татьяна Владимировна",
+      "job_title": "Не указано",
+      "email": "dmitriy.alekseev@crediteurope.ru; tatyana.chekmareva@crediteurope.ru",
+      "phone": "89032303115; 7 (495) 981-38-00 доб. 3453",
+      "comment": "",
+      "company_import_id": "company_77"
+    },
+    {
+      "full_name": "Дмитрий Першин",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "89927778866",
+      "comment": "",
+      "company_import_id": "company_78"
+    },
+    {
+      "full_name": "Роскошная Ольга",
+      "job_title": "Не указано",
+      "email": "olga.roskoshnaya@gazprombank.ru",
+      "phone": "7(968) 953 8151",
+      "comment": "",
+      "company_import_id": "company_79"
+    },
+    {
+      "full_name": "Светлана Балюкина",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "7 (495) 777-09-05; +7 (495) 777-02-07; +7 (495) 777-02-06",
+      "comment": "",
+      "company_import_id": "company_80"
+    },
+    {
+      "full_name": "Олеся Ковырова",
+      "job_title": "Не указано",
+      "email": "kovyrova@action-media.ru; okovyrova@mail.ru",
+      "phone": "79165195218",
+      "comment": "",
+      "company_import_id": "company_81"
+    },
+    {
+      "full_name": "Антонина Николаевна",
+      "job_title": "Не указано",
+      "email": "an.s.leonteva@efko.ru; service-hotline@efko.ru",
+      "phone": "89155701900",
+      "comment": "",
+      "company_import_id": "company_82"
+    },
+    {
+      "full_name": "Ольга Ломак",
+      "job_title": "Не указано",
+      "email": "an.s.leonteva@efko.ru; service-hotline@efko.ru",
+      "phone": "89155701900",
+      "comment": "",
+      "company_import_id": "company_82"
+    },
+    {
+      "full_name": "Валерия Байлар",
+      "job_title": "Не указано",
+      "email": "Vmazur@eve.rest; KFrolov@eve.rest",
+      "phone": "89169796220",
+      "comment": "",
+      "company_import_id": "company_83"
+    },
+    {
+      "full_name": "Фролов Константин",
+      "job_title": "Не указано",
+      "email": "Vmazur@eve.rest; KFrolov@eve.rest",
+      "phone": "89169796220",
+      "comment": "",
+      "company_import_id": "company_83"
+    },
+    {
+      "full_name": "Александр Саркисов",
+      "job_title": "Не указано",
+      "email": "a.sarkisov@mail.ru",
+      "phone": "89639715117",
+      "comment": "",
+      "company_import_id": "company_84"
+    },
+    {
+      "full_name": "Дарья Кошевая",
+      "job_title": "Не указано",
+      "email": "d.v.koshevaya@kalashnikovconcern.ru",
+      "phone": "89853407696",
+      "comment": "",
+      "company_import_id": "company_85"
+    },
+    {
+      "full_name": "Ксения Спицина",
+      "job_title": "Не указано",
+      "email": "partners@iidf.ru; rustam.mingaleev.1997@mail.ru",
+      "phone": "89235699987",
+      "comment": "",
+      "company_import_id": "company_86"
+    },
+    {
+      "full_name": "Рустам Мингалеев",
+      "job_title": "Не указано",
+      "email": "partners@iidf.ru; rustam.mingaleev.1997@mail.ru",
+      "phone": "89235699987",
+      "comment": "",
+      "company_import_id": "company_86"
+    },
+    {
+      "full_name": "Николай Чуин",
+      "job_title": "Не указано",
+      "email": "hr@topcase.ru",
+      "phone": "495649664289663000000",
+      "comment": "",
+      "company_import_id": "company_88"
+    },
+    {
+      "full_name": "Регина Магомедова",
+      "job_title": "HR",
+      "email": "hr@topcase.ru",
+      "phone": "495649664289663000000",
+      "comment": "",
+      "company_import_id": "company_88"
+    },
+    {
+      "full_name": "Варвара Савинова",
+      "job_title": "Не указано",
+      "email": "varvara.savinova@nov.com",
+      "phone": "89859223943",
+      "comment": "",
+      "company_import_id": "company_89"
+    },
+    {
+      "full_name": "Сергей Бабкин",
+      "job_title": "Не указано",
+      "email": "sergey.babkin@merck.com; evgeny.smolkin@merck.com",
+      "phone": "916 523-56-61",
+      "comment": "",
+      "company_import_id": "company_90"
+    },
+    {
+      "full_name": "Евгений Смолкин",
+      "job_title": "Не указано",
+      "email": "sergey.babkin@merck.com; evgeny.smolkin@merck.com",
+      "phone": "(926)921-80-12",
+      "comment": "",
+      "company_import_id": "company_90"
+    },
+    {
+      "full_name": "Иван Троценко",
+      "job_title": "Не указано",
+      "email": "sergey.babkin@merck.com; evgeny.smolkin@merck.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_90"
+    },
+    {
+      "full_name": "Виктория Тананян",
+      "job_title": "Не указано",
+      "email": "sergey.babkin@merck.com; evgeny.smolkin@merck.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_90"
+    },
+    {
+      "full_name": "Юрий Бородин",
+      "job_title": "Не указано",
+      "email": "sergey.babkin@merck.com; evgeny.smolkin@merck.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_90"
+    },
+    {
+      "full_name": "Екатерина Стороженко",
+      "job_title": "Не указано",
+      "email": "sergey.babkin@merck.com; evgeny.smolkin@merck.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_90"
+    },
+    {
+      "full_name": "Татьяна Шеметьева",
+      "job_title": "Не указано",
+      "email": "zinchenko@servier.com",
+      "phone": "(495)937-07-00",
+      "comment": "",
+      "company_import_id": "company_91"
+    },
+    {
+      "full_name": "Чендрова Дарья",
+      "job_title": "Не указано",
+      "email": "'chendrova_da@rfs.ru'; 'strekalova_ea@rfs.ru'",
+      "phone": "7 (495) 926-13-00",
+      "comment": "",
+      "company_import_id": "company_92"
+    },
+    {
+      "full_name": "Стрекалова Елизавета",
+      "job_title": "Не указано",
+      "email": "'chendrova_da@rfs.ru'; 'strekalova_ea@rfs.ru'",
+      "phone": "7 (495) 926-13-00",
+      "comment": "",
+      "company_import_id": "company_92"
+    },
+    {
+      "full_name": "Светлана Чернова",
+      "job_title": "Не указано",
+      "email": "'svetlana.chernova@krka.biz'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_93"
+    },
+    {
+      "full_name": "Анастасия Зазнобина",
+      "job_title": "Не указано",
+      "email": "'svetlana.chernova@krka.biz'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_93"
+    },
+    {
+      "full_name": "Татьяна Рачинская",
+      "job_title": "Не указано",
+      "email": "'t.rachinskaya@al-farma.com'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_94"
+    },
+    {
+      "full_name": "Ольга Евгеньевна Варламова",
+      "job_title": "Не указано",
+      "email": "'OEVarlamova@armz.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_95"
+    },
+    {
+      "full_name": "Екатерина Ивушкина",
+      "job_title": "Не указано",
+      "email": "'ekaterina.ivushkina@uralchem.com'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_96"
+    },
+    {
+      "full_name": "Ольга Феокфеститова",
+      "job_title": "Не указано",
+      "email": "'o.feoktistova@prodo.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_97"
+    },
+    {
+      "full_name": "Юлия Брызгалина",
+      "job_title": "Не указано",
+      "email": "'julia.bryzgalina@astrazeneca.com'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_98"
+    },
+    {
+      "full_name": "Анна Чаплыгина",
+      "job_title": "Не указано",
+      "email": "'achaplygina@ostrovok.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_99"
+    },
+    {
+      "full_name": "Елена Жуланова",
+      "job_title": "Не указано",
+      "email": "elena.zhulanova@chery.ru",
+      "phone": "79260907270",
+      "comment": "",
+      "company_import_id": "company_100"
+    },
+    {
+      "full_name": "Ирина Боева",
+      "job_title": "Не указано",
+      "email": "'Irina.boeva@rambler.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_101"
+    },
+    {
+      "full_name": "Маргарита Хурадо",
+      "job_title": "Не указано",
+      "email": "'margarita.khurado@stada.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_102"
+    },
+    {
+      "full_name": "Анна Ширшкова",
+      "job_title": "Не указано",
+      "email": "'anna.shirshikova@takeda.com'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_103"
+    },
+    {
+      "full_name": "Кристина Гуренкова",
+      "job_title": "Не указано",
+      "email": "'k.gurenkova@cersanit.ru'",
+      "phone": "8 (800) 555-29-91; +7 (495) 134-39-39",
+      "comment": "",
+      "company_import_id": "company_104"
+    },
+    {
+      "full_name": "Владимир Булатов",
+      "job_title": "Не указано",
+      "email": "''Vladimir.bulatov@novartis.com'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_105"
+    },
+    {
+      "full_name": "Анастасия Леонтьева",
+      "job_title": "Не указано",
+      "email": "an.s.leonteva@efko.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_106"
+    },
+    {
+      "full_name": "Юлия Акимова",
+      "job_title": "Не указано",
+      "email": "'Yuliya.Akimova@lukoil.com'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_107"
+    },
+    {
+      "full_name": "Юлия Жогло",
+      "job_title": "Не указано",
+      "email": "'yuliya.zhoglo@MegaFon.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_108"
+    },
+    {
+      "full_name": "Чендрова Дарья",
+      "job_title": "Не указано",
+      "email": "'chendrova_da@rfs.ru'; 'strekalova_ea@rfs.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_109"
+    },
+    {
+      "full_name": "Стрекалова Елизавета",
+      "job_title": "Не указано",
+      "email": "'chendrova_da@rfs.ru'; 'strekalova_ea@rfs.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_109"
+    },
+    {
+      "full_name": "Елена Севостьянова",
+      "job_title": "Не указано",
+      "email": "'medvedeva@frprf.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_110"
+    },
+    {
+      "full_name": "Юлия Ретуньская",
+      "job_title": "Не указано",
+      "email": "'darya.stradze@okmarket.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_111"
+    },
+    {
+      "full_name": "Лидия Лембик",
+      "job_title": "Не указано",
+      "email": "'Lidia.Lembik@x5.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_112"
+    },
+    {
+      "full_name": "Татьяна Веревкина",
+      "job_title": "Не указано",
+      "email": "'veronika.ejova@moskvich-auto.ru'",
+      "phone": "7 495 775-40-00",
+      "comment": "",
+      "company_import_id": "company_113"
+    },
+    {
+      "full_name": "Алина Гаязедитнова",
+      "job_title": "Не указано",
+      "email": "alina.gayazetdinova@barilla.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_114"
+    },
+    {
+      "full_name": "Олеся Качан",
+      "job_title": "Не указано",
+      "email": "'Olesya.kachan@open.ru'",
+      "phone": "7 (925) 432-05-66",
+      "comment": "",
+      "company_import_id": "company_115"
+    },
+    {
+      "full_name": "Елена Севостьянова",
+      "job_title": "Не указано",
+      "email": "'elena.savostyanova@renlife.com'",
+      "phone": "7 (495) 981-29-81",
+      "comment": "",
+      "company_import_id": "company_116"
+    },
+    {
+      "full_name": "Юлия Ретуньская",
+      "job_title": "Не указано",
+      "email": "'julia.retyunskaya@bayer.com'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_117"
+    },
+    {
+      "full_name": "Проткин Даниил",
+      "job_title": "Не указано",
+      "email": "protkin.daniil@huawei.com",
+      "phone": "7 (495) 234-06-86",
+      "comment": "",
+      "company_import_id": "company_118"
+    },
+    {
+      "full_name": "Кристина Печенина",
+      "job_title": "Не указано",
+      "email": "kristina.pechinina@mechel.com",
+      "phone": "Телефон+7 (495) 221-88-88",
+      "comment": "",
+      "company_import_id": "company_119"
+    },
+    {
+      "full_name": "Соколова Екатерина",
+      "job_title": "Не указано",
+      "email": "Ekaterina.sokolova@interfax.ru",
+      "phone": "74957874343",
+      "comment": "",
+      "company_import_id": "company_146"
+    },
+    {
+      "full_name": "Людмила ЛИ",
+      "job_title": "Не указано",
+      "email": "liudmila.lee",
+      "phone": "84959267766 ; 8925 0072373",
+      "comment": "",
+      "company_import_id": "company_147"
+    },
+    {
+      "full_name": "Ксения Баязитова",
+      "job_title": "Не указано",
+      "email": "Ksenia.Bayazitova@b1.ru; liudmila.budanova@b1.ru",
+      "phone": "7 (495) 755-97-00; +7 (495) 755-97-01",
+      "comment": "",
+      "company_import_id": "company_148"
+    },
+    {
+      "full_name": "Людмила Буданова",
+      "job_title": "Не указано",
+      "email": "Ksenia.Bayazitova@b1.ru; liudmila.budanova@b1.ru",
+      "phone": "7 (495) 755-97-00; +7 (495) 755-97-01",
+      "comment": "",
+      "company_import_id": "company_148"
+    },
+    {
+      "full_name": "Смирнова Наталья Владимировна",
+      "job_title": "Не указано",
+      "email": "nvs3@europlan.ru",
+      "phone": "89166497701",
+      "comment": "",
+      "company_import_id": "company_149"
+    },
+    {
+      "full_name": "Логинова Ольга Александровна",
+      "job_title": "Не указано",
+      "email": "o.loginova@npktrans.ru",
+      "phone": "7 (495) 445 05 75 доб. 34-92",
+      "comment": "",
+      "company_import_id": "company_150"
+    },
+    {
+      "full_name": "Киселева Екатерина Михайловна",
+      "job_title": "Не указано",
+      "email": "ek9017074@gmail.com",
+      "phone": "89169017074",
+      "comment": "",
+      "company_import_id": "company_151"
+    },
+    {
+      "full_name": "Павлова Кристина Вадимовна",
+      "job_title": "Не указано",
+      "email": "pavlova.christina@dahuatech.com",
+      "phone": "89031705113",
+      "comment": "",
+      "company_import_id": "company_153"
+    },
+    {
+      "full_name": "Попкова Марина Петровна",
+      "job_title": "Директор Маркетинга",
+      "email": "Info@jet.su; pr@jet.su",
+      "phone": "7 (495) 411-76-01; +7 (495) 411-76-03",
+      "comment": "",
+      "company_import_id": "company_155"
+    },
+    {
+      "full_name": "Анна Алексеева",
+      "job_title": "Не указано",
+      "email": "anna.alekseeva@rockwool.ru",
+      "phone": "89037647313",
+      "comment": "",
+      "company_import_id": "company_157"
+    },
+    {
+      "full_name": "Людмила Бадулина",
+      "job_title": "Не указано",
+      "email": "ludmila.badulina@megafon.ru",
+      "phone": "8 916 489 63 08",
+      "comment": "",
+      "company_import_id": "company_158"
+    },
+    {
+      "full_name": "Юлия Грушина",
+      "job_title": "Не указано",
+      "email": "vostokenergotrade@bk.ru",
+      "phone": "тел.: +7 925 028 05 57",
+      "comment": "Маноил Аурелия",
+      "company_import_id": "company_159"
+    },
+    {
+      "full_name": "Светлана Зинченко",
+      "job_title": "Не указано",
+      "email": "'svetlana.zinchenko@servier.com'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_160"
+    },
+    {
+      "full_name": "Олеся Калюжная",
+      "job_title": "Не указано",
+      "email": "'Olesya.Kaliuzhnaia@leroymerlin.ru'",
+      "phone": "7(495)961-01-60; +7(903)665-10-01",
+      "comment": "",
+      "company_import_id": "company_161"
+    },
+    {
+      "full_name": "Марина Рыкова",
+      "job_title": "Не указано",
+      "email": "Marina.Rykova@geropharm.com; Evgenia.Domoroschenkova@geropharm.com",
+      "phone": "(495)995-09-17 (812) 703-79-75",
+      "comment": "",
+      "company_import_id": "company_162"
+    },
+    {
+      "full_name": "Евгения Доморощенкова",
+      "job_title": "Не указано",
+      "email": "Marina.Rykova@geropharm.com; Evgenia.Domoroschenkova@geropharm.com",
+      "phone": "(495)995-09-17 (812) 703-79-75",
+      "comment": "",
+      "company_import_id": "company_162"
+    },
+    {
+      "full_name": "Иван Меркель",
+      "job_title": "Не указано",
+      "email": "artplast@artplast.ru",
+      "phone": "88007700929",
+      "comment": "",
+      "company_import_id": "company_163"
+    },
+    {
+      "full_name": "Владимир Булатова",
+      "job_title": "Не указано",
+      "email": "Vladimir.bulatov@ novartis.com",
+      "phone": "(916)519-45-20 Екатерина",
+      "comment": "",
+      "company_import_id": "company_164"
+    },
+    {
+      "full_name": "катерина Одинцова",
+      "job_title": "Не указано",
+      "email": "Vladimir.bulatov@ novartis.com",
+      "phone": "(916)519-45-20 Екатерина",
+      "comment": "",
+      "company_import_id": "company_164"
+    },
+    {
+      "full_name": "Ирина Белогурова",
+      "job_title": "Не указано",
+      "email": "vladislav.petrokas@gardia.sk; irina.belogurova@gardia.sk",
+      "phone": "89037232402",
+      "comment": "",
+      "company_import_id": "company_165"
+    },
+    {
+      "full_name": "Валерия Березовая",
+      "job_title": "Не указано",
+      "email": "vberezovaya@unim.su",
+      "phone": "89162276260",
+      "comment": "",
+      "company_import_id": "company_166"
+    },
+    {
+      "full_name": "Александр Дмитриев",
+      "job_title": "Не указано",
+      "email": "info@holo.group",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_167"
+    },
+    {
+      "full_name": "Александр Ломакин",
+      "job_title": "Не указано",
+      "email": "a.lomakin@b2b-center.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_169"
+    },
+    {
+      "full_name": "Юлия",
+      "job_title": "Не указано",
+      "email": "'sekretar@sibrt.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_170"
+    },
+    {
+      "full_name": "Иван Корешков",
+      "job_title": "Менеджер по закупкам",
+      "email": "resp@gas-is.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_172"
+    },
+    {
+      "full_name": "Евгений Коваленко",
+      "job_title": "Не указано",
+      "email": "kovalenko@arenadata.io",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_173"
+    },
+    {
+      "full_name": "Светлана",
+      "job_title": "маркетинг",
+      "email": "info@bi.zone",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_174"
+    },
+    {
+      "full_name": "Анастасия Глумова",
+      "job_title": "Не указано",
+      "email": "an.glumova@jet.su",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_175"
+    },
+    {
+      "full_name": "ЯР Бабин",
+      "job_title": "Не указано",
+      "email": "ybabin@ptsecurity.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_176"
+    },
+    {
+      "full_name": "Мария Львова",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "79037503103",
+      "comment": "",
+      "company_import_id": "company_177"
+    },
+    {
+      "full_name": "Вера Буданова",
+      "job_title": "Не указано",
+      "email": "Vera.Budanova@flexicore.ru",
+      "phone": "phone: +7 846 374 28 82; mobile: +7 919 815 18 40",
+      "comment": "",
+      "company_import_id": "company_178"
+    },
+    {
+      "full_name": "Дмитрий Белоусов",
+      "job_title": "Не указано",
+      "email": "l: bds@sikn.ru",
+      "phone": "7 (3452) 215-518 доб. 201; +7 (9088) 731382",
+      "comment": "",
+      "company_import_id": "company_179"
+    },
+    {
+      "full_name": "Александра Жернова",
+      "job_title": "Не указано",
+      "email": "alexandrajernova@gmail.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_180"
+    },
+    {
+      "full_name": "Максим Филатов",
+      "job_title": "Не указано",
+      "email": "mfilatov@corpmsp.ru",
+      "phone": "8800100-11-00",
+      "comment": "",
+      "company_import_id": "company_181"
+    },
+    {
+      "full_name": "Светлана Старшова",
+      "job_title": "Не указано",
+      "email": "s.starshova@dssl.ru",
+      "phone": "89168422435",
+      "comment": "",
+      "company_import_id": "company_182"
+    },
+    {
+      "full_name": "Татьяна Пантюхина",
+      "job_title": "Не указано",
+      "email": "t.pantyukhina@cablewalker.com",
+      "phone": ": +79502049000",
+      "comment": "",
+      "company_import_id": "company_183"
+    },
+    {
+      "full_name": "Дарья Корнилина",
+      "job_title": "Не указано",
+      "email": "Dkornilina@beeline.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_184"
+    },
+    {
+      "full_name": "Мария Рунина",
+      "job_title": "Не указано",
+      "email": "web@vatechrussia.com",
+      "phone": "7 (800) 533-99-23",
+      "comment": "",
+      "company_import_id": "company_185"
+    },
+    {
+      "full_name": "Олег Матвиенко",
+      "job_title": "Не указано",
+      "email": "o.matvienko@fibogroup.ru",
+      "phone": "79687672303",
+      "comment": "",
+      "company_import_id": "company_186"
+    },
+    {
+      "full_name": "Виктория Ельцова",
+      "job_title": "Не указано",
+      "email": "Velcova@vtb.ru",
+      "phone": "89057936404",
+      "comment": "",
+      "company_import_id": "company_187"
+    },
+    {
+      "full_name": "Олеся Серегина",
+      "job_title": "Не указано",
+      "email": "seregina@matchtv.ru",
+      "phone": "89207333237",
+      "comment": "",
+      "company_import_id": "company_188"
+    },
+    {
+      "full_name": "Ксения Хокрякова",
+      "job_title": "Не указано",
+      "email": "K.Hohryakova@ledvance.com; D.Shmeleva@ledvance.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_189"
+    },
+    {
+      "full_name": "Блохина Екатерина",
+      "job_title": "Координатор ЦОД",
+      "email": "Блохина Екатерина",
+      "phone": "8 (903) 616 86 04",
+      "comment": "",
+      "company_import_id": "company_190"
+    },
+    {
+      "full_name": "Марина",
+      "job_title": "организация мероприятий",
+      "email": "info@ct-sg.ru",
+      "phone": "7 (495) 532-10-96",
+      "comment": "",
+      "company_import_id": "company_191"
+    },
+    {
+      "full_name": "Виктор Михайлов",
+      "job_title": "Не указано",
+      "email": "'v.mikhaylov@cft.ru'",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_193"
+    },
+    {
+      "full_name": "Юлия Кушниренко",
+      "job_title": "Не указано",
+      "email": "startupvillage@sk.ru",
+      "phone": "89035869391",
+      "comment": "",
+      "company_import_id": "company_194"
+    },
+    {
+      "full_name": "Икаева Алина Юрьевна",
+      "job_title": "Не указано",
+      "email": "a.ikaeva@rusnarbank.ru",
+      "phone": "м +7916 725 14 44",
+      "comment": "",
+      "company_import_id": "company_195"
+    },
+    {
+      "full_name": "Константин Винокуров",
+      "job_title": "Не указано",
+      "email": "kvinokurov@mtsbank.ru",
+      "phone": "89165110342",
+      "comment": "",
+      "company_import_id": "company_196"
+    },
+    {
+      "full_name": "Алексей Гладков",
+      "job_title": "Не указано",
+      "email": "aleksey.gladkov@leroymerlin.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_197"
+    },
+    {
+      "full_name": "Андрей Елистратов",
+      "job_title": "Не указано",
+      "email": "svetofor.bel@gmail.com",
+      "phone": "7 926 596-20-95",
+      "comment": "",
+      "company_import_id": "company_198"
+    },
+    {
+      "full_name": "Екатерина Курзанова",
+      "job_title": "Не указано",
+      "email": "Ekaterina KURZANOVA <Ekaterina.Kurzanova@essilor.com>",
+      "phone": "M +7 985 5400382",
+      "comment": "",
+      "company_import_id": "company_199"
+    },
+    {
+      "full_name": "Середкина Ксения Сергеевна",
+      "job_title": "Не указано",
+      "email": "k.seredkina@comitas.ru",
+      "phone": "7 (909) 988-79-60",
+      "comment": "",
+      "company_import_id": "company_200"
+    },
+    {
+      "full_name": "Алина Савченко",
+      "job_title": "Не указано",
+      "email": "HELLO@IMBA-IT.RU",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_201"
+    },
+    {
+      "full_name": "Алина Шмакова",
+      "job_title": "Не указано",
+      "email": "Alina.Shmakova@rdif.ru",
+      "phone": "89163359832",
+      "comment": "",
+      "company_import_id": "company_202"
+    },
+    {
+      "full_name": "Сергей Руденко",
+      "job_title": "Не указано",
+      "email": "s.rudenko@iboxmpos.ru",
+      "phone": "89266440196",
+      "comment": "",
+      "company_import_id": "company_203"
+    },
+    {
+      "full_name": "Чернова Светлана",
+      "job_title": "рук АХО",
+      "email": "svetlana.chernova@krka.biz",
+      "phone": "8(495)981-10-95; 8(985)770-22-30",
+      "comment": "",
+      "company_import_id": "company_204"
+    },
+    {
+      "full_name": "Дарья Верблудова",
+      "job_title": "Не указано",
+      "email": "Daria.Verbludova@packaging-systems.ru",
+      "phone": "7 (495) 787-80-00 доб63",
+      "comment": "",
+      "company_import_id": "company_205"
+    },
+    {
+      "full_name": "Голубева Татьяна Владимировна",
+      "job_title": "Не указано",
+      "email": "tgolubeva@stan-company.ru",
+      "phone": "7 800-333-88-89, вн. тел. 11-80",
+      "comment": "",
+      "company_import_id": "company_206"
+    },
+    {
+      "full_name": "Антонова Екатерина",
+      "job_title": "Не указано",
+      "email": "antonova@agalarovdevelopment.com",
+      "phone": "7 985 180 31 32",
+      "comment": "",
+      "company_import_id": "company_207"
+    },
+    {
+      "full_name": "Ольга Тюрина",
+      "job_title": "Не указано",
+      "email": "tyurinadtcs28.04@gmail.com",
+      "phone": "79895352144",
+      "comment": "",
+      "company_import_id": "company_208"
+    },
+    {
+      "full_name": "Баликоева Милана Даниловна",
+      "job_title": "Не указано",
+      "email": "office@advateh.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_209"
+    },
+    {
+      "full_name": "Фролова Дарина",
+      "job_title": "Не указано",
+      "email": "frolova.ds@new-mmc.com",
+      "phone": "89164193378",
+      "comment": "",
+      "company_import_id": "company_210"
+    },
+    {
+      "full_name": "Иван",
+      "job_title": "Не указано",
+      "email": "info@manika-group.ru",
+      "phone": "89057985412",
+      "comment": "",
+      "company_import_id": "company_211"
+    },
+    {
+      "full_name": "Дмитрий Маркетинг",
+      "job_title": "Не указано",
+      "email": "autos-office@inbox.ru",
+      "phone": "8(812)905-54-55",
+      "comment": "",
+      "company_import_id": "company_212"
+    },
+    {
+      "full_name": "Залялов Фарит Фурхутдинович",
+      "job_title": "Не указано",
+      "email": "farit7101@gmail.com; marketing@tatpharm.ru",
+      "phone": "С сайта: 7 (843) 527(843)526-97-826-97-05",
+      "comment": "",
+      "company_import_id": "company_213"
+    },
+    {
+      "full_name": "Сочнева Юлия",
+      "job_title": "Не указано",
+      "email": "yu_sochneva@rn-tnpz.ru",
+      "phone": "8(861)677-77-14; доб в другой отдел 4160",
+      "comment": "",
+      "company_import_id": "company_214"
+    },
+    {
+      "full_name": "Михаил Рассказов",
+      "job_title": "Не указано",
+      "email": "tendcom@alfabank.ru",
+      "phone": "7(495)974-25-15 ext.3283",
+      "comment": "",
+      "company_import_id": "company_215"
+    },
+    {
+      "full_name": "Сибирякова Светлана Вячеславовна",
+      "job_title": "Секретарь Тендерной комиссии",
+      "email": "tendcom@alfabank.ru",
+      "phone": "+7 499 271-89-98",
+      "comment": "",
+      "company_import_id": "company_215"
+    },
+    {
+      "full_name": "Проноза Татьяна Анатольевна",
+      "job_title": "Главный специалист по закупкам",
+      "email": "pta@aoglonass.ru; Zakupki@aoglonass.ru",
+      "phone": "7 (495) 988-47-10 доб.136; 8 925-829-70-91",
+      "comment": "",
+      "company_import_id": "company_216"
+    },
+    {
+      "full_name": "Людмила Корченюк",
+      "job_title": "руководитель службы административных сервисов",
+      "email": "lyudmila.korchenyuk@x5.ru; Evgeniya.prokhorova@x5.ru",
+      "phone": "8(495)662-88-88/доб 31-377; 8(916)700-26-16; 8(495)662-88-88 доб 13203; 7( 906) 790-25-85",
+      "comment": "",
+      "company_import_id": "company_217"
+    },
+    {
+      "full_name": "Прохорова Евгения",
+      "job_title": "менеджер по орг-ии дел мероприятий",
+      "email": "lyudmila.korchenyuk@x5.ru; Evgeniya.prokhorova@x5.ru",
+      "phone": "8(495)662-88-88/доб 31-377; 8(916)700-26-16; 8(495)662-88-88 доб 13203; 7( 906) 790-25-85",
+      "comment": "",
+      "company_import_id": "company_217"
+    },
+    {
+      "full_name": "Тевс Вячеслав Геннадиевич",
+      "job_title": "Не указано",
+      "email": "v.tevs@slvz-rk.ru; info@slvz-rk.ru",
+      "phone": "8 (821)222-22-16",
+      "comment": "",
+      "company_import_id": "company_218"
+    },
+    {
+      "full_name": "Щукарев Роман Сергеевич",
+      "job_title": "рук. Закупочного направления",
+      "email": "SchukarevRS@nornik.ru",
+      "phone": "7 (495) 787-76-67 доб. 4013",
+      "comment": "",
+      "company_import_id": "company_219"
+    },
+    {
+      "full_name": "Атмурков Виктор",
+      "job_title": "мероприятиями",
+      "email": "Atmurkov@morbank.com",
+      "phone": "8(495)777-11-77",
+      "comment": "",
+      "company_import_id": "company_220"
+    },
+    {
+      "full_name": "Ирина Еровикова",
+      "job_title": "Не указано",
+      "email": "erovikova@pskprofil.ru",
+      "phone": "89231111584",
+      "comment": "",
+      "company_import_id": "company_221"
+    },
+    {
+      "full_name": "Фадеева Екатерина",
+      "job_title": "Не указано",
+      "email": "fadeeva_ep@mosoblbank.ru",
+      "phone": "8 800 200 14 15",
+      "comment": "",
+      "company_import_id": "company_222"
+    },
+    {
+      "full_name": "Екатерина Тетерина",
+      "job_title": "Не указано",
+      "email": "Ekaterina.Teterina@merz.ru; Tatiana.Shkodina@merz.ru",
+      "phone": "7 (495) 653-85-55; +79197738152",
+      "comment": "",
+      "company_import_id": "company_223"
+    },
+    {
+      "full_name": "Татьяна Шкодина",
+      "job_title": "Не указано",
+      "email": "Ekaterina.Teterina@merz.ru; Tatiana.Shkodina@merz.ru",
+      "phone": "7 (495) 653-85-55; +79197738152",
+      "comment": "",
+      "company_import_id": "company_223"
+    },
+    {
+      "full_name": "Дмитрий",
+      "job_title": "маркетинг",
+      "email": "autos-office@inbox.ru",
+      "phone": "8(812)905-54-55",
+      "comment": "",
+      "company_import_id": "company_224"
+    },
+    {
+      "full_name": "Наталья Ворона",
+      "job_title": "Не указано",
+      "email": "anna.kolysheva@woerwagpharma.ru",
+      "phone": "7 (495) 269 69 20; +7 (495) 382 85 56; моб: 8 916 512 08 64",
+      "comment": "",
+      "company_import_id": "company_225"
+    },
+    {
+      "full_name": "Павел",
+      "job_title": "Не указано",
+      "email": "pavel@yizumi.com",
+      "phone": "89260848484",
+      "comment": "",
+      "company_import_id": "company_226"
+    },
+    {
+      "full_name": "Залялов Фарит Фурхутдинович",
+      "job_title": "Не указано",
+      "email": "farit7101@gmail.com; marketing@tatpharm.ru",
+      "phone": "С сайта: 7 (843) 527(843)526-97-826-97-05",
+      "comment": "",
+      "company_import_id": "company_227"
+    },
+    {
+      "full_name": "Сочнева Юлия",
+      "job_title": "Не указано",
+      "email": "yu_sochneva@rn-tnpz.ru",
+      "phone": "8(861)677-77-14; доб в другой отдел 4160",
+      "comment": "",
+      "company_import_id": "company_228"
+    },
+    {
+      "full_name": "Михаил Рассказов",
+      "job_title": "Не указано",
+      "email": "tendcom@alfabank.ru",
+      "phone": "7(495)974-25-15 ext.3283",
+      "comment": "",
+      "company_import_id": "company_229"
+    },
+    {
+      "full_name": "Сибирякова Светлана Вячеславовна",
+      "job_title": "Секретарь Тендерной комиссии",
+      "email": "tendcom@alfabank.ru",
+      "phone": "+7 499 271-89-98",
+      "comment": "",
+      "company_import_id": "company_229"
+    },
+    {
+      "full_name": "Проноза Татьяна Анатольевна",
+      "job_title": "Главный специалист по закупкам",
+      "email": "pta@aoglonass.ru; Zakupki@aoglonass.ru",
+      "phone": "7 (495) 988-47-10 доб.136; 8 925-829-70-91",
+      "comment": "",
+      "company_import_id": "company_230"
+    },
+    {
+      "full_name": "Людмила Корченюк",
+      "job_title": "руководитель службы административных сервисов",
+      "email": "lyudmila.korchenyuk@x5.ru; Evgeniya.prokhorova@x5.ru",
+      "phone": "8(495)662-88-88/доб 31-377; 8(495)662-88-88 доб 13203; 7( 906) 790-25-85; 8(916)700-26-16",
+      "comment": "",
+      "company_import_id": "company_231"
+    },
+    {
+      "full_name": "Прохорова Евгения",
+      "job_title": "менеджер по орг-ии дел мероприятий",
+      "email": "lyudmila.korchenyuk@x5.ru; Evgeniya.prokhorova@x5.ru",
+      "phone": "8(495)662-88-88/доб 31-377; 8(495)662-88-88 доб 13203; 7( 906) 790-25-85; 8(916)700-26-16",
+      "comment": "",
+      "company_import_id": "company_231"
+    },
+    {
+      "full_name": "Тевс Вячеслав Геннадиевич",
+      "job_title": "Не указано",
+      "email": "v.tevs@slvz-rk.ru; info@slvz-rk.ru",
+      "phone": "8 (821)222-22-16",
+      "comment": "",
+      "company_import_id": "company_232"
+    },
+    {
+      "full_name": "Щукарев Роман Сергеевич",
+      "job_title": "рук. Закупочного направления",
+      "email": "SchukarevRS@nornik.ru",
+      "phone": "7 (495) 787-76-67 доб. 4013",
+      "comment": "",
+      "company_import_id": "company_233"
+    },
+    {
+      "full_name": "Атмурков Виктор",
+      "job_title": "мероприятиями",
+      "email": "Atmurkov@morbank.com",
+      "phone": "8(495)777-11-77",
+      "comment": "",
+      "company_import_id": "company_234"
+    },
+    {
+      "full_name": "Наргиза Бораева Пюрвяевна",
+      "job_title": "Не указано",
+      "email": "nargiza@svds.ru",
+      "phone": "8 903 743 78 18",
+      "comment": "",
+      "company_import_id": "company_235"
+    },
+    {
+      "full_name": "Ирина Владимирская (Острова)",
+      "job_title": "Администратор отдела продаж",
+      "email": "Irina.Ostrova@amada.ru; info@amada.ru",
+      "phone": "Тел.: +7 (495) 518 96 50, доб. 206; Моб.: +7 (906) 033 11 10",
+      "comment": "",
+      "company_import_id": "company_236"
+    },
+    {
+      "full_name": "Григорьева Елизавета",
+      "job_title": "ВТ менеджер",
+      "email": "lanit@lanit.ru; egrigorieva@lanit.ru",
+      "phone": "(495)967-6650 доб. 14072; 14904",
+      "comment": "",
+      "company_import_id": "company_237"
+    },
+    {
+      "full_name": "Михаил Малафеев",
+      "job_title": "Специалист по снабжению",
+      "email": "Михаил Малафеев",
+      "phone": "Тел: 8 (964) 859 24 25",
+      "comment": "имэйл не актуален",
+      "company_import_id": "company_238"
+    },
+    {
+      "full_name": "Алеева Елена Алексеевна",
+      "job_title": "Ведущий специалист по внутренним коммуникациям; Отдел кадров",
+      "email": "aleeva.ea@gilsinp.ru",
+      "phone": "8 (495) 676-43-60 доб. 3114",
+      "comment": "По пятнцам работают до 16:45",
+      "company_import_id": "company_239"
+    },
+    {
+      "full_name": "Дмитрий",
+      "job_title": "маркетинг",
+      "email": "autos-office@inbox.ru",
+      "phone": "8(812)905-54-55",
+      "comment": "",
+      "company_import_id": "company_240"
+    },
+    {
+      "full_name": "Арутюнян Юлия",
+      "job_title": "Заместитель коммерческого директора дивизиона \"Кейтеринг Москва\"",
+      "email": "corpusgroup@corpusgroup.ru",
+      "phone": "7-915-079-20-75; С сайта: 7(495)788-66-86, доб. 16-04",
+      "comment": "",
+      "company_import_id": "company_241"
+    },
+    {
+      "full_name": "Анна Бельвинская",
+      "job_title": "Не указано",
+      "email": "Anna.belavinskaya@verba.legal",
+      "phone": "7 (495) 374-74-03",
+      "comment": "",
+      "company_import_id": "company_242"
+    },
+    {
+      "full_name": "Вострякова Оксана Владимировна",
+      "job_title": "Не указано",
+      "email": "vostriakova@seismopoisk.ru",
+      "phone": "8(391)200-16-41 доб 111; 8(913)523-24-13",
+      "comment": "",
+      "company_import_id": "company_243"
+    },
+    {
+      "full_name": "Анна Прокофьева",
+      "job_title": "глава Диджитал Маркетинга",
+      "email": "app@kion.ru",
+      "phone": "8 800 250 08 04",
+      "comment": "",
+      "company_import_id": "company_it_1"
+    },
+    {
+      "full_name": "Артем Лопухин",
+      "job_title": "Не указано",
+      "email": "alopukhin@ivi.ru",
+      "phone": "7 (495) 276-06-31",
+      "comment": "",
+      "company_import_id": "company_it_2"
+    },
+    {
+      "full_name": "Екатерина Казмерова",
+      "job_title": "Не указано",
+      "email": "e.kazmerova@2Gis.ru; el.lozlova@2Gis.ru",
+      "phone": "8 (800) 2003600; +7 (495) 6041055",
+      "comment": "",
+      "company_import_id": "company_it_3"
+    },
+    {
+      "full_name": "Евгений Коваленко",
+      "job_title": "Не указано",
+      "email": "kovalenko@arenadata.io; support@arenadata.io",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_4"
+    },
+    {
+      "full_name": "Максим Рындин",
+      "job_title": "Cis Developer",
+      "email": "ir@eruditor-group.com",
+      "phone": "8 (495) 540-46-03",
+      "comment": "",
+      "company_import_id": "company_it_5"
+    },
+    {
+      "full_name": "Даниил Данин",
+      "job_title": "Не указано",
+      "email": "partners@kazanexpress.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_6"
+    },
+    {
+      "full_name": "Александр Ломакин",
+      "job_title": "Не указано",
+      "email": "a.lomakin@b2b-center.ru",
+      "phone": "84955328519",
+      "comment": "",
+      "company_import_id": "company_it_7"
+    },
+    {
+      "full_name": "Алексей Иванов",
+      "job_title": "Не указано",
+      "email": "alex.ivanov@astralinux.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_8"
+    },
+    {
+      "full_name": "Анастасия Белова",
+      "job_title": "Не указано",
+      "email": "abelova@astralinux.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_8"
+    },
+    {
+      "full_name": "Дмитрий Кириллов",
+      "job_title": "Не указано",
+      "email": "d.kirillov@cft.ru",
+      "phone": "(495) 604-12-20",
+      "comment": "",
+      "company_import_id": "company_it_9"
+    },
+    {
+      "full_name": "Виктор Михайлов",
+      "job_title": "Не указано",
+      "email": "v.mikhaylov@cft.ru",
+      "phone": "(495) 604-12-20",
+      "comment": "",
+      "company_import_id": "company_it_9"
+    },
+    {
+      "full_name": "Смирнова Юлия Васильевна",
+      "job_title": "Не указано",
+      "email": "yuvsmirnova@greenatom.ru; srtimkaeva@greenatom.ru",
+      "phone": "7 (499) 949-49-19",
+      "comment": "",
+      "company_import_id": "company_it_10"
+    },
+    {
+      "full_name": "Светлана",
+      "job_title": "менеджер маркетинг",
+      "email": "savenko@usergate.ru; eliseeva@usergate.ru",
+      "phone": "8 800 500 4032; +7 383 286 2913",
+      "comment": "",
+      "company_import_id": "company_it_11"
+    },
+    {
+      "full_name": "Владимир Ульянов",
+      "job_title": "Не указано",
+      "email": "vladimir.ulyanov@zecurion.com",
+      "phone": "7 495 221-21-60",
+      "comment": "",
+      "company_import_id": "company_it_12"
+    },
+    {
+      "full_name": "Андрей Жиляев",
+      "job_title": "Не указано",
+      "email": "andrey.zhilyaev@infotecs.ru; ilia.gavrilov@infotecs.ru",
+      "phone": "Телефон8 (800) 250-02-60",
+      "comment": "",
+      "company_import_id": "company_it_13"
+    },
+    {
+      "full_name": "Илья Гаврилов",
+      "job_title": "Не указано",
+      "email": "andrey.zhilyaev@infotecs.ru; ilia.gavrilov@infotecs.ru",
+      "phone": "Телефон8 (800) 250-02-60",
+      "comment": "",
+      "company_import_id": "company_it_13"
+    },
+    {
+      "full_name": "Илья Мозорнин",
+      "job_title": "Не указано",
+      "email": "mozornin@ptsecurity.com; ybabin@ptsecurity.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_15"
+    },
+    {
+      "full_name": "Яр Бабин",
+      "job_title": "Не указано",
+      "email": "mozornin@ptsecurity.com; ybabin@ptsecurity.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_15"
+    },
+    {
+      "full_name": "Ульяна",
+      "job_title": "Менеджер по персоналу",
+      "email": "rma@3logic.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_16"
+    },
+    {
+      "full_name": "Трэвел отдел",
+      "job_title": "Не указано",
+      "email": "rfpfeedback@delret.ru",
+      "phone": "7 (495) 787 06 00",
+      "comment": "",
+      "company_import_id": "company_it_19"
+    },
+    {
+      "full_name": "Отдел по орг мероприятий",
+      "job_title": "Не указано",
+      "email": "info@fplus.ru",
+      "phone": "7 (495) 745-80-08",
+      "comment": "",
+      "company_import_id": "company_it_20"
+    },
+    {
+      "full_name": "Ксения Шестакова",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "7 (495) 660-73-11",
+      "comment": "",
+      "company_import_id": "company_it_25"
+    },
+    {
+      "full_name": "Инна Демидова",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "8 800 200-68-86",
+      "comment": "",
+      "company_import_id": "company_it_26"
+    },
+    {
+      "full_name": "Мария Кокорева",
+      "job_title": "Не указано",
+      "email": "info@accu-chek.ru",
+      "phone": "7 495 229 69 95; 8-800-200-88-99",
+      "comment": "",
+      "company_import_id": "company_it_27"
+    },
+    {
+      "full_name": "Ольга Горбунова",
+      "job_title": "Не указано",
+      "email": "gorbunovao@i-teco.ru; hin@i-teco.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_35"
+    },
+    {
+      "full_name": "Анастасия Глумова",
+      "job_title": "Не указано",
+      "email": "an.glumova@jet.su",
+      "phone": "7 495 411-76-01",
+      "comment": "",
+      "company_import_id": "company_it_36"
+    },
+    {
+      "full_name": "Кирилл Кулаков",
+      "job_title": "основатель",
+      "email": "msk@berizariad.com",
+      "phone": "7 (800) 555-04-96",
+      "comment": "",
+      "company_import_id": "company_it_37"
+    },
+    {
+      "full_name": "Елена Филимонова",
+      "job_title": "Не указано",
+      "email": "info@rubytech.ru",
+      "phone": "7 (495) 788 99 99",
+      "comment": "",
+      "company_import_id": "company_it_38"
+    },
+    {
+      "full_name": "Анна Прокофьева",
+      "job_title": "глава Диджитал Маркетинга",
+      "email": "app@kion.ru",
+      "phone": "8 800 250 08 04",
+      "comment": "",
+      "company_import_id": "company_it_39"
+    },
+    {
+      "full_name": "Артем Лопухин",
+      "job_title": "Не указано",
+      "email": "alopukhin@ivi.ru",
+      "phone": "7 (495) 276-06-31",
+      "comment": "",
+      "company_import_id": "company_it_40"
+    },
+    {
+      "full_name": "Екатерина Казмерова",
+      "job_title": "Не указано",
+      "email": "e.kazmerova@2Gis.ru; el.lozlova@2Gis.ru",
+      "phone": "8 (800) 2003600; +7 (495) 6041055",
+      "comment": "",
+      "company_import_id": "company_it_41"
+    },
+    {
+      "full_name": "Евгений Коваленко",
+      "job_title": "Не указано",
+      "email": "kovalenko@arenadata.io; support@arenadata.io",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_42"
+    },
+    {
+      "full_name": "Максим Рындин",
+      "job_title": "Cis Developer",
+      "email": "ir@eruditor-group.com",
+      "phone": "8 (495) 540-46-03",
+      "comment": "",
+      "company_import_id": "company_it_43"
+    },
+    {
+      "full_name": "Даниил Данин",
+      "job_title": "Не указано",
+      "email": "partners@kazanexpress.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_44"
+    },
+    {
+      "full_name": "Александр Ломакин",
+      "job_title": "Не указано",
+      "email": "a.lomakin@b2b-center.ru",
+      "phone": "84955328519",
+      "comment": "",
+      "company_import_id": "company_it_45"
+    },
+    {
+      "full_name": "Алексей Иванов",
+      "job_title": "Не указано",
+      "email": "alex.ivanov@astralinux.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_46"
+    },
+    {
+      "full_name": "Анастасия Белова",
+      "job_title": "Не указано",
+      "email": "abelova@astralinux.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_46"
+    },
+    {
+      "full_name": "Дмитрий Кириллов",
+      "job_title": "Не указано",
+      "email": "d.kirillov@cft.ru",
+      "phone": "(495) 604-12-20",
+      "comment": "",
+      "company_import_id": "company_it_47"
+    },
+    {
+      "full_name": "Виктор Михайлов",
+      "job_title": "Не указано",
+      "email": "v.mikhaylov@cft.ru",
+      "phone": "(495) 604-12-20",
+      "comment": "",
+      "company_import_id": "company_it_47"
+    },
+    {
+      "full_name": "Смирнова Юлия Васильевна",
+      "job_title": "Не указано",
+      "email": "yuvsmirnova@greenatom.ru; srtimkaeva@greenatom.ru",
+      "phone": "7 (499) 949-49-19",
+      "comment": "",
+      "company_import_id": "company_it_48"
+    },
+    {
+      "full_name": "Светлана",
+      "job_title": "менеджер маркетинг",
+      "email": "savenko@usergate.ru; eliseeva@usergate.ru",
+      "phone": "8 800 500 4032; +7 383 286 2913",
+      "comment": "",
+      "company_import_id": "company_it_49"
+    },
+    {
+      "full_name": "Владимир Ульянов",
+      "job_title": "Не указано",
+      "email": "vladimir.ulyanov@zecurion.com",
+      "phone": "7 495 221-21-60",
+      "comment": "",
+      "company_import_id": "company_it_50"
+    },
+    {
+      "full_name": "Андрей Жиляев",
+      "job_title": "Не указано",
+      "email": "andrey.zhilyaev@infotecs.ru; ilia.gavrilov@infotecs.ru",
+      "phone": "Телефон8 (800) 250-02-60",
+      "comment": "",
+      "company_import_id": "company_it_51"
+    },
+    {
+      "full_name": "Илья Гаврилов",
+      "job_title": "Не указано",
+      "email": "andrey.zhilyaev@infotecs.ru; ilia.gavrilov@infotecs.ru",
+      "phone": "Телефон8 (800) 250-02-60",
+      "comment": "",
+      "company_import_id": "company_it_51"
+    },
+    {
+      "full_name": "Илья Мозорнин",
+      "job_title": "Не указано",
+      "email": "mozornin@ptsecurity.com; ybabin@ptsecurity.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_53"
+    },
+    {
+      "full_name": "Яр Бабин",
+      "job_title": "Не указано",
+      "email": "mozornin@ptsecurity.com; ybabin@ptsecurity.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_53"
+    },
+    {
+      "full_name": "Ульяна",
+      "job_title": "Менеджер по персоналу",
+      "email": "rma@3logic.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_54"
+    },
+    {
+      "full_name": "Трэвел отдел",
+      "job_title": "Не указано",
+      "email": "rfpfeedback@delret.ru",
+      "phone": "7 (495) 787 06 00",
+      "comment": "",
+      "company_import_id": "company_it_57"
+    },
+    {
+      "full_name": "Отдел по орг мероприятий",
+      "job_title": "Не указано",
+      "email": "info@fplus.ru",
+      "phone": "7 (495) 745-80-08",
+      "comment": "",
+      "company_import_id": "company_it_58"
+    },
+    {
+      "full_name": "Ксения Шестакова",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "7 (495) 660-73-11",
+      "comment": "",
+      "company_import_id": "company_it_63"
+    },
+    {
+      "full_name": "Инна Демидова",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "8 800 200-68-86",
+      "comment": "",
+      "company_import_id": "company_it_64"
+    },
+    {
+      "full_name": "Мария Кокорева",
+      "job_title": "Не указано",
+      "email": "info@accu-chek.ru",
+      "phone": "7 495 229 69 95; 8-800-200-88-99",
+      "comment": "",
+      "company_import_id": "company_it_65"
+    },
+    {
+      "full_name": "Ольга Горбунова",
+      "job_title": "Не указано",
+      "email": "gorbunovao@i-teco.ru; hin@i-teco.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_73"
+    },
+    {
+      "full_name": "Анастасия Глумова",
+      "job_title": "Не указано",
+      "email": "an.glumova@jet.su",
+      "phone": "7 495 411-76-01",
+      "comment": "",
+      "company_import_id": "company_it_74"
+    },
+    {
+      "full_name": "Кирилл Кулаков",
+      "job_title": "основатель",
+      "email": "msk@berizariad.com",
+      "phone": "7 (800) 555-04-96",
+      "comment": "",
+      "company_import_id": "company_it_75"
+    },
+    {
+      "full_name": "Елена Филимонова",
+      "job_title": "Не указано",
+      "email": "info@rubytech.ru",
+      "phone": "7 (495) 788 99 99",
+      "comment": "",
+      "company_import_id": "company_it_76"
+    },
+    {
+      "full_name": "Анна Прокофьева",
+      "job_title": "глава Диджитал Маркетинга",
+      "email": "app@kion.ru",
+      "phone": "8 800 250 08 04",
+      "comment": "",
+      "company_import_id": "company_it_77"
+    },
+    {
+      "full_name": "Артем Лопухин",
+      "job_title": "Не указано",
+      "email": "alopukhin@ivi.ru",
+      "phone": "7 (495) 276-06-31",
+      "comment": "",
+      "company_import_id": "company_it_78"
+    },
+    {
+      "full_name": "Екатерина Казмерова",
+      "job_title": "Не указано",
+      "email": "e.kazmerova@2Gis.ru; el.lozlova@2Gis.ru",
+      "phone": "8 (800) 2003600; +7 (495) 6041055",
+      "comment": "",
+      "company_import_id": "company_it_79"
+    },
+    {
+      "full_name": "Евгений Коваленко",
+      "job_title": "Не указано",
+      "email": "kovalenko@arenadata.io; support@arenadata.io",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_80"
+    },
+    {
+      "full_name": "Максим Рындин",
+      "job_title": "Cis Developer",
+      "email": "ir@eruditor-group.com",
+      "phone": "8 (495) 540-46-03",
+      "comment": "",
+      "company_import_id": "company_it_81"
+    },
+    {
+      "full_name": "Даниил Данин",
+      "job_title": "Не указано",
+      "email": "partners@kazanexpress.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_82"
+    },
+    {
+      "full_name": "Александр Ломакин",
+      "job_title": "Не указано",
+      "email": "a.lomakin@b2b-center.ru",
+      "phone": "84955328519",
+      "comment": "",
+      "company_import_id": "company_it_83"
+    },
+    {
+      "full_name": "Алексей Иванов",
+      "job_title": "Не указано",
+      "email": "alex.ivanov@astralinux.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_84"
+    },
+    {
+      "full_name": "Анастасия Белова",
+      "job_title": "Не указано",
+      "email": "abelova@astralinux.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_84"
+    },
+    {
+      "full_name": "Дмитрий Кириллов",
+      "job_title": "Не указано",
+      "email": "d.kirillov@cft.ru",
+      "phone": "(495) 604-12-20",
+      "comment": "",
+      "company_import_id": "company_it_85"
+    },
+    {
+      "full_name": "Виктор Михайлов",
+      "job_title": "Не указано",
+      "email": "v.mikhaylov@cft.ru",
+      "phone": "(495) 604-12-20",
+      "comment": "",
+      "company_import_id": "company_it_85"
+    },
+    {
+      "full_name": "Смирнова Юлия Васильевна",
+      "job_title": "Не указано",
+      "email": "yuvsmirnova@greenatom.ru; srtimkaeva@greenatom.ru",
+      "phone": "7 (499) 949-49-19",
+      "comment": "",
+      "company_import_id": "company_it_86"
+    },
+    {
+      "full_name": "Светлана",
+      "job_title": "менеджер маркетинг",
+      "email": "savenko@usergate.ru; eliseeva@usergate.ru",
+      "phone": "8 800 500 4032; +7 383 286 2913",
+      "comment": "",
+      "company_import_id": "company_it_87"
+    },
+    {
+      "full_name": "Владимир Ульянов",
+      "job_title": "Не указано",
+      "email": "vladimir.ulyanov@zecurion.com",
+      "phone": "7 495 221-21-60",
+      "comment": "",
+      "company_import_id": "company_it_88"
+    },
+    {
+      "full_name": "Андрей Жиляев",
+      "job_title": "Не указано",
+      "email": "andrey.zhilyaev@infotecs.ru; ilia.gavrilov@infotecs.ru",
+      "phone": "Телефон8 (800) 250-02-60",
+      "comment": "",
+      "company_import_id": "company_it_89"
+    },
+    {
+      "full_name": "Илья Гаврилов",
+      "job_title": "Не указано",
+      "email": "andrey.zhilyaev@infotecs.ru; ilia.gavrilov@infotecs.ru",
+      "phone": "Телефон8 (800) 250-02-60",
+      "comment": "",
+      "company_import_id": "company_it_89"
+    },
+    {
+      "full_name": "Илья Мозорнин",
+      "job_title": "Не указано",
+      "email": "mozornin@ptsecurity.com; ybabin@ptsecurity.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_91"
+    },
+    {
+      "full_name": "Яр Бабин",
+      "job_title": "Не указано",
+      "email": "mozornin@ptsecurity.com; ybabin@ptsecurity.com",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_91"
+    },
+    {
+      "full_name": "Ульяна",
+      "job_title": "Менеджер по персоналу",
+      "email": "rma@3logic.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_92"
+    },
+    {
+      "full_name": "Трэвел отдел",
+      "job_title": "Не указано",
+      "email": "rfpfeedback@delret.ru",
+      "phone": "7 (495) 787 06 00",
+      "comment": "",
+      "company_import_id": "company_it_95"
+    },
+    {
+      "full_name": "Отдел по орг мероприятий",
+      "job_title": "Не указано",
+      "email": "info@fplus.ru",
+      "phone": "7 (495) 745-80-08",
+      "comment": "",
+      "company_import_id": "company_it_96"
+    },
+    {
+      "full_name": "Ксения Шестакова",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "7 (495) 660-73-11",
+      "comment": "",
+      "company_import_id": "company_it_101"
+    },
+    {
+      "full_name": "Инна Демидова",
+      "job_title": "Не указано",
+      "email": "",
+      "phone": "8 800 200-68-86",
+      "comment": "",
+      "company_import_id": "company_it_102"
+    },
+    {
+      "full_name": "Мария Кокорева",
+      "job_title": "Не указано",
+      "email": "info@accu-chek.ru",
+      "phone": "7 495 229 69 95; 8-800-200-88-99",
+      "comment": "",
+      "company_import_id": "company_it_103"
+    },
+    {
+      "full_name": "Ольга Горбунова",
+      "job_title": "Не указано",
+      "email": "gorbunovao@i-teco.ru; hin@i-teco.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_111"
+    },
+    {
+      "full_name": "Анастасия Глумова",
+      "job_title": "Не указано",
+      "email": "an.glumova@jet.su",
+      "phone": "7 495 411-76-01",
+      "comment": "",
+      "company_import_id": "company_it_112"
+    },
+    {
+      "full_name": "Кирилл Кулаков",
+      "job_title": "основатель",
+      "email": "msk@berizariad.com",
+      "phone": "7 (800) 555-04-96",
+      "comment": "",
+      "company_import_id": "company_it_113"
+    },
+    {
+      "full_name": "Елена Филимонова",
+      "job_title": "Не указано",
+      "email": "info@rubytech.ru",
+      "phone": "7 (495) 788 99 99",
+      "comment": "",
+      "company_import_id": "company_it_114"
+    },
+    {
+      "full_name": "Анна Прокофьева",
+      "job_title": "глава Диджитал Маркетинга",
+      "email": "app@kion.ru",
+      "phone": "8 800 250 08 04",
+      "comment": "",
+      "company_import_id": "company_it_115"
+    },
+    {
+      "full_name": "Артем Лопухин",
+      "job_title": "Не указано",
+      "email": "alopukhin@ivi.ru",
+      "phone": "7 (495) 276-06-31",
+      "comment": "",
+      "company_import_id": "company_it_116"
+    },
+    {
+      "full_name": "Екатерина Казмерова",
+      "job_title": "Не указано",
+      "email": "e.kazmerova@2Gis.ru; el.lozlova@2Gis.ru",
+      "phone": "8 (800) 2003600; +7 (495) 6041055",
+      "comment": "",
+      "company_import_id": "company_it_117"
+    },
+    {
+      "full_name": "Евгений Коваленко",
+      "job_title": "Не указано",
+      "email": "kovalenko@arenadata.io; support@arenadata.io",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_118"
+    },
+    {
+      "full_name": "Максим Рындин",
+      "job_title": "Cis Developer",
+      "email": "ir@eruditor-group.com",
+      "phone": "8 (495) 540-46-03",
+      "comment": "",
+      "company_import_id": "company_it_119"
+    },
+    {
+      "full_name": "Даниил Данин",
+      "job_title": "Не указано",
+      "email": "partners@kazanexpress.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_120"
+    },
+    {
+      "full_name": "Александр Ломакин",
+      "job_title": "Не указано",
+      "email": "a.lomakin@b2b-center.ru",
+      "phone": "84955328519",
+      "comment": "",
+      "company_import_id": "company_it_121"
+    },
+    {
+      "full_name": "Алексей Иванов",
+      "job_title": "Не указано",
+      "email": "alex.ivanov@astralinux.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_122"
+    },
+    {
+      "full_name": "Анастасия Белова",
+      "job_title": "Не указано",
+      "email": "abelova@astralinux.ru",
+      "phone": "",
+      "comment": "",
+      "company_import_id": "company_it_122"
+    },
+    {
+      "full_name": "Дмитрий Кириллов",
+      "job_title": "Не указано",
+      "email": "d.kirillov@cft.ru",
+      "phone": "(495) 604-12-20",
+      "comment": "",
+      "company_import_id": "company_it_123"
+    },
+    {
+      "full_name": "Виктор Михайлов",
+      "job_title": "Не указано",
+      "email": "v.mikhaylov@cft.ru",
+      "phone": "("
+    }
+  ]
+}

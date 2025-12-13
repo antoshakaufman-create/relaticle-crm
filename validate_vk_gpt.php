@@ -21,30 +21,36 @@ $folderId = config('ai.yandex.folder_id');
 echo "=== VK Activity Validation (GPT Knowledge) ===\n";
 echo "Date: " . date('Y-m-d') . "\n\n";
 
-function validateVKWithGPT($companyName, $vkUrl, $apiKey, $folderId)
+// function signature updated to take industry and context
+function validateVKWithGPT($companyName, $vkUrl, $industry, $position, $apiKey, $folderId)
 {
-    $prompt = "Ты эксперт по соц сетям. Проверь страницу VK компании '$companyName'.
+    $prompt = "Ты эксперт по соц сетям и бизнесу. 
+Проверь, является ли указанная страница VK официальной страницей компании '$companyName'.
 
-VK URL: $vkUrl
+Контекст:
+- Компания: $companyName
+- Отрасль: $industry
+- Должность контакта в этой компании: $position
+- Ссылка VK: $vkUrl
 
-Ответь на вопросы (используй свои знания о этой компании):
+Внимательно проверь соответствие ОТРАСЛИ. Частая ошибка:
+- 'Everest' (Фарма/IT) путают с 'Everest' (Школа/Курсы/Туризм).
+- 'Vertex' (Фармзавод) с 'Vertex' (Строители).
 
-1. Существует ли эта страница VK? (да/нет)
-2. Это ОФИЦИАЛЬНАЯ страница компании или фейк/фан-страница? (официальная/неофициальная/неизвестно)
-3. Компания '$companyName' активна в соц сетях в России? (да/нет/неизвестно)
-4. Это крупная компания которая обычно ведёт соц сети? (да/нет)
+Ответь на вопросы:
+1. Соответствует ли контент страницы VK указанной отрасли компании ($industry)? (да/нет)
+2. Это ОФИЦИАЛЬНАЯ страница именно этой компании? (да/нет/неизвестно)
+3. Это страница другой компании с похожим названием? (да/нет)
 
 Ответь СТРОГО в JSON:
 {
-  \"exists\": true/false,
+  \"match_industry\": true/false,
   \"is_official\": true/false,
-  \"is_active_company\": true/false,
-  \"is_large_company\": true/false,
+  \"is_different_company\": true/false,
   \"confidence\": \"high/medium/low\",
-  \"reason\": \"краткое пояснение\"
+  \"reason\": \"краткое пояснение (например: Это школа, а не фарма)\"
 }
-
-ВАЖНО: Если это известная крупная компания (банк, телеком, ритейл, нефтегаз) - они обычно активно ведут VK.";
+";
 
     try {
         $response = Http::timeout(30)
@@ -56,7 +62,7 @@ VK URL: $vkUrl
                 'modelUri' => 'gpt://' . $folderId . '/yandexgpt-lite/latest',
                 'completionOptions' => [
                     'stream' => false,
-                    'temperature' => 0.2,
+                    'temperature' => 0.1, // Lower temp for stricter logic
                     'maxTokens' => 500,
                 ],
                 'messages' => [
@@ -105,19 +111,30 @@ foreach ($contacts as $contact) {
     $processed++;
     $companyName = '';
 
+    // Extract info
     $notes = $contact->notes ?? '';
     if (preg_match('/Компания:\s*([^\n]+)/u', $notes, $m)) {
         $companyName = trim($m[1]);
     } elseif ($contact->company) {
         $companyName = $contact->company->name;
     } else {
-        $companyName = $contact->name;
+        $companyName = $contact->name; // Fallback
     }
 
-    echo "[$processed] $companyName\n";
+    $industry = $contact->industry ?? $contact->company?->industry ?? 'Фармацевтика/Медицина'; // Default context
+    $position = $contact->position ?? 'Сотрудник';
+
+    // Heuristics for industry if empty
+    if (!$contact->industry && !$contact->company?->industry) {
+        if (stripos($notes, 'фарм') !== false || stripos($companyName, 'pharm') !== false) {
+            $industry = 'Фармацевтика';
+        }
+    }
+
+    echo "[$processed] $companyName ($industry)\n";
     echo "    VK: $vkUrl\n";
 
-    $result = validateVKWithGPT($companyName, $vkUrl, $apiKey, $folderId);
+    $result = validateVKWithGPT($companyName, $vkUrl, $industry, $position, $apiKey, $folderId);
 
     if (!$result) {
         echo "    ⚠ GPT ERROR (keeping)\n\n";
@@ -126,18 +143,17 @@ foreach ($contacts as $contact) {
         continue;
     }
 
-    $exists = $result['exists'] ?? false;
+    $matchIndustry = $result['match_industry'] ?? false;
     $isOfficial = $result['is_official'] ?? false;
-    $isActiveCompany = $result['is_active_company'] ?? false;
-    $isLarge = $result['is_large_company'] ?? false;
-    $confidence = $result['confidence'] ?? 'low';
+    $isDifferent = $result['is_different_company'] ?? false;
     $reason = $result['reason'] ?? '';
 
-    // Logic: Keep if (exists AND official) OR (large company AND exists)
-    $keepLink = ($exists && $isOfficial) || ($isLarge && $exists);
+    // Logic: Keep ONLY if it matches industry AND is official/relevant
+    // remove if it is a different company or mismatches industry
+    $keepLink = $matchIndustry && !$isDifferent && $isOfficial;
 
     if ($keepLink) {
-        echo "    ✓ VALID (official: " . ($isOfficial ? 'yes' : 'no') . ", large: " . ($isLarge ? 'yes' : 'no') . ")\n";
+        echo "    ✓ VALID\n";
         echo "    Reason: $reason\n";
         $valid++;
         $seen[$vkUrl] = true;

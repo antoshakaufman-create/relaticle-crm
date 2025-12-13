@@ -61,6 +61,13 @@ final class Company extends Model implements HasCustomFields, HasMedia
         'phone',
         'website',
         'industry',
+        'website',
+        'vk_url',
+        'vk_status',
+        'lead_score',
+        'lead_category',
+        'smm_analysis',
+        'linkedin_url',
         'creation_source',
     ];
 
