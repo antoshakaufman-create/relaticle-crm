@@ -179,15 +179,21 @@ function gpt_scores($textSample, $commentsSample, $apiKey, $folderId)
 
 // --- Main Loop ---
 
-function classify_lead($score)
+function classify_lead($score, $postingScore)
 {
+    // Active check: if posting score is near 0 (less than 1 = essentially no posts in month), it's DEAD.
+    // calculate_posting_score returns ~0.66 points per post per day.
+    // If postingScore < 2 (less than 3 posts/month) -> LOW ACTIVITY / DEAD?
+
+    $status = ($postingScore > 1) ? "ACTIVE (2025)" : "INACTIVE/DEAD";
+
     if ($score >= 75)
-        return ['cat' => 'HOT', 'desc' => 'Горячий (Срочный аудит)'];
+        return ['cat' => 'HOT', 'desc' => 'Горячий (Срочный аудит)', 'status' => $status];
     if ($score >= 50)
-        return ['cat' => 'WARM', 'desc' => 'Теплый (Оптимизация)'];
+        return ['cat' => 'WARM', 'desc' => 'Теплый (Оптимизация)', 'status' => $status];
     if ($score >= 25)
-        return ['cat' => 'COLD-WARM', 'desc' => 'Тепло-холодный (Внедрение)'];
-    return ['cat' => 'COLD', 'desc' => 'Холодный (Низкий приоритет)'];
+        return ['cat' => 'COLD-WARM', 'desc' => 'Тепло-холодный (Внедрение)', 'status' => $status];
+    return ['cat' => 'COLD', 'desc' => 'Холодный (Низкий приоритет)', 'status' => $status];
 }
 
 $contacts = People::where('notes', 'LIKE', '%VK_STATUS: ACTIVE%')
@@ -294,13 +300,14 @@ foreach ($companyMap as $vkUrl => $contactList) {
     $finalScore = $erScore + $postingScore + $growthScore + $promoScore + $commentQuality + $gptIntent + $gptAuth;
     $finalScore = min(100, round($finalScore, 1));
 
-    $cat = classify_lead($finalScore);
+    $cat = classify_lead($finalScore, $postingScore);
 
-    echo "Score: $finalScore (" . $cat['cat'] . ")\n";
+    echo "Score: $finalScore (" . $cat['cat'] . " | " . $cat['status'] . ")\n";
 
     // Update CRM
     $report = "=== 🎯 LEAD SCORE: $finalScore ({$cat['cat']}) ===\n";
     $report .= $cat['desc'] . "\n";
+    $report .= "Status: " . $cat['status'] . "\n";
     $report .= "ER: " . round($erScore, 1) . " (of 30)\n";
     $report .= "Posting: " . round($postingScore, 1) . " (of 20)\n";
     $report .= "Growth: " . round($growthScore, 1) . " (of 15)\n";
