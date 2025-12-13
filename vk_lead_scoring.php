@@ -27,7 +27,7 @@ echo "=== VK Lead Scoring Algorithm ===\n\n";
 function calculate_er_score($posts)
 {
     if (empty($posts))
-        return 0;
+        return ['score' => 0, 'raw' => 0];
 
     $totalReach = 0;
     $totalEngagement = 0;
@@ -37,9 +37,9 @@ function calculate_er_score($posts)
         $likes = $post['likes']['count'] ?? 0;
         $comments = $post['comments']['count'] ?? 0;
         $reposts = $post['reposts']['count'] ?? 0;
-        $views = $post['views']['count'] ?? ($likes * 10); // approximation
+        $views = $post['views']['count'] ?? ($likes * 10);
         if ($views == 0)
-            $views = 100; // prevent div/0
+            $views = 100;
 
         $totalEngagement += ($likes + $comments + $reposts);
         $totalReach += $views;
@@ -47,32 +47,36 @@ function calculate_er_score($posts)
     }
 
     if ($totalReach == 0)
-        return 0;
+        return ['score' => 0, 'raw' => 0];
 
     $er = ($totalEngagement / $totalReach) * 100;
     // Normalize: 3% ER = 30 points (Max 30)
-    return min(($er / 3) * 30, 30);
+    return ['score' => min(($er / 3) * 30, 30), 'raw' => $er];
 }
 
 function calculate_posting_score($posts)
 {
     if (empty($posts))
-        return 0;
+        return ['score' => 0, 'raw' => 0];
 
     $monthAgo = time() - (30 * 24 * 60 * 60);
     $postingDays = [];
+    $rawCount = 0;
 
     foreach ($posts as $post) {
         if ($post['date'] > $monthAgo) {
             $day = date('Y-m-d', $post['date']);
             $postingDays[$day] = true;
+            $rawCount++;
         }
     }
 
     $daysCount = count($postingDays);
     // Normalize: 30 days = 20 points (Max 20)
-    return ($daysCount / 30) * 20;
+    return ['score' => ($daysCount / 30) * 20, 'raw' => $rawCount];
 }
+
+
 
 function calculate_growth_score($membersCount)
 {
@@ -246,8 +250,14 @@ foreach ($companyMap as $vkUrl => $contactList) {
     }
 
     // 3. Calc Scores
-    $erScore = calculate_er_score($posts);
-    $postingScore = calculate_posting_score($posts);
+    $erData = calculate_er_score($posts);
+    $erScore = $erData['score'];
+    $erRaw = $erData['raw'];
+
+    $postingData = calculate_posting_score($posts);
+    $postingScore = $postingData['score'];
+    $postsPerMonth = $postingData['raw'];
+
     $growthScore = calculate_growth_score($membersCount);
     $promoScore = calculate_promo_score($posts, $apiKey, $folderId);
     $commentQuality = calculate_comment_quality($groupId, $posts, $vkToken);
@@ -262,41 +272,6 @@ foreach ($companyMap as $vkUrl => $contactList) {
     $gptIntent = $gptData['intent'] ?? 0;
     $gptAuth = $gptData['authenticity'] ?? 0;
 
-    // Final Formula
-    $totalScore = ($erScore * 0.30) +
-        ($postingScore * 0.20) +
-        ($growthScore * 0.15) +
-        ($promoScore * 0.10) +
-        ($commentQuality * 0.15) +
-        ($gptIntent * 0.05) +
-        ($gptAuth * 0.5); // Fixed weight from User request 0.05 -> assume 1.0 total. It was 0.05.
-    // Wait, User formula sums: 0.3+0.2+0.15+0.1+0.15+0.05+0.05 = 1.0. Correct.
-
-    // Recalculate correctly using user weights
-    $finalScore = ($erScore) + ($postingScore) + ($growthScore) + ($promoScore) + ($commentQuality) + ($gptIntent) + ($gptAuth);
-    // User formula implies weighted components sum up to score.
-    // User example: Lead_Score = (ER_Score * 0.30) ...
-    // But calculate_er_score returns 0-30.
-    // If calculate_er_score returns "points" (0-30), then we simply ADD them.
-    // Wait, let's look at user code: 
-    // total_score = er_score * 0.30 + ...
-    // But his calculate_er_score returns "min(er / 3 * 30, 30)". 
-    // If ER score is ALREADY 0-30, should we multiply by 0.3?
-    // If ER Score represents 30% of total 100, then max ER Score is 30.
-    // If we multiply 30 * 0.3 = 9. Max score would be 9. That's wrong.
-    // User code is: `er = (total_engagement / total_reach) * 100; return min(er / 3 * 30, 30)` -> Returns 0-30.
-    // User Final Score: `er_score * 0.30`.
-    // If er_score is 30, then 30 * 0.3 = 9.
-    // Total max score would be 30*0.3 + 20*0.2 + ... = 9 + 4 + ... << 100.
-    // User likely meant "Normalized Score (0-100) * Weight". OR "Max Component Score" is the weight.
-    // Let's assume the functions return the COMPONENT POINTS (0-30, 0-20 etc) and we just SUM them.
-    // Re-reading user code: `return min(er / 3 * 30, 30)` -> returns max 30.
-    // `total_score = er_score * 0.30`.
-    // This looks like a mistake in the user's provided python snippet vs text description.
-    // Text says "ER_Score (0-30 баллов)".
-    // If I multiply 30 * 0.3, I get 9.
-    // I will implementation: SUM(Components). Because components are already scaled to their max (30, 20, 15...).
-
     $finalScore = $erScore + $postingScore + $growthScore + $promoScore + $commentQuality + $gptIntent + $gptAuth;
     $finalScore = min(100, round($finalScore, 1));
 
@@ -310,13 +285,14 @@ foreach ($companyMap as $vkUrl => $contactList) {
     if ($company) {
         $company->update([
             'lead_score' => $finalScore,
-            'lead_category' => $cat['cat'], // HOT, WARM...
-            'vk_status' => trim(str_replace(' (2025)', '', $status)), // "ACTIVE" or "INACTIVE/DEAD" (simplified)
-            // Store SMM Analysis text
+            'lead_category' => $cat['cat'],
+            'vk_status' => trim(str_replace(' (2025)', '', $status)),
+            'er_score' => $erRaw,
+            'posts_per_month' => $postsPerMonth,
             'smm_analysis' => $cat['desc'] . "\n" .
                 "Status: $status\n" .
-                "ER: " . round($erScore, 1) . "\n" .
-                "Posting: " . round($postingScore, 1) . "\n" .
+                "ER: " . round($erScore, 1) . " (Raw: " . round($erRaw, 2) . "%)\n" .
+                "Posting: " . round($postingScore, 1) . " (Count: $postsPerMonth)\n" .
                 "Growth: " . round($growthScore, 1) . "\n" .
                 "Promo: " . round($promoScore, 1) . "\n" .
                 "Quality: " . round($commentQuality, 1)

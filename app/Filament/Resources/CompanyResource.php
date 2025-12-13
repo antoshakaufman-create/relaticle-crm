@@ -104,6 +104,12 @@ final class CompanyResource extends Resource
                         TextInput::make('lead_score')
                             ->label('Lead Score')
                             ->numeric(),
+                        TextInput::make('er_score')
+                            ->label('ER %')
+                            ->numeric(),
+                        TextInput::make('posts_per_month')
+                            ->label('Posts/Month')
+                            ->numeric(),
                         Select::make('lead_category')
                             ->label('Category')
                             ->options([
@@ -140,6 +146,16 @@ final class CompanyResource extends Resource
                     ->numeric(1)
                     ->sortable()
                     ->toggleable(),
+                TextColumn::make('er_score')
+                    ->label('ER %')
+                    ->numeric(2)
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('posts_per_month')
+                    ->label('Posts/Mo')
+                    ->numeric(1)
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('lead_category')
                     ->badge()
                     ->color(fn(string $state): string => match ($state) {
