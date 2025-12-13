@@ -25,6 +25,7 @@ use Filament\Actions\RestoreAction;
 use Filament\Actions\RestoreBulkAction;
 use Filament\Actions\ViewAction;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Resource;
 use Filament\Schemas\Components\Grid;
@@ -163,6 +164,61 @@ final class PeopleResource extends Resource
                             ->columnSpanFull(),
                     ])
                     ->columns(12),
+                \Filament\Forms\Components\Section::make('Enrichment Data')
+                    ->description('Automatic data from LinkedIn and VK Analysis')
+                    ->schema([
+                        Grid::make()
+                            ->schema([
+                                TextInput::make('linkedin_url')
+                                    ->label('LinkedIn URL')
+                                    ->url()
+                                    ->maxLength(255)
+                                    ->columnSpan(6),
+                                TextInput::make('linkedin_position')
+                                    ->label('LinkedIn Должность')
+                                    ->maxLength(255)
+                                    ->columnSpan(6),
+                                TextInput::make('linkedin_company')
+                                    ->label('LinkedIn Компания')
+                                    ->maxLength(255)
+                                    ->columnSpan(6),
+                                TextInput::make('linkedin_location')
+                                    ->label('LinkedIn Локация')
+                                    ->maxLength(255)
+                                    ->columnSpan(6),
+                            ])->columns(12),
+
+                        Grid::make()
+                            ->schema([
+                                Select::make('vk_status')
+                                    ->label('VK Status')
+                                    ->options([
+                                        'ACTIVE' => 'Active',
+                                        'INACTIVE' => 'Inactive',
+                                        'DEAD' => 'Dead'
+                                    ])
+                                    ->columnSpan(4),
+                                TextInput::make('lead_score')
+                                    ->label('Lead Score')
+                                    ->numeric()
+                                    ->columnSpan(4),
+                                Select::make('lead_category')
+                                    ->label('Category')
+                                    ->options([
+                                        'HOT' => 'HOT',
+                                        'WARM' => 'WARM',
+                                        'COLD-WARM' => 'COLD-WARM',
+                                        'COLD' => 'COLD'
+                                    ])
+                                    ->columnSpan(4),
+                            ])->columns(12),
+
+                        \Filament\Forms\Components\Textarea::make('visual_analysis')
+                            ->label('Visual Analysis (Lisa)')
+                            ->rows(3)
+                            ->columnSpanFull(),
+                    ])
+                    ->collapsible(),
                 CustomFields::form()->forSchema($schema)
                     ->build()
                     ->columnSpanFull(),
