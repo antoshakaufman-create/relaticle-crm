@@ -42,18 +42,58 @@ final class ViewPeople extends ViewRecord
                 Flex::make([
                     ImageEntry::make('avatar')
                         ->label('')
-                        ->height(30)
+                        ->height(60)
                         ->circular()
                         ->grow(false),
-                    TextEntry::make('name')
-                        ->label('')
-                        ->size(TextSize::Large),
-                    TextEntry::make('company.name')
-                        ->label(__('resources.common.companies'))
-                        ->color('primary')
-                        ->url(fn (People $record): ?string => $record->company ? CompanyResource::getUrl('view', [$record->company]) : null),
+                    \Filament\Schemas\Components\Section::make()->schema([
+                        TextEntry::make('name')
+                            ->label('')
+                            ->size(TextSize::Large)
+                            ->weight(\Filament\Support\Enums\FontWeight::Bold),
+                        TextEntry::make('position')
+                            ->label('')
+                            ->size(TextSize::Medium)
+                            ->color('gray'),
+                        TextEntry::make('company.name')
+                            ->label('')
+                            ->color('primary')
+                            ->url(fn(People $record): ?string => $record->company ? CompanyResource::getUrl('view', [$record->company]) : null),
+                    ]),
                 ]),
-                CustomFields::infolist()->forSchema($schema)->build()->columnSpanFull(),
+            ])->columnSpanFull(),
+
+            Section::make('Contact Info')
+                ->schema([
+                    TextEntry::make('email')->icon('heroicon-m-envelope')->copyable(),
+                    TextEntry::make('phone')->icon('heroicon-m-phone')->copyable(),
+                    TextEntry::make('website')->url(fn($state) => $state)->openUrlInNewTab()->color('primary'),
+                    TextEntry::make('linkedin_location')->label('Location'),
+                ])->columns(2),
+
+            Section::make('Social & Analysis')
+                ->schema([
+                    TextEntry::make('linkedin_url')
+                        ->label('LinkedIn')
+                        ->icon('heroicon-m-link')
+                        ->url(fn($state) => $state)
+                        ->openUrlInNewTab()
+                        ->color('primary'),
+                    TextEntry::make('vk_url')
+                        ->label('VK')
+                        ->icon('heroicon-m-link')
+                        ->url(fn($state) => $state)
+                        ->openUrlInNewTab()
+                        ->color('primary'),
+                    TextEntry::make('vk_status')->badge(),
+                    TextEntry::make('lead_score')->label('Score'),
+                    TextEntry::make('lead_category')->badge(),
+                    TextEntry::make('smm_analysis')
+                        ->columnSpanFull()
+                        ->markdown(),
+                ])->columns(3),
+
+            Section::make('Custom Fields')->schema([
+                CustomFields::infolist()->forSchema($schema)->build(),
             ])->columnSpanFull(),
         ]);
     }

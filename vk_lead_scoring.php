@@ -200,27 +200,27 @@ function classify_lead($score, $postingScore)
     return ['cat' => 'COLD', 'desc' => 'Холодный (Низкий приоритет)', 'status' => $status];
 }
 
-$contacts = People::where('notes', 'LIKE', '%VK_STATUS: ACTIVE%')
-    ->whereNotNull('vk_url')
+// Iterate over Companies directly
+$companies = \App\Models\Company::whereNotNull('vk_url')
+    ->where('vk_url', '!=', '')
     ->get();
 
-// Group by company
-$companyMap = [];
-foreach ($contacts as $c) {
-    $vk = $c->vk_url;
-    if (!isset($companyMap[$vk]))
-        $companyMap[$vk] = [];
-    $companyMap[$vk][] = $c;
-}
-
-echo "Active Companies to Score: " . count($companyMap) . "\n\n";
+echo "Active Companies to Score: " . $companies->count() . "\n\n";
 
 $processed = 0;
 
-foreach ($companyMap as $vkUrl => $contactList) {
+foreach ($companies as $company) {
+    if (!$company->vk_url)
+        continue;
+
+    $vkUrl = $company->vk_url;
     $processed++;
-    $compName = $contactList[0]->company->name ?? 'Unknown';
-    echo "[$processed] $compName... ";
+    echo "[$processed] {$company->name}... ";
+
+    // Create a mock list for the logic below (which expects a list of contacts)
+    // Actually, let's simplify the loop below to work with $company directly
+    $contactList = [$company]; // Hack to keep structure or we refactor completely
+
 
     // 1. Get Group ID
     $path = parse_url($vkUrl, PHP_URL_PATH);
@@ -281,7 +281,6 @@ foreach ($companyMap as $vkUrl => $contactList) {
     echo "Score: $finalScore (" . $cat['cat'] . " | " . $status . ")\n";
 
     // Update Company Record
-    $company = $contactList[0]->company;
     if ($company) {
         $company->update([
             'lead_score' => $finalScore,

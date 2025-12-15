@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace App\Filament\Resources;
 
 use App\Enums\CreationSource;
+use App\Models\Company;
 use App\Filament\Exports\CompanyExporter;
 use App\Filament\Resources\CompanyResource\Pages\ListCompanies;
 use App\Filament\Resources\CompanyResource\Pages\ViewCompany;
 use App\Filament\Resources\CompanyResource\RelationManagers\PeopleRelationManager;
 use Filament\Forms\Components\Section;
-
-
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
@@ -81,7 +80,7 @@ final class CompanyResource extends Resource
                     ->preload()
                     ->searchable(),
 
-                \Filament\Forms\Components\Section::make('Enrichment Data')
+                \Filament\Schemas\Components\Section::make('Enrichment Data')
                     ->description('Automatic SMM Analysis & Lead Score')
                     ->schema([
                         TextInput::make('industry')
@@ -124,7 +123,11 @@ final class CompanyResource extends Resource
                             ->columnSpanFull(),
                     ])->collapsible(),
 
-                CustomFields::form()->forSchema($schema)->build()->columns(1),
+                \Filament\Schemas\Components\Section::make('Additional Information')
+                    ->schema([
+                        CustomFields::form()->forSchema($schema)->build()->columns(1),
+                    ])
+                    ->collapsible(),
             ])
             ->columns(1);
     }
@@ -140,6 +143,12 @@ final class CompanyResource extends Resource
                 TextColumn::make('industry')
                     ->label('Отрасль')
                     ->searchable()
+                    ->toggleable(),
+                TextColumn::make('vk_url')
+                    ->label('VK')
+                    ->url(fn($state) => $state)
+                    ->openUrlInNewTab()
+                    ->icon('heroicon-m-link')
                     ->toggleable(),
                 TextColumn::make('lead_score')
                     ->label('Score')
@@ -243,6 +252,7 @@ final class CompanyResource extends Resource
         return [
             'index' => ListCompanies::route('/'),
             'view' => ViewCompany::route('/{record}'),
+            // 'edit' => \App\Filament\Resources\CompanyResource\Pages\EditCompany::route('/{record}/edit'),
         ];
     }
 

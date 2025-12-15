@@ -135,7 +135,6 @@ final class AppPanelProvider extends PanelProvider
             ->pages([
                 EditProfile::class,
                 ApiTokens::class,
-                \App\Filament\Pages\AiImport::class,
             ])
             ->spa()
             ->breadcrumbs(false)

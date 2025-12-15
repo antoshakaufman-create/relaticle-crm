@@ -55,6 +55,30 @@ final class People extends Model implements HasCustomFields
         'website',
         'industry',
         'company_id',
+
+        // Address
+        'address_line_1',
+        'address_line_2',
+        'city',
+        'state_province',
+        'postal_code',
+        'country_code',
+        'latitude',
+        'longitude',
+        'timezone',
+
+        // Engagement & GDPR
+        'last_contacted_at',
+        'last_email_opened_at',
+        'gdpr_consent_given',
+        'gdpr_consent_date',
+        'email_opt_in',
+
+        // Marketing
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'marketing_campaign_id',
         'creation_source',
         'vk_url',
         'linkedin_url',
@@ -81,7 +105,6 @@ final class People extends Model implements HasCustomFields
     /**
      * The attributes that should be cast.
      *
-     * @return array<string, string|class-string>
      */
     protected function casts(): array
     {

@@ -12,6 +12,8 @@ use App\Filament\Resources\CompanyResource\RelationManagers\NotesRelationManager
 use App\Filament\Resources\CompanyResource\RelationManagers\PeopleRelationManager;
 use App\Filament\Resources\CompanyResource\RelationManagers\TasksRelationManager;
 use App\Jobs\FetchFaviconForCompany;
+use App\Jobs\PerformDeepAiAnalysis;
+use App\Jobs\PerformSmmAnalysis;
 use App\Models\Company;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
@@ -30,6 +32,99 @@ final class ViewCompany extends ViewRecord
     protected function getHeaderActions(): array
     {
         return [
+            \Filament\Actions\Action::make('Find VK Link')
+                ->icon('heroicon-m-magnifying-glass')
+                ->form([
+                    \Filament\Forms\Components\TextInput::make('query')
+                        ->label('Search Query')
+                        ->default(fn($record) => $record->name)
+                        ->required(),
+                ])
+                ->action(function (Company $record, array $data, \App\Services\VkActionService $vkService) {
+                    // 1. Try to extract domain from website
+                    $domain = null;
+                    if ($record->website) {
+                        $host = parse_url($record->website, PHP_URL_HOST);
+                        $domain = $host ? str_ireplace('www.', '', $host) : null;
+                    }
+
+                    // 2. If no website, try from employees
+                    if (!$domain) {
+                        $genericDomains = ['gmail.com', 'mail.ru', 'yandex.ru', 'bk.ru', 'list.ru', 'inbox.ru', 'outlook.com', 'hotmail.com', 'icloud.com'];
+                        foreach ($record->people as $person) {
+                            if ($person->email && str_contains($person->email, '@')) {
+                                $parts = explode('@', $person->email);
+                                $d = end($parts);
+                                if (!in_array(strtolower($d), $genericDomains)) {
+                                    $domain = $d;
+                                    break; // Found corporate domain
+                                }
+                            }
+                        }
+                    }
+
+                    $url = $vkService->findGroup($data['query'], $domain);
+
+                    if ($url) {
+                        $record->update(['vk_url' => $url]);
+                        $msg = "Found and saved: $url";
+                        if ($domain)
+                            $msg .= " (Verified via $domain)";
+
+                        \Filament\Notifications\Notification::make()
+                            ->title('VK Link Found')
+                            ->body($msg)
+                            ->success()
+                            ->send();
+                    } else {
+                        \Filament\Notifications\Notification::make()
+                            ->title('Not Found')
+                            ->warning()
+                            ->send();
+                    }
+                }),
+            \Filament\Actions\Action::make('SMM Analysis')
+                ->icon('heroicon-m-chart-bar')
+                ->requiresConfirmation()
+                ->action(function (Company $record) {
+                    if (!$record->vk_url) {
+                        \Filament\Notifications\Notification::make()
+                            ->title('No VK Link')
+                            ->body('Please find a VK link first.')
+                            ->danger()
+                            ->send();
+                        return;
+                    }
+
+                    // Dispatch Async Job
+                    PerformSmmAnalysis::dispatch($record);
+
+                    \Filament\Notifications\Notification::make()
+                        ->title('SMM Analysis Started')
+                        ->body('The analysis is running in the background. You will be notified when complete.')
+                        ->success()
+                        ->send();
+                }),
+            // Deep AI Analysis Action
+            \Filament\Actions\Action::make('Deep AI Analysis')
+                ->icon('heroicon-m-sparkles')
+                ->color('warning')
+                ->requiresConfirmation()
+                ->action(function (Company $record) {
+                    if (!$record->vk_url) {
+                        \Filament\Notifications\Notification::make()->title('No VK Link')->danger()->send();
+                        return;
+                    }
+
+                    // Dispatch Async Job
+                    PerformDeepAiAnalysis::dispatch($record);
+
+                    \Filament\Notifications\Notification::make()
+                        ->title('AI Analysis Started')
+                        ->body('This process may take several minutes. You will be notified when complete.')
+                        ->info()
+                        ->send();
+                }),
             GenerateRecordSummaryAction::make(),
             ActionGroup::make([
                 EditAction::make()
@@ -60,7 +155,7 @@ final class ViewCompany extends ViewRecord
         $oldDomain = $domainField !== null ? $company->getCustomFieldValue($domainField) : null;
 
         // Only dispatch if domain changed and new value is not empty
-        if (! in_array($newDomain, [$oldDomain, null, '', '0'], true)) {
+        if (!in_array($newDomain, [$oldDomain, null, '', '0'], true)) {
             FetchFaviconForCompany::dispatch($company)->afterCommit();
         }
     }
@@ -107,6 +202,34 @@ final class ViewCompany extends ViewRecord
                             ->dateTime(),
                     ])->grow(false),
                 ])->columnSpan('full'),
+
+                Section::make('Social Metrics')
+                    ->schema([
+                        Flex::make([
+                            TextEntry::make('vk_url')
+                                ->label('VK')
+                                ->icon('heroicon-m-link')
+                                ->url(fn($state) => $state)
+                                ->openUrlInNewTab()
+                                ->color('primary'),
+                            TextEntry::make('vk_status')
+                                ->badge()
+                                ->color(fn(string $state): string => match (true) {
+                                    str_contains($state, 'ACTIVE') => 'success',
+                                    str_contains($state, 'INACTIVE') => 'warning',
+                                    default => 'danger',
+                                }),
+                        ]),
+                        Flex::make([
+                            TextEntry::make('er_score')->label('ER Score')->numeric(2),
+                            TextEntry::make('posts_per_month')->label('Posts/Month')->numeric(1),
+                            TextEntry::make('lead_score')->label('Lead Score'),
+                            TextEntry::make('lead_category')->badge(),
+                        ]),
+                        TextEntry::make('smm_analysis')
+                            ->columnSpanFull()
+                            ->markdown(),
+                    ]),
             ]);
     }
 

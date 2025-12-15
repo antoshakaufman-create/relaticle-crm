@@ -49,18 +49,17 @@ final class PeopleRelationManager extends RelationManager
                 TextColumn::make('position')->label('Должность'),
                 TextColumn::make('email')->label('Email')->toggleable(),
                 TextColumn::make('phone')->label('Телефон')->toggleable(),
-                TextColumn::make('vk_status')
-                    ->label('VK')
-                    ->badge()
-                    ->color(fn(string $state): string => match (true) {
-                        str_contains($state, 'ACTIVE') => 'success',
-                        str_contains($state, 'INACTIVE') => 'warning',
-                        default => 'danger',
-                    })
+                TextColumn::make('linkedin_url')
+                    ->label('LinkedIn')
+                    ->url(fn($state) => $state)
+                    ->openUrlInNewTab()
+                    ->icon('heroicon-m-link')
+                    ->limit(30)
                     ->toggleable(),
 
                 ...CustomFields::table()->forModel($table->getModel())->columns(),
             ])
+            ->recordUrl(fn($record) => \App\Filament\Resources\PeopleResource::getUrl('view', ['record' => $record]))
             ->filters([
                 //
             ])

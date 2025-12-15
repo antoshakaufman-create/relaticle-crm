@@ -48,6 +48,19 @@ final class Opportunity extends Model implements HasCustomFields
      */
     protected $fillable = [
         'creation_source',
+        'expected_close_date',
+        'pipeline_stage_id',
+        'is_won',
+        'is_lost',
+
+        // Sales Pipeline
+        'amount',
+        'probability',
+        'close_date',
+        'next_step',
+        'competitor',
+        'lost_reason',
+        'order_column',
     ];
 
     /**

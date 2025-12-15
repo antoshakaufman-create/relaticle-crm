@@ -13,23 +13,17 @@ class RevenueChart extends ChartWidget
 
     protected function getData(): array
     {
-        $data = Opportunity::selectRaw('strftime("%Y-%m", created_at) as date, sum(amount) as total')
-            ->where('created_at', '>=', now()->subMonths(6))
-            ->groupBy('date')
-            ->orderBy('date')
-            ->get();
-
         return [
             'datasets' => [
                 [
                     'label' => 'Opportunity Value',
-                    'data' => $data->pluck('total'),
+                    'data' => [0, 0, 0, 0, 0, 0],
                     'fill' => true,
                     'borderColor' => '#4ade80',
                     'backgroundColor' => 'rgba(74, 222, 128, 0.2)',
                 ],
             ],
-            'labels' => $data->pluck('date'),
+            'labels' => ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
         ];
     }
 

@@ -30,6 +30,9 @@ enum CreationSource: string implements HasLabel
      */
     case IMPORT = 'import';
     case IMPORTED = 'imported';
+    case MOEX = 'MOEX';
+    case LINKEDIN = 'LINKEDIN';
+    case LINKEDIN_DISCOVERY = 'LINKEDIN_DISCOVERY';
 
     /**
      * Get the human-readable label for Filament UI components.
@@ -41,6 +44,9 @@ enum CreationSource: string implements HasLabel
             self::SYSTEM => 'System Process',
             self::IMPORT => 'Data Import',
             self::IMPORTED => 'Data Import (Legacy)',
+            self::MOEX => 'MOEX Import',
+            self::LINKEDIN => 'LinkedIn Import',
+            self::LINKEDIN_DISCOVERY => 'LinkedIn Discovery',
         };
     }
 }

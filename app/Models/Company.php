@@ -52,6 +52,25 @@ final class Company extends Model implements HasCustomFields, HasMedia
     /**
      * @var list<string>
      */
+    protected $casts = [
+        'lead_score' => 'decimal:2',
+        'er_score' => 'decimal:2',
+        'posts_per_month' => 'integer',
+        'smm_analysis' => 'array',
+        'raw_response' => 'array',
+        'smm_analysis_date' => 'datetime',
+        'last_enrichment_at' => 'datetime',
+        'latitude' => 'decimal:8',
+        'longitude' => 'decimal:8',
+        'annual_revenue' => 'decimal:2',
+        'engagement_score' => 'decimal:2',
+        'last_contacted_at' => 'datetime',
+        'creation_source' => CreationSource::class,
+    ];
+
+    /**
+     * @var list<string>
+     */
     protected $fillable = [
         'team_id',
         'creator_id',
@@ -69,6 +88,34 @@ final class Company extends Model implements HasCustomFields, HasMedia
         'posts_per_month',
         'lead_category',
         'smm_analysis',
+        'raw_response',
+
+        // Address & Location
+        'address_line_1',
+        'address_line_2',
+        'city',
+        'state_province',
+        'postal_code',
+        'country_code',
+        'latitude',
+        'longitude',
+        'timezone',
+
+        // Financial & Engagement
+        'annual_revenue',
+        'number_of_employees',
+        'founded_year',
+        'currency_code',
+        'last_contacted_at',
+        'engagement_score',
+
+        // Marketing
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'marketing_campaign_id',
+        'smm_analysis_date',
+        'last_enrichment_at',
         'linkedin_url',
         'creation_source',
     ];

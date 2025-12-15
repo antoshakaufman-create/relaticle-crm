@@ -164,7 +164,7 @@ final class PeopleResource extends Resource
                             ->columnSpanFull(),
                     ])
                     ->columns(12),
-                \Filament\Forms\Components\Section::make('Enrichment Data')
+                \Filament\Schemas\Components\Section::make('Enrichment Data')
                     ->description('Automatic data from LinkedIn and VK Analysis')
                     ->schema([
                         Grid::make()
@@ -219,9 +219,11 @@ final class PeopleResource extends Resource
                             ->columnSpanFull(),
                     ])
                     ->collapsible(),
-                CustomFields::form()->forSchema($schema)
-                    ->build()
-                    ->columnSpanFull(),
+                \Filament\Schemas\Components\Section::make('Additional Information')
+                    ->schema([
+                        CustomFields::form()->forSchema($schema)->build()->columns(1),
+                    ])
+                    ->collapsible(),
             ]);
     }
 
@@ -246,6 +248,12 @@ final class PeopleResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('vk_url')
                     ->label('VK')
+                    ->icon('heroicon-m-link')
+                    ->url(fn($state) => $state)
+                    ->openUrlInNewTab()
+                    ->toggleable(),
+                TextColumn::make('linkedin_url')
+                    ->label('LinkedIn')
                     ->icon('heroicon-m-link')
                     ->url(fn($state) => $state)
                     ->openUrlInNewTab()

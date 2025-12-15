@@ -1,0 +1,13 @@
+BEGIN TRANSACTION;
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/37874629' WHERE name = 'Р Фарм';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/5944137' WHERE name = 'Фармасинтез';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/70993062' WHERE name = 'Фарм Синтез';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/97107286' WHERE name = 'Веро Фарма';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/8064775' WHERE name = 'НоваМедика';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/89641682' WHERE name = 'Озон';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/408660' WHERE name = 'Вертекс';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/19143820' WHERE name = 'Синтез';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/3215104' WHERE name = 'Эвалар';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/8885' WHERE name = 'Полярис';
+UPDATE companies SET linkedin_url = 'https://www.linkedin.com/company/22196' WHERE name = 'KPBS';
+COMMIT;

@@ -1,0 +1,1316 @@
+[
+    {
+        "id": 1868,
+        "name": "\u0421\u0430\u043c\u0441\u043e\u043d\u043e\u0432 \u041c\u0438\u0445\u0430\u0438\u043b",
+        "company": "\u0420 \u0424\u0430\u0440\u043c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1869,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0410\u043d\u0434\u0440\u0435\u0435\u0432",
+        "company": "\u0412\u0430\u043b\u0435\u043d\u0442\u0430 \u0424\u0430\u0440\u043c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1872,
+        "name": "\u041d\u0438\u043d\u0430 \u041f\u043e\u0437\u0434\u0435\u0435\u0432\u0430",
+        "company": "\u0424\u0430\u0440\u043c \u0421\u0438\u043d\u0442\u0435\u0437",
+        "company_linkedin": null
+    },
+    {
+        "id": 1873,
+        "name": "\u0418\u0440\u0438\u043d\u0430 \u0422\u0440\u0443\u0441\u043e\u0432\u0430",
+        "company": "\u0412\u0435\u0440\u043e \u0424\u0430\u0440\u043c\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 1874,
+        "name": "\u041c\u0430\u0440\u0438\u043d\u0430 \u0410\u0439\u0432\u0430\u0437\u043e\u0432\u0430",
+        "company": "\u041d\u043e\u0432\u0430\u041c\u0435\u0434\u0438\u043a\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 1875,
+        "name": "\u0410\u043d\u043d\u0430 \u0421\u0438\u043c\u0430\u043d\u043e\u0432\u0438\u0447",
+        "company": "\u0412\u0435\u0440\u0442\u0435\u043a\u0441",
+        "company_linkedin": null
+    },
+    {
+        "id": 1877,
+        "name": "\u0410\u0431\u0445\u0430\u0440 \u041c\u0430\u043c\u0435\u0434\u043e\u0432",
+        "company": "\u0421\u0438\u043d\u0442\u0435\u0437",
+        "company_linkedin": null
+    },
+    {
+        "id": 1878,
+        "name": "\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440",
+        "company": "\u0427\u0438\u0435\u0437\u0438 \u0424\u0430\u0440\u043c\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 1879,
+        "name": "\u0412\u0438\u0442\u0430\u043b\u0438\u0439 \u041f\u0440\u0438\u0439\u043c\u0435\u043d\u043a\u043e",
+        "company": "\u041f\u0410\u041e \"\u041e\u0442\u0438\u0441\u0438\u0444\u0430\u0440\u043c\"",
+        "company_linkedin": null
+    },
+    {
+        "id": 1881,
+        "name": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0417\u0430\u0432\u044c\u044f\u043b\u043e\u0432",
+        "company": "\u042d\u0432\u0430\u043b\u0430\u0440",
+        "company_linkedin": null
+    },
+    {
+        "id": 1882,
+        "name": "\u0410\u043d\u043d\u0430 \u041a\u043e\u0437\u043b\u043e\u0432\u0441\u043a\u0430\u044f",
+        "company": "\u041d\u0438\u0436\u0444\u0430\u0440\u043c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1884,
+        "name": "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u0415\u0436\u043e\u0432\u0430",
+        "company": "\u041f\u043e\u043b\u044f\u0440\u0438\u0441",
+        "company_linkedin": null
+    },
+    {
+        "id": 1885,
+        "name": "\u0412\u0430\u0434\u0438\u043c \u0415\u0432\u0434\u043e\u043a\u0438\u043c\u043e\u0432",
+        "company": "\u0426\u0438\u0444\u0440\u043e\u0432\u0430\u044f \u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 1886,
+        "name": "\u042e\u0440\u0438\u0439 \u041c\u0430\u0440\u043a\u0435\u043b\u043e\u0432",
+        "company": "KPBS",
+        "company_linkedin": null
+    },
+    {
+        "id": 1887,
+        "name": "\u041f\u0440\u0430\u0441\u043b\u043e\u0432 \u0415\u0432\u0433\u0435\u043d\u0438\u0439",
+        "company": "Ozon Travel",
+        "company_linkedin": null
+    },
+    {
+        "id": 1888,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u041b\u0438\u043f\u0438\u043b\u0438\u043d",
+        "company": "\u0422\u0440\u0438\u043a\u043e\u043b\u043e\u0440",
+        "company_linkedin": null
+    },
+    {
+        "id": 1889,
+        "name": "\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u0411\u043e\u043b\u044c\u0448\u043e\u0432\u0430",
+        "company": "\u041d\u0430\u0445\u043e\u0434\u043a\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 1890,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u041f\u043e\u043f\u043e\u0432",
+        "company": "\u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442 \u041a\u043e\u0443\u0447\u0438\u043d\u0433\u0430 \u0421\u041f\u0411",
+        "company_linkedin": null
+    },
+    {
+        "id": 1891,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u041c\u0430\u0439\u043e\u0440\u043e\u0432\u0430",
+        "company": "\u0420\u0438\u0433\u043b\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 1892,
+        "name": "\u0412\u0438\u043a\u0442\u043e\u0440",
+        "company": "\u0421\u043e\u044e\u0437 \u0424\u0430\u0440\u043c\u0430\u0446\u0435\u0432\u0442\u043e\u0432 \u0420\u043e\u0441\u0441\u0438\u0438",
+        "company_linkedin": null
+    },
+    {
+        "id": 1893,
+        "name": "\u0412\u0430\u043b\u0435\u043d\u0442\u0438\u043d\u0430 \u0422\u0440\u043e\u0444\u0438\u043c\u0435\u043d\u043a\u043e",
+        "company": "Pozitive Techlogies",
+        "company_linkedin": null
+    },
+    {
+        "id": 1894,
+        "name": "\u0418\u0440\u0438\u043d\u0430 \u041c\u043e\u0441\u043a\u0430\u043b\u0435\u0432\u0430",
+        "company": "\u0422\u0435\u043d\u0437\u043e\u0440",
+        "company_linkedin": null
+    },
+    {
+        "id": 1895,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u041a\u0443\u0440\u0435\u043f\u0438\u043d\u0430",
+        "company": "\u0422\u0435\u0445\u043d\u043e\u043d\u0438\u043a\u043e\u043b\u044c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1896,
+        "name": "\u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447\u0435\u0432 \u041c\u0430\u043a\u0441\u0438\u043c \u0413\u0435\u043d\u043d\u0430\u0434\u044c\u0435\u0432\u0438\u0447",
+        "company": "\u0413\u0430\u0437\u043f\u0440\u043e\u043c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1897,
+        "name": "\u041a\u043e\u0441\u0442\u0430 \u041a\u0430\u0434\u0437\u043e\u0432",
+        "company": "\u0421\u0434\u0435\u043b\u0430\u043d\u043e \u0432 \u0420\u043e\u0441\u0441\u0438\u0438",
+        "company_linkedin": null
+    },
+    {
+        "id": 1898,
+        "name": "\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u0428\u0435\u0441\u0442\u0435\u0440\u0438\u043a\u043e\u0432\u0430",
+        "company": "My games",
+        "company_linkedin": null
+    },
+    {
+        "id": 1899,
+        "name": "Roman Polyak",
+        "company": "My games",
+        "company_linkedin": null
+    },
+    {
+        "id": 1900,
+        "name": "\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u041a\u0430\u043b\u0443\u043d\u043e\u0432\u0430",
+        "company": "\u041c\u0430\u0440\u0432\u0435\u043b",
+        "company_linkedin": null
+    },
+    {
+        "id": 1901,
+        "name": "\u041c\u0430\u0440\u0438\u044f \u041f\u043e\u0442\u043e\u0440\u0430\u0446\u043a\u0430\u044f",
+        "company": "Level",
+        "company_linkedin": null
+    },
+    {
+        "id": 1902,
+        "name": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u041a\u0430\u0448\u0438\u043d\u0430",
+        "company": "Start",
+        "company_linkedin": null
+    },
+    {
+        "id": 1903,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u041a\u0430\u0446\u043a\u043e",
+        "company": "\u041b\u0410\u041d\u0418\u0422",
+        "company_linkedin": null
+    },
+    {
+        "id": 1904,
+        "name": "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u041a\u0438\u0441\u0435\u043b\u0435\u0432\u0430",
+        "company": "\u0411\u0430\u043d\u043a\u0438 \u0440\u0443",
+        "company_linkedin": null
+    },
+    {
+        "id": 1905,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u041f\u043e\u043b\u043e\u0432\u0438\u043d\u043a\u0438\u043d",
+        "company": "Talenttech",
+        "company_linkedin": null
+    },
+    {
+        "id": 1907,
+        "name": "\u0415\u043b\u0438\u0437\u0430\u0432\u0435\u0442\u0430 \u0422\u0438\u043c\u0430\u043d\u0441\u043a\u0430\u044f",
+        "company": "\u0410\u0432\u0438\u0430 \u0421\u0435\u0439\u043b\u0441",
+        "company_linkedin": null
+    },
+    {
+        "id": 1908,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u041a\u043e\u0432\u0430\u043b\u0435\u043d\u043a\u043e",
+        "company": "RGS",
+        "company_linkedin": null
+    },
+    {
+        "id": 1909,
+        "name": "\u0412\u0438\u043a\u0442\u043e\u0440\u0438\u044f \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u043d\u0430 \u041a\u0430\u0431\u0430\u043d\u043e\u0432\u0430",
+        "company": "RGS",
+        "company_linkedin": null
+    },
+    {
+        "id": 1910,
+        "name": "\u041d\u0430\u0433\u0438\u0435\u0432\u0430 \u042e\u043b\u0438\u044f",
+        "company": "\u041c\u0430\u0442\u0435\u0440\u0438\u043a\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 1911,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u041b\u0430\u0440\u0435\u0432\u0430",
+        "company": "Netwell",
+        "company_linkedin": null
+    },
+    {
+        "id": 1912,
+        "name": "\u0410\u043d\u043d\u0430 \u041c\u0430\u0449\u0435\u043d\u043a\u043e",
+        "company": "Kaspersky",
+        "company_linkedin": null
+    },
+    {
+        "id": 1913,
+        "name": "\u0414\u0430\u0440\u044c\u044f \u0428\u0435\u043a\u043e\u0447\u0438\u0445\u0438\u043d\u0430",
+        "company": "Kaspersky",
+        "company_linkedin": null
+    },
+    {
+        "id": 1914,
+        "name": "\u0421\u0435\u0440\u0433\u0435\u0439 \u0417\u0430\u0439\u0446\u0435\u0432",
+        "company": "\u042f\u043d\u0434\u0435\u043a\u0441",
+        "company_linkedin": null
+    },
+    {
+        "id": 1916,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u041b\u0430\u043f\u0443\u0442\u0438\u043d",
+        "company": "\u0413\u0430\u0437\u043f\u0440\u043e\u043c\u043d\u0435\u0444\u0442\u044c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1917,
+        "name": "\u0418\u0440\u0438\u043d\u0430 \u041c\u0430\u0445\u043c\u0443\u0442\u043e\u0432\u0430",
+        "company": "\u041b\u043e\u0440\u0435\u0430\u043b\u044c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1918,
+        "name": "\u0410\u043d\u043d\u0430 \u041f\u043e\u0434\u0440\u044f\u0434\u0447\u0438\u043a\u043e\u0432\u0430",
+        "company": "\u0410\u0415\u0411",
+        "company_linkedin": null
+    },
+    {
+        "id": 1919,
+        "name": "\u0410\u043b\u043b\u0430 \u0413\u043e\u0440\u0431\u0443\u043d\u043e\u0432\u0430",
+        "company": "Redbull",
+        "company_linkedin": null
+    },
+    {
+        "id": 1920,
+        "name": "\u0427\u0443\u0431\u0430\u0440\u043e\u0432\u0430 \u0415\u043b\u0435\u043d\u0430",
+        "company": "NL international",
+        "company_linkedin": null
+    },
+    {
+        "id": 1921,
+        "name": "\u041d\u0430\u0442\u0430\u043b\u044c\u044f \u042f\u0440\u043e\u043c\u0447\u0438\u043a",
+        "company": "\u0421\u0438\u0431\u0438\u0440\u0441\u043a\u043e\u0435 \u0437\u0434\u043e\u0440\u043e\u0432\u044c\u0435",
+        "company_linkedin": null
+    },
+    {
+        "id": 1922,
+        "name": "\u0410\u043d\u0430\u0442\u043e\u043b\u0438\u0439 \u0421\u0435\u0440\u0435\u0431\u0440\u044f\u043d\u0441\u043a\u0438\u0439",
+        "company": "Gisbuyer",
+        "company_linkedin": null
+    },
+    {
+        "id": 1923,
+        "name": "\u0418\u0440\u0438\u043d\u0430 \u0417\u043e\u043b\u043e\u0442\u043e\u0432\u0430",
+        "company": "GreenWay",
+        "company_linkedin": null
+    },
+    {
+        "id": 1924,
+        "name": "\u0418\u0440\u044d\u043d\u0430 \u041b\u0443\u043a\u0438\u044f\u043d\u043e\u0432\u0430",
+        "company": "Faberlic",
+        "company_linkedin": null
+    },
+    {
+        "id": 1925,
+        "name": "\u041c\u043e\u0432\u0447\u0430\u043d \u041d\u0430\u0442\u0430\u043b\u044c\u044f \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u043d\u0430",
+        "company": "\u041f\u0435\u0440\u0432\u0430\u044f \u0413\u0440\u0443\u0437\u043e\u0432\u0430\u044f \u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f",
+        "company_linkedin": null
+    },
+    {
+        "id": 1926,
+        "name": "\u0415\u043b\u0435\u043d\u0430 \u0422\u0443\u0440\u0447\u0438\u043d\u0430",
+        "company": "L'oreal",
+        "company_linkedin": null
+    },
+    {
+        "id": 1927,
+        "name": "\u0414\u0430\u0440\u044c\u044f \u0410\u0444\u0430\u043d\u0430\u0441\u044c\u0435\u0432\u0430",
+        "company": "\u0415\u0412\u0420\u0410\u0417",
+        "company_linkedin": null
+    },
+    {
+        "id": 1928,
+        "name": "\u041d\u0430\u0442\u0430\u043b\u044c\u044f \u0417\u0430\u0440\u0435\u0446\u043a\u0438\u0445",
+        "company": "Fun and sun",
+        "company_linkedin": null
+    },
+    {
+        "id": 1929,
+        "name": "\u042f\u043d\u0430 \u041a\u0443\u0437\u043d\u0435\u0446\u043e\u0432\u0430",
+        "company": "\u041d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d\u043e",
+        "company_linkedin": null
+    },
+    {
+        "id": 1930,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u041d\u0435\u0441\u0442\u0435\u0440\u043e\u0432\u0430",
+        "company": "Tiande",
+        "company_linkedin": null
+    },
+    {
+        "id": 1931,
+        "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439",
+        "company": "\u0411\u0430\u0442\u0435\u043b\u044c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1932,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430",
+        "company": "\u0412\u0438\u0442\u0430\u043c\u0430\u043a\u0441",
+        "company_linkedin": null
+    },
+    {
+        "id": 1933,
+        "name": "\u0410\u043b\u0438\u043d\u0430",
+        "company": "Atomy",
+        "company_linkedin": null
+    },
+    {
+        "id": 1934,
+        "name": "\u041a\u0441\u0435\u043d\u0438\u044f \u041c\u0438\u0445\u0430\u0439\u043b\u0438\u043d\u0430",
+        "company": "Herbalife",
+        "company_linkedin": null
+    },
+    {
+        "id": 1935,
+        "name": "\u042e\u043b\u0438\u044f \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u043d\u0430 \u0424\u0438\u0440\u0441\u043e\u0432\u0430",
+        "company": "\u041a\u044d\u043f\u0438\u0442\u0430\u043b \u041b\u0430\u0439\u0444",
+        "company_linkedin": null
+    },
+    {
+        "id": 1936,
+        "name": "\u041d\u0430\u0442\u0430\u043b\u044c\u044f \u0420\u043e\u0441\u0441\u0430",
+        "company": "C\u0435\u0432\u0435\u0440\u0441\u0442\u0430\u043b\u044c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1937,
+        "name": "\u0423\u0441\u0430\u043d\u043e\u0432\u0430 \u0415\u043b\u0435\u043d\u0430",
+        "company": "Gipfel",
+        "company_linkedin": null
+    },
+    {
+        "id": 1938,
+        "name": "\u041c\u0430\u0440\u0438\u044f \u041a\u0430\u043c\u0430\u0435\u0432\u0430",
+        "company": "World Class",
+        "company_linkedin": null
+    },
+    {
+        "id": 1939,
+        "name": "\u041e\u043b\u0435\u0441\u044f \u0413\u043e\u0440\u0432\u043e\u043d\u0435\u043d\u043a\u043e",
+        "company": "World Class",
+        "company_linkedin": null
+    },
+    {
+        "id": 1940,
+        "name": "\u041a\u0443\u0437\u044c\u043c\u0438\u043d \u0424\u0438\u043b\u0438\u043f\u043f",
+        "company": "World Class",
+        "company_linkedin": null
+    },
+    {
+        "id": 1941,
+        "name": "\u0415\u0432\u0433\u0435\u043d\u0438\u0439 \u0421\u0432\u0435\u0448\u043d\u0438\u043a\u043e\u0432",
+        "company": "Tele2",
+        "company_linkedin": null
+    },
+    {
+        "id": 1942,
+        "name": "\u0412\u0438\u043e\u043b\u0435\u0442\u0442\u0430 \u041a\u0430\u0437\u0430\u043a\u043e\u0432\u0430",
+        "company": "\u041d\u0421\u041f\u041a",
+        "company_linkedin": null
+    },
+    {
+        "id": 1943,
+        "name": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0424\u0438\u043b\u0438\u043f\u043f\u043e\u0432",
+        "company": "\u0420\u0430\u0437\u043c\u0435\u0440",
+        "company_linkedin": null
+    },
+    {
+        "id": 1944,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0421\u0430\u0432\u0435\u043b\u044c\u0435\u0432",
+        "company": "\u0421\u0442\u043e\u043b\u043e\u0442\u043e",
+        "company_linkedin": null
+    },
+    {
+        "id": 1945,
+        "name": "\u0410\u043b\u0438\u043d\u0430 \u0413\u0440\u044e\u043a\u0430\u043d\u043e\u0432\u0430",
+        "company": "\u041b\u0435\u043d\u0442\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 1946,
+        "name": "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u0410\u043d\u0434\u0440\u0435\u0435\u0432\u043d\u0430 \u0415\u043c\u0438\u0441\u043a\u0435\u0432\u0438\u0447",
+        "company": "\u0420\u0435\u043d\u043a\u0440\u0435\u0434\u0438\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 1947,
+        "name": "\u041c\u0430\u043a\u0441\u0438\u043c \u0414\u0435\u0440\u044f\u0436\u0438\u043d",
+        "company": "\u0422\u0438\u043d\u044c\u043a\u043e\u0444\u0444",
+        "company_linkedin": null
+    },
+    {
+        "id": 1948,
+        "name": "\u041c\u0430\u0440\u0438\u044f \u041e\u0441\u0442\u0440\u043e\u0443\u043c\u043e\u0432\u0430",
+        "company": "\u0422\u0438\u043d\u044c\u043a\u043e\u0444\u0444",
+        "company_linkedin": null
+    },
+    {
+        "id": 1949,
+        "name": "\u042f\u043d\u0430 \u0421\u0430\u043c\u043e\u0439\u043b\u0435\u043d\u043a\u043e",
+        "company": "\u0422\u0438\u043d\u044c\u043a\u043e\u0444\u0444",
+        "company_linkedin": null
+    },
+    {
+        "id": 1950,
+        "name": "\u0414\u0435\u043d\u0438\u0441 \u0422\u0438\u0445\u043e\u043c\u0438\u0440\u043e\u0432",
+        "company": "\u0420\u0430\u0439\u0444\u0444\u0430\u0439\u0437\u0435\u043d \u0411\u0430\u043d\u043a",
+        "company_linkedin": null
+    },
+    {
+        "id": 1952,
+        "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u0410\u043b\u0435\u043a\u0441\u0435\u0435\u0432",
+        "company": "Credit Europa Bank",
+        "company_linkedin": null
+    },
+    {
+        "id": 1954,
+        "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u041f\u0435\u0440\u0448\u0438\u043d",
+        "company": "\u0421\u0431\u0435\u0440\u0421\u0442\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0438\u0435 \u0436\u0438\u0437\u043d\u0438",
+        "company_linkedin": null
+    },
+    {
+        "id": 1955,
+        "name": "\u0420\u043e\u0441\u043a\u043e\u0448\u043d\u0430\u044f \u041e\u043b\u044c\u0433\u0430",
+        "company": "\u0413\u0430\u0437\u043f\u0440\u043e\u043c\u0411\u0430\u043d\u043a",
+        "company_linkedin": null
+    },
+    {
+        "id": 1956,
+        "name": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u0411\u0430\u043b\u044e\u043a\u0438\u043d\u0430",
+        "company": "Hochland",
+        "company_linkedin": null
+    },
+    {
+        "id": 1957,
+        "name": "\u041e\u043b\u0435\u0441\u044f \u041a\u043e\u0432\u044b\u0440\u043e\u0432\u0430",
+        "company": "\u0410\u043a\u0442\u0438\u043e\u043d \u0413\u0440\u0443\u043f\u043f",
+        "company_linkedin": null
+    },
+    {
+        "id": 1958,
+        "name": "\u0410\u043d\u0442\u043e\u043d\u0438\u043d\u0430 \u041d\u0438\u043a\u043e\u043b\u0430\u0435\u0432\u043d\u0430",
+        "company": "Efko(\u0434\u043e\u043f)",
+        "company_linkedin": null
+    },
+    {
+        "id": 1960,
+        "name": "\u0412\u0430\u043b\u0435\u0440\u0438\u044f \u0411\u0430\u0439\u043b\u0430\u0440",
+        "company": "Everest",
+        "company_linkedin": null
+    },
+    {
+        "id": 1962,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u0421\u0430\u0440\u043a\u0438\u0441\u043e\u0432",
+        "company": "\u041e\u043a\u0435\u0439",
+        "company_linkedin": null
+    },
+    {
+        "id": 1963,
+        "name": "\u0414\u0430\u0440\u044c\u044f \u041a\u043e\u0448\u0435\u0432\u0430\u044f",
+        "company": "\u041a\u043e\u043d\u0446\u0435\u0440\u043d \u041a\u0430\u043b\u0430\u0448\u043d\u0438\u043a\u043e\u0432",
+        "company_linkedin": null
+    },
+    {
+        "id": 1964,
+        "name": "\u041a\u0441\u0435\u043d\u0438\u044f \u0421\u043f\u0438\u0446\u0438\u043d\u0430",
+        "company": "\u0424\u0420\u0418\u0418",
+        "company_linkedin": null
+    },
+    {
+        "id": 1966,
+        "name": "\u041d\u0438\u043a\u043e\u043b\u0430\u0439 \u0427\u0443\u0438\u043d",
+        "company": "Topcase",
+        "company_linkedin": null
+    },
+    {
+        "id": 1968,
+        "name": "\u0412\u0430\u0440\u0432\u0430\u0440\u0430 \u0421\u0430\u0432\u0438\u043d\u043e\u0432\u0430",
+        "company": "NOV",
+        "company_linkedin": null
+    },
+    {
+        "id": 1969,
+        "name": "\u0421\u0435\u0440\u0433\u0435\u0439 \u0411\u0430\u0431\u043a\u0438\u043d",
+        "company": "Merck KGaA",
+        "company_linkedin": null
+    },
+    {
+        "id": 1975,
+        "name": "\u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u0428\u0435\u043c\u0435\u0442\u044c\u0435\u0432\u0430",
+        "company": "Servier",
+        "company_linkedin": null
+    },
+    {
+        "id": 1976,
+        "name": "\u0427\u0435\u043d\u0434\u0440\u043e\u0432\u0430 \u0414\u0430\u0440\u044c\u044f",
+        "company": "\u0420\u0424\u0421(\u0434\u043e\u043f)",
+        "company_linkedin": null
+    },
+    {
+        "id": 1978,
+        "name": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u0427\u0435\u0440\u043d\u043e\u0432\u0430",
+        "company": "KRKA (\u041e\u041e\u041e \u041a\u0420\u041a\u0410 \u0424\u0410\u0420\u041c\u0410)",
+        "company_linkedin": null
+    },
+    {
+        "id": 1980,
+        "name": "\u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u0420\u0430\u0447\u0438\u043d\u0441\u043a\u0430\u044f",
+        "company": "AL Pharma",
+        "company_linkedin": null
+    },
+    {
+        "id": 1981,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u0415\u0432\u0433\u0435\u043d\u044c\u0435\u0432\u043d\u0430 \u0412\u0430\u0440\u043b\u0430\u043c\u043e\u0432\u0430",
+        "company": "ARMZ",
+        "company_linkedin": null
+    },
+    {
+        "id": 1982,
+        "name": "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u0418\u0432\u0443\u0448\u043a\u0438\u043d\u0430",
+        "company": "\u0423\u0440\u0430\u043b \u0425\u0438\u043c",
+        "company_linkedin": null
+    },
+    {
+        "id": 1983,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u0424\u0435\u043e\u043a\u0444\u0435\u0441\u0442\u0438\u0442\u043e\u0432\u0430",
+        "company": "\u041f\u0440\u043e\u0434\u043e",
+        "company_linkedin": null
+    },
+    {
+        "id": 1984,
+        "name": "\u042e\u043b\u0438\u044f \u0411\u0440\u044b\u0437\u0433\u0430\u043b\u0438\u043d\u0430",
+        "company": "Astra Zeneca",
+        "company_linkedin": null
+    },
+    {
+        "id": 1985,
+        "name": "\u0410\u043d\u043d\u0430 \u0427\u0430\u043f\u043b\u044b\u0433\u0438\u043d\u0430",
+        "company": "\u041e\u0441\u0442\u0440\u043e\u0432\u043e\u043a",
+        "company_linkedin": null
+    },
+    {
+        "id": 1986,
+        "name": "\u0415\u043b\u0435\u043d\u0430 \u0416\u0443\u043b\u0430\u043d\u043e\u0432\u0430",
+        "company": "Chery",
+        "company_linkedin": null
+    },
+    {
+        "id": 1987,
+        "name": "\u0418\u0440\u0438\u043d\u0430 \u0411\u043e\u0435\u0432\u0430",
+        "company": "Rambler",
+        "company_linkedin": null
+    },
+    {
+        "id": 1988,
+        "name": "\u041c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430 \u0425\u0443\u0440\u0430\u0434\u043e",
+        "company": "Stada(\u0414\u041e\u041f)",
+        "company_linkedin": null
+    },
+    {
+        "id": 1989,
+        "name": "\u0410\u043d\u043d\u0430 \u0428\u0438\u0440\u0448\u043a\u043e\u0432\u0430",
+        "company": "Takeda",
+        "company_linkedin": null
+    },
+    {
+        "id": 1990,
+        "name": "\u041a\u0440\u0438\u0441\u0442\u0438\u043d\u0430 \u0413\u0443\u0440\u0435\u043d\u043a\u043e\u0432\u0430",
+        "company": "\u0426\u0435\u0440\u0441\u0430\u043d\u0438\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 1991,
+        "name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0411\u0443\u043b\u0430\u0442\u043e\u0432",
+        "company": "Novartis(\u0414\u043e\u043f)",
+        "company_linkedin": null
+    },
+    {
+        "id": 1993,
+        "name": "\u042e\u043b\u0438\u044f \u0410\u043a\u0438\u043c\u043e\u0432\u0430",
+        "company": "\u041b\u0443\u043a\u043e\u0439\u043b",
+        "company_linkedin": null
+    },
+    {
+        "id": 1994,
+        "name": "\u042e\u043b\u0438\u044f \u0416\u043e\u0433\u043b\u043e",
+        "company": "Megafon",
+        "company_linkedin": null
+    },
+    {
+        "id": 1997,
+        "name": "\u0415\u043b\u0435\u043d\u0430 \u0421\u0435\u0432\u043e\u0441\u0442\u044c\u044f\u043d\u043e\u0432\u0430",
+        "company": "\u0424\u0438\u043d\u041f\u0420",
+        "company_linkedin": null
+    },
+    {
+        "id": 1998,
+        "name": "\u042e\u043b\u0438\u044f \u0420\u0435\u0442\u0443\u043d\u044c\u0441\u043a\u0430\u044f",
+        "company": "OK \u043c\u0430\u0440\u043a\u0435\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 1999,
+        "name": "\u041b\u0438\u0434\u0438\u044f \u041b\u0435\u043c\u0431\u0438\u043a",
+        "company": "X5",
+        "company_linkedin": null
+    },
+    {
+        "id": 2000,
+        "name": "\u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u0412\u0435\u0440\u0435\u0432\u043a\u0438\u043d\u0430",
+        "company": "\u041c\u043e\u0441\u043a\u0432\u0438\u0447",
+        "company_linkedin": null
+    },
+    {
+        "id": 2001,
+        "name": "\u0410\u043b\u0438\u043d\u0430 \u0413\u0430\u044f\u0437\u0435\u0434\u0438\u0442\u043d\u043e\u0432\u0430",
+        "company": "Barilla (\u0434\u043e\u043f)",
+        "company_linkedin": null
+    },
+    {
+        "id": 2002,
+        "name": "\u041e\u043b\u0435\u0441\u044f \u041a\u0430\u0447\u0430\u043d",
+        "company": "Open",
+        "company_linkedin": null
+    },
+    {
+        "id": 2003,
+        "name": "\u0415\u043b\u0435\u043d\u0430 \u0421\u0435\u0432\u043e\u0441\u0442\u044c\u044f\u043d\u043e\u0432\u0430",
+        "company": "RenLife",
+        "company_linkedin": null
+    },
+    {
+        "id": 2004,
+        "name": "\u042e\u043b\u0438\u044f \u0420\u0435\u0442\u0443\u043d\u044c\u0441\u043a\u0430\u044f",
+        "company": "Bayer",
+        "company_linkedin": null
+    },
+    {
+        "id": 2005,
+        "name": "\u041f\u0440\u043e\u0442\u043a\u0438\u043d \u0414\u0430\u043d\u0438\u0438\u043b",
+        "company": "Huawei",
+        "company_linkedin": null
+    },
+    {
+        "id": 2006,
+        "name": "\u041a\u0440\u0438\u0441\u0442\u0438\u043d\u0430 \u041f\u0435\u0447\u0435\u043d\u0438\u043d\u0430",
+        "company": "\u041c\u0435\u0447\u0435\u043b",
+        "company_linkedin": null
+    },
+    {
+        "id": 2007,
+        "name": "\u0421\u043e\u043a\u043e\u043b\u043e\u0432\u0430 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430",
+        "company": "\u0418\u043d\u0442\u0435\u0440\u0444\u0430\u043a\u0441",
+        "company_linkedin": null
+    },
+    {
+        "id": 2008,
+        "name": "\u041b\u044e\u0434\u043c\u0438\u043b\u0430 \u041b\u0418",
+        "company": "\u0421\u0435\u0432\u0435\u0440\u0441\u0442\u0430\u043b\u044c \u0426\u0411\u0421",
+        "company_linkedin": null
+    },
+    {
+        "id": 2009,
+        "name": "\u041a\u0441\u0435\u043d\u0438\u044f \u0411\u0430\u044f\u0437\u0438\u0442\u043e\u0432\u0430",
+        "company": "B1",
+        "company_linkedin": null
+    },
+    {
+        "id": 2011,
+        "name": "\u0421\u043c\u0438\u0440\u043d\u043e\u0432\u0430 \u041d\u0430\u0442\u0430\u043b\u044c\u044f \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u043d\u0430",
+        "company": "\u0415\u0432\u0440\u043e\u043f\u043b\u0430\u043d",
+        "company_linkedin": null
+    },
+    {
+        "id": 2012,
+        "name": "\u041b\u043e\u0433\u0438\u043d\u043e\u0432\u0430 \u041e\u043b\u044c\u0433\u0430 \u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u043e\u0432\u043d\u0430",
+        "company": "\u041d\u041f\u041a \u0422\u0420\u0410\u041d\u0421",
+        "company_linkedin": null
+    },
+    {
+        "id": 2013,
+        "name": "\u041a\u0438\u0441\u0435\u043b\u0435\u0432\u0430 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u041c\u0438\u0445\u0430\u0439\u043b\u043e\u0432\u043d\u0430",
+        "company": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439 \u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 2014,
+        "name": "\u041f\u0430\u0432\u043b\u043e\u0432\u0430 \u041a\u0440\u0438\u0441\u0442\u0438\u043d\u0430 \u0412\u0430\u0434\u0438\u043c\u043e\u0432\u043d\u0430",
+        "company": "Dahua Technology",
+        "company_linkedin": null
+    },
+    {
+        "id": 2015,
+        "name": "\u041f\u043e\u043f\u043a\u043e\u0432\u0430 \u041c\u0430\u0440\u0438\u043d\u0430 \u041f\u0435\u0442\u0440\u043e\u0432\u043d\u0430",
+        "company": "\u0418\u043d\u0444\u043e\u0441\u0438\u0441\u0442\u0435\u043c\u044b \u0414\u0436\u0435\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 2016,
+        "name": "\u0410\u043d\u043d\u0430 \u0410\u043b\u0435\u043a\u0441\u0435\u0435\u0432\u0430",
+        "company": "RockWool",
+        "company_linkedin": null
+    },
+    {
+        "id": 2017,
+        "name": "\u041b\u044e\u0434\u043c\u0438\u043b\u0430 \u0411\u0430\u0434\u0443\u043b\u0438\u043d\u0430",
+        "company": "\u041c\u0435\u0433\u0430\u0444\u043e\u043d",
+        "company_linkedin": null
+    },
+    {
+        "id": 2018,
+        "name": "\u042e\u043b\u0438\u044f \u0413\u0440\u0443\u0448\u0438\u043d\u0430",
+        "company": "\u0412\u043e\u0441\u0442\u043e\u043a \u042d\u043d\u0435\u0440\u0433\u043e\u0422\u0440\u044d\u0439\u0434",
+        "company_linkedin": null
+    },
+    {
+        "id": 2019,
+        "name": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u0417\u0438\u043d\u0447\u0435\u043d\u043a\u043e",
+        "company": "Servier",
+        "company_linkedin": null
+    },
+    {
+        "id": 2020,
+        "name": "\u041e\u043b\u0435\u0441\u044f \u041a\u0430\u043b\u044e\u0436\u043d\u0430\u044f",
+        "company": "Leroymerlin(\u0434\u043e\u043f)",
+        "company_linkedin": null
+    },
+    {
+        "id": 2021,
+        "name": "\u041c\u0430\u0440\u0438\u043d\u0430 \u0420\u044b\u043a\u043e\u0432\u0430",
+        "company": "Geropharm",
+        "company_linkedin": null
+    },
+    {
+        "id": 2023,
+        "name": "\u0418\u0432\u0430\u043d \u041c\u0435\u0440\u043a\u0435\u043b\u044c",
+        "company": "\u0410\u0440\u0442\u043f\u043b\u0430\u0441\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 2024,
+        "name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0411\u0443\u043b\u0430\u0442\u043e\u0432\u0430",
+        "company": "\u041d\u043e\u0432\u0430\u0440\u0442\u0438\u0441 \u0424\u0430\u0440\u043c\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 2026,
+        "name": "\u0418\u0440\u0438\u043d\u0430 \u0411\u0435\u043b\u043e\u0433\u0443\u0440\u043e\u0432\u0430",
+        "company": "\u0413\u0430\u0440\u0434\u0438\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 2027,
+        "name": "\u0412\u0430\u043b\u0435\u0440\u0438\u044f \u0411\u0435\u0440\u0435\u0437\u043e\u0432\u0430\u044f",
+        "company": "Unim",
+        "company_linkedin": null
+    },
+    {
+        "id": 2028,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u0414\u043c\u0438\u0442\u0440\u0438\u0435\u0432",
+        "company": "Holo Group",
+        "company_linkedin": null
+    },
+    {
+        "id": 2029,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440 \u041b\u043e\u043c\u0430\u043a\u0438\u043d",
+        "company": "B2B Center",
+        "company_linkedin": null
+    },
+    {
+        "id": 2030,
+        "name": "\u042e\u043b\u0438\u044f",
+        "company": "\u0421\u0418\u0411\u0420\u0422",
+        "company_linkedin": null
+    },
+    {
+        "id": 2031,
+        "name": "\u0418\u0432\u0430\u043d \u041a\u043e\u0440\u0435\u0448\u043a\u043e\u0432",
+        "company": "\u0413\u0410\u0417 \u0418\u0421",
+        "company_linkedin": null
+    },
+    {
+        "id": 2032,
+        "name": "\u0415\u0432\u0433\u0435\u043d\u0438\u0439 \u041a\u043e\u0432\u0430\u043b\u0435\u043d\u043a\u043e",
+        "company": "\u0410\u0440\u0435\u043d\u0430\u0434\u0430\u0442\u0430 Software",
+        "company_linkedin": null
+    },
+    {
+        "id": 2033,
+        "name": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430",
+        "company": "BI.ZONE",
+        "company_linkedin": null
+    },
+    {
+        "id": 2034,
+        "name": "\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u0413\u043b\u0443\u043c\u043e\u0432\u0430",
+        "company": "\u0418\u043d\u0444\u043e\u0441\u0438\u0441\u0442\u0435\u043c\u044b \u0414\u0436\u0435\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 2035,
+        "name": "\u042f\u0420 \u0411\u0430\u0431\u0438\u043d",
+        "company": "PTSecurity",
+        "company_linkedin": null
+    },
+    {
+        "id": 2036,
+        "name": "\u041c\u0430\u0440\u0438\u044f \u041b\u044c\u0432\u043e\u0432\u0430",
+        "company": "Crocus Group",
+        "company_linkedin": null
+    },
+    {
+        "id": 2037,
+        "name": "\u0412\u0435\u0440\u0430 \u0411\u0443\u0434\u0430\u043d\u043e\u0432\u0430",
+        "company": "Flexicore(\u0420\u0430\u043a\u0435\u0442\u0430)",
+        "company_linkedin": null
+    },
+    {
+        "id": 2038,
+        "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u0411\u0435\u043b\u043e\u0443\u0441\u043e\u0432",
+        "company": "\u041e\u041e\u041e \"\u0410\u0421\u0423 \u043c\u0435\u0442\u0440\u043e\u043b\u043e\u0433\u0438\u044f \u0441\u0435\u0440\u0432\u0438\u0441\"",
+        "company_linkedin": null
+    },
+    {
+        "id": 2039,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430 \u0416\u0435\u0440\u043d\u043e\u0432\u0430",
+        "company": "\u0425\u041a \u0412\u044f\u0437\u043a\u0438",
+        "company_linkedin": null
+    },
+    {
+        "id": 2040,
+        "name": "\u041c\u0430\u043a\u0441\u0438\u043c \u0424\u0438\u043b\u0430\u0442\u043e\u0432",
+        "company": "\u0410\u041e \"\u041a\u043e\u0440\u043f\u043e\u0440\u0430\u0446\u0438\u044f \"\u041c\u0421\u041f\"",
+        "company_linkedin": null
+    },
+    {
+        "id": 2041,
+        "name": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430 \u0421\u0442\u0430\u0440\u0448\u043e\u0432\u0430",
+        "company": "\u0414\u0421\u0421\u041b",
+        "company_linkedin": null
+    },
+    {
+        "id": 2042,
+        "name": "\u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u041f\u0430\u043d\u0442\u044e\u0445\u0438\u043d\u0430",
+        "company": "\u041e\u041e\u041e \u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u0438\u044f \u0411\u0443\u0434\u0443\u0449\u0435\u0433\u043e",
+        "company_linkedin": null
+    },
+    {
+        "id": 2043,
+        "name": "\u0414\u0430\u0440\u044c\u044f \u041a\u043e\u0440\u043d\u0438\u043b\u0438\u043d\u0430",
+        "company": "\u0411\u0438\u043b\u0430\u0439\u043d",
+        "company_linkedin": null
+    },
+    {
+        "id": 2044,
+        "name": "\u041c\u0430\u0440\u0438\u044f \u0420\u0443\u043d\u0438\u043d\u0430",
+        "company": "Vatech",
+        "company_linkedin": null
+    },
+    {
+        "id": 2045,
+        "name": "\u041e\u043b\u0435\u0433 \u041c\u0430\u0442\u0432\u0438\u0435\u043d\u043a\u043e",
+        "company": "Fibo Group",
+        "company_linkedin": null
+    },
+    {
+        "id": 2046,
+        "name": "\u0412\u0438\u043a\u0442\u043e\u0440\u0438\u044f \u0415\u043b\u044c\u0446\u043e\u0432\u0430",
+        "company": "\u0412\u0422\u0411",
+        "company_linkedin": null
+    },
+    {
+        "id": 2047,
+        "name": "\u041e\u043b\u0435\u0441\u044f \u0421\u0435\u0440\u0435\u0433\u0438\u043d\u0430",
+        "company": "\u041c\u0430\u0442\u0447\u0422\u0412",
+        "company_linkedin": null
+    },
+    {
+        "id": 2048,
+        "name": "\u041a\u0441\u0435\u043d\u0438\u044f \u0425\u043e\u043a\u0440\u044f\u043a\u043e\u0432\u0430",
+        "company": "\u041b\u0435\u0434\u0432\u0430\u043d\u0441(\u0421\u0442\u0430\u0440\u044b\u0439 \u041a\u043b\u0438\u0435\u043d\u0442)",
+        "company_linkedin": null
+    },
+    {
+        "id": 2049,
+        "name": "\u0411\u043b\u043e\u0445\u0438\u043d\u0430 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430",
+        "company": "\u0413\u0430\u043b\u0430 \u0426\u0435\u043d\u0442\u0440(\u0421\u0442\u0430\u0440\u044b\u0439 \u041a\u043b\u0438\u0435\u043d\u0442)",
+        "company_linkedin": null
+    },
+    {
+        "id": 2050,
+        "name": "\u041c\u0430\u0440\u0438\u043d\u0430",
+        "company": "\u041d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d\u043e",
+        "company_linkedin": null
+    },
+    {
+        "id": 2051,
+        "name": "\u0412\u0438\u043a\u0442\u043e\u0440 \u041c\u0438\u0445\u0430\u0439\u043b\u043e\u0432",
+        "company": "\u0426\u0424\u0422",
+        "company_linkedin": null
+    },
+    {
+        "id": 2052,
+        "name": "\u042e\u043b\u0438\u044f \u041a\u0443\u0448\u043d\u0438\u0440\u0435\u043d\u043a\u043e",
+        "company": "\u0420\u0416\u0414",
+        "company_linkedin": null
+    },
+    {
+        "id": 2053,
+        "name": "\u0418\u043a\u0430\u0435\u0432\u0430 \u0410\u043b\u0438\u043d\u0430 \u042e\u0440\u044c\u0435\u0432\u043d\u0430",
+        "company": "\u0420\u0443\u0441\u041d\u0410P\u0411\u0430\u043d\u043a",
+        "company_linkedin": null
+    },
+    {
+        "id": 2054,
+        "name": "\u041a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0438\u043d \u0412\u0438\u043d\u043e\u043a\u0443\u0440\u043e\u0432",
+        "company": "\u041c\u0422\u0421 \u0411\u0410\u041d\u041a",
+        "company_linkedin": null
+    },
+    {
+        "id": 2055,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0413\u043b\u0430\u0434\u043a\u043e\u0432",
+        "company": "\u041b\u0435\u0440\u0443\u0430 \u041c\u0435\u0440\u043b\u0435\u043d",
+        "company_linkedin": null
+    },
+    {
+        "id": 2056,
+        "name": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0415\u043b\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0432",
+        "company": "\u0421\u0432\u0435\u0442\u043e\u0444\u043e\u0440",
+        "company_linkedin": null
+    },
+    {
+        "id": 2057,
+        "name": "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u041a\u0443\u0440\u0437\u0430\u043d\u043e\u0432\u0430",
+        "company": "\u041b\u044e\u043a\u0441\u043e\u0440\u042d\u043a\u0437\u043e\u0442\u0438\u043a\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 2058,
+        "name": "\u0421\u0435\u0440\u0435\u0434\u043a\u0438\u043d\u0430 \u041a\u0441\u0435\u043d\u0438\u044f \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u043d\u0430",
+        "company": "\u041a\u043e\u043c\u0438\u0442\u0430\u0441",
+        "company_linkedin": null
+    },
+    {
+        "id": 2059,
+        "name": "\u0410\u043b\u0438\u043d\u0430 \u0421\u0430\u0432\u0447\u0435\u043d\u043a\u043e",
+        "company": "Imba-IT",
+        "company_linkedin": null
+    },
+    {
+        "id": 2060,
+        "name": "\u0410\u043b\u0438\u043d\u0430 \u0428\u043c\u0430\u043a\u043e\u0432\u0430",
+        "company": "\u0424\u043e\u043d\u0434 \u041f\u0440\u044f\u043c\u044b\u0445 \u0418\u043d\u0432\u0435\u0441\u0442\u0438\u0446\u0438\u0439",
+        "company_linkedin": null
+    },
+    {
+        "id": 2061,
+        "name": "\u0421\u0435\u0440\u0433\u0435\u0439 \u0420\u0443\u0434\u0435\u043d\u043a\u043e",
+        "company": "2can",
+        "company_linkedin": null
+    },
+    {
+        "id": 2063,
+        "name": "\u0414\u0430\u0440\u044c\u044f \u0412\u0435\u0440\u0431\u043b\u0443\u0434\u043e\u0432\u0430",
+        "company": "\u0423\u043f\u043e\u043a\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+        "company_linkedin": null
+    },
+    {
+        "id": 2064,
+        "name": "\u0413\u043e\u043b\u0443\u0431\u0435\u0432\u0430 \u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u043d\u0430",
+        "company": "\u0421\u0442\u0430\u043d",
+        "company_linkedin": null
+    },
+    {
+        "id": 2065,
+        "name": "\u0410\u043d\u0442\u043e\u043d\u043e\u0432\u0430 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430",
+        "company": "\u0410\u0433\u0430\u043b\u0430\u0440\u043e\u0432 \u0414\u0435\u0432\u0435\u043b\u043e\u043f\u043c\u0435\u043d\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 2066,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u0422\u044e\u0440\u0438\u043d\u0430",
+        "company": "\u0417\u0410\u041e \u0411\u0430\u0441\u0442\u0438\u043e\u043d",
+        "company_linkedin": null
+    },
+    {
+        "id": 2067,
+        "name": "\u0411\u0430\u043b\u0438\u043a\u043e\u0435\u0432\u0430 \u041c\u0438\u043b\u0430\u043d\u0430 \u0414\u0430\u043d\u0438\u043b\u043e\u0432\u043d\u0430",
+        "company": "\u0410\u0434\u0432\u0430\u0442\u0435\u0445 \u0418\u043d\u0436\u0438\u043d\u0438\u0440\u0438\u043d\u0433",
+        "company_linkedin": null
+    },
+    {
+        "id": 2068,
+        "name": "\u0424\u0440\u043e\u043b\u043e\u0432\u0430 \u0414\u0430\u0440\u0438\u043d\u0430",
+        "company": "\u041d\u043e\u0432\u0430\u044f \u0413\u043e\u0440\u043d\u0430\u044f \u0423\u041a",
+        "company_linkedin": null
+    },
+    {
+        "id": 2069,
+        "name": "\u0418\u0432\u0430\u043d",
+        "company": "\u041c\u0430\u043d\u0438\u043a\u0430 \u0413\u0440\u0443\u043f\u043f",
+        "company_linkedin": null
+    },
+    {
+        "id": 2070,
+        "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u041c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433",
+        "company": "\u0413\u0440\u0443\u043f\u043f\u0430 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0439 \u0421\u041f\u0415\u042f",
+        "company_linkedin": null
+    },
+    {
+        "id": 2071,
+        "name": "\u0417\u0430\u043b\u044f\u043b\u043e\u0432 \u0424\u0430\u0440\u0438\u0442 \u0424\u0443\u0440\u0445\u0443\u0442\u0434\u0438\u043d\u043e\u0432\u0438\u0447",
+        "company": "\u0410\u041e \u0422\u0430\u0442\u0445\u0438\u043c\u0444\u0430\u0440\u043c\u043f\u0440\u0435\u043f\u0430\u0440\u0430\u0442\u044b",
+        "company_linkedin": null
+    },
+    {
+        "id": 2072,
+        "name": "\u0421\u043e\u0447\u043d\u0435\u0432\u0430 \u042e\u043b\u0438\u044f",
+        "company": "\u0422\u0443\u0430\u043f\u0441\u0438\u043d\u0441\u043a\u0438\u0439 \u041d\u041f\u0417 (\u0420\u041d)",
+        "company_linkedin": null
+    },
+    {
+        "id": 2073,
+        "name": "\u041c\u0438\u0445\u0430\u0438\u043b \u0420\u0430\u0441\u0441\u043a\u0430\u0437\u043e\u0432",
+        "company": "\u0410\u043b\u044c\u0444\u0430 \u0411\u0430\u043d\u043a",
+        "company_linkedin": null
+    },
+    {
+        "id": 2075,
+        "name": "\u041f\u0440\u043e\u043d\u043e\u0437\u0430 \u0422\u0430\u0442\u044c\u044f\u043d\u0430 \u0410\u043d\u0430\u0442\u043e\u043b\u044c\u0435\u0432\u043d\u0430",
+        "company": "\u0410\u041e \u0413\u041b\u041e\u041d\u0410\u0421\u0421",
+        "company_linkedin": null
+    },
+    {
+        "id": 2076,
+        "name": "\u041b\u044e\u0434\u043c\u0438\u043b\u0430 \u041a\u043e\u0440\u0447\u0435\u043d\u044e\u043a",
+        "company": "x5 retail group",
+        "company_linkedin": null
+    },
+    {
+        "id": 2078,
+        "name": "\u0422\u0435\u0432\u0441 \u0412\u044f\u0447\u0435\u0441\u043b\u0430\u0432 \u0413\u0435\u043d\u043d\u0430\u0434\u0438\u0435\u0432\u0438\u0447",
+        "company": "\u0421\u044b\u043a\u0442\u044b\u0432\u043a\u0430\u0440\u0441\u043a\u0438\u0439 \u043b\u0438\u043a\u0435\u0440\u043e-\u0432\u043e\u0434\u043e\u0447\u043d\u044b\u0439 \u0437\u0430\u0432\u043e\u0434",
+        "company_linkedin": null
+    },
+    {
+        "id": 2079,
+        "name": "\u0429\u0443\u043a\u0430\u0440\u0435\u0432 \u0420\u043e\u043c\u0430\u043d \u0421\u0435\u0440\u0433\u0435\u0435\u0432\u0438\u0447",
+        "company": "\u0415\u0434\u0438\u043d\u0441\u0442\u0432\u043e (\u041d\u043e\u0440\u043d\u0438\u043a\u0435\u043b\u044c)",
+        "company_linkedin": null
+    },
+    {
+        "id": 2080,
+        "name": "\u0410\u0442\u043c\u0443\u0440\u043a\u043e\u0432 \u0412\u0438\u043a\u0442\u043e\u0440",
+        "company": "\u041c\u043e\u0440\u0441\u043a\u043e\u0439 \u0431\u0430\u043d\u043a",
+        "company_linkedin": null
+    },
+    {
+        "id": 2081,
+        "name": "\u0418\u0440\u0438\u043d\u0430 \u0415\u0440\u043e\u0432\u0438\u043a\u043e\u0432\u0430",
+        "company": "\u041d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d\u043e",
+        "company_linkedin": null
+    },
+    {
+        "id": 2082,
+        "name": "\u0424\u0430\u0434\u0435\u0435\u0432\u0430 \u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430",
+        "company": "\u041c\u043e\u0441\u041e\u0411\u043b\u0411\u0430\u043d\u043a",
+        "company_linkedin": null
+    },
+    {
+        "id": 2083,
+        "name": "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u0422\u0435\u0442\u0435\u0440\u0438\u043d\u0430",
+        "company": "\u041c\u0435\u0440\u0446 \u0424\u0430\u0440\u043c\u0430",
+        "company_linkedin": null
+    },
+    {
+        "id": 2086,
+        "name": "\u041d\u0430\u0442\u0430\u043b\u044c\u044f \u0412\u043e\u0440\u043e\u043d\u0430",
+        "company": "Worwag Pharma",
+        "company_linkedin": null
+    },
+    {
+        "id": 2087,
+        "name": "\u041f\u0430\u0432\u0435\u043b",
+        "company": "\u041d\u0435 \u0443\u043a\u0430\u0437\u0430\u043d\u043e",
+        "company_linkedin": null
+    },
+    {
+        "id": 2098,
+        "name": "\u041d\u0430\u0440\u0433\u0438\u0437\u0430 \u0411\u043e\u0440\u0430\u0435\u0432\u0430 \u041f\u044e\u0440\u0432\u044f\u0435\u0432\u043d\u0430",
+        "company": "\u041a\u0410\u041d\u0415\u041a\u0421",
+        "company_linkedin": null
+    },
+    {
+        "id": 2099,
+        "name": "\u0418\u0440\u0438\u043d\u0430 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u0441\u043a\u0430\u044f (\u041e\u0441\u0442\u0440\u043e\u0432\u0430)",
+        "company": "\u0410\u041c\u0410\u0414\u0410",
+        "company_linkedin": null
+    },
+    {
+        "id": 2100,
+        "name": "\u0413\u0440\u0438\u0433\u043e\u0440\u044c\u0435\u0432\u0430 \u0415\u043b\u0438\u0437\u0430\u0432\u0435\u0442\u0430",
+        "company": "\u041b\u0430\u043d\u0438\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 2101,
+        "name": "\u041c\u0438\u0445\u0430\u0438\u043b \u041c\u0430\u043b\u0430\u0444\u0435\u0435\u0432",
+        "company": "\u0411\u044b\u0441\u0442\u0440\u044b\u0435 \u0414\u0435\u043d\u044c\u0433\u0438",
+        "company_linkedin": null
+    },
+    {
+        "id": 2102,
+        "name": "\u0410\u043b\u0435\u0435\u0432\u0430 \u0415\u043b\u0435\u043d\u0430 \u0410\u043b\u0435\u043a\u0441\u0435\u0435\u0432\u043d\u0430",
+        "company": "\u0424\u0411\u0423 \"\u0413\u0418\u041b\u0421 \u0438 \u041d\u041f\"",
+        "company_linkedin": null
+    },
+    {
+        "id": 2104,
+        "name": "\u0410\u0440\u0443\u0442\u044e\u043d\u044f\u043d \u042e\u043b\u0438\u044f",
+        "company": "\u0413\u0440\u0443\u043f\u043f\u0430 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0439 \"\u041a\u043e\u0440\u043f\u0443\u0441\u0413\u0440\u0443\u043f\u043f\"",
+        "company_linkedin": null
+    },
+    {
+        "id": 2105,
+        "name": "\u0410\u043d\u043d\u0430 \u0411\u0435\u043b\u044c\u0432\u0438\u043d\u0441\u043a\u0430\u044f",
+        "company": "Verba Legal",
+        "company_linkedin": null
+    },
+    {
+        "id": 2106,
+        "name": "\u0412\u043e\u0441\u0442\u0440\u044f\u043a\u043e\u0432\u0430 \u041e\u043a\u0441\u0430\u043d\u0430 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u043d\u0430",
+        "company": "\u0421\u0435\u0439\u0441\u043c\u043e\u043f\u043e\u0438\u0441\u043a",
+        "company_linkedin": null
+    },
+    {
+        "id": 2107,
+        "name": "\u0410\u043d\u043d\u0430 \u041f\u0440\u043e\u043a\u043e\u0444\u044c\u0435\u0432\u0430",
+        "company": "Kion",
+        "company_linkedin": null
+    },
+    {
+        "id": 2108,
+        "name": "\u0410\u0440\u0442\u0435\u043c \u041b\u043e\u043f\u0443\u0445\u0438\u043d",
+        "company": "IVI",
+        "company_linkedin": null
+    },
+    {
+        "id": 2109,
+        "name": "\u0415\u043a\u0430\u0442\u0435\u0440\u0438\u043d\u0430 \u041a\u0430\u0437\u043c\u0435\u0440\u043e\u0432\u0430",
+        "company": "2Gis",
+        "company_linkedin": null
+    },
+    {
+        "id": 2111,
+        "name": "\u041c\u0430\u043a\u0441\u0438\u043c \u0420\u044b\u043d\u0434\u0438\u043d",
+        "company": "Eruditor Group",
+        "company_linkedin": null
+    },
+    {
+        "id": 2112,
+        "name": "\u0414\u0430\u043d\u0438\u0438\u043b \u0414\u0430\u043d\u0438\u043d",
+        "company": "KazanExpress",
+        "company_linkedin": null
+    },
+    {
+        "id": 2114,
+        "name": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0418\u0432\u0430\u043d\u043e\u0432",
+        "company": "AstraLinux",
+        "company_linkedin": null
+    },
+    {
+        "id": 2115,
+        "name": "\u0410\u043d\u0430\u0441\u0442\u0430\u0441\u0438\u044f \u0411\u0435\u043b\u043e\u0432\u0430",
+        "company": "AstraLinux",
+        "company_linkedin": null
+    },
+    {
+        "id": 2116,
+        "name": "\u0414\u043c\u0438\u0442\u0440\u0438\u0439 \u041a\u0438\u0440\u0438\u043b\u043b\u043e\u0432",
+        "company": "\u0426\u0424\u0422",
+        "company_linkedin": null
+    },
+    {
+        "id": 2118,
+        "name": "\u0421\u043c\u0438\u0440\u043d\u043e\u0432\u0430 \u042e\u043b\u0438\u044f \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432\u043d\u0430",
+        "company": "GreenAtom",
+        "company_linkedin": null
+    },
+    {
+        "id": 2119,
+        "name": "\u0421\u0432\u0435\u0442\u043b\u0430\u043d\u0430",
+        "company": "Usergate",
+        "company_linkedin": null
+    },
+    {
+        "id": 2120,
+        "name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0423\u043b\u044c\u044f\u043d\u043e\u0432",
+        "company": "Zecurion",
+        "company_linkedin": null
+    },
+    {
+        "id": 2121,
+        "name": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0416\u0438\u043b\u044f\u0435\u0432",
+        "company": "Infotecs",
+        "company_linkedin": null
+    },
+    {
+        "id": 2123,
+        "name": "\u0418\u043b\u044c\u044f \u041c\u043e\u0437\u043e\u0440\u043d\u0438\u043d",
+        "company": "Positive Technologies",
+        "company_linkedin": null
+    },
+    {
+        "id": 2125,
+        "name": "\u0423\u043b\u044c\u044f\u043d\u0430",
+        "company": "3Logic Group",
+        "company_linkedin": null
+    },
+    {
+        "id": 2126,
+        "name": "\u0422\u0440\u044d\u0432\u0435\u043b \u043e\u0442\u0434\u0435\u043b",
+        "company": "\u0414\u0435\u043b\u044c\u0440\u0435\u0442",
+        "company_linkedin": null
+    },
+    {
+        "id": 2127,
+        "name": "\u041e\u0442\u0434\u0435\u043b \u043f\u043e \u043e\u0440\u0433 \u043c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u0439",
+        "company": "Fplus",
+        "company_linkedin": null
+    },
+    {
+        "id": 2128,
+        "name": "\u041a\u0441\u0435\u043d\u0438\u044f \u0428\u0435\u0441\u0442\u0430\u043a\u043e\u0432\u0430",
+        "company": "\u0411\u043e\u0440\u0436\u043e\u043c\u0438",
+        "company_linkedin": null
+    },
+    {
+        "id": 2129,
+        "name": "\u0418\u043d\u043d\u0430 \u0414\u0435\u043c\u0438\u0434\u043e\u0432\u0430",
+        "company": "Capital Life",
+        "company_linkedin": null
+    },
+    {
+        "id": 2130,
+        "name": "\u041c\u0430\u0440\u0438\u044f \u041a\u043e\u043a\u043e\u0440\u0435\u0432\u0430",
+        "company": "Roche Diabetes Care Rus",
+        "company_linkedin": null
+    },
+    {
+        "id": 2131,
+        "name": "\u041e\u043b\u044c\u0433\u0430 \u0413\u043e\u0440\u0431\u0443\u043d\u043e\u0432\u0430",
+        "company": "\u0410\u0439\u0442\u0435\u043a\u043e",
+        "company_linkedin": null
+    },
+    {
+        "id": 2133,
+        "name": "\u041a\u0438\u0440\u0438\u043b\u043b \u041a\u0443\u043b\u0430\u043a\u043e\u0432",
+        "company": "\u0411\u0435\u0440\u0438\u0437\u0430\u0440\u044f\u0434",
+        "company_linkedin": null
+    },
+    {
+        "id": 2134,
+        "name": "\u0415\u043b\u0435\u043d\u0430 \u0424\u0438\u043b\u0438\u043c\u043e\u043d\u043e\u0432\u0430",
+        "company": "Rubytech",
+        "company_linkedin": null
+    }
+]

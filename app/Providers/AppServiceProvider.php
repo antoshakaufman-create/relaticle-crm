@@ -44,6 +44,11 @@ final class AppServiceProvider extends ServiceProvider
         $this->configureFilament();
         $this->configureGitHubStars();
         $this->configureLivewire();
+
+        \Relaticle\CustomFields\Facades\CustomFieldsType::register([
+            \App\Filament\FieldTypes\DropdownFieldType::class,
+            \App\Filament\FieldTypes\FormattedDateFieldType::class,
+        ]);
     }
 
     private function configurePolicies(): void
@@ -83,20 +88,20 @@ final class AppServiceProvider extends ServiceProvider
         // Generate all possible policy paths
         for ($index = 0; $index < $counter; $index++) {
             $classDirname = implode('\\', array_slice($classDirnameSegments, 0, $index));
-            $candidates->push($classDirname.'\\Policies\\'.class_basename($modelClass).'Policy');
+            $candidates->push($classDirname . '\\Policies\\' . class_basename($modelClass) . 'Policy');
         }
 
         // Add Models-specific paths if the model is in a Models directory
         if (str_contains($classDirname, '\\Models\\')) {
             $candidates = $candidates
-                ->concat([str_replace('\\Models\\', '\\Policies\\', $classDirname).'\\'.class_basename($modelClass).'Policy'])
-                ->concat([str_replace('\\Models\\', '\\Models\\Policies\\', $classDirname).'\\'.class_basename($modelClass).'Policy']);
+                ->concat([str_replace('\\Models\\', '\\Policies\\', $classDirname) . '\\' . class_basename($modelClass) . 'Policy'])
+                ->concat([str_replace('\\Models\\', '\\Models\\Policies\\', $classDirname) . '\\' . class_basename($modelClass) . 'Policy']);
         }
 
         // Return the first existing class, or fallback
-        $existingPolicy = $candidates->reverse()->first(fn (string $class): bool => class_exists($class));
+        $existingPolicy = $candidates->reverse()->first(fn(string $class): bool => class_exists($class));
 
-        return $existingPolicy ?: $classDirname.'\\Policies\\'.class_basename($modelClass).'Policy';
+        return $existingPolicy ?: $classDirname . '\\Policies\\' . class_basename($modelClass) . 'Policy';
     }
 
     /**
