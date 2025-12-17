@@ -63,7 +63,7 @@ final class ViewCompany extends ViewRecord
                         }
                     }
 
-                    $url = $vkService->findGroup($data['query'], $domain);
+                    $url = $vkService->findGroup($data['query'], $domain, $record->legal_name, $record->address_line_1);
 
                     if ($url) {
                         $record->update(['vk_url' => $url]);
@@ -203,6 +203,30 @@ final class ViewCompany extends ViewRecord
                     ])->grow(false),
                 ])->columnSpan('full'),
 
+                Section::make('Legal Details')
+                    ->schema([
+                        Flex::make([
+                            TextEntry::make('legal_name')->label('Юр. Лицо'),
+                            TextEntry::make('inn')->label('ИНН'),
+                            TextEntry::make('kpp')->label('КПП'),
+                            TextEntry::make('ogrn')->label('ОГРН'),
+                        ]),
+                        Flex::make([
+                            TextEntry::make('management_name')->label('CEO Name'),
+                            TextEntry::make('management_post')->label('CEO Post'),
+                        ]),
+                        Flex::make([
+                            TextEntry::make('status')->label('Status')->badge()->color(fn(string $state): string => match ($state) {
+                                'ACTIVE' => 'success',
+                                'LIQUIDATING' => 'warning',
+                                'LIQUIDATED' => 'danger',
+                                default => 'gray',
+                            }),
+                            TextEntry::make('okved')->label('OKVED'),
+                        ]),
+                        TextEntry::make('address_line_1')->label('Legal Address')->columnSpanFull(),
+                    ])->collapsible(),
+
                 Section::make('Social Metrics')
                     ->schema([
                         Flex::make([
@@ -226,9 +250,24 @@ final class ViewCompany extends ViewRecord
                             TextEntry::make('lead_score')->label('Lead Score'),
                             TextEntry::make('lead_category')->badge(),
                         ]),
-                        TextEntry::make('smm_analysis')
-                            ->columnSpanFull()
-                            ->markdown(),
+                        \Filament\Infolists\Components\RepeatableEntry::make('smm_analysis.related_links')
+                            ->label('Ссылки связанные с брендом')
+                            ->schema([
+                                \Filament\Infolists\Components\TextEntry::make('title')
+                                    ->label('Название')
+                                    ->icon('heroicon-m-link'),
+                                \Filament\Infolists\Components\TextEntry::make('url')
+                                    ->label('Ссылка')
+                                    ->url(fn($state) => $state)
+                                    ->openUrlInNewTab()
+                                    ->color('primary'),
+                            ])
+                            ->grid(2)
+                            ->columnSpanFull(),
+                        TextEntry::make('smm_analysis.summary')
+                            ->label('SMM Summary')
+                            ->markdown()
+                            ->columnSpanFull(),
                     ]),
             ]);
     }

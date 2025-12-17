@@ -117,11 +117,42 @@ final class CompanyResource extends Resource
                                 'COLD-WARM' => 'COLD-WARM',
                                 'COLD' => 'COLD',
                             ]),
-                        \Filament\Forms\Components\Textarea::make('smm_analysis')
-                            ->label('SMM Анализ')
+                        \Filament\Forms\Components\Repeater::make('smm_analysis.related_links')
+                            ->label('Ссылки связанные с брендом')
+                            ->schema([
+                                TextInput::make('title')
+                                    ->label('Название')
+                                    ->required(),
+                                TextInput::make('url')
+                                    ->label('Ссылка')
+                                    ->url()
+                                    ->required()
+                                    ->suffixIcon('heroicon-m-link'),
+                            ])
+                            ->collapsible()
+                            ->collapsed()
+                            ->itemLabel(fn(array $state): ?string => $state['title'] ?? null)
+                            ->addActionLabel('Добавить ссылку')
+                            ->columnSpanFull(),
+                        \Filament\Forms\Components\Textarea::make('smm_analysis.summary')
+                            ->label('SMM Анализ (Текст)')
                             ->rows(3)
                             ->columnSpanFull(),
                     ])->collapsible(),
+
+                \Filament\Schemas\Components\Section::make('Legal Details')
+                    ->description('Official company information')
+                    ->schema([
+                        TextInput::make('legal_name')->label('Юр. Лицо')->columnSpanFull(),
+                        TextInput::make('inn')->label('ИНН'),
+                        TextInput::make('kpp')->label('КПП'),
+                        TextInput::make('ogrn')->label('ОГРН'),
+                        TextInput::make('management_name')->label('CEO Name'),
+                        TextInput::make('management_post')->label('CEO Post'),
+                        TextInput::make('status')->label('Legal Status'),
+                        TextInput::make('okved')->label('OKVED'),
+                        TextInput::make('address_line_1')->label('Legal Address')->columnSpanFull(),
+                    ])->columns(2)->collapsible(),
 
                 \Filament\Schemas\Components\Section::make('Additional Information')
                     ->schema([

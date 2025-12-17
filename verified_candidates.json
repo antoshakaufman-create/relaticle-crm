@@ -1,0 +1,136 @@
+[
+  {
+    "type": "person",
+    "id": 2279,
+    "name": "Дмитрий Костыгин",
+    "email": "dmitrii.kostygin@kari.com",
+    "company": "Kari",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "person",
+    "id": 2278,
+    "name": "Татьяна Бакальчук",
+    "email": "tatiana.bakalcuk@kari.com",
+    "company": "Kari",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "person",
+    "id": 2269,
+    "name": "Сергей Шлома",
+    "email": "sergei.sloma@inkom.ru",
+    "company": "Инком-Недвижимость",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "person",
+    "id": 2268,
+    "name": "Константин Попов",
+    "email": "konstantin.popov@inkom.ru",
+    "company": "Инком-Недвижимость",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "person",
+    "id": 2263,
+    "name": "Dr. Andrey Stepensky",
+    "email": "dr.andrey@evalar.ru",
+    "company": "Эвалар",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "company",
+    "id": 38,
+    "name": "Info",
+    "email": "info@litres.ru",
+    "company": "Litress",
+    "verified_sites": [
+      "twitter.com",
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "company",
+    "id": 64,
+    "name": "Info",
+    "email": "info@amway.ru",
+    "company": "AMWAY",
+    "verified_sites": [
+      "office365.com",
+      "twitter.com",
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "company",
+    "id": 65,
+    "name": "Info",
+    "email": "info@oriflame.ru",
+    "company": "Oriflame",
+    "verified_sites": [
+      "office365.com",
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "company",
+    "id": 66,
+    "name": "Info",
+    "email": "info@avon.ru",
+    "company": "Avon",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "company",
+    "id": 71,
+    "name": "Info",
+    "email": "info@janssen.ru",
+    "company": "Janssen Cosmetics",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "company",
+    "id": 87,
+    "name": "Info",
+    "email": "info@efko.ru",
+    "company": "Группа Компаний Эфко",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "company",
+    "id": 97,
+    "name": "Info",
+    "email": "info@rfs.ru",
+    "company": "РФС",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  },
+  {
+    "type": "company",
+    "id": 98,
+    "name": "Info",
+    "email": "info@krka.ru",
+    "company": "KRKA",
+    "verified_sites": [
+      ", [-] Email not used, [x] Rate limit"
+    ]
+  }
+]

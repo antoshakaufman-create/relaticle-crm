@@ -109,6 +109,16 @@ final class Company extends Model implements HasCustomFields, HasMedia
         'last_contacted_at',
         'engagement_score',
 
+        // Legal Details
+        'legal_name',
+        'inn',
+        'ogrn',
+        'kpp',
+        'management_name',
+        'management_post',
+        'okved',
+        'status',
+
         // Marketing
         'utm_source',
         'utm_medium',

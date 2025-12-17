@@ -15,7 +15,8 @@ final class YandexGPTLeadService
     public function __construct(
         private YandexGPTService $yandexGPT,
         private LeadValidationService $validationService,
-    ) {}
+    ) {
+    }
 
     /**
      * Поиск лидов через YandexGPT
@@ -36,6 +37,34 @@ final class YandexGPTLeadService
 
         // Валидируем каждый лид
         return $this->validateAndCreateLeads($leadsData);
+    }
+
+    /**
+     * Поиск сотрудников для конкретной компании
+     */
+    public function findEmployeesForCompany(\App\Models\Company $company): array
+    {
+        $websiteInfo = $company->vk_url ? "VK: {$company->vk_url}" : "";
+        $prompt = "Ты HR-ресчер. Твоя задача: Найти ТОП-менеджмент (Гендир, Основатель, Маркетинг-директор, Коммерческий директор) для компании:\n" .
+            "Название: \"{$company->name}\" (Юр. имя: {$company->legal_name})\n" .
+            "Адрес: {$company->address_line_1}\n" .
+            "{$websiteInfo}\n\n" .
+            "ВАЖНО:\n" .
+            "1. Назови РЕАЛЬНЫХ людей, известных в публичных источниках (СМИ, LinkedIn, Rusprofile).\n" .
+            "2. Если точных данных о 'Current' нет, укажи наиболее вероятно последних известных менеджеров.\n" .
+            "3. Если есть LinkedIn профиль - укажи ссылку (linkedin.com/in/...).\n" .
+            "4. Верни только JSON массив: [{ \"name\": \"Имя Фамилия\", \"position\": \"Должность\", \"linkedin_url\": \"ссылка или null\" }].\n" .
+            "5. Если уверенных данных нет - верни пустой массив []. Не выдумывай имена.";
+
+        $result = $this->yandexGPT->search($prompt);
+        $content = $result['content'] ?? '';
+
+        if (preg_match('/\[.*\]/s', $content, $matches)) {
+            $data = json_decode($matches[0], true);
+            return is_array($data) ? $data : [];
+        }
+
+        return [];
     }
 
     private function buildLeadSearchPrompt(string $query, array $filters): string
@@ -76,18 +105,18 @@ final class YandexGPTLeadService
         $prompt .= "Верни результат в формате JSON:\n";
         $prompt .= "[\n";
         $prompt .= "  {\n";
-        $prompt .= '    "company_name": "полное название",'."\n";
-        $prompt .= '    "inn": "ИНН",'."\n";
-        $prompt .= '    "contact_name": "Имя Фамилия",'."\n";
-        $prompt .= '    "position": "Должность",'."\n";
-        $prompt .= '    "email": "email@domain.ru",'."\n";
-        $prompt .= '    "phone": "+7XXXXXXXXXX",'."\n";
-        $prompt .= '    "website": "https://...",'."\n";
-        $prompt .= '    "address": "город, адрес",'."\n";
-        $prompt .= '    "vk_url": "https://vk.com/...",'."\n";
-        $prompt .= '    "telegram": "@username",'."\n";
-        $prompt .= '    "linkedin_url": "https://linkedin.com/...",'."\n";
-        $prompt .= '    "source": "источник информации"'."\n";
+        $prompt .= '    "company_name": "полное название",' . "\n";
+        $prompt .= '    "inn": "ИНН",' . "\n";
+        $prompt .= '    "contact_name": "Имя Фамилия",' . "\n";
+        $prompt .= '    "position": "Должность",' . "\n";
+        $prompt .= '    "email": "email@domain.ru",' . "\n";
+        $prompt .= '    "phone": "+7XXXXXXXXXX",' . "\n";
+        $prompt .= '    "website": "https://...",' . "\n";
+        $prompt .= '    "address": "город, адрес",' . "\n";
+        $prompt .= '    "vk_url": "https://vk.com/...",' . "\n";
+        $prompt .= '    "telegram": "@username",' . "\n";
+        $prompt .= '    "linkedin_url": "https://linkedin.com/...",' . "\n";
+        $prompt .= '    "source": "источник информации"' . "\n";
         $prompt .= "  }\n";
         $prompt .= "]\n";
 
@@ -117,8 +146,10 @@ final class YandexGPTLeadService
             try {
                 $validationResult = $this->validationService->validateLead($leadData);
 
-                if ($validationResult->status->value !== 'invalid' &&
-                    $validationResult->status->value !== 'mock') {
+                if (
+                    $validationResult->status->value !== 'invalid' &&
+                    $validationResult->status->value !== 'mock'
+                ) {
 
                     $teamId = $this->getTeamId();
 
@@ -150,7 +181,7 @@ final class YandexGPTLeadService
 
                 return null;
             } catch (\Exception $e) {
-                Log::error('Error creating lead: '.$e->getMessage());
+                Log::error('Error creating lead: ' . $e->getMessage());
 
                 return null;
             }

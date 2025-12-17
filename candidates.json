@@ -1,0 +1,4719 @@
+[
+    {
+        "type": "company",
+        "id": 6,
+        "name": "Р Фарм",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 7,
+        "name": "Валента Фарм",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 8,
+        "name": "Фармасинтез",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 9,
+        "name": "Фарм Синтез",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 10,
+        "name": "Веро Фарма",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 11,
+        "name": "НоваМедика",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 12,
+        "name": "Озон",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 13,
+        "name": "Вертекс",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 14,
+        "name": "Синтез",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 15,
+        "name": "Чиези Фарма",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 16,
+        "name": "ПАО \"Отисифарм\"",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 17,
+        "name": "Эвалар",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 18,
+        "name": "Нижфарм",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 19,
+        "name": "Полярис",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 20,
+        "name": "Цифровая Экономика",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 21,
+        "name": "KPBS",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 22,
+        "name": "Ozon Travel",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 23,
+        "name": "Триколор",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 24,
+        "name": "Находка",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 25,
+        "name": "Институт Коучинга СПБ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 26,
+        "name": "Ригла",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 27,
+        "name": "Союз Фармацевтов России",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 28,
+        "name": "Pozitive Techlogies",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 29,
+        "name": "Тензор",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 30,
+        "name": "Технониколь",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 31,
+        "name": "Газпром",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 32,
+        "name": "Сделано в России",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 33,
+        "name": "My games",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 34,
+        "name": "Марвел",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 35,
+        "name": "Level",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 36,
+        "name": "Start",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 37,
+        "name": "ЛАНИТ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 38,
+        "name": "Litress",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 39,
+        "name": "Банки ру",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 40,
+        "name": "Talenttech",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 41,
+        "name": "Авиа Сейлс",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 42,
+        "name": "RGS",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 43,
+        "name": "Материка",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 44,
+        "name": "Netwell",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 45,
+        "name": "Kaspersky",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 46,
+        "name": "Яндекс",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 47,
+        "name": "Газпромнефть",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 48,
+        "name": "Лореаль",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 49,
+        "name": "АЕБ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 50,
+        "name": "Redbull",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 51,
+        "name": "NL international",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 52,
+        "name": "Сибирское здоровье",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 53,
+        "name": "Gisbuyer",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 54,
+        "name": "GreenWay",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 55,
+        "name": "Faberlic",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 56,
+        "name": "Первая Грузовая Компания",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 58,
+        "name": "ЕВРАЗ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 59,
+        "name": "Fun and sun",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 60,
+        "name": "Не указано",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 61,
+        "name": "Tiande",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 62,
+        "name": "Батель",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 63,
+        "name": "Витамакс",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 64,
+        "name": "AMWAY",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 65,
+        "name": "Oriflame",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 66,
+        "name": "Avon",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 67,
+        "name": "Atomy",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 68,
+        "name": "Herbalife",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 69,
+        "name": "Кэпитал Лайф",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 70,
+        "name": "Cеверсталь",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 71,
+        "name": "Janssen Cosmetics",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 72,
+        "name": "Gipfel",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 73,
+        "name": "World Class",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 74,
+        "name": "Tele2",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 75,
+        "name": "НСПК",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 76,
+        "name": "Размер",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 77,
+        "name": "Столото",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 78,
+        "name": "Лента",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 79,
+        "name": "Ренкредит",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 80,
+        "name": "Тинькофф",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 81,
+        "name": "Райффайзен Банк",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 82,
+        "name": "Credit Europa Bank",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 83,
+        "name": "СберСтрахование жизни",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 84,
+        "name": "ГазпромБанк",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 85,
+        "name": "Hochland",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 86,
+        "name": "Актион Групп",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 87,
+        "name": "Группа Компаний Эфко",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 88,
+        "name": "Everest",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 89,
+        "name": "Окей",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 90,
+        "name": "Концерн Калашников",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 91,
+        "name": "ФРИИ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 92,
+        "name": "УралМАШ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 93,
+        "name": "Topcase",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 94,
+        "name": "NOV",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 95,
+        "name": "Merck KGaA",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 96,
+        "name": "Servier",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 97,
+        "name": "РФС",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 98,
+        "name": "KRKA",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 99,
+        "name": "AL Pharma",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 100,
+        "name": "ARMZ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 101,
+        "name": "Урал Хим",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 102,
+        "name": "Продо",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 103,
+        "name": "Astra Zeneca",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 104,
+        "name": "Островок",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 105,
+        "name": "Chery",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 106,
+        "name": "Rambler",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 107,
+        "name": "Stada(ДОП)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 108,
+        "name": "Takeda",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 109,
+        "name": "Церсанит",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 110,
+        "name": "Novartis(Доп)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 111,
+        "name": "Efko(доп)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 112,
+        "name": "Лукойл",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 113,
+        "name": "Megafon",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 114,
+        "name": "РФС(доп)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 115,
+        "name": "ФинПР",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 116,
+        "name": "OK маркет",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 117,
+        "name": "X5",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 118,
+        "name": "Москвич",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 119,
+        "name": "Barilla (доп)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 120,
+        "name": "Open",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 121,
+        "name": "RenLife",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 122,
+        "name": "Bayer",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 123,
+        "name": "Huawei",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 124,
+        "name": "Мечел",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 125,
+        "name": "2Gis",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 126,
+        "name": "Аренадата Software",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 128,
+        "name": "KazanExpress",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 129,
+        "name": "B2B Center",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 131,
+        "name": "ЦФТ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 132,
+        "name": "GreenAtom",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 133,
+        "name": "Usergate",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 134,
+        "name": "Zecurion",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 135,
+        "name": "Infotecs",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 136,
+        "name": "ИКС Холдинг",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 137,
+        "name": "Positive Technologies",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 138,
+        "name": "3Logic Group",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 140,
+        "name": "Юникон",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 142,
+        "name": "Fplus",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 143,
+        "name": "Isource",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 145,
+        "name": "Cloud.ru",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 146,
+        "name": "Mary Kay Russia",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 147,
+        "name": "Боржоми",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 148,
+        "name": "Capital Life",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 150,
+        "name": "Lanit",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 151,
+        "name": "Интерфакс",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 153,
+        "name": "B1",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 154,
+        "name": "Европлан",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 155,
+        "name": "НПК ТРАНС",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 156,
+        "name": "Русский Стандарт",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 157,
+        "name": "ГазпрпомЦПС",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 158,
+        "name": "Dahua Technology",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 159,
+        "name": "Айтеко",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 160,
+        "name": "Инфосистемы Джет",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 162,
+        "name": "RockWool",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 164,
+        "name": "Восток ЭнергоТрэйд",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 166,
+        "name": "Leroymerlin(доп)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 167,
+        "name": "Geropharm",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 168,
+        "name": "Артпласт",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 169,
+        "name": "Новартис Фарма",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 170,
+        "name": "Гардиа",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 171,
+        "name": "Unim",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 172,
+        "name": "Holo Group",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 173,
+        "name": "Solid-clouds",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 174,
+        "name": "B2b centr",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 175,
+        "name": "СИБРТ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 176,
+        "name": "Инностэйдж",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 177,
+        "name": "ГАЗ ИС",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 178,
+        "name": "Аренадата",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 179,
+        "name": "BI.ZONE",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 180,
+        "name": "Jet SU",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 181,
+        "name": "PTSecurity",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 182,
+        "name": "Crocus Group",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 183,
+        "name": "Flexicore(Ракета)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 184,
+        "name": "ООО \"АСУ метрология сервис\"",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 185,
+        "name": "ХК Вязки",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 186,
+        "name": "АО \"Корпорация \"МСП\"",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 187,
+        "name": "ДССЛ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 188,
+        "name": "ООО Лаборатория Будущего",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 189,
+        "name": "Билайн",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 190,
+        "name": "Vatech",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 191,
+        "name": "Fibo Group",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 192,
+        "name": "ВТБ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 193,
+        "name": "МатчТВ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 194,
+        "name": "Ледванс(Старый Клиент)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 195,
+        "name": "Гала Центр(Старый Клиент)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 199,
+        "name": "РЖД",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 200,
+        "name": "РусНАPБанк",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 201,
+        "name": "МТС БАНК",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 202,
+        "name": "Леруа Мерлен",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 203,
+        "name": "Светофор",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 204,
+        "name": "ЛюксорЭкзотика",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 205,
+        "name": "Комитас",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 206,
+        "name": "Imba-IT",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 207,
+        "name": "Фонд Прямых Инвестиций",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 208,
+        "name": "2can",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 209,
+        "name": "KRKA (ООО КРКА ФАРМА)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 210,
+        "name": "Упоковочные системы",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 211,
+        "name": "Стан",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 212,
+        "name": "Агаларов Девелопмент",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 213,
+        "name": "ЗАО Бастион",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 214,
+        "name": "Адватех Инжиниринг",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 215,
+        "name": "Новая Горная УК",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 216,
+        "name": "Маника Групп",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 217,
+        "name": "Группа компаний СПЕЯ",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 218,
+        "name": "АО Татхимфармпрепараты",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 219,
+        "name": "Туапсинский НПЗ (РН)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 220,
+        "name": "Альфа Банк",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 221,
+        "name": "АО ГЛОНАСС",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 222,
+        "name": "x5 retail group",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 223,
+        "name": "Сыктывкарский ликеро-водочный завод",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 224,
+        "name": "Единство (Норникель)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 225,
+        "name": "Морской банк",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 227,
+        "name": "МосОБлБанк",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 228,
+        "name": "Мерц Фарма",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 230,
+        "name": "Worwag Pharma",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 240,
+        "name": "КАНЕКС",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 241,
+        "name": "АМАДА",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 243,
+        "name": "Быстрые Деньги",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 244,
+        "name": "ФБУ \"ГИЛС и НП\"",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 246,
+        "name": "Группа компаний \"КорпусГрупп\"",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 247,
+        "name": "Verba Legal",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 248,
+        "name": "Сейсмопоиск",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 250,
+        "name": "IVI",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 265,
+        "name": "Техфорвард",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 267,
+        "name": "Дельрет",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 270,
+        "name": "Монт",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 275,
+        "name": "Roche Diabetes Care Rus",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 277,
+        "name": "Спектрум",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 278,
+        "name": "Северсталь ЦБС",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 280,
+        "name": "Связь Сервис Телекоммуникации",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 282,
+        "name": "Центр Корпоративных решений",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 285,
+        "name": "Беризаряд",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 286,
+        "name": "Rubytech",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 363,
+        "name": "Kion",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 367,
+        "name": "Eruditor Group",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 370,
+        "name": "AstraLinux",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 372,
+        "name": "Sberbank",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 373,
+        "name": "Yandex",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 374,
+        "name": "MTS",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 375,
+        "name": "Magnit",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 378,
+        "name": "Aeroflot",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 379,
+        "name": "Sistema",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 380,
+        "name": "PIK Group",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 381,
+        "name": "VK (Mail.ru Group)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 382,
+        "name": "Tinkoff (T-Bank)",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 383,
+        "name": "Whoosh",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 385,
+        "name": "Samolet",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 386,
+        "name": "M.Video",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 388,
+        "name": "Detsky Mir",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 389,
+        "name": "Fix Price",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 407,
+        "name": "УниПро",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 408,
+        "name": "Бест-Новострой",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 409,
+        "name": "Инком-Недвижимость",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 410,
+        "name": "Этажи-Москва",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 411,
+        "name": "Флоресан",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 412,
+        "name": "Перекрёсток",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 413,
+        "name": "Дикси",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 414,
+        "name": "Карусель",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 415,
+        "name": "ВкусВилл",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 416,
+        "name": "Ашан",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 417,
+        "name": "Спортмастер",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 418,
+        "name": "Kari",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 419,
+        "name": "SESDERMA",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 420,
+        "name": "Sela",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 421,
+        "name": "Твой Дом",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 422,
+        "name": "Оби",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 423,
+        "name": "Кораблик",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 424,
+        "name": "Виктория",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 425,
+        "name": "Азбука вкуса",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 426,
+        "name": "Mirra",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 427,
+        "name": "Mustela",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 428,
+        "name": "Остров",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 429,
+        "name": "Шеф",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 430,
+        "name": "Яндекс.Лавка",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 431,
+        "name": "Lamoda",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 432,
+        "name": "Регард",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 433,
+        "name": "Рив Гош",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 434,
+        "name": "Ralf Ringer",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 435,
+        "name": "Aravia",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 436,
+        "name": "Leovit",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 437,
+        "name": "Kedem",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 438,
+        "name": "Guam",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 439,
+        "name": "Орифлэйм",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 440,
+        "name": "Натура Сиберика",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 441,
+        "name": "Эльфарма",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 442,
+        "name": "Фармтек",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 443,
+        "name": "Арт-Визаж",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 444,
+        "name": "Simple",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 445,
+        "name": "Milv",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 446,
+        "name": "Sammy Beauty",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 447,
+        "name": "Эйвон",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 448,
+        "name": "Estel",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 450,
+        "name": "Аравия",
+        "domain": null
+    },
+    {
+        "type": "company",
+        "id": 451,
+        "name": "NappyClub",
+        "domain": null
+    },
+    {
+        "type": "person",
+        "id": 1868,
+        "name": "Самсонов Михаил",
+        "email_username": "samsonov",
+        "company_name": "Р Фарм"
+    },
+    {
+        "type": "person",
+        "id": 1869,
+        "name": "Алексей Андреев",
+        "email_username": "a.andreev",
+        "company_name": "Валента Фарм"
+    },
+    {
+        "type": "person",
+        "id": 1870,
+        "name": "Анастасия Мещерякова",
+        "email_username": "a.andreev",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1871,
+        "name": "Мария Курган",
+        "email_username": "a.andreev",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1872,
+        "name": "Нина Поздеева",
+        "email_username": "npozdeeva",
+        "company_name": "Фарм Синтез"
+    },
+    {
+        "type": "person",
+        "id": 1873,
+        "name": "Ирина Трусова",
+        "email_username": "irina.trusova",
+        "company_name": "Веро Фарма"
+    },
+    {
+        "type": "person",
+        "id": 1874,
+        "name": "Марина Айвазова",
+        "email_username": "maivazova",
+        "company_name": "НоваМедика"
+    },
+    {
+        "type": "person",
+        "id": 1875,
+        "name": "Анна Симанович",
+        "email_username": "vertex",
+        "company_name": "Вертекс"
+    },
+    {
+        "type": "person",
+        "id": 1876,
+        "name": "Гадимов Рамал",
+        "email_username": "vertex",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1877,
+        "name": "Абхар Мамедов",
+        "email_username": "contact",
+        "company_name": "Синтез"
+    },
+    {
+        "type": "person",
+        "id": 1878,
+        "name": "Административный Менеджер",
+        "email_username": "t.kozlova",
+        "company_name": "Чиези Фарма"
+    },
+    {
+        "type": "person",
+        "id": 1879,
+        "name": "Виталий Прийменко",
+        "email_username": "marketing",
+        "company_name": "ПАО \"Отисифарм\""
+    },
+    {
+        "type": "person",
+        "id": 1880,
+        "name": "Юлия Суслова",
+        "email_username": "marketing",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1881,
+        "name": "Андрей Завьялов",
+        "email_username": "commerce.msk",
+        "company_name": "Эвалар"
+    },
+    {
+        "type": "person",
+        "id": 1882,
+        "name": "Анна Козловская",
+        "email_username": "Trifantsova <Natalia.Trifantsova",
+        "company_name": "Нижфарм"
+    },
+    {
+        "type": "person",
+        "id": 1883,
+        "name": "Наталья Трифанцова",
+        "email_username": "Trifantsova <Natalia.Trifantsova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1884,
+        "name": "Екатерина Ежова",
+        "email_username": "ezhova",
+        "company_name": "Полярис"
+    },
+    {
+        "type": "person",
+        "id": 1885,
+        "name": "Вадим Евдокимов",
+        "email_username": "vevdokimov",
+        "company_name": "Цифровая Экономика"
+    },
+    {
+        "type": "person",
+        "id": 1886,
+        "name": "Юрий Маркелов",
+        "email_username": "yuriy.markelov",
+        "company_name": "KPBS"
+    },
+    {
+        "type": "person",
+        "id": 1887,
+        "name": "Праслов Евгений",
+        "email_username": null,
+        "company_name": "Ozon Travel"
+    },
+    {
+        "type": "person",
+        "id": 1888,
+        "name": "Алексей Липилин",
+        "email_username": "lapilin",
+        "company_name": "Триколор"
+    },
+    {
+        "type": "person",
+        "id": 1889,
+        "name": "Анастасия Большова",
+        "email_username": "info",
+        "company_name": "Находка"
+    },
+    {
+        "type": "person",
+        "id": 1890,
+        "name": "Алексей Попов",
+        "email_username": "aldpopov",
+        "company_name": "Институт Коучинга СПБ"
+    },
+    {
+        "type": "person",
+        "id": 1891,
+        "name": "Ольга Майорова",
+        "email_username": null,
+        "company_name": "Ригла"
+    },
+    {
+        "type": "person",
+        "id": 1892,
+        "name": "Виктор",
+        "email_username": null,
+        "company_name": "Союз Фармацевтов России"
+    },
+    {
+        "type": "person",
+        "id": 1893,
+        "name": "Валентина Трофименко",
+        "email_username": "vtrofimenko",
+        "company_name": "Pozitive Techlogies"
+    },
+    {
+        "type": "person",
+        "id": 1894,
+        "name": "Ирина Москалева",
+        "email_username": "info1",
+        "company_name": "Тензор"
+    },
+    {
+        "type": "person",
+        "id": 1895,
+        "name": "Ольга Курепина",
+        "email_username": "kurepina",
+        "company_name": "Технониколь"
+    },
+    {
+        "type": "person",
+        "id": 1896,
+        "name": "Петровичев Максим Геннадьевич",
+        "email_username": "petrovich.MG",
+        "company_name": "Газпром"
+    },
+    {
+        "type": "person",
+        "id": 1897,
+        "name": "Коста Кадзов",
+        "email_username": "k.kadzov",
+        "company_name": "Сделано в России"
+    },
+    {
+        "type": "person",
+        "id": 1898,
+        "name": "Анастасия Шестерикова",
+        "email_username": "anastasiia.shesterikova",
+        "company_name": "My games"
+    },
+    {
+        "type": "person",
+        "id": 1899,
+        "name": "Roman Polyak",
+        "email_username": "roman.polyak",
+        "company_name": "My games"
+    },
+    {
+        "type": "person",
+        "id": 1900,
+        "name": "Анастасия Калунова",
+        "email_username": "a.kolunova",
+        "company_name": "Марвел"
+    },
+    {
+        "type": "person",
+        "id": 1901,
+        "name": "Мария Поторацкая",
+        "email_username": "mpoltoratskaya",
+        "company_name": "Level"
+    },
+    {
+        "type": "person",
+        "id": 1902,
+        "name": "Светлана Кашина",
+        "email_username": null,
+        "company_name": "Start"
+    },
+    {
+        "type": "person",
+        "id": 1903,
+        "name": "Ольга Кацко",
+        "email_username": "kazko",
+        "company_name": "ЛАНИТ"
+    },
+    {
+        "type": "person",
+        "id": 1904,
+        "name": "Екатерина Киселева",
+        "email_username": "Info",
+        "company_name": "Банки ру"
+    },
+    {
+        "type": "person",
+        "id": 1905,
+        "name": "Алексей Половинкин",
+        "email_username": "info",
+        "company_name": "Talenttech"
+    },
+    {
+        "type": "person",
+        "id": 1906,
+        "name": "Мария Маслова",
+        "email_username": "info",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1907,
+        "name": "Елизавета Тиманская",
+        "email_username": "Timanskaya",
+        "company_name": "Авиа Сейлс"
+    },
+    {
+        "type": "person",
+        "id": 1908,
+        "name": "Ольга Коваленко",
+        "email_username": "olga_kovalenko",
+        "company_name": "RGS"
+    },
+    {
+        "type": "person",
+        "id": 1909,
+        "name": "Виктория Александровна Кабанова",
+        "email_username": "Viktoriya_Kabanova",
+        "company_name": "RGS"
+    },
+    {
+        "type": "person",
+        "id": 1910,
+        "name": "Нагиева Юлия",
+        "email_username": "nagaevaYN",
+        "company_name": "Материка"
+    },
+    {
+        "type": "person",
+        "id": 1911,
+        "name": "Ольга Ларева",
+        "email_username": "olareva",
+        "company_name": "Netwell"
+    },
+    {
+        "type": "person",
+        "id": 1912,
+        "name": "Анна Мащенко",
+        "email_username": null,
+        "company_name": "Kaspersky"
+    },
+    {
+        "type": "person",
+        "id": 1913,
+        "name": "Дарья Шекочихина",
+        "email_username": null,
+        "company_name": "Kaspersky"
+    },
+    {
+        "type": "person",
+        "id": 1914,
+        "name": "Сергей Зайцев",
+        "email_username": "liza-merk",
+        "company_name": "Яндекс"
+    },
+    {
+        "type": "person",
+        "id": 1915,
+        "name": "Елизавета Меркурьева",
+        "email_username": "liza-merk",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1916,
+        "name": "Алексей Лапутин",
+        "email_username": "Laputin.AV",
+        "company_name": "Газпромнефть"
+    },
+    {
+        "type": "person",
+        "id": 1917,
+        "name": "Ирина Махмутова",
+        "email_username": "mariya.khikmatova",
+        "company_name": "Лореаль"
+    },
+    {
+        "type": "person",
+        "id": 1918,
+        "name": "Анна Подрядчикова",
+        "email_username": "anna,podryadchikova",
+        "company_name": "АЕБ"
+    },
+    {
+        "type": "person",
+        "id": 1919,
+        "name": "Алла Горбунова",
+        "email_username": "alla-d",
+        "company_name": "Redbull"
+    },
+    {
+        "type": "person",
+        "id": 1920,
+        "name": "Чубарова Елена",
+        "email_username": "info",
+        "company_name": "NL international"
+    },
+    {
+        "type": "person",
+        "id": 1921,
+        "name": "Наталья Яромчик",
+        "email_username": "call-centre",
+        "company_name": "Сибирское здоровье"
+    },
+    {
+        "type": "person",
+        "id": 1922,
+        "name": "Анатолий Серебрянский",
+        "email_username": "info",
+        "company_name": "Gisbuyer"
+    },
+    {
+        "type": "person",
+        "id": 1923,
+        "name": "Ирина Золотова",
+        "email_username": "I.zolotova",
+        "company_name": "GreenWay"
+    },
+    {
+        "type": "person",
+        "id": 1924,
+        "name": "Ирэна Лукиянова",
+        "email_username": "i.lukiyanova",
+        "company_name": "Faberlic"
+    },
+    {
+        "type": "person",
+        "id": 1925,
+        "name": "Мовчан Наталья Александровна",
+        "email_username": "MovchanNA",
+        "company_name": "Первая Грузовая Компания"
+    },
+    {
+        "type": "person",
+        "id": 1926,
+        "name": "Елена Турчина",
+        "email_username": "elena.turtchina",
+        "company_name": "Лореаль"
+    },
+    {
+        "type": "person",
+        "id": 1927,
+        "name": "Дарья Афанасьева",
+        "email_username": "daria.afanasieva",
+        "company_name": "ЕВРАЗ"
+    },
+    {
+        "type": "person",
+        "id": 1928,
+        "name": "Наталья Зарецких",
+        "email_username": "natalya.zaretskikh",
+        "company_name": "Fun and sun"
+    },
+    {
+        "type": "person",
+        "id": 1929,
+        "name": "Яна Кузнецова",
+        "email_username": "kulagina",
+        "company_name": "Не указано"
+    },
+    {
+        "type": "person",
+        "id": 1930,
+        "name": "Ольга Нестерова",
+        "email_username": "SUPPORT",
+        "company_name": "Tiande"
+    },
+    {
+        "type": "person",
+        "id": 1931,
+        "name": "Дмитрий",
+        "email_username": "sales",
+        "company_name": "Батель"
+    },
+    {
+        "type": "person",
+        "id": 1932,
+        "name": "Александра",
+        "email_username": "mail",
+        "company_name": "Витамакс"
+    },
+    {
+        "type": "person",
+        "id": 1933,
+        "name": "Алина",
+        "email_username": "atomy_ru",
+        "company_name": "Atomy"
+    },
+    {
+        "type": "person",
+        "id": 1934,
+        "name": "Ксения Михайлина",
+        "email_username": "Yanat",
+        "company_name": "Herbalife"
+    },
+    {
+        "type": "person",
+        "id": 1935,
+        "name": "Юлия Александровна Фирсова",
+        "email_username": "yuliya_firsova",
+        "company_name": "Кэпитал Лайф"
+    },
+    {
+        "type": "person",
+        "id": 1936,
+        "name": "Наталья Росса",
+        "email_username": "natalya.rossa",
+        "company_name": "Cеверсталь"
+    },
+    {
+        "type": "person",
+        "id": 1937,
+        "name": "Усанова Елена",
+        "email_username": "usanova_eu",
+        "company_name": "Gipfel"
+    },
+    {
+        "type": "person",
+        "id": 1938,
+        "name": "Мария Камаева",
+        "email_username": null,
+        "company_name": "World Class"
+    },
+    {
+        "type": "person",
+        "id": 1939,
+        "name": "Олеся Горвоненко",
+        "email_username": null,
+        "company_name": "World Class"
+    },
+    {
+        "type": "person",
+        "id": 1940,
+        "name": "Кузьмин Филипп",
+        "email_username": "kuzminFA",
+        "company_name": "World Class"
+    },
+    {
+        "type": "person",
+        "id": 1941,
+        "name": "Евгений Свешников",
+        "email_username": "evgeny.sveshnikov",
+        "company_name": "Tele2"
+    },
+    {
+        "type": "person",
+        "id": 1942,
+        "name": "Виолетта Казакова",
+        "email_username": "kazakova",
+        "company_name": "НСПК"
+    },
+    {
+        "type": "person",
+        "id": 1943,
+        "name": "Андрей Филиппов",
+        "email_username": "afilippov",
+        "company_name": "Размер"
+    },
+    {
+        "type": "person",
+        "id": 1944,
+        "name": "Алексей Савельев",
+        "email_username": "ekaterina.letsko",
+        "company_name": "Столото"
+    },
+    {
+        "type": "person",
+        "id": 1945,
+        "name": "Алина Грюканова",
+        "email_username": "pr",
+        "company_name": "Лента"
+    },
+    {
+        "type": "person",
+        "id": 1946,
+        "name": "Екатерина Андреевна Емискевич",
+        "email_username": "emitskevitch",
+        "company_name": "Ренкредит"
+    },
+    {
+        "type": "person",
+        "id": 1947,
+        "name": "Максим Деряжин",
+        "email_username": "m.deryazhin",
+        "company_name": "Тинькофф"
+    },
+    {
+        "type": "person",
+        "id": 1948,
+        "name": "Мария Остроумова",
+        "email_username": "m.ostroumova",
+        "company_name": "Тинькофф"
+    },
+    {
+        "type": "person",
+        "id": 1949,
+        "name": "Яна Самойленко",
+        "email_username": "y.samoylenko",
+        "company_name": "Тинькофф"
+    },
+    {
+        "type": "person",
+        "id": 1950,
+        "name": "Денис Тихомиров",
+        "email_username": "denis.tikhomirov",
+        "company_name": "Райффайзен Банк"
+    },
+    {
+        "type": "person",
+        "id": 1951,
+        "name": "Анна Сазонова",
+        "email_username": "denis.tikhomirov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1952,
+        "name": "Дмитрий Алексеев",
+        "email_username": "dmitriy.alekseev",
+        "company_name": "Credit Europa Bank"
+    },
+    {
+        "type": "person",
+        "id": 1953,
+        "name": "Чекмарева Татьяна Владимировна",
+        "email_username": "dmitriy.alekseev",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1954,
+        "name": "Дмитрий Першин",
+        "email_username": null,
+        "company_name": "СберСтрахование жизни"
+    },
+    {
+        "type": "person",
+        "id": 1955,
+        "name": "Роскошная Ольга",
+        "email_username": "olga.roskoshnaya",
+        "company_name": "ГазпромБанк"
+    },
+    {
+        "type": "person",
+        "id": 1956,
+        "name": "Светлана Балюкина",
+        "email_username": null,
+        "company_name": "Hochland"
+    },
+    {
+        "type": "person",
+        "id": 1957,
+        "name": "Олеся Ковырова",
+        "email_username": "kovyrova",
+        "company_name": "Актион Групп"
+    },
+    {
+        "type": "person",
+        "id": 1958,
+        "name": "Антонина Николаевна",
+        "email_username": "an.s.leonteva",
+        "company_name": "Efko(доп)"
+    },
+    {
+        "type": "person",
+        "id": 1959,
+        "name": "Ольга Ломак",
+        "email_username": "an.s.leonteva",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1960,
+        "name": "Валерия Байлар",
+        "email_username": "Vmazur",
+        "company_name": "Everest"
+    },
+    {
+        "type": "person",
+        "id": 1961,
+        "name": "Фролов Константин",
+        "email_username": "Vmazur",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1962,
+        "name": "Александр Саркисов",
+        "email_username": "a.sarkisov",
+        "company_name": "Окей"
+    },
+    {
+        "type": "person",
+        "id": 1963,
+        "name": "Дарья Кошевая",
+        "email_username": "d.v.koshevaya",
+        "company_name": "Концерн Калашников"
+    },
+    {
+        "type": "person",
+        "id": 1964,
+        "name": "Ксения Спицина",
+        "email_username": "partners",
+        "company_name": "ФРИИ"
+    },
+    {
+        "type": "person",
+        "id": 1965,
+        "name": "Рустам Мингалеев",
+        "email_username": "partners",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1966,
+        "name": "Николай Чуин",
+        "email_username": "hr",
+        "company_name": "Topcase"
+    },
+    {
+        "type": "person",
+        "id": 1967,
+        "name": "Регина Магомедова",
+        "email_username": "hr",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1968,
+        "name": "Варвара Савинова",
+        "email_username": "varvara.savinova",
+        "company_name": "NOV"
+    },
+    {
+        "type": "person",
+        "id": 1969,
+        "name": "Сергей Бабкин",
+        "email_username": "sergey.babkin",
+        "company_name": "Merck KGaA"
+    },
+    {
+        "type": "person",
+        "id": 1970,
+        "name": "Евгений Смолкин",
+        "email_username": "sergey.babkin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1971,
+        "name": "Иван Троценко",
+        "email_username": "sergey.babkin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1972,
+        "name": "Виктория Тананян",
+        "email_username": "sergey.babkin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1973,
+        "name": "Юрий Бородин",
+        "email_username": "sergey.babkin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1974,
+        "name": "Екатерина Стороженко",
+        "email_username": "sergey.babkin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1975,
+        "name": "Татьяна Шеметьева",
+        "email_username": "zinchenko",
+        "company_name": "Servier"
+    },
+    {
+        "type": "person",
+        "id": 1976,
+        "name": "Чендрова Дарья",
+        "email_username": "chendrova_da",
+        "company_name": "РФС(доп)"
+    },
+    {
+        "type": "person",
+        "id": 1977,
+        "name": "Стрекалова Елизавета",
+        "email_username": "chendrova_da",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1978,
+        "name": "Светлана Чернова",
+        "email_username": "svetlana.chernova",
+        "company_name": "KRKA (ООО КРКА ФАРМА)"
+    },
+    {
+        "type": "person",
+        "id": 1979,
+        "name": "Анастасия Зазнобина",
+        "email_username": "svetlana.chernova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1980,
+        "name": "Татьяна Рачинская",
+        "email_username": "t.rachinskaya",
+        "company_name": "AL Pharma"
+    },
+    {
+        "type": "person",
+        "id": 1981,
+        "name": "Ольга Евгеньевна Варламова",
+        "email_username": "OEVarlamova",
+        "company_name": "ARMZ"
+    },
+    {
+        "type": "person",
+        "id": 1982,
+        "name": "Екатерина Ивушкина",
+        "email_username": "ekaterina.ivushkina",
+        "company_name": "Урал Хим"
+    },
+    {
+        "type": "person",
+        "id": 1983,
+        "name": "Ольга Феокфеститова",
+        "email_username": "o.feoktistova",
+        "company_name": "Продо"
+    },
+    {
+        "type": "person",
+        "id": 1984,
+        "name": "Юлия Брызгалина",
+        "email_username": "julia.bryzgalina",
+        "company_name": "Astra Zeneca"
+    },
+    {
+        "type": "person",
+        "id": 1985,
+        "name": "Анна Чаплыгина",
+        "email_username": "achaplygina",
+        "company_name": "Островок"
+    },
+    {
+        "type": "person",
+        "id": 1986,
+        "name": "Елена Жуланова",
+        "email_username": "elena.zhulanova",
+        "company_name": "Chery"
+    },
+    {
+        "type": "person",
+        "id": 1987,
+        "name": "Ирина Боева",
+        "email_username": "Irina.boeva",
+        "company_name": "Rambler"
+    },
+    {
+        "type": "person",
+        "id": 1988,
+        "name": "Маргарита Хурадо",
+        "email_username": "margarita.khurado",
+        "company_name": "Stada(ДОП)"
+    },
+    {
+        "type": "person",
+        "id": 1989,
+        "name": "Анна Ширшкова",
+        "email_username": "anna.shirshikova",
+        "company_name": "Takeda"
+    },
+    {
+        "type": "person",
+        "id": 1990,
+        "name": "Кристина Гуренкова",
+        "email_username": "k.gurenkova",
+        "company_name": "Церсанит"
+    },
+    {
+        "type": "person",
+        "id": 1991,
+        "name": "Владимир Булатов",
+        "email_username": "Vladimir.bulatov",
+        "company_name": "Novartis(Доп)"
+    },
+    {
+        "type": "person",
+        "id": 1992,
+        "name": "Анастасия Леонтьева",
+        "email_username": "an.s.leonteva",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1993,
+        "name": "Юлия Акимова",
+        "email_username": "Yuliya.Akimova",
+        "company_name": "Лукойл"
+    },
+    {
+        "type": "person",
+        "id": 1994,
+        "name": "Юлия Жогло",
+        "email_username": "yuliya.zhoglo",
+        "company_name": "Megafon"
+    },
+    {
+        "type": "person",
+        "id": 1995,
+        "name": "Чендрова Дарья",
+        "email_username": "chendrova_da",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1996,
+        "name": "Стрекалова Елизавета",
+        "email_username": "chendrova_da",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 1997,
+        "name": "Елена Севостьянова",
+        "email_username": "medvedeva",
+        "company_name": "ФинПР"
+    },
+    {
+        "type": "person",
+        "id": 1998,
+        "name": "Юлия Ретуньская",
+        "email_username": "darya.stradze",
+        "company_name": "OK маркет"
+    },
+    {
+        "type": "person",
+        "id": 1999,
+        "name": "Лидия Лембик",
+        "email_username": "Lidia.Lembik",
+        "company_name": "X5"
+    },
+    {
+        "type": "person",
+        "id": 2000,
+        "name": "Татьяна Веревкина",
+        "email_username": "veronika.ejova",
+        "company_name": "Москвич"
+    },
+    {
+        "type": "person",
+        "id": 2001,
+        "name": "Алина Гаязедитнова",
+        "email_username": "alina.gayazetdinova",
+        "company_name": "Barilla (доп)"
+    },
+    {
+        "type": "person",
+        "id": 2002,
+        "name": "Олеся Качан",
+        "email_username": "Olesya.kachan",
+        "company_name": "Open"
+    },
+    {
+        "type": "person",
+        "id": 2003,
+        "name": "Елена Севостьянова",
+        "email_username": "elena.savostyanova",
+        "company_name": "RenLife"
+    },
+    {
+        "type": "person",
+        "id": 2004,
+        "name": "Юлия Ретуньская",
+        "email_username": "julia.retyunskaya",
+        "company_name": "Bayer"
+    },
+    {
+        "type": "person",
+        "id": 2005,
+        "name": "Проткин Даниил",
+        "email_username": "protkin.daniil",
+        "company_name": "Huawei"
+    },
+    {
+        "type": "person",
+        "id": 2006,
+        "name": "Кристина Печенина",
+        "email_username": "kristina.pechinina",
+        "company_name": "Мечел"
+    },
+    {
+        "type": "person",
+        "id": 2007,
+        "name": "Соколова Екатерина",
+        "email_username": "Ekaterina.sokolova",
+        "company_name": "Интерфакс"
+    },
+    {
+        "type": "person",
+        "id": 2008,
+        "name": "Людмила ЛИ",
+        "email_username": null,
+        "company_name": "Северсталь ЦБС"
+    },
+    {
+        "type": "person",
+        "id": 2009,
+        "name": "Ксения Баязитова",
+        "email_username": "Ksenia.Bayazitova",
+        "company_name": "B1"
+    },
+    {
+        "type": "person",
+        "id": 2010,
+        "name": "Людмила Буданова",
+        "email_username": "Ksenia.Bayazitova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2011,
+        "name": "Смирнова Наталья Владимировна",
+        "email_username": "nvs3",
+        "company_name": "Европлан"
+    },
+    {
+        "type": "person",
+        "id": 2012,
+        "name": "Логинова Ольга Александровна",
+        "email_username": "o.loginova",
+        "company_name": "НПК ТРАНС"
+    },
+    {
+        "type": "person",
+        "id": 2013,
+        "name": "Киселева Екатерина Михайловна",
+        "email_username": "ek9017074",
+        "company_name": "Русский Стандарт"
+    },
+    {
+        "type": "person",
+        "id": 2014,
+        "name": "Павлова Кристина Вадимовна",
+        "email_username": "pavlova.christina",
+        "company_name": "Dahua Technology"
+    },
+    {
+        "type": "person",
+        "id": 2015,
+        "name": "Попкова Марина Петровна",
+        "email_username": "Info",
+        "company_name": "Инфосистемы Джет"
+    },
+    {
+        "type": "person",
+        "id": 2016,
+        "name": "Анна Алексеева",
+        "email_username": "anna.alekseeva",
+        "company_name": "RockWool"
+    },
+    {
+        "type": "person",
+        "id": 2017,
+        "name": "Людмила Бадулина",
+        "email_username": "ludmila.badulina",
+        "company_name": "Megafon"
+    },
+    {
+        "type": "person",
+        "id": 2018,
+        "name": "Юлия Грушина",
+        "email_username": "vostokenergotrade",
+        "company_name": "Восток ЭнергоТрэйд"
+    },
+    {
+        "type": "person",
+        "id": 2019,
+        "name": "Светлана Зинченко",
+        "email_username": "svetlana.zinchenko",
+        "company_name": "Servier"
+    },
+    {
+        "type": "person",
+        "id": 2020,
+        "name": "Олеся Калюжная",
+        "email_username": "Olesya.Kaliuzhnaia",
+        "company_name": "Leroymerlin(доп)"
+    },
+    {
+        "type": "person",
+        "id": 2021,
+        "name": "Марина Рыкова",
+        "email_username": "Marina.Rykova",
+        "company_name": "Geropharm"
+    },
+    {
+        "type": "person",
+        "id": 2022,
+        "name": "Евгения Доморощенкова",
+        "email_username": "Marina.Rykova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2023,
+        "name": "Иван Меркель",
+        "email_username": "artplast",
+        "company_name": "Артпласт"
+    },
+    {
+        "type": "person",
+        "id": 2024,
+        "name": "Владимир Булатова",
+        "email_username": "Vladimir.bulatov",
+        "company_name": "Новартис Фарма"
+    },
+    {
+        "type": "person",
+        "id": 2025,
+        "name": "катерина Одинцова",
+        "email_username": "Vladimir.bulatov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2026,
+        "name": "Ирина Белогурова",
+        "email_username": "vladislav.petrokas",
+        "company_name": "Гардиа"
+    },
+    {
+        "type": "person",
+        "id": 2027,
+        "name": "Валерия Березовая",
+        "email_username": "vberezovaya",
+        "company_name": "Unim"
+    },
+    {
+        "type": "person",
+        "id": 2028,
+        "name": "Александр Дмитриев",
+        "email_username": "info",
+        "company_name": "Holo Group"
+    },
+    {
+        "type": "person",
+        "id": 2029,
+        "name": "Александр Ломакин",
+        "email_username": "a.lomakin",
+        "company_name": "B2B Center"
+    },
+    {
+        "type": "person",
+        "id": 2030,
+        "name": "Юлия",
+        "email_username": "sekretar",
+        "company_name": "СИБРТ"
+    },
+    {
+        "type": "person",
+        "id": 2031,
+        "name": "Иван Корешков",
+        "email_username": "resp",
+        "company_name": "ГАЗ ИС"
+    },
+    {
+        "type": "person",
+        "id": 2032,
+        "name": "Евгений Коваленко",
+        "email_username": "kovalenko",
+        "company_name": "Аренадата Software"
+    },
+    {
+        "type": "person",
+        "id": 2033,
+        "name": "Светлана",
+        "email_username": "info",
+        "company_name": "BI.ZONE"
+    },
+    {
+        "type": "person",
+        "id": 2034,
+        "name": "Анастасия Глумова",
+        "email_username": "an.glumova",
+        "company_name": "Инфосистемы Джет"
+    },
+    {
+        "type": "person",
+        "id": 2035,
+        "name": "ЯР Бабин",
+        "email_username": "ybabin",
+        "company_name": "PTSecurity"
+    },
+    {
+        "type": "person",
+        "id": 2036,
+        "name": "Мария Львова",
+        "email_username": null,
+        "company_name": "Crocus Group"
+    },
+    {
+        "type": "person",
+        "id": 2037,
+        "name": "Вера Буданова",
+        "email_username": "Vera.Budanova",
+        "company_name": "Flexicore(Ракета)"
+    },
+    {
+        "type": "person",
+        "id": 2038,
+        "name": "Дмитрий Белоусов",
+        "email_username": "l: bds",
+        "company_name": "ООО \"АСУ метрология сервис\""
+    },
+    {
+        "type": "person",
+        "id": 2039,
+        "name": "Александра Жернова",
+        "email_username": "alexandrajernova",
+        "company_name": "ХК Вязки"
+    },
+    {
+        "type": "person",
+        "id": 2040,
+        "name": "Максим Филатов",
+        "email_username": "mfilatov",
+        "company_name": "АО \"Корпорация \"МСП\""
+    },
+    {
+        "type": "person",
+        "id": 2041,
+        "name": "Светлана Старшова",
+        "email_username": "s.starshova",
+        "company_name": "ДССЛ"
+    },
+    {
+        "type": "person",
+        "id": 2042,
+        "name": "Татьяна Пантюхина",
+        "email_username": "t.pantyukhina",
+        "company_name": "ООО Лаборатория Будущего"
+    },
+    {
+        "type": "person",
+        "id": 2043,
+        "name": "Дарья Корнилина",
+        "email_username": "Dkornilina",
+        "company_name": "Билайн"
+    },
+    {
+        "type": "person",
+        "id": 2044,
+        "name": "Мария Рунина",
+        "email_username": "web",
+        "company_name": "Vatech"
+    },
+    {
+        "type": "person",
+        "id": 2045,
+        "name": "Олег Матвиенко",
+        "email_username": "o.matvienko",
+        "company_name": "Fibo Group"
+    },
+    {
+        "type": "person",
+        "id": 2046,
+        "name": "Виктория Ельцова",
+        "email_username": "Velcova",
+        "company_name": "ВТБ"
+    },
+    {
+        "type": "person",
+        "id": 2047,
+        "name": "Олеся Серегина",
+        "email_username": "seregina",
+        "company_name": "МатчТВ"
+    },
+    {
+        "type": "person",
+        "id": 2048,
+        "name": "Ксения Хокрякова",
+        "email_username": "K.Hohryakova",
+        "company_name": "Ледванс(Старый Клиент)"
+    },
+    {
+        "type": "person",
+        "id": 2049,
+        "name": "Блохина Екатерина",
+        "email_username": null,
+        "company_name": "Гала Центр(Старый Клиент)"
+    },
+    {
+        "type": "person",
+        "id": 2050,
+        "name": "Марина",
+        "email_username": "info",
+        "company_name": "Не указано"
+    },
+    {
+        "type": "person",
+        "id": 2051,
+        "name": "Виктор Михайлов",
+        "email_username": "v.mikhaylov",
+        "company_name": "ЦФТ"
+    },
+    {
+        "type": "person",
+        "id": 2052,
+        "name": "Юлия Кушниренко",
+        "email_username": "startupvillage",
+        "company_name": "РЖД"
+    },
+    {
+        "type": "person",
+        "id": 2053,
+        "name": "Икаева Алина Юрьевна",
+        "email_username": "a.ikaeva",
+        "company_name": "РусНАPБанк"
+    },
+    {
+        "type": "person",
+        "id": 2054,
+        "name": "Константин Винокуров",
+        "email_username": "kvinokurov",
+        "company_name": "МТС БАНК"
+    },
+    {
+        "type": "person",
+        "id": 2055,
+        "name": "Алексей Гладков",
+        "email_username": "aleksey.gladkov",
+        "company_name": "Леруа Мерлен"
+    },
+    {
+        "type": "person",
+        "id": 2056,
+        "name": "Андрей Елистратов",
+        "email_username": "svetofor.bel",
+        "company_name": "Светофор"
+    },
+    {
+        "type": "person",
+        "id": 2057,
+        "name": "Екатерина Курзанова",
+        "email_username": "Ekaterina KURZANOVA <Ekaterina.Kurzanova",
+        "company_name": "ЛюксорЭкзотика"
+    },
+    {
+        "type": "person",
+        "id": 2058,
+        "name": "Середкина Ксения Сергеевна",
+        "email_username": "k.seredkina",
+        "company_name": "Комитас"
+    },
+    {
+        "type": "person",
+        "id": 2059,
+        "name": "Алина Савченко",
+        "email_username": "HELLO",
+        "company_name": "Imba-IT"
+    },
+    {
+        "type": "person",
+        "id": 2060,
+        "name": "Алина Шмакова",
+        "email_username": "Alina.Shmakova",
+        "company_name": "Фонд Прямых Инвестиций"
+    },
+    {
+        "type": "person",
+        "id": 2061,
+        "name": "Сергей Руденко",
+        "email_username": "s.rudenko",
+        "company_name": "2can"
+    },
+    {
+        "type": "person",
+        "id": 2062,
+        "name": "Чернова Светлана",
+        "email_username": "svetlana.chernova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2063,
+        "name": "Дарья Верблудова",
+        "email_username": "Daria.Verbludova",
+        "company_name": "Упоковочные системы"
+    },
+    {
+        "type": "person",
+        "id": 2064,
+        "name": "Голубева Татьяна Владимировна",
+        "email_username": "tgolubeva",
+        "company_name": "Стан"
+    },
+    {
+        "type": "person",
+        "id": 2065,
+        "name": "Антонова Екатерина",
+        "email_username": "antonova",
+        "company_name": "Агаларов Девелопмент"
+    },
+    {
+        "type": "person",
+        "id": 2066,
+        "name": "Ольга Тюрина",
+        "email_username": "tyurinadtcs28.04",
+        "company_name": "ЗАО Бастион"
+    },
+    {
+        "type": "person",
+        "id": 2067,
+        "name": "Баликоева Милана Даниловна",
+        "email_username": "office",
+        "company_name": "Адватех Инжиниринг"
+    },
+    {
+        "type": "person",
+        "id": 2068,
+        "name": "Фролова Дарина",
+        "email_username": "frolova.ds",
+        "company_name": "Новая Горная УК"
+    },
+    {
+        "type": "person",
+        "id": 2069,
+        "name": "Иван",
+        "email_username": "info",
+        "company_name": "Маника Групп"
+    },
+    {
+        "type": "person",
+        "id": 2070,
+        "name": "Дмитрий Маркетинг",
+        "email_username": "autos-office",
+        "company_name": "Группа компаний СПЕЯ"
+    },
+    {
+        "type": "person",
+        "id": 2071,
+        "name": "Залялов Фарит Фурхутдинович",
+        "email_username": "farit7101",
+        "company_name": "АО Татхимфармпрепараты"
+    },
+    {
+        "type": "person",
+        "id": 2072,
+        "name": "Сочнева Юлия",
+        "email_username": "yu_sochneva",
+        "company_name": "Туапсинский НПЗ (РН)"
+    },
+    {
+        "type": "person",
+        "id": 2073,
+        "name": "Михаил Рассказов",
+        "email_username": "tendcom",
+        "company_name": "Альфа Банк"
+    },
+    {
+        "type": "person",
+        "id": 2074,
+        "name": "Сибирякова Светлана Вячеславовна",
+        "email_username": "tendcom",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2075,
+        "name": "Проноза Татьяна Анатольевна",
+        "email_username": "pta",
+        "company_name": "АО ГЛОНАСС"
+    },
+    {
+        "type": "person",
+        "id": 2076,
+        "name": "Людмила Корченюк",
+        "email_username": "lyudmila.korchenyuk",
+        "company_name": "x5 retail group"
+    },
+    {
+        "type": "person",
+        "id": 2077,
+        "name": "Прохорова Евгения",
+        "email_username": "lyudmila.korchenyuk",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2078,
+        "name": "Тевс Вячеслав Геннадиевич",
+        "email_username": "v.tevs",
+        "company_name": "Сыктывкарский ликеро-водочный завод"
+    },
+    {
+        "type": "person",
+        "id": 2079,
+        "name": "Щукарев Роман Сергеевич",
+        "email_username": "SchukarevRS",
+        "company_name": "Единство (Норникель)"
+    },
+    {
+        "type": "person",
+        "id": 2080,
+        "name": "Атмурков Виктор",
+        "email_username": "Atmurkov",
+        "company_name": "Морской банк"
+    },
+    {
+        "type": "person",
+        "id": 2081,
+        "name": "Ирина Еровикова",
+        "email_username": "erovikova",
+        "company_name": "Не указано"
+    },
+    {
+        "type": "person",
+        "id": 2082,
+        "name": "Фадеева Екатерина",
+        "email_username": "fadeeva_ep",
+        "company_name": "МосОБлБанк"
+    },
+    {
+        "type": "person",
+        "id": 2083,
+        "name": "Екатерина Тетерина",
+        "email_username": "Ekaterina.Teterina",
+        "company_name": "Мерц Фарма"
+    },
+    {
+        "type": "person",
+        "id": 2084,
+        "name": "Татьяна Шкодина",
+        "email_username": "Ekaterina.Teterina",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2085,
+        "name": "Дмитрий",
+        "email_username": "autos-office",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2086,
+        "name": "Наталья Ворона",
+        "email_username": "anna.kolysheva",
+        "company_name": "Worwag Pharma"
+    },
+    {
+        "type": "person",
+        "id": 2087,
+        "name": "Павел",
+        "email_username": "pavel",
+        "company_name": "Не указано"
+    },
+    {
+        "type": "person",
+        "id": 2088,
+        "name": "Залялов Фарит Фурхутдинович",
+        "email_username": "farit7101",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2089,
+        "name": "Сочнева Юлия",
+        "email_username": "yu_sochneva",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2090,
+        "name": "Михаил Рассказов",
+        "email_username": "tendcom",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2091,
+        "name": "Сибирякова Светлана Вячеславовна",
+        "email_username": "tendcom",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2092,
+        "name": "Проноза Татьяна Анатольевна",
+        "email_username": "pta",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2093,
+        "name": "Людмила Корченюк",
+        "email_username": "lyudmila.korchenyuk",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2094,
+        "name": "Прохорова Евгения",
+        "email_username": "lyudmila.korchenyuk",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2095,
+        "name": "Тевс Вячеслав Геннадиевич",
+        "email_username": "v.tevs",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2096,
+        "name": "Щукарев Роман Сергеевич",
+        "email_username": "SchukarevRS",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2097,
+        "name": "Атмурков Виктор",
+        "email_username": "Atmurkov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2098,
+        "name": "Наргиза Бораева Пюрвяевна",
+        "email_username": "nargiza",
+        "company_name": "КАНЕКС"
+    },
+    {
+        "type": "person",
+        "id": 2099,
+        "name": "Ирина Владимирская (Острова)",
+        "email_username": "Irina.Ostrova",
+        "company_name": "АМАДА"
+    },
+    {
+        "type": "person",
+        "id": 2100,
+        "name": "Григорьева Елизавета",
+        "email_username": "lanit",
+        "company_name": "ЛАНИТ"
+    },
+    {
+        "type": "person",
+        "id": 2101,
+        "name": "Михаил Малафеев",
+        "email_username": null,
+        "company_name": "Быстрые Деньги"
+    },
+    {
+        "type": "person",
+        "id": 2102,
+        "name": "Алеева Елена Алексеевна",
+        "email_username": "aleeva.ea",
+        "company_name": "ФБУ \"ГИЛС и НП\""
+    },
+    {
+        "type": "person",
+        "id": 2103,
+        "name": "Дмитрий",
+        "email_username": "autos-office",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2104,
+        "name": "Арутюнян Юлия",
+        "email_username": "corpusgroup",
+        "company_name": "Группа компаний \"КорпусГрупп\""
+    },
+    {
+        "type": "person",
+        "id": 2105,
+        "name": "Анна Бельвинская",
+        "email_username": "Anna.belavinskaya",
+        "company_name": "Verba Legal"
+    },
+    {
+        "type": "person",
+        "id": 2106,
+        "name": "Вострякова Оксана Владимировна",
+        "email_username": "vostriakova",
+        "company_name": "Сейсмопоиск"
+    },
+    {
+        "type": "person",
+        "id": 2107,
+        "name": "Анна Прокофьева",
+        "email_username": "app",
+        "company_name": "Kion"
+    },
+    {
+        "type": "person",
+        "id": 2108,
+        "name": "Артем Лопухин",
+        "email_username": "alopukhin",
+        "company_name": "IVI"
+    },
+    {
+        "type": "person",
+        "id": 2109,
+        "name": "Екатерина Казмерова",
+        "email_username": "e.kazmerova",
+        "company_name": "2Gis"
+    },
+    {
+        "type": "person",
+        "id": 2110,
+        "name": "Евгений Коваленко",
+        "email_username": "kovalenko",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2111,
+        "name": "Максим Рындин",
+        "email_username": "ir",
+        "company_name": "Eruditor Group"
+    },
+    {
+        "type": "person",
+        "id": 2112,
+        "name": "Даниил Данин",
+        "email_username": "partners",
+        "company_name": "KazanExpress"
+    },
+    {
+        "type": "person",
+        "id": 2113,
+        "name": "Александр Ломакин",
+        "email_username": "a.lomakin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2114,
+        "name": "Алексей Иванов",
+        "email_username": "alex.ivanov",
+        "company_name": "AstraLinux"
+    },
+    {
+        "type": "person",
+        "id": 2115,
+        "name": "Анастасия Белова",
+        "email_username": "abelova",
+        "company_name": "AstraLinux"
+    },
+    {
+        "type": "person",
+        "id": 2116,
+        "name": "Дмитрий Кириллов",
+        "email_username": "d.kirillov",
+        "company_name": "ЦФТ"
+    },
+    {
+        "type": "person",
+        "id": 2117,
+        "name": "Виктор Михайлов",
+        "email_username": "v.mikhaylov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2118,
+        "name": "Смирнова Юлия Васильевна",
+        "email_username": "yuvsmirnova",
+        "company_name": "GreenAtom"
+    },
+    {
+        "type": "person",
+        "id": 2119,
+        "name": "Светлана",
+        "email_username": "savenko",
+        "company_name": "Usergate"
+    },
+    {
+        "type": "person",
+        "id": 2120,
+        "name": "Владимир Ульянов",
+        "email_username": "vladimir.ulyanov",
+        "company_name": "Zecurion"
+    },
+    {
+        "type": "person",
+        "id": 2121,
+        "name": "Андрей Жиляев",
+        "email_username": "andrey.zhilyaev",
+        "company_name": "Infotecs"
+    },
+    {
+        "type": "person",
+        "id": 2122,
+        "name": "Илья Гаврилов",
+        "email_username": "andrey.zhilyaev",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2123,
+        "name": "Илья Мозорнин",
+        "email_username": "mozornin",
+        "company_name": "Positive Technologies"
+    },
+    {
+        "type": "person",
+        "id": 2124,
+        "name": "Яр Бабин",
+        "email_username": "mozornin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2125,
+        "name": "Ульяна",
+        "email_username": "rma",
+        "company_name": "3Logic Group"
+    },
+    {
+        "type": "person",
+        "id": 2126,
+        "name": "Трэвел отдел",
+        "email_username": "rfpfeedback",
+        "company_name": "Дельрет"
+    },
+    {
+        "type": "person",
+        "id": 2127,
+        "name": "Отдел по орг мероприятий",
+        "email_username": "info",
+        "company_name": "Fplus"
+    },
+    {
+        "type": "person",
+        "id": 2128,
+        "name": "Ксения Шестакова",
+        "email_username": null,
+        "company_name": "Боржоми"
+    },
+    {
+        "type": "person",
+        "id": 2129,
+        "name": "Инна Демидова",
+        "email_username": null,
+        "company_name": "Capital Life"
+    },
+    {
+        "type": "person",
+        "id": 2130,
+        "name": "Мария Кокорева",
+        "email_username": "info",
+        "company_name": "Roche Diabetes Care Rus"
+    },
+    {
+        "type": "person",
+        "id": 2131,
+        "name": "Ольга Горбунова",
+        "email_username": "gorbunovao",
+        "company_name": "Айтеко"
+    },
+    {
+        "type": "person",
+        "id": 2132,
+        "name": "Анастасия Глумова",
+        "email_username": "an.glumova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2133,
+        "name": "Кирилл Кулаков",
+        "email_username": "msk",
+        "company_name": "Беризаряд"
+    },
+    {
+        "type": "person",
+        "id": 2134,
+        "name": "Елена Филимонова",
+        "email_username": "info",
+        "company_name": "Rubytech"
+    },
+    {
+        "type": "person",
+        "id": 2135,
+        "name": "Анна Прокофьева",
+        "email_username": "app",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2136,
+        "name": "Артем Лопухин",
+        "email_username": "alopukhin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2137,
+        "name": "Екатерина Казмерова",
+        "email_username": "e.kazmerova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2138,
+        "name": "Евгений Коваленко",
+        "email_username": "kovalenko",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2139,
+        "name": "Максим Рындин",
+        "email_username": "ir",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2140,
+        "name": "Даниил Данин",
+        "email_username": "partners",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2141,
+        "name": "Александр Ломакин",
+        "email_username": "a.lomakin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2142,
+        "name": "Алексей Иванов",
+        "email_username": "alex.ivanov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2143,
+        "name": "Анастасия Белова",
+        "email_username": "abelova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2144,
+        "name": "Дмитрий Кириллов",
+        "email_username": "d.kirillov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2145,
+        "name": "Виктор Михайлов",
+        "email_username": "v.mikhaylov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2146,
+        "name": "Смирнова Юлия Васильевна",
+        "email_username": "yuvsmirnova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2147,
+        "name": "Светлана",
+        "email_username": "savenko",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2148,
+        "name": "Владимир Ульянов",
+        "email_username": "vladimir.ulyanov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2149,
+        "name": "Андрей Жиляев",
+        "email_username": "andrey.zhilyaev",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2150,
+        "name": "Илья Гаврилов",
+        "email_username": "andrey.zhilyaev",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2151,
+        "name": "Илья Мозорнин",
+        "email_username": "mozornin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2152,
+        "name": "Яр Бабин",
+        "email_username": "mozornin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2153,
+        "name": "Ульяна",
+        "email_username": "rma",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2154,
+        "name": "Трэвел отдел",
+        "email_username": "rfpfeedback",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2155,
+        "name": "Отдел по орг мероприятий",
+        "email_username": "info",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2156,
+        "name": "Ксения Шестакова",
+        "email_username": null,
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2157,
+        "name": "Инна Демидова",
+        "email_username": null,
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2158,
+        "name": "Мария Кокорева",
+        "email_username": "info",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2159,
+        "name": "Ольга Горбунова",
+        "email_username": "gorbunovao",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2160,
+        "name": "Анастасия Глумова",
+        "email_username": "an.glumova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2161,
+        "name": "Кирилл Кулаков",
+        "email_username": "msk",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2162,
+        "name": "Елена Филимонова",
+        "email_username": "info",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2163,
+        "name": "Анна Прокофьева",
+        "email_username": "app",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2164,
+        "name": "Артем Лопухин",
+        "email_username": "alopukhin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2165,
+        "name": "Екатерина Казмерова",
+        "email_username": "e.kazmerova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2166,
+        "name": "Евгений Коваленко",
+        "email_username": "kovalenko",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2167,
+        "name": "Максим Рындин",
+        "email_username": "ir",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2168,
+        "name": "Даниил Данин",
+        "email_username": "partners",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2169,
+        "name": "Александр Ломакин",
+        "email_username": "a.lomakin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2170,
+        "name": "Алексей Иванов",
+        "email_username": "alex.ivanov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2171,
+        "name": "Анастасия Белова",
+        "email_username": "abelova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2172,
+        "name": "Дмитрий Кириллов",
+        "email_username": "d.kirillov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2173,
+        "name": "Виктор Михайлов",
+        "email_username": "v.mikhaylov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2174,
+        "name": "Смирнова Юлия Васильевна",
+        "email_username": "yuvsmirnova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2175,
+        "name": "Светлана",
+        "email_username": "savenko",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2176,
+        "name": "Владимир Ульянов",
+        "email_username": "vladimir.ulyanov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2177,
+        "name": "Андрей Жиляев",
+        "email_username": "andrey.zhilyaev",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2178,
+        "name": "Илья Гаврилов",
+        "email_username": "andrey.zhilyaev",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2179,
+        "name": "Илья Мозорнин",
+        "email_username": "mozornin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2180,
+        "name": "Яр Бабин",
+        "email_username": "mozornin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2181,
+        "name": "Ульяна",
+        "email_username": "rma",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2182,
+        "name": "Трэвел отдел",
+        "email_username": "rfpfeedback",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2183,
+        "name": "Отдел по орг мероприятий",
+        "email_username": "info",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2184,
+        "name": "Ксения Шестакова",
+        "email_username": null,
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2185,
+        "name": "Инна Демидова",
+        "email_username": null,
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2186,
+        "name": "Мария Кокорева",
+        "email_username": "info",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2187,
+        "name": "Ольга Горбунова",
+        "email_username": "gorbunovao",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2188,
+        "name": "Анастасия Глумова",
+        "email_username": "an.glumova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2189,
+        "name": "Кирилл Кулаков",
+        "email_username": "msk",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2190,
+        "name": "Елена Филимонова",
+        "email_username": "info",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2191,
+        "name": "Анна Прокофьева",
+        "email_username": "app",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2192,
+        "name": "Артем Лопухин",
+        "email_username": "alopukhin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2193,
+        "name": "Екатерина Казмерова",
+        "email_username": "e.kazmerova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2194,
+        "name": "Евгений Коваленко",
+        "email_username": "kovalenko",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2195,
+        "name": "Максим Рындин",
+        "email_username": "ir",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2196,
+        "name": "Даниил Данин",
+        "email_username": "partners",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2197,
+        "name": "Александр Ломакин",
+        "email_username": "a.lomakin",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2198,
+        "name": "Алексей Иванов",
+        "email_username": "alex.ivanov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2199,
+        "name": "Анастасия Белова",
+        "email_username": "abelova",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2200,
+        "name": "Дмитрий Кириллов",
+        "email_username": "d.kirillov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2201,
+        "name": "Виктор Михайлов",
+        "email_username": "v.mikhaylov",
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2202,
+        "name": "Leonid Okunev",
+        "email_username": null,
+        "company_name": "x5 retail group"
+    },
+    {
+        "type": "person",
+        "id": 2203,
+        "name": "Lia Danielyan",
+        "email_username": null,
+        "company_name": "ВТБ"
+    },
+    {
+        "type": "person",
+        "id": 2204,
+        "name": "Anna Dmitrieva",
+        "email_username": null,
+        "company_name": "Samolet"
+    },
+    {
+        "type": "person",
+        "id": 2205,
+        "name": "Dmitrii Mukhametov",
+        "email_username": null,
+        "company_name": "Samolet"
+    },
+    {
+        "type": "person",
+        "id": 2206,
+        "name": "Pavel Lebedev",
+        "email_username": null,
+        "company_name": "Лента"
+    },
+    {
+        "type": "person",
+        "id": 2207,
+        "name": "Daria Sholomova",
+        "email_username": null,
+        "company_name": "Sberbank"
+    },
+    {
+        "type": "person",
+        "id": 2208,
+        "name": "Stella Khon",
+        "email_username": null,
+        "company_name": "Sberbank"
+    },
+    {
+        "type": "person",
+        "id": 2209,
+        "name": "Ira Efimova",
+        "email_username": null,
+        "company_name": "Sberbank"
+    },
+    {
+        "type": "person",
+        "id": 2210,
+        "name": "Alexandra Kuratova",
+        "email_username": null,
+        "company_name": "Sberbank"
+    },
+    {
+        "type": "person",
+        "id": 2211,
+        "name": "Anastasiia Smirnova",
+        "email_username": null,
+        "company_name": "Yandex"
+    },
+    {
+        "type": "person",
+        "id": 2212,
+        "name": "Roman Epishkin",
+        "email_username": null,
+        "company_name": "MTS"
+    },
+    {
+        "type": "person",
+        "id": 2213,
+        "name": "Andrey Donov",
+        "email_username": null,
+        "company_name": "MTS"
+    },
+    {
+        "type": "person",
+        "id": 2214,
+        "name": "Artem Ermilov",
+        "email_username": null,
+        "company_name": "MTS"
+    },
+    {
+        "type": "person",
+        "id": 2215,
+        "name": "Maksym Pylypenko",
+        "email_username": null,
+        "company_name": "MTS"
+    },
+    {
+        "type": "person",
+        "id": 2216,
+        "name": "Oleg Dubovik",
+        "email_username": null,
+        "company_name": "Magnit"
+    },
+    {
+        "type": "person",
+        "id": 2217,
+        "name": "Artem Solovenko",
+        "email_username": null,
+        "company_name": "Magnit"
+    },
+    {
+        "type": "person",
+        "id": 2218,
+        "name": "Pavel Timofeev",
+        "email_username": null,
+        "company_name": "x5 retail group"
+    },
+    {
+        "type": "person",
+        "id": 2219,
+        "name": "Evdokia Grigorova",
+        "email_username": null,
+        "company_name": "x5 retail group"
+    },
+    {
+        "type": "person",
+        "id": 2220,
+        "name": "Gordey Babich",
+        "email_username": null,
+        "company_name": "x5 retail group"
+    },
+    {
+        "type": "person",
+        "id": 2221,
+        "name": "Ekaterina Razuvaeva",
+        "email_username": null,
+        "company_name": "x5 retail group"
+    },
+    {
+        "type": "person",
+        "id": 2222,
+        "name": "Daria Belova",
+        "email_username": null,
+        "company_name": "x5 retail group"
+    },
+    {
+        "type": "person",
+        "id": 2223,
+        "name": "Yevgenia Bagratyan",
+        "email_username": null,
+        "company_name": "ВТБ"
+    },
+    {
+        "type": "person",
+        "id": 2224,
+        "name": "Dmitrii Chikhachev",
+        "email_username": null,
+        "company_name": "ВТБ"
+    },
+    {
+        "type": "person",
+        "id": 2225,
+        "name": "Artem Prokhorov",
+        "email_username": null,
+        "company_name": "ВТБ"
+    },
+    {
+        "type": "person",
+        "id": 2226,
+        "name": "Anna Tiukacheva",
+        "email_username": null,
+        "company_name": "Aeroflot"
+    },
+    {
+        "type": "person",
+        "id": 2227,
+        "name": "Denis Kushkin",
+        "email_username": null,
+        "company_name": "Aeroflot"
+    },
+    {
+        "type": "person",
+        "id": 2228,
+        "name": "Arina Nepomniashchikh",
+        "email_username": null,
+        "company_name": "Aeroflot"
+    },
+    {
+        "type": "person",
+        "id": 2229,
+        "name": "Natalia Tolstova",
+        "email_username": null,
+        "company_name": "PIK Group"
+    },
+    {
+        "type": "person",
+        "id": 2230,
+        "name": "Danil Vladimirov",
+        "email_username": null,
+        "company_name": "PIK Group"
+    },
+    {
+        "type": "person",
+        "id": 2231,
+        "name": "Kirill Gerasimov",
+        "email_username": null,
+        "company_name": "VK (Mail.ru Group)"
+    },
+    {
+        "type": "person",
+        "id": 2232,
+        "name": "Lena Dyakova",
+        "email_username": null,
+        "company_name": "Tinkoff (T-Bank)"
+    },
+    {
+        "type": "person",
+        "id": 2233,
+        "name": "Irina Shchedrina",
+        "email_username": null,
+        "company_name": "Tinkoff (T-Bank)"
+    },
+    {
+        "type": "person",
+        "id": 2234,
+        "name": "Viacheslav Kuznetsov",
+        "email_username": null,
+        "company_name": "Tinkoff (T-Bank)"
+    },
+    {
+        "type": "person",
+        "id": 2235,
+        "name": "Ivan Vasin",
+        "email_username": null,
+        "company_name": "Tinkoff (T-Bank)"
+    },
+    {
+        "type": "person",
+        "id": 2236,
+        "name": "Natalia Shimkiv",
+        "email_username": null,
+        "company_name": "Tinkoff (T-Bank)"
+    },
+    {
+        "type": "person",
+        "id": 2237,
+        "name": "Miroslav Iurchuk",
+        "email_username": null,
+        "company_name": "Tinkoff (T-Bank)"
+    },
+    {
+        "type": "person",
+        "id": 2238,
+        "name": "Yulia Kamoylik",
+        "email_username": null,
+        "company_name": "Whoosh"
+    },
+    {
+        "type": "person",
+        "id": 2239,
+        "name": "Artur Martynov",
+        "email_username": null,
+        "company_name": "Samolet"
+    },
+    {
+        "type": "person",
+        "id": 2240,
+        "name": "Ekaterina Shalaputina",
+        "email_username": null,
+        "company_name": "Samolet"
+    },
+    {
+        "type": "person",
+        "id": 2241,
+        "name": "Xenia Guliaeva",
+        "email_username": null,
+        "company_name": "Samolet"
+    },
+    {
+        "type": "person",
+        "id": 2242,
+        "name": "Nikita Sebrenev",
+        "email_username": null,
+        "company_name": "Samolet"
+    },
+    {
+        "type": "person",
+        "id": 2243,
+        "name": "Yelena D.",
+        "email_username": null,
+        "company_name": "M.Video"
+    },
+    {
+        "type": "person",
+        "id": 2244,
+        "name": "Tanja Nikolaeva",
+        "email_username": null,
+        "company_name": "Лента"
+    },
+    {
+        "type": "person",
+        "id": 2245,
+        "name": "Iurii Demin",
+        "email_username": null,
+        "company_name": "Лента"
+    },
+    {
+        "type": "person",
+        "id": 2246,
+        "name": "Kirill Kalinin",
+        "email_username": null,
+        "company_name": "Detsky Mir"
+    },
+    {
+        "type": "person",
+        "id": 2247,
+        "name": "Andrey Kudryavtsev",
+        "email_username": null,
+        "company_name": "Fix Price"
+    },
+    {
+        "type": "person",
+        "id": 2248,
+        "name": "Valeria Sumina",
+        "email_username": null,
+        "company_name": "Fix Price"
+    },
+    {
+        "type": "person",
+        "id": 2249,
+        "name": "Артем Глебов",
+        "email_username": null,
+        "company_name": null
+    },
+    {
+        "type": "person",
+        "id": 2250,
+        "name": "leonid Amirov",
+        "email_username": null,
+        "company_name": "Фармасинтез"
+    },
+    {
+        "type": "person",
+        "id": 2251,
+        "name": "Vladislav Koivistoinen",
+        "email_username": null,
+        "company_name": "Фармасинтез"
+    },
+    {
+        "type": "person",
+        "id": 2252,
+        "name": "Sasha Borodina",
+        "email_username": null,
+        "company_name": "Фармасинтез"
+    },
+    {
+        "type": "person",
+        "id": 2253,
+        "name": "Anastasia Khokhlova",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2254,
+        "name": "Oleg Trunov",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2255,
+        "name": "Maria Scheblyakova",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2256,
+        "name": "Alex Kataev",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2257,
+        "name": "Nina Treshcheva",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2258,
+        "name": "Alexandra Demianko",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2259,
+        "name": "Sofia Arefeva",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2260,
+        "name": "Daniel Pimenov",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2261,
+        "name": "Pavel Antropov",
+        "email_username": null,
+        "company_name": "Озон"
+    },
+    {
+        "type": "person",
+        "id": 2262,
+        "name": "Pavel Kolbin",
+        "email_username": null,
+        "company_name": "Эвалар"
+    },
+    {
+        "type": "person",
+        "id": 2263,
+        "name": "Dr. Andrey Stepensky",
+        "email_username": null,
+        "company_name": "Эвалар"
+    },
+    {
+        "type": "person",
+        "id": 2264,
+        "name": "Андрей Бережной",
+        "email_username": "andrey.berezhnoy",
+        "company_name": "Ralf Ringer"
+    },
+    {
+        "type": "person",
+        "id": 2265,
+        "name": "null",
+        "email_username": null,
+        "company_name": "Ralf Ringer"
+    },
+    {
+        "type": "person",
+        "id": 2266,
+        "name": "null",
+        "email_username": null,
+        "company_name": "Ralf Ringer"
+    },
+    {
+        "type": "person",
+        "id": 2267,
+        "name": "null",
+        "email_username": null,
+        "company_name": "Ralf Ringer"
+    },
+    {
+        "type": "person",
+        "id": 2268,
+        "name": "Константин Попов",
+        "email_username": null,
+        "company_name": "Инком-Недвижимость"
+    },
+    {
+        "type": "person",
+        "id": 2269,
+        "name": "Сергей Шлома",
+        "email_username": null,
+        "company_name": "Инком-Недвижимость"
+    },
+    {
+        "type": "person",
+        "id": 2270,
+        "name": "Владислав Курбатов",
+        "email_username": "vladislav.kurbatov",
+        "company_name": "Перекрёсток"
+    },
+    {
+        "type": "person",
+        "id": 2271,
+        "name": "Татьяна Митина",
+        "email_username": "tatyana.mitina",
+        "company_name": "Перекрёсток"
+    },
+    {
+        "type": "person",
+        "id": 2272,
+        "name": "Игорь Шехтерман",
+        "email_username": "igor.shekhterman",
+        "company_name": "Дикси"
+    },
+    {
+        "type": "person",
+        "id": 2273,
+        "name": "Алексей Толоконцев",
+        "email_username": "aleksey.tolokontsev",
+        "company_name": "Дикси"
+    },
+    {
+        "type": "person",
+        "id": 2274,
+        "name": "Владислав Свиблов",
+        "email_username": "vladislav.sviblov",
+        "company_name": "ВкусВилл"
+    },
+    {
+        "type": "person",
+        "id": 2275,
+        "name": "Ив Клод Каррон де ла Каррьер",
+        "email_username": "iv.karrer",
+        "company_name": "Ашан"
+    },
+    {
+        "type": "person",
+        "id": 2276,
+        "name": "Филипп Бульер",
+        "email_username": "filipp.buler",
+        "company_name": "Ашан"
+    },
+    {
+        "type": "person",
+        "id": 2277,
+        "name": "Леонид Довладбегян",
+        "email_username": "leonid.dovladbegyan",
+        "company_name": "Спортмастер"
+    },
+    {
+        "type": "person",
+        "id": 2278,
+        "name": "Татьяна Бакальчук",
+        "email_username": null,
+        "company_name": "Kari"
+    },
+    {
+        "type": "person",
+        "id": 2279,
+        "name": "Дмитрий Костыгин",
+        "email_username": null,
+        "company_name": "Kari"
+    },
+    {
+        "type": "person",
+        "id": 2280,
+        "name": "Алексей Кудрин",
+        "email_username": "aleksey.kudrin",
+        "company_name": "Яндекс.Лавка"
+    },
+    {
+        "type": "person",
+        "id": 2281,
+        "name": "Аркадий Волож",
+        "email_username": "arkadiy.volozh",
+        "company_name": "Яндекс.Лавка"
+    },
+    {
+        "type": "person",
+        "id": 2282,
+        "name": "Мария Давыдова",
+        "email_username": "mariya.davydova",
+        "company_name": "Яндекс.Лавка"
+    },
+    {
+        "type": "person",
+        "id": 2283,
+        "name": "Дмитрий Костюк",
+        "email_username": "dmitriy.kostyuk",
+        "company_name": "Lamoda"
+    },
+    {
+        "type": "person",
+        "id": 2284,
+        "name": "Татьяна Бакальчук",
+        "email_username": "tatyana.bakalchuk",
+        "company_name": "Lamoda"
+    },
+    {
+        "type": "person",
+        "id": 2285,
+        "name": "Татьяна Владимировна Литвинова",
+        "email_username": "tatyana.litvinova",
+        "company_name": "Рив Гош"
+    },
+    {
+        "type": "person",
+        "id": 2286,
+        "name": "Ольга Михайловна Слуцкер",
+        "email_username": "olga.slutsker",
+        "company_name": "Рив Гош"
+    },
+    {
+        "type": "person",
+        "id": 2287,
+        "name": "Виктор Александрович Тутельян",
+        "email_username": null,
+        "company_name": "Leovit"
+    },
+    {
+        "type": "person",
+        "id": 2288,
+        "name": "Михаил Сергеевич Ананьев",
+        "email_username": null,
+        "company_name": "Leovit"
+    },
+    {
+        "type": "person",
+        "id": 2289,
+        "name": "Джон Дерринджер",
+        "email_username": "dzhon.derrindzher",
+        "company_name": "Орифлэйм"
+    },
+    {
+        "type": "person",
+        "id": 2290,
+        "name": "Роберт Айгнер",
+        "email_username": "robert.aygner",
+        "company_name": "Орифлэйм"
+    },
+    {
+        "type": "person",
+        "id": 2291,
+        "name": "General Contact",
+        "email_username": "info",
+        "company_name": "Спортмастер"
+    },
+    {
+        "type": "person",
+        "id": 2292,
+        "name": "General Contact",
+        "email_username": "info",
+        "company_name": "Litress"
+    },
+    {
+        "type": "person",
+        "id": 2293,
+        "name": "General Contact",
+        "email_username": "info",
+        "company_name": "AMWAY"
+    },
+    {
+        "type": "person",
+        "id": 2294,
+        "name": "General Contact",
+        "email_username": "info",
+        "company_name": "Oriflame"
+    }
+]

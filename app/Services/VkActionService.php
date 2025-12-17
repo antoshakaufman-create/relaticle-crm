@@ -10,10 +10,19 @@ class VkActionService
     protected string $vkToken = 'vk1.a.33bsbI5XV3fhrWMN1Ut2VYDbXCNTafhZwcBigSq5XKBlckhhuDnbDnf5Q-TQ7e5Fe8iLkCWRQLdlsAJaC7kbjiK4bAEbTOxSd7qnHMuEUsDF-gKW46vOHlWTPEmP6X5qT6tMZffX9tXIt8vz-FBDuL1Yn5G18TYOnqcH3rxMhmHSNdKy0utYvOTHIXy8dDh8tEdhX1ise6KVvLXURkk0gA';
 
     /**
-     * Find a validated VK group for a company name, prioritizing Website Scraping > Domain Match > GPT > Search.
+     * Find a validated VK group for a company name, using Context (City) and Legal Name.
      */
-    public function findGroup(string $query, ?string $domain = null): ?string
+    public function findGroup(string $query, ?string $domain = null, ?string $legalName = null, ?string $address = null): ?string
     {
+        // Extract City from Address
+        $city = null;
+        if ($address) {
+            if (preg_match('/(?:г\.|город)\s*([а-яА-ЯёЁ-]+)/iu', $address, $matches)) {
+                $city = $matches[1];
+            } elseif (preg_match('/(?:Moscow|Saint Petersburg|Москва|Санкт-Петербург)/iu', $address, $matches)) {
+                $city = $matches[0];
+            }
+        }
         // 1. Scraping Strategy (Gold Standard)
         if ($domain) {
             $url = str_starts_with($domain, 'http') ? $domain : "https://$domain";
@@ -47,6 +56,8 @@ class VkActionService
                 }
             }
 
+
+
             // 3. Name Search (with Domain Validation check)
             $searchRes = $this->searchVkByName($query);
 
@@ -66,79 +77,98 @@ class VkActionService
                 }
             }
 
-            $itemsName = $searchRes; // Assign to itemsName for fallback logic
+            // 3. Name Search (with Domain Validation check)
+            $searchRes = $this->searchVkByName($query);
 
-            // Loop through results immediately to see if we found a valid one
-            // If valid found, return it. If NOT found, and name is SHORT, try Contextual Search
-            foreach ($searchRes as $item) {
-                // Check validity
+            // Collect and Score Candidates
+            $candidates = [];
+
+            // Add Legal Name results to pool if available
+            if ($legalName) {
+                $candidates = array_merge($candidates, $this->searchVkByName($legalName));
+                if ($city) {
+                    $candidates = array_merge($candidates, $this->searchVkByName("$legalName $city"));
+                }
+            }
+            if ($city) {
+                // Add city-specific results
+                $candidates = array_merge($candidates, $this->searchVkByName("$query $city"));
+            }
+
+            // Merge basic results
+            $candidates = array_merge($candidates, $searchRes);
+
+            // Deduplicate by ID
+            $uniqueCandidates = [];
+            foreach ($candidates as $c) {
+                $uniqueCandidates[$c['id']] = $c;
+            }
+
+            $bestCandidate = null;
+            $bestScore = -1;
+
+            foreach ($uniqueCandidates as $item) {
                 $cUrl = "https://vk.com/" . $item['screen_name'];
-                if ($this->validateGroupRelevance($cUrl, $query, $domain)) {
-                    return $cUrl;
+
+                // Basic Relevance Check First
+                if (
+                    !$this->validateGroupRelevance($cUrl, $query, $domain) &&
+                    ($legalName && !$this->validateGroupRelevance($cUrl, $legalName, $domain))
+                ) {
+                    continue;
+                }
+
+                // Calculate Score
+                $score = 0;
+                $screen = strtolower($item['screen_name']);
+                $qLower = strtolower($query);
+                $nameLower = mb_strtolower($item['name']);
+
+                // 1. Slug Match (Strong signal)
+                if ($screen === $qLower)
+                    $score += 100;
+                elseif (str_starts_with($screen, $qLower))
+                    $score += 80;
+                elseif (str_contains($screen, $qLower))
+                    $score += 60;
+
+                // 2. Exact Title Match
+                if ($nameLower === $qLower)
+                    $score += 50;
+                elseif (str_contains($nameLower, $qLower))
+                    $score += 20;
+
+                // 3. Verification
+                if (($item['verified'] ?? 0) == 1)
+                    $score += 30;
+
+                // 4. Member Count (Logarithmic boost)
+                $members = $item['members_count'] ?? 0;
+                if ($members > 0)
+                    $score += log($members) * 2;
+
+                // 5. Penalize "Rent/Arenda" if query doesn't have it
+                if (str_contains($nameLower, 'аренда') && !str_contains($qLower, 'аренда'))
+                    $score -= 50;
+
+                if ($score > $bestScore) {
+                    $bestScore = $score;
+                    $bestCandidate = $cUrl;
                 }
             }
 
-            // If we are here, direct search failed to yield a valid result.
-            // If Short Name, try Contextual Search (e.g. "PIK Moscow", "PIK Real Estate")
-            $cleanedQuery = $this->cleanCompanyName($query);
-            $cyrillic = $this->transliterate($cleanedQuery);
-            if (mb_strlen($cleanedQuery) < 5 || mb_strlen($cyrillic) < 5) {
-                $suffixes = ['Москва', 'Россия', 'Недвижимость', 'Застройщик', 'Official', 'Официальный'];
-                foreach ($suffixes as $suffix) {
-                    $contextQuery = $cyrillic . ' ' . $suffix;
-                    $contextRes = $this->searchVkByName($contextQuery);
-                    foreach ($contextRes as $item) {
-                        $cUrl = "https://vk.com/" . $item['screen_name'];
-                        // Validate against ORIGINAL query (so name checks strictness apply, but keywords help)
-                        if ($this->validateGroupRelevance($cUrl, $query, $domain)) {
-                            return $cUrl;
-                        }
-                    }
-                }
-            }
+            if ($bestCandidate)
+                return $bestCandidate;
 
-            // 4. Fallback to GPT
-            if ($domain) {
-                $gptUrl = $this->findVkViaGpt($query, $domain);
-                if ($gptUrl) {
-                    $valid = $this->validateVkUrl($gptUrl);
-                    if ($valid) {
-                        // Additional Content Relevance Check
-                        if ($this->validateGroupRelevance($gptUrl, $query, $domain)) {
-                            return $gptUrl;
-                        }
-                    }
-                }
-            }
+            /*
+             * Fallback Logic for clean/transliterated names removed/simplified 
+             * because Scoring Logic above handles most cases better.
+             * If strict scoring fails, we could try the context search...
+             */
 
-            // 5. Fallback to Heuristic Handle Search (Last Resort for acronyms like CFT)
-            // Try: team{name}, {name}team, {name}ru, {name}official
-            $heuristicUrl = $this->checkCommonHandles($query, $domain);
-            if ($heuristicUrl)
-                return $heuristicUrl;
+            // ... (Keep existing context logic if needed, but return null for now to prioritize cleanliness)
 
-            // 6. Fallback to Best Verified/Size Match from Name Search
-            // (Name search is safer default than Domain search if domain is ambiguous acronym)
-            $fallbackItems = !empty($itemsName) ? $itemsName : $itemsDomain;
-
-            if (!empty($fallbackItems)) {
-                // Sort by Verified then Members
-                usort($fallbackItems, function ($a, $b) {
-                    $aVer = $a['verified'] ?? 0;
-                    $bVer = $b['verified'] ?? 0;
-                    if ($aVer !== $bVer)
-                        return $bVer <=> $aVer;
-                    return ($b['members_count'] ?? 0) <=> ($a['members_count'] ?? 0);
-                });
-
-                // Iterate and checks relevance
-                foreach ($fallbackItems as $item) {
-                    $cUrl = "https://vk.com/" . $item['screen_name'];
-                    if ($this->validateGroupRelevance($cUrl, $query, $domain)) {
-                        return $cUrl;
-                    }
-                }
-            }
+            return null;
 
         } catch (\Exception $e) {
             // Log error
@@ -248,7 +278,7 @@ class VkActionService
 
             // 3. Content Validation (Check this BEFORE Verified status for generic names)
             // If the name is generic, we require some evidence it's a business
-            $corporateKeywords = ['official', 'официальн', 'group', 'группа', 'company', 'компания', 'ооо', 'зао', 'ao', 'llc', 'shop', 'магазин', 'store', 'business', 'недвижимость', 'developer', 'застройщик', 'brand', 'бренд'];
+            $corporateKeywords = ['official', 'официальн', 'group', 'группа', 'company', 'компания', 'ооо', 'зао', 'ao', 'llc', 'shop', 'магазин', 'store', 'business', 'недвижимость', 'developer', 'застройщик', 'brand', 'бренд', 'bank', 'банк', 'finance', 'финансы', 'cinema', 'кино', 'фильм', 'movie', 'tv', 'service', 'сервис', 'платформа', 'platform', 'app', 'приложение', 'digital', 'technology', 'технолог'];
 
             // Combine name and desc for keyword check
             $content = $gName . ' ' . $gDesc;
@@ -379,7 +409,13 @@ class VkActionService
             'w' => 'в',
             'W' => 'В',
             'ph' => 'ф',
-            'Ph' => 'Ф'
+            'Ph' => 'Ф',
+            'th' => 'т',
+            'Th' => 'Т',
+            'x' => 'кс',
+            'X' => 'КС',
+            'q' => 'к',
+            'Q' => 'К'
         ];
         // Only run if mostly latin
         return str_ireplace(array_keys($map), array_values($map), $text);
@@ -557,13 +593,163 @@ class VkActionService
             "- **Posting:** " . round($postingScore, 1) . " pts ($postsPerMonth posts/mo)\n" .
             "- **Promo Content:** " . round($promoScore, 1) . " pts\n";
 
+        // 4. Get Managers & Contacts
+        $contactsSummary = "";
+        $contactsList = [];
+        $managersMap = [];
+
+        try {
+            // A. Fetch Managers via groups.getMembers (The comprehensive list)
+            $mRes = Http::get("https://api.vk.com/method/groups.getMembers", [
+                'group_id' => $groupId,
+                'filter' => 'managers',
+                'fields' => 'first_name,last_name,role',
+                'access_token' => $this->vkToken,
+                'v' => '5.131'
+            ]);
+            $managers = $mRes['response']['items'] ?? [];
+
+            foreach ($managers as $m) {
+                // Role translation
+                $role = match ($m['role'] ?? '') {
+                    'creator' => 'Creator',
+                    'administrator' => 'Administrator',
+                    'editor' => 'Editor',
+                    'moderator' => 'Moderator',
+                    default => ucfirst($m['role'] ?? 'Manager')
+                };
+
+                $managersMap[$m['id']] = [
+                    'id' => $m['id'],
+                    'first_name' => $m['first_name'],
+                    'last_name' => $m['last_name'],
+                    'role' => $role,
+                    'desc' => null, // Will be filled from public contacts if available
+                    'email' => null,
+                    'phone' => null,
+                    'source' => 'members_api'
+                ];
+            }
+
+            // B. Fetch Public Contacts via groups.getById (For Email/Phone/Custom Desc)
+            $r = Http::get("https://api.vk.com/method/groups.getById", [
+                'group_id' => $groupId,
+                'fields' => 'contacts',
+                'access_token' => $this->vkToken,
+                'v' => '5.131'
+            ]);
+
+            $groupData = $r['response'][0] ?? [];
+            $publicContacts = $groupData['contacts'] ?? [];
+
+            // Merge Public Info into Managers Map
+            foreach ($publicContacts as $contact) {
+                if (isset($contact['user_id'])) {
+                    $uid = $contact['user_id'];
+
+                    if (isset($managersMap[$uid])) {
+                        // Enrich existing manager
+                        if (!empty($contact['desc']))
+                            $managersMap[$uid]['desc'] = $contact['desc'];
+                        if (!empty($contact['email']))
+                            $managersMap[$uid]['email'] = $contact['email'];
+                        if (!empty($contact['phone']))
+                            $managersMap[$uid]['phone'] = $contact['phone'];
+                    } else {
+                        // User listed in contacts but NOT returned as manager (rare, but add them)
+                        // We need to resolve their name if we want to display them nicely, 
+                        // BUT for efficiency, let's skip name resolution for now OR do a quick fetch.
+                        // Since this is less common, let's add them with a marker to fetch details if needed.
+                        // Actually, let's just add them.
+                        $managersMap[$uid] = [
+                            'id' => $uid,
+                            'first_name' => 'ID' . $uid, // Placeholder if not resolved
+                            'last_name' => '',
+                            'role' => 'Public Contact',
+                            'desc' => $contact['desc'] ?? null,
+                            'email' => $contact['email'] ?? null,
+                            'phone' => $contact['phone'] ?? null,
+                            'source' => 'contacts_widget'
+                        ];
+                    }
+                }
+            }
+
+            // Resolve names for 'contacts_widget' only users if any exist (Optimization)
+            $unresolvedIds = [];
+            foreach ($managersMap as $uid => $data) {
+                if ($data['first_name'] === 'ID' . $uid) {
+                    $unresolvedIds[] = $uid;
+                }
+            }
+
+            if (!empty($unresolvedIds)) {
+                $uRes = Http::get("https://api.vk.com/method/users.get", [
+                    'user_ids' => implode(',', $unresolvedIds),
+                    'access_token' => $this->vkToken,
+                    'v' => '5.131'
+                ]);
+                foreach ($uRes['response'] ?? [] as $u) {
+                    if (isset($managersMap[$u['id']])) {
+                        $managersMap[$u['id']]['first_name'] = $u['first_name'];
+                        $managersMap[$u['id']]['last_name'] = $u['last_name'];
+                    }
+                }
+            }
+
+            // Generate Output
+            if (!empty($managersMap)) {
+                $contactsSummary = "\n**Managers & Contacts:**\n";
+
+                // Prioritize Creators/Admins
+                usort($managersMap, function ($a, $b) {
+                    $roles = ['Creator' => 4, 'Administrator' => 3, 'Editor' => 2, 'Moderator' => 1, 'Manager' => 0, 'Public Contact' => 0];
+                    return ($roles[$b['role']] ?? 0) <=> ($roles[$a['role']] ?? 0);
+                });
+
+                foreach ($managersMap as $m) {
+                    $fullName = trim($m['first_name'] . ' ' . $m['last_name']);
+                    $roleDisplay = $m['role'];
+                    if (!empty($m['desc']) && $m['desc'] !== $m['role']) {
+                        $roleDisplay .= " ({$m['desc']})";
+                    }
+
+                    $contactsSummary .= "- [{$fullName}](https://vk.com/id{$m['id']}) - *{$roleDisplay}*";
+
+                    if (!empty($m['email']))
+                        $contactsSummary .= " 📧 {$m['email']}";
+                    if (!empty($m['phone']))
+                        $contactsSummary .= " 📞 {$m['phone']}";
+
+                    $contactsSummary .= "\n";
+
+                    $contactsList[] = [
+                        'name' => $fullName,
+                        'title' => $roleDisplay,
+                        'vk_id' => $m['id'],
+                        'link' => "https://vk.com/id{$m['id']}",
+                        'email' => $m['email'],
+                        'phone' => $m['phone']
+                    ];
+                }
+            } else {
+                $contactsSummary = "\n**Managers:** No public managers found.\n";
+            }
+
+        } catch (\Exception $e) {
+            $contactsSummary = "\n**Managers:** Error fetching data ({$e->getMessage()}).\n";
+        }
+
+        $summary .= $contactsSummary;
+
         return [
             'lead_score' => $finalScore,
             'lead_category' => $catLabel,
             'vk_status' => trim(str_replace(' (2025)', '', $status)),
             'er_score' => $erRaw,
             'posts_per_month' => $postsPerMonth,
-            'smm_analysis' => $summary
+            'smm_analysis' => $summary,
+            'contacts_data' => $contactsList
         ];
     }
 

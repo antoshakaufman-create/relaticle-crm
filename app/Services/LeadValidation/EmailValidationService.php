@@ -60,8 +60,59 @@ final class EmailValidationService
         // 5. Проверка MX-записей
         $mxResult = $this->validateMXRecords($email);
 
+        // 6. Проверка существования ящика (SMTP Handshake)
+        $smtpResult = $this->validateSMTP($email);
+
         // Комбинируем результаты
-        return ValidationResult::combined($domainResult, $dnsResult, $mxResult);
+        return ValidationResult::combined($domainResult, $dnsResult, $mxResult, $smtpResult);
+    }
+
+    private function validateSMTP(string $email): ValidationResult
+    {
+        $domain = substr(strrchr($email, '@'), 1);
+        if (!getmxrr($domain, $mxhosts, $mxweight)) {
+            return ValidationResult::neutral('Не удалось получить MX записи');
+        }
+
+        // Try highest priority MX
+        $server = $mxhosts[0];
+
+        try {
+            $connection = @fsockopen($server, 25, $errno, $errstr, 2);
+            if (!$connection) {
+                return ValidationResult::neutral("Не удалось подключиться к SMTP ($errstr)");
+            }
+
+            $response = fgets($connection); // 220 banner
+
+            // HELO
+            fputs($connection, "HELO " . $_SERVER['SERVER_NAME'] . "\r\n");
+            $response = fgets($connection);
+
+            // MAIL FROM
+            fputs($connection, "MAIL FROM: <info@relaticle.com>\r\n");
+            $response = fgets($connection);
+
+            // RCPT TO
+            fputs($connection, "RCPT TO: <$email>\r\n");
+            $response = fgets($connection); // Expect 250 OK or 550 User unknown
+
+            $status = substr($response, 0, 3);
+
+            fputs($connection, "QUIT\r\n");
+            fclose($connection);
+
+            if ($status == '250' || $status == '251') {
+                return ValidationResult::valid('Ящик существует (SMTP Verified)');
+            } elseif ($status == '550') {
+                return ValidationResult::invalid('Ящик не существует (SMTP Rejected)');
+            }
+
+            return ValidationResult::neutral("SMTP ответ неоднозначен: $status");
+
+        } catch (\Exception $e) {
+            return ValidationResult::neutral('Ошибка SMTP проверки');
+        }
     }
 
     private function isMockEmail(string $email): bool
