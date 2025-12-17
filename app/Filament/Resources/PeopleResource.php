@@ -27,8 +27,8 @@ use Filament\Actions\ViewAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
-use Filament\Infolists\Components\TextEntry;
-use Filament\Infolists\Components\ImageEntry;
+use Filament\Schemas\Components\Text;
+use Filament\Schemas\Components\Image;
 use Filament\Resources\Resource;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Utilities\Set;
@@ -513,7 +513,7 @@ final class PeopleResource extends Resource
                 \Filament\Schemas\Components\Section::make('Verification Status')
                     ->description('Email Validation & Mosint Intelligence')
                     ->schema([
-                        TextEntry::make('validation_status_label')
+                        Text::make('validation_status_label')
                             ->label('Email Status')
                             ->state(function (People $record) {
                                 if (str_contains($record->notes ?? '', '[Mosint] ❌ INVALID')) {
@@ -535,15 +535,15 @@ final class PeopleResource extends Resource
                             })
                             ->weight('bold'),
 
-                        TextEntry::make('ip_organization')
+                        Text::make('ip_organization')
                             ->label('IP Organization (Mosint)'),
 
-                        TextEntry::make('twitter_url')
+                        Text::make('twitter_url')
                             ->label('Twitter Profile')
                             ->url(fn($state) => $state)
                             ->openUrlInNewTab(),
 
-                        TextEntry::make('osint_data')
+                        Text::make('osint_data')
                             ->label('Raw OSINT Data')
                             ->formatStateUsing(fn($state) => json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))
                             ->markdown()
@@ -554,38 +554,38 @@ final class PeopleResource extends Resource
 
                 \Filament\Schemas\Components\Section::make('Contact Info')
                     ->schema([
-                        ImageEntry::make('avatar')
+                        Image::make('avatar')
                             ->label('Avatar')
                             ->circular(),
-                        TextEntry::make('name')
+                        Text::make('name')
                             ->weight('bold')
                             ->size('lg'),
-                        TextEntry::make('position'),
-                        TextEntry::make('company.name')
+                        Text::make('position'),
+                        Text::make('company.name')
                             ->label('Company')
                             ->url(fn(People $record): ?string => $record->company_id ? CompanyResource::getUrl('view', [$record->company_id]) : null),
-                        TextEntry::make('email')
+                        Text::make('email')
                             ->icon('heroicon-m-envelope')
                             ->copyable(),
-                        TextEntry::make('phone')
+                        Text::make('phone')
                             ->icon('heroicon-m-phone')
                             ->copyable(),
-                        TextEntry::make('website')
+                        Text::make('website')
                             ->url(fn($state) => $state)
                             ->openUrlInNewTab(),
-                        TextEntry::make('location') // Assuming logic exists or remove if not
+                        Text::make('location') // Assuming logic exists or remove if not
                             ->default('—'),
                     ])
                     ->columns(2),
 
                 \Filament\Schemas\Components\Section::make('Social & Analysis')
                     ->schema([
-                        TextEntry::make('linkedin_url')->label('LinkedIn')->url(fn($state) => $state),
-                        TextEntry::make('vk_url')->label('VK')->url(fn($state) => $state),
-                        TextEntry::make('vk_status')->badge(),
-                        TextEntry::make('lead_score'),
-                        TextEntry::make('lead_category')->badge(),
-                        TextEntry::make('smm_analysis')
+                        Text::make('linkedin_url')->label('LinkedIn')->url(fn($state) => $state),
+                        Text::make('vk_url')->label('VK')->url(fn($state) => $state),
+                        Text::make('vk_status')->badge(),
+                        Text::make('lead_score'),
+                        Text::make('lead_category')->badge(),
+                        Text::make('smm_analysis')
                             ->formatStateUsing(fn($state) => $state ? '✅ Analyzed' : '—'),
                     ])->columns(3),
             ]);
