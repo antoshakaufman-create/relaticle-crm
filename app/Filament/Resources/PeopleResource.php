@@ -79,6 +79,43 @@ final class PeopleResource extends Resource
     {
         return $schema
             ->components([
+                \Filament\Forms\Components\Section::make('Verification Status')
+                    ->description('Email Validation & Mosint Intelligence')
+                    ->schema([
+                        \Filament\Forms\Components\Placeholder::make('validation_status')
+                            ->label('Email Status')
+                            ->content(function (People $record) {
+                                if (str_contains($record->notes ?? '', '[Mosint] ❌ INVALID')) {
+                                    return new \Illuminate\Support\HtmlString('<span style="color: red; font-weight: bold;">❌ Invalid: No MX Records found (Mosint Scan)</span>');
+                                }
+                                if ($record->email) {
+                                    return new \Illuminate\Support\HtmlString('<span style="color: green; font-weight: bold;">✅ Valid (MX Present)</span>');
+                                }
+                                return 'No Email';
+                            })
+                            ->columnSpanFull(),
+
+                        TextInput::make('ip_organization')
+                            ->label('IP Organization (Mosint)')
+                            ->maxLength(255)
+                            ->columnSpan(6),
+
+                        TextInput::make('twitter_url')
+                            ->label('Twitter Profile')
+                            ->url()
+                            ->maxLength(255)
+                            ->columnSpan(6),
+
+                        \Filament\Forms\Components\Textarea::make('osint_data_pretty')
+                            ->label('Raw OSINT Data')
+                            ->rows(5)
+                            ->formatStateUsing(fn(People $record) => json_encode($record->osint_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))
+                            ->disabled()
+                            ->dehydrated(false) // Do not save back to DB
+                            ->columnSpanFull(),
+                    ])
+                    ->collapsible(),
+
                 Grid::make()
                     ->columnSpanFull()
                     ->schema([
@@ -130,15 +167,6 @@ final class PeopleResource extends Resource
                             ->columnSpan(6),
                         TextInput::make('website')
                             ->url()
-                            ->maxLength(255)
-                            ->columnSpan(6),
-                        TextInput::make('twitter_url')
-                            ->label('Twitter')
-                            ->url()
-                            ->maxLength(255)
-                            ->columnSpan(6),
-                        TextInput::make('ip_organization')
-                            ->label('IP Organization')
                             ->maxLength(255)
                             ->columnSpan(6),
                         TextInput::make('vk_url')
@@ -225,16 +253,6 @@ final class PeopleResource extends Resource
                         \Filament\Forms\Components\Textarea::make('visual_analysis')
                             ->label('Visual Analysis (Lisa)')
                             ->rows(3)
-                            ->columnSpanFull(),
-                    ])
-                    ->collapsible(),
-                \Filament\Schemas\Components\Section::make('OSINT Intelligence')
-                    ->description('Deep data from Mosint/Holehe/IP Geolocation')
-                    ->schema([
-                        \Filament\Forms\Components\KeyValue::make('osint_data')
-                            ->label('Raw Findings')
-                            ->keyLabel('Field')
-                            ->valueLabel('Value')
                             ->columnSpanFull(),
                     ])
                     ->collapsible(),
