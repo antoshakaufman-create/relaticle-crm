@@ -27,6 +27,10 @@ use Filament\Actions\ViewAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Infolist;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Infolists\Components\ImageEntry;
+use Filament\Infolists\Components\Section as InfoSection;
 use Filament\Resources\Resource;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Utilities\Set;
@@ -588,6 +592,7 @@ final class PeopleResource extends Resource
                     ])->columns(3),
             ]);
     }
+
 
     public static function getRelations(): array
     {
