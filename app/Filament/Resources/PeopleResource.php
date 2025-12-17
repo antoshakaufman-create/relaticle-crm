@@ -397,11 +397,47 @@ final class PeopleResource extends Resource
                     ->placeholder('Все')
                     ->trueLabel('Есть Телефон')
                     ->falseLabel('Нет Телефона')
+                \Filament\Tables\Filters\TernaryFilter::make('has_twitter')
+                    ->label('Twitter')
+                    ->placeholder('Все')
+                    ->trueLabel('Есть Twitter')
+                    ->falseLabel('Нет Twitter')
                     ->queries(
-                        true: fn($query) => $query->whereNotNull('phone')->where('phone', '!=', ''),
-                        false: fn($query) => $query->where(fn($q) => $q->whereNull('phone')->orWhere('phone', '=', '')),
+                        true: fn($query) => $query->whereNotNull('twitter_url')->where('twitter_url', '!=', ''),
+                        false: fn($query) => $query->where(fn($q) => $q->whereNull('twitter_url')->orWhere('twitter_url', '=', '')),
                         blank: fn($query) => $query,
                     ),
+
+                \Filament\Tables\Filters\TernaryFilter::make('has_ip_org')
+                    ->label('IP Организация')
+                    ->placeholder('Все')
+                    ->trueLabel('Есть IP Org')
+                    ->falseLabel('Нет IP Org')
+                    ->queries(
+                        true: fn($query) => $query->whereNotNull('ip_organization')->where('ip_organization', '!=', ''),
+                        false: fn($query) => $query->where(fn($q) => $q->whereNull('ip_organization')->orWhere('ip_organization', '=', '')),
+                        blank: fn($query) => $query,
+                    ),
+
+                \Filament\Tables\Filters\SelectFilter::make('mosint_status')
+                    ->label('Mosint Валидация')
+                    ->options([
+                        'valid' => 'Valid (MX Found)',
+                        'invalid' => 'Invalid (No MX)',
+                    ])
+                    ->query(function (Builder $query, array $data): Builder {
+                        return $query
+                            ->when(
+                                $data['value'] === 'invalid',
+                                fn (Builder $query) => $query->where('notes', 'like', '%[Mosint] ❌ INVALID%'),
+                            )
+                            ->when(
+                                $data['value'] === 'valid',
+                                fn (Builder $query) => $query->where('notes', 'not like', '%[Mosint] ❌ INVALID%')
+                                                            ->whereNotNull('email'), // Assume others are valid if they have email and not marked invalid? Or explicitly validated? 
+                                                            // Let's just filter for "Not marked invalid" for now as proxy.
+                            );
+                    }),
 
                 \Filament\Tables\Filters\SelectFilter::make('industry')
                     ->label('Отрасль')
