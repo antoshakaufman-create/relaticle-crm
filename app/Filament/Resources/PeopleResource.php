@@ -132,6 +132,15 @@ final class PeopleResource extends Resource
                             ->url()
                             ->maxLength(255)
                             ->columnSpan(6),
+                        TextInput::make('twitter_url')
+                            ->label('Twitter')
+                            ->url()
+                            ->maxLength(255)
+                            ->columnSpan(6),
+                        TextInput::make('ip_organization')
+                            ->label('IP Organization')
+                            ->maxLength(255)
+                            ->columnSpan(6),
                         TextInput::make('vk_url')
                             ->label('ВКонтакте')
                             ->url()
@@ -219,6 +228,16 @@ final class PeopleResource extends Resource
                             ->columnSpanFull(),
                     ])
                     ->collapsible(),
+                \Filament\Schemas\Components\Section::make('OSINT Intelligence')
+                    ->description('Deep data from Mosint/Holehe/IP Geolocation')
+                    ->schema([
+                        \Filament\Forms\Components\KeyValue::make('osint_data')
+                            ->label('Raw Findings')
+                            ->keyLabel('Field')
+                            ->valueLabel('Value')
+                            ->columnSpanFull(),
+                    ])
+                    ->collapsible(),
                 \Filament\Schemas\Components\Section::make('Additional Information')
                     ->schema([
                         CustomFields::form()->forSchema($schema)->build()->columns(1),
@@ -248,6 +267,12 @@ final class PeopleResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('vk_url')
                     ->label('VK')
+                    ->icon('heroicon-m-link')
+                    ->url(fn($state) => $state)
+                    ->openUrlInNewTab()
+                    ->toggleable(),
+                TextColumn::make('twitter_url')
+                    ->label('Twitter')
                     ->icon('heroicon-m-link')
                     ->url(fn($state) => $state)
                     ->openUrlInNewTab()

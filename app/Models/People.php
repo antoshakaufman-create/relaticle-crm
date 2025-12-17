@@ -93,6 +93,9 @@ final class People extends Model implements HasCustomFields
         'youtube_url',
         'smm_analysis',
         'visual_analysis',
+        'osint_data',
+        'twitter_url',
+        'ip_organization',
     ];
 
     /**
@@ -110,6 +113,7 @@ final class People extends Model implements HasCustomFields
     {
         return [
             'creation_source' => CreationSource::class,
+            'osint_data' => 'array',
         ];
     }
 
