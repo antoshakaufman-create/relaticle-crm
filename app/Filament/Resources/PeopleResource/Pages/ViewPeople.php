@@ -119,15 +119,15 @@ final class ViewPeople extends ViewRecord
                         ->color('success'),
 
                     TextEntry::make('dns_summary')
-                        ->label('DNS Analysis')
+                        ->label('DNS Анализ')
                         ->state(function (People $record) {
                             $data = $record->osint_data;
                             if (!$data)
-                                return 'No data';
+                                return 'Нет данных';
 
                             $dns = $data['dns_records'] ?? ($data[5] ?? []);
                             if (empty($dns))
-                                return 'No DNS records found';
+                                return 'DNS записи не найдены';
 
                             $mxRecords = [];
                             foreach ($dns as $rec) {
@@ -146,10 +146,10 @@ final class ViewPeople extends ViewRecord
                                 $host = end($parts);
                                 $host = rtrim($host, '.'); // Remove trailing dot
                 
-                                return "✅ Email domain is active and routed through {$host}";
+                                return "✅ Почтовый домен активен, маршрутизация через {$host}";
                             }
 
-                            return '❌ No Mail Servers (MX) found - Domain likely cannot receive email.';
+                            return '❌ Почтовые серверы (MX) не найдены — прием почты невозможен.';
                         })
                         ->columnSpanFull()
                         ->color(fn($state) => str_contains($state, '✅') ? 'success' : 'danger'),
