@@ -62,6 +62,48 @@ final class ViewPeople extends ViewRecord
                 ]),
             ])->columnSpanFull(),
 
+            Section::make('Verification Status')
+                ->description('Email Validation & Mosint Intelligence')
+                ->schema([
+                    TextEntry::make('validation_status_label')
+                        ->label('Email Status')
+                        ->state(function (People $record) {
+                            if (str_contains($record->notes ?? '', '[Mosint] ❌ INVALID')) {
+                                return '❌ Invalid: No MX Records found';
+                            }
+                            if ($record->email) {
+                                return '✅ Valid (MX Present)';
+                            }
+                            return 'No Email';
+                        })
+                        ->color(function (People $record) {
+                            if (str_contains($record->notes ?? '', '[Mosint] ❌ INVALID')) {
+                                return 'danger';
+                            }
+                            if ($record->email) {
+                                return 'success';
+                            }
+                            return 'gray';
+                        })
+                        ->weight(\Filament\Support\Enums\FontWeight::Bold),
+
+                    TextEntry::make('ip_organization')
+                        ->label('IP Organization'),
+
+                    TextEntry::make('twitter_url')
+                        ->label('Twitter')
+                        ->url(fn($state) => $state)
+                        ->openUrlInNewTab()
+                        ->color('primary'),
+
+                    TextEntry::make('osint_data')
+                        ->label('Raw OSINT Data')
+                        ->formatStateUsing(fn($state) => json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))
+                        ->markdown()
+                        ->prose()
+                        ->columnSpanFull(),
+                ])->columns(3),
+
             Section::make('Contact Info')
                 ->schema([
                     TextEntry::make('email')->icon('heroicon-m-envelope')->copyable(),
