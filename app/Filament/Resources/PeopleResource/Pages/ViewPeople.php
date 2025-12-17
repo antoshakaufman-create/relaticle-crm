@@ -118,36 +118,41 @@ final class ViewPeople extends ViewRecord
                         ->badge()
                         ->color('success'),
 
-                    TextEntry::make('dns_records_view')
-                        ->label('DNS Records (Mosint)')
+                    TextEntry::make('dns_summary')
+                        ->label('DNS Analysis')
                         ->state(function (People $record) {
                             $data = $record->osint_data;
                             if (!$data)
-                                return '—';
+                                return 'No data';
 
                             $dns = $data['dns_records'] ?? ($data[5] ?? []);
                             if (empty($dns))
-                                return 'No records found';
+                                return 'No DNS records found';
 
-                            $html = '<div class="space-y-1">';
+                            $mxRecords = [];
                             foreach ($dns as $rec) {
-                                // Handle object or array entry
-                                $type = $rec['Type'] ?? $rec[0] ?? '?';
-                                $val = $rec['Value'] ?? $rec[1] ?? '?';
-
-                                $color = match ($type) {
-                                    'MX' => 'text-success-500 font-bold',
-                                    'NS' => 'text-primary-500 font-bold',
-                                    'A' => 'text-warning-500 font-bold',
-                                    default => 'text-gray-400 font-bold'
-                                };
-
-                                $html .= "<div class='text-sm'><span class='{$color} w-8 inline-block'>{$type}</span> <span class='text-gray-300'>{$val}</span></div>";
+                                $type = $rec['Type'] ?? $rec[0] ?? '';
+                                $val = $rec['Value'] ?? $rec[1] ?? '';
+                                if ($type === 'MX') {
+                                    $mxRecords[] = $val;
+                                }
                             }
-                            $html .= '</div>';
-                            return new \Illuminate\Support\HtmlString($html);
+
+                            if (count($mxRecords) > 0) {
+                                // Extract domain or host from first MX
+                                $firstMx = $mxRecords[0];
+                                // Usually format is "10 mx.google.com." - remove priority
+                                $parts = explode(' ', trim($firstMx));
+                                $host = end($parts);
+                                $host = rtrim($host, '.'); // Remove trailing dot
+                
+                                return "✅ Email domain is active and routed through {$host}";
+                            }
+
+                            return '❌ No Mail Servers (MX) found - Domain likely cannot receive email.';
                         })
-                        ->columnSpanFull(),
+                        ->columnSpanFull()
+                        ->color(fn($state) => str_contains($state, '✅') ? 'success' : 'danger'),
                 ])->columns(3),
 
             Section::make('Contact Info')
