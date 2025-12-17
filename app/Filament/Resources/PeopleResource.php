@@ -504,6 +504,91 @@ final class PeopleResource extends Resource
             ]);
     }
 
+    public static function infolist(\Filament\Infolists\Infolist $infolist): \Filament\Infolists\Infolist
+    {
+        return $infolist
+            ->schema([
+                \Filament\Infolists\Components\Section::make('Verification Status')
+                    ->description('Email Validation & Mosint Intelligence')
+                    ->schema([
+                        \Filament\Infolists\Components\TextEntry::make('validation_status_label')
+                            ->label('Email Status')
+                            ->state(function (People $record) {
+                                if (str_contains($record->notes ?? '', '[Mosint] ❌ INVALID')) {
+                                    return '❌ Invalid: No MX Records found';
+                                }
+                                if ($record->email) {
+                                    return '✅ Valid (MX Present)';
+                                }
+                                return 'No Email';
+                            })
+                            ->color(function (People $record) {
+                                if (str_contains($record->notes ?? '', '[Mosint] ❌ INVALID')) {
+                                    return 'danger';
+                                }
+                                if ($record->email) {
+                                    return 'success';
+                                }
+                                return 'gray';
+                            })
+                            ->weight('bold'),
+
+                        \Filament\Infolists\Components\TextEntry::make('ip_organization')
+                            ->label('IP Organization (Mosint)'),
+
+                        \Filament\Infolists\Components\TextEntry::make('twitter_url')
+                            ->label('Twitter Profile')
+                            ->url(fn($state) => $state)
+                            ->openUrlInNewTab(),
+
+                        \Filament\Infolists\Components\TextEntry::make('osint_data')
+                            ->label('Raw OSINT Data')
+                            ->formatStateUsing(fn($state) => json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))
+                            ->markdown()
+                            ->prose() // Better readability
+                            ->columnSpanFull(),
+                    ])
+                    ->columns(3),
+
+                \Filament\Infolists\Components\Section::make('Contact Info')
+                    ->schema([
+                        \Filament\Infolists\Components\ImageEntry::make('avatar')
+                            ->label('Avatar')
+                            ->circular(),
+                        \Filament\Infolists\Components\TextEntry::make('name')
+                            ->weight('bold')
+                            ->size('lg'),
+                        \Filament\Infolists\Components\TextEntry::make('position'),
+                        \Filament\Infolists\Components\TextEntry::make('company.name')
+                            ->label('Company')
+                            ->url(fn(People $record): ?string => $record->company_id ? CompanyResource::getUrl('view', [$record->company_id]) : null),
+                        \Filament\Infolists\Components\TextEntry::make('email')
+                            ->icon('heroicon-m-envelope')
+                            ->copyable(),
+                        \Filament\Infolists\Components\TextEntry::make('phone')
+                            ->icon('heroicon-m-phone')
+                            ->copyable(),
+                        \Filament\Infolists\Components\TextEntry::make('website')
+                            ->url(fn($state) => $state)
+                            ->openUrlInNewTab(),
+                        \Filament\Infolists\Components\TextEntry::make('location') // Assuming logic exists or remove if not
+                            ->default('—'),
+                    ])
+                    ->columns(2),
+
+                \Filament\Infolists\Components\Section::make('Social & Analysis')
+                    ->schema([
+                        \Filament\Infolists\Components\TextEntry::make('linkedin_url')->label('LinkedIn')->url(fn($state) => $state),
+                        \Filament\Infolists\Components\TextEntry::make('vk_url')->label('VK')->url(fn($state) => $state),
+                        \Filament\Infolists\Components\TextEntry::make('vk_status')->badge(),
+                        \Filament\Infolists\Components\TextEntry::make('lead_score'),
+                        \Filament\Infolists\Components\TextEntry::make('lead_category')->badge(),
+                        \Filament\Infolists\Components\TextEntry::make('smm_analysis')
+                            ->formatStateUsing(fn($state) => $state ? '✅ Analyzed' : '—'),
+                    ])->columns(3),
+            ]);
+    }
+
     public static function getRelations(): array
     {
         return [
