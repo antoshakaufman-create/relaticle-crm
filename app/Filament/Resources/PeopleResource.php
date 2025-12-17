@@ -397,6 +397,12 @@ final class PeopleResource extends Resource
                     ->placeholder('Все')
                     ->trueLabel('Есть Телефон')
                     ->falseLabel('Нет Телефона')
+                    ->queries(
+                        true: fn($query) => $query->whereNotNull('phone')->where('phone', '!=', ''),
+                        false: fn($query) => $query->where(fn($q) => $q->whereNull('phone')->orWhere('phone', '=', '')),
+                        blank: fn($query) => $query,
+                    ),
+
                 \Filament\Tables\Filters\TernaryFilter::make('has_twitter')
                     ->label('Twitter')
                     ->placeholder('Все')
@@ -429,13 +435,13 @@ final class PeopleResource extends Resource
                         return $query
                             ->when(
                                 $data['value'] === 'invalid',
-                                fn (Builder $query) => $query->where('notes', 'like', '%[Mosint] ❌ INVALID%'),
+                                fn(Builder $query) => $query->where('notes', 'like', '%[Mosint] ❌ INVALID%'),
                             )
                             ->when(
                                 $data['value'] === 'valid',
-                                fn (Builder $query) => $query->where('notes', 'not like', '%[Mosint] ❌ INVALID%')
-                                                            ->whereNotNull('email'), // Assume others are valid if they have email and not marked invalid? Or explicitly validated? 
-                                                            // Let's just filter for "Not marked invalid" for now as proxy.
+                                fn(Builder $query) => $query->where('notes', 'not like', '%[Mosint] ❌ INVALID%')
+                                    ->whereNotNull('email'), // Assume others are valid if they have email and not marked invalid? Or explicitly validated? 
+                                // Let's just filter for "Not marked invalid" for now as proxy.
                             );
                     }),
 
