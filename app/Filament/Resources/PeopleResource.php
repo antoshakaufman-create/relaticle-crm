@@ -255,10 +255,17 @@ final class PeopleResource extends Resource
                     ->searchable(),
                 TextColumn::make('email')
                     ->searchable()
-                    ->toggleable(),
+                    ->toggleable()
+                    ->description(fn(People $record) => str_contains($record->notes ?? '', '[Mosint] ❌ INVALID') ? '❌ Invalid (No MX)' : null),
                 TextColumn::make('phone')
                     ->searchable()
                     ->toggleable(),
+                TextColumn::make('ip_organization')
+                    ->label('IP Org')
+                    ->searchable()
+                    ->sortable()
+                    ->toggleable()
+                    ->limit(20),
                 TextColumn::make('position')
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
