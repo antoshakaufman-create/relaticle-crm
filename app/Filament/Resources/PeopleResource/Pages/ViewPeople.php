@@ -96,11 +96,57 @@ final class ViewPeople extends ViewRecord
                         ->openUrlInNewTab()
                         ->color('primary'),
 
-                    TextEntry::make('osint_data')
-                        ->label('Raw OSINT Data')
-                        ->formatStateUsing(fn($state) => json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))
-                        ->markdown()
-                        ->prose()
+                    TextEntry::make('mosint_signals')
+                        ->label('Mosint Signals')
+                        ->state(function (People $record) {
+                            $data = $record->osint_data;
+                            if (!$data)
+                                return null;
+
+                            $signals = [];
+                            // Handle associative or indexed
+                            $twitter = $data['twitter'] ?? ($data[2] ?? false);
+                            $spotify = $data['spotify'] ?? ($data[3] ?? false);
+
+                            if ($twitter)
+                                $signals[] = 'Twitter';
+                            if ($spotify)
+                                $signals[] = 'Spotify';
+
+                            return $signals;
+                        })
+                        ->badge()
+                        ->color('success'),
+
+                    TextEntry::make('dns_records_view')
+                        ->label('DNS Records (Mosint)')
+                        ->state(function (People $record) {
+                            $data = $record->osint_data;
+                            if (!$data)
+                                return '—';
+
+                            $dns = $data['dns_records'] ?? ($data[5] ?? []);
+                            if (empty($dns))
+                                return 'No records found';
+
+                            $html = '<div class="space-y-1">';
+                            foreach ($dns as $rec) {
+                                // Handle object or array entry
+                                $type = $rec['Type'] ?? $rec[0] ?? '?';
+                                $val = $rec['Value'] ?? $rec[1] ?? '?';
+
+                                $color = match ($type) {
+                                    'MX' => 'text-success-500 font-bold',
+                                    'NS' => 'text-primary-500 font-bold',
+                                    'A' => 'text-warning-500 font-bold',
+                                    default => 'text-gray-400 font-bold'
+                                };
+
+                                $html .= "<div class='text-sm'><span class='{$color} w-8 inline-block'>{$type}</span> <span class='text-gray-300'>{$val}</span></div>";
+                            }
+                            $html .= '</div>';
+                            return new \Illuminate\Support\HtmlString($html);
+                        })
                         ->columnSpanFull(),
                 ])->columns(3),
 
