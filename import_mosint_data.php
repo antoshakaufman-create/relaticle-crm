@@ -63,12 +63,20 @@ foreach ($results as $hit) {
         // echo "Found Person: {$person->id}\n";
 
         $notes = $person->notes ?? '';
-        $enrichment = "[Mosint] " . $hit['summary'];
+        $newNote = "[Mosint] " . $hit['summary'];
 
-        if (!str_contains($notes, "[Mosint]")) {
-            $person->notes = $notes . "\n" . $enrichment;
+        if (str_contains($notes, "[Mosint]")) {
+            // Replace existing Mosint note with new one (richer data)
+            $notes = preg_replace('/\[Mosint\].*/', $newNote, $notes);
+            $person->notes = $notes;
             $person->save();
-            echo "Updated {$person->name}: $enrichment\n";
+            echo "Upgraded {$person->name}: $newNote\n";
+            $imported++;
+        } else {
+            // Append new
+            $person->notes = $notes . "\n" . $newNote;
+            $person->save();
+            echo "Added {$person->name}: $newNote\n";
             $imported++;
         }
 
