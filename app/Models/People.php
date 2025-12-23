@@ -96,6 +96,7 @@ final class People extends Model implements HasCustomFields
         'osint_data',
         'twitter_url',
         'ip_organization',
+        'comment',
     ];
 
     /**

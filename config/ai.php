@@ -98,5 +98,22 @@ return [
         'api_key' => env('TWO_GIS_API_KEY'),
         'enabled' => env('TWO_GIS_ENABLED', false),
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Exa.ai Search Integration
+    |--------------------------------------------------------------------------
+    |
+    | Configuration for Exa.ai search API - AI-powered search engine for
+    | finding company information and contact details.
+    |
+    */
+
+    'exa' => [
+        'api_key' => env('EXA_API_KEY'),
+        'enabled' => env('EXA_ENABLED', false),
+        'base_url' => env('EXA_BASE_URL', 'https://api.exa.ai'),
+        'timeout' => (int) env('EXA_TIMEOUT', 30),
+    ],
 ];
 

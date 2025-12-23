@@ -103,6 +103,7 @@ final class Company extends Model implements HasCustomFields, HasMedia
 
         // Financial & Engagement
         'annual_revenue',
+        'company_size',
         'number_of_employees',
         'founded_year',
         'currency_code',
@@ -128,6 +129,7 @@ final class Company extends Model implements HasCustomFields, HasMedia
         'last_enrichment_at',
         'linkedin_url',
         'creation_source',
+        'comment',
     ];
 
     /**
@@ -188,5 +190,12 @@ final class Company extends Model implements HasCustomFields, HasMedia
     public function tasks(): MorphToMany
     {
         return $this->morphToMany(Task::class, 'taskable');
+    }
+    /**
+     * @return HasMany<Tender, $this>
+     */
+    public function tenders(): HasMany
+    {
+        return $this->hasMany(Tender::class);
     }
 }

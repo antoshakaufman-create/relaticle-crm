@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 namespace App\Filament\Resources\PeopleResource\Pages;
 
+use App\Filament\Actions\FindWebsiteWithExaAction;
+use App\Filament\Actions\EnrichWithExaAction;
 use App\Filament\Actions\GenerateRecordSummaryAction;
 use App\Filament\Resources\CompanyResource;
 use App\Filament\Resources\PeopleResource;
+use App\Jobs\PerformDeepAiAnalysis;
+use App\Jobs\PerformSmmAnalysis;
 use App\Models\People;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
@@ -27,7 +31,77 @@ final class ViewPeople extends ViewRecord
     protected function getHeaderActions(): array
     {
         return [
-            GenerateRecordSummaryAction::make(),
+            ActionGroup::make([
+                \Filament\Actions\Action::make('Find VK Link')
+                    ->icon('heroicon-m-magnifying-glass')
+                    ->form([
+                        \Filament\Forms\Components\TextInput::make('query')
+                            ->label('Search Query')
+                            ->default(fn($record) => $record->name . ($record->company ? ' ' . $record->company->name : ''))
+                            ->required(),
+                    ])
+                    ->action(function (People $record, array $data, \App\Services\VkActionService $vkService) {
+                        $url = $vkService->findGroup($data['query']); // Works for users too if they have groups or just search
+            
+                        if ($url) {
+                            $record->update(['vk_url' => $url]);
+                            \Filament\Notifications\Notification::make()
+                                ->title('VK Link Found')
+                                ->body("Found and saved: $url")
+                                ->success()
+                                ->send();
+                        } else {
+                            \Filament\Notifications\Notification::make()
+                                ->title('Not Found')
+                                ->warning()
+                                ->send();
+                        }
+                    }),
+                \Filament\Actions\Action::make('SMM Analysis')
+                    ->icon('heroicon-m-chart-bar')
+                    ->requiresConfirmation()
+                    ->action(function (People $record) {
+                        if (!$record->vk_url) {
+                            \Filament\Notifications\Notification::make()
+                                ->title('No VK Link')
+                                ->body('Please find a VK link first.')
+                                ->danger()
+                                ->send();
+                            return;
+                        }
+
+                        PerformSmmAnalysis::dispatch($record);
+
+                        \Filament\Notifications\Notification::make()
+                            ->title('SMM Analysis Started')
+                            ->success()
+                            ->send();
+                    }),
+                \Filament\Actions\Action::make('Deep AI Analysis')
+                    ->icon('heroicon-m-sparkles')
+                    ->color('warning')
+                    ->requiresConfirmation()
+                    ->action(function (People $record) {
+                        if (!$record->vk_url) {
+                            \Filament\Notifications\Notification::make()->title('No VK Link')->danger()->send();
+                            return;
+                        }
+
+                        PerformDeepAiAnalysis::dispatch($record);
+
+                        \Filament\Notifications\Notification::make()
+                            ->title('AI Analysis Started')
+                            ->info()
+                            ->send();
+                    }),
+                FindWebsiteWithExaAction::make(),
+                EnrichWithExaAction::make(),
+                GenerateRecordSummaryAction::make(),
+            ])
+                ->label('Enrichment')
+                ->icon('heroicon-m-sparkles')
+                ->color('primary')
+                ->button(),
             ActionGroup::make([
                 EditAction::make(),
                 DeleteAction::make(),
@@ -45,7 +119,7 @@ final class ViewPeople extends ViewRecord
                         ->height(60)
                         ->circular()
                         ->grow(false),
-                    \Filament\Schemas\Components\Section::make()->schema([
+                    Section::make()->schema([
                         TextEntry::make('name')
                             ->label('')
                             ->size(TextSize::Large)

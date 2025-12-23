@@ -10,7 +10,7 @@ use App\Filament\Exports\CompanyExporter;
 use App\Filament\Resources\CompanyResource\Pages\ListCompanies;
 use App\Filament\Resources\CompanyResource\Pages\ViewCompany;
 use App\Filament\Resources\CompanyResource\RelationManagers\PeopleRelationManager;
-use Filament\Forms\Components\Section;
+use Filament\Schemas\Components\Section;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
@@ -80,7 +80,7 @@ final class CompanyResource extends Resource
                     ->preload()
                     ->searchable(),
 
-                \Filament\Schemas\Components\Section::make('Enrichment Data')
+                Section::make('Enrichment Data')
                     ->description('Automatic SMM Analysis & Lead Score')
                     ->schema([
                         TextInput::make('industry')
@@ -138,9 +138,13 @@ final class CompanyResource extends Resource
                             ->label('SMM Анализ (Текст)')
                             ->rows(3)
                             ->columnSpanFull(),
+                        \Filament\Forms\Components\Textarea::make('comment')
+                            ->label('Комментарии')
+                            ->rows(3)
+                            ->columnSpanFull(),
                     ])->collapsible(),
 
-                \Filament\Schemas\Components\Section::make('Legal Details')
+                Section::make('Legal Details')
                     ->description('Official company information')
                     ->schema([
                         TextInput::make('legal_name')->label('Юр. Лицо')->columnSpanFull(),
@@ -154,7 +158,7 @@ final class CompanyResource extends Resource
                         TextInput::make('address_line_1')->label('Legal Address')->columnSpanFull(),
                     ])->columns(2)->collapsible(),
 
-                \Filament\Schemas\Components\Section::make('Additional Information')
+                Section::make('Additional Information')
                     ->schema([
                         CustomFields::form()->forSchema($schema)->build()->columns(1),
                     ])
@@ -175,6 +179,12 @@ final class CompanyResource extends Resource
                     ->label('Отрасль')
                     ->searchable()
                     ->toggleable(),
+                TextColumn::make('website')
+                    ->label('Сайт')
+                    ->url(fn($state) => $state)
+                    ->openUrlInNewTab()
+                    ->icon('heroicon-m-globe-alt')
+                    ->toggleable(),
                 TextColumn::make('vk_url')
                     ->label('VK')
                     ->url(fn($state) => $state)
@@ -187,15 +197,20 @@ final class CompanyResource extends Resource
                     ->sortable()
                     ->toggleable(),
                 TextColumn::make('er_score')
-                    ->label('ER %')
+                    ->label('ER')
                     ->numeric(2)
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->suffix('%'),
                 TextColumn::make('posts_per_month')
-                    ->label('Posts/Mo')
-                    ->numeric(1)
+                    ->label('Посты')
+                    ->numeric(0)
                     ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->suffix('/мес'),
+                TextColumn::make('smm_analysis.summary')
+                    ->label('SMM')
+                    ->limit(50)
+                    ->toggleable()
+                    ->toggledHiddenByDefault(),
                 TextColumn::make('lead_category')
                     ->badge()
                     ->color(fn(string $state): string => match ($state) {
@@ -205,6 +220,30 @@ final class CompanyResource extends Resource
                         'COLD' => 'gray',
                         default => 'gray',
                     }),
+                TextColumn::make('annual_revenue')
+                    ->label('Выручка')
+                    ->money('RUB', divideBy: 1)
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('company_size')
+                    ->label('Размер')
+                    ->badge()
+                    ->color(fn(?string $state): string => match ($state) {
+                        'LARGE' => 'success',
+                        'MEDIUM' => 'info',
+                        'SMALL' => 'warning',
+                        'MICRO' => 'gray',
+                        default => 'gray',
+                    })
+                    ->formatStateUsing(fn(?string $state): string => match ($state) {
+                        'LARGE' => 'Крупная',
+                        'MEDIUM' => 'Средняя',
+                        'SMALL' => 'Малая',
+                        'MICRO' => 'Микро',
+                        default => '-',
+                    })
+                    ->sortable()
+                    ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('vk_status')
                     ->badge()
                     ->color(fn(string $state): string => match (true) {
@@ -213,6 +252,11 @@ final class CompanyResource extends Resource
                         default => 'danger',
                     })
                     ->toggleable(),
+                TextColumn::make('comment')
+                    ->label('Комментарии')
+                    ->limit(50)
+                    ->toggleable()
+                    ->toggledHiddenByDefault(),
                 TextColumn::make('accountOwner.name')
                     ->label(__('resources.company.account_owner'))
                     ->searchable()
@@ -248,6 +292,32 @@ final class CompanyResource extends Resource
                 SelectFilter::make('creation_source')
                     ->label(__('resources.common.creation_source'))
                     ->options(CreationSource::class)
+                    ->multiple(),
+                SelectFilter::make('vk_status')
+                    ->label('VK Статус')
+                    ->options([
+                        'ACTIVE' => 'Active',
+                        'INACTIVE' => 'Inactive',
+                        'DEAD' => 'Dead',
+                    ])
+                    ->multiple(),
+                SelectFilter::make('lead_category')
+                    ->label('Категория')
+                    ->options([
+                        'HOT' => 'HOT',
+                        'WARM' => 'WARM',
+                        'COLD-WARM' => 'COLD-WARM',
+                        'COLD' => 'COLD',
+                    ])
+                    ->multiple(),
+                SelectFilter::make('company_size')
+                    ->label('Размер компании')
+                    ->options([
+                        'LARGE' => 'Крупная (2B+ ₽)',
+                        'MEDIUM' => 'Средняя (800M-2B ₽)',
+                        'SMALL' => 'Малая (120M-800M ₽)',
+                        'MICRO' => 'Микро (<120M ₽)',
+                    ])
                     ->multiple(),
                 TrashedFilter::make(),
             ])

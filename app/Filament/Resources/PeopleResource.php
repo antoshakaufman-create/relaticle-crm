@@ -25,7 +25,7 @@ use Filament\Actions\RestoreAction;
 use Filament\Actions\RestoreBulkAction;
 use Filament\Actions\ViewAction;
 use Filament\Forms\Components\Select;
-use Filament\Forms\Components\Section;
+use Filament\Schemas\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Text;
 use Filament\Schemas\Components\Image;
@@ -81,12 +81,15 @@ final class PeopleResource extends Resource
     {
         return $schema
             ->components([
-                \Filament\Forms\Components\Section::make('Verification Status')
+                Section::make('Verification Status')
                     ->description('Email Validation & Mosint Intelligence')
                     ->schema([
                         \Filament\Forms\Components\Placeholder::make('validation_status')
                             ->label('Email Status')
-                            ->content(function (People $record) {
+                            ->content(function (?People $record) {
+                                if (!$record) {
+                                    return 'No Record';
+                                }
                                 if (str_contains($record->notes ?? '', '[Mosint] ❌ INVALID')) {
                                     return new \Illuminate\Support\HtmlString('<span style="color: red; font-weight: bold;">❌ Invalid: No MX Records found (Mosint Scan)</span>');
                                 }
@@ -111,7 +114,7 @@ final class PeopleResource extends Resource
                         \Filament\Forms\Components\Textarea::make('osint_data_pretty')
                             ->label('Raw OSINT Data')
                             ->rows(5)
-                            ->formatStateUsing(fn(People $record) => json_encode($record->osint_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))
+                            ->formatStateUsing(fn(?People $record) => $record ? json_encode($record->osint_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) : '')
                             ->disabled()
                             ->dehydrated(false) // Do not save back to DB
                             ->columnSpanFull(),
@@ -197,13 +200,17 @@ final class PeopleResource extends Resource
                         \Filament\Forms\Components\Textarea::make('notes')
                             ->rows(3)
                             ->columnSpanFull(),
+                        \Filament\Forms\Components\Textarea::make('comment')
+                            ->label('Комментарии')
+                            ->rows(3)
+                            ->columnSpanFull(),
                         \Filament\Forms\Components\Textarea::make('smm_analysis')
                             ->label('SMM Анализ')
                             ->rows(5)
                             ->columnSpanFull(),
                     ])
                     ->columns(12),
-                \Filament\Schemas\Components\Section::make('Enrichment Data')
+                Section::make('Enrichment Data')
                     ->description('Automatic data from LinkedIn and VK Analysis')
                     ->schema([
                         Grid::make()
@@ -258,7 +265,7 @@ final class PeopleResource extends Resource
                             ->columnSpanFull(),
                     ])
                     ->collapsible(),
-                \Filament\Schemas\Components\Section::make('Additional Information')
+                Section::make('Additional Information')
                     ->schema([
                         CustomFields::form()->forSchema($schema)->build()->columns(1),
                     ])
@@ -345,6 +352,11 @@ final class PeopleResource extends Resource
                     ->label('SMM')
                     ->formatStateUsing(fn($state) => $state ? '✅' : '—')
                     ->toggleable(),
+                TextColumn::make('comment')
+                    ->label('Комментарии')
+                    ->limit(50)
+                    ->toggleable()
+                    ->toggledHiddenByDefault(),
                 TextColumn::make('company.name')
                     ->label(__('resources.common.companies'))
                     ->url(fn(People $record): ?string => $record->company_id ? CompanyResource::getUrl('view', [$record->company_id]) : null)
@@ -510,7 +522,7 @@ final class PeopleResource extends Resource
     {
         return $schema
             ->components([
-                \Filament\Schemas\Components\Section::make('Verification Status')
+                Section::make('Verification Status')
                     ->description('Email Validation & Mosint Intelligence')
                     ->schema([
                         Text::make('validation_status_label')
@@ -552,7 +564,7 @@ final class PeopleResource extends Resource
                     ])
                     ->columns(3),
 
-                \Filament\Schemas\Components\Section::make('Contact Info')
+                Section::make('Contact Info')
                     ->schema([
                         Image::make('avatar')
                             ->label('Avatar')
@@ -578,7 +590,7 @@ final class PeopleResource extends Resource
                     ])
                     ->columns(2),
 
-                \Filament\Schemas\Components\Section::make('Social & Analysis')
+                Section::make('Social & Analysis')
                     ->schema([
                         Text::make('linkedin_url')->label('LinkedIn')->url(fn($state) => $state),
                         Text::make('vk_url')->label('VK')->url(fn($state) => $state),
